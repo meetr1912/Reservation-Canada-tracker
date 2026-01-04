@@ -1,0 +1,734 @@
+[
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#34 - 58",
+        "ResourceName": "O45",
+        "NegativeResourceValue": -2147480485
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#34 - 58",
+        "ResourceName": "O48",
+        "NegativeResourceValue": -2147480475
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#34 - 58",
+        "ResourceName": "O46",
+        "NegativeResourceValue": -2147480411
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O75",
+        "NegativeResourceValue": -2147480496
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O70",
+        "NegativeResourceValue": -2147480495
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O78",
+        "NegativeResourceValue": -2147480472
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O81",
+        "NegativeResourceValue": -2147480442
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O74",
+        "NegativeResourceValue": -2147480413
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O85",
+        "NegativeResourceValue": -2147480410
+    },
+    {
+        "ParkName": "Fundy - Headquarters",
+        "PageTitle": "#59 - 124",
+        "ResourceName": "O72",
+        "NegativeResourceValue": -2147480408
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 80 - 161",
+        "ResourceName": "O123",
+        "NegativeResourceValue": -2147481486
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 80 - 161",
+        "ResourceName": "O124",
+        "NegativeResourceValue": -2147481457
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 80 - 161",
+        "ResourceName": "O131",
+        "NegativeResourceValue": -2147481408
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O264",
+        "NegativeResourceValue": -2147481508
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O286",
+        "NegativeResourceValue": -2147481483
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O289",
+        "NegativeResourceValue": -2147481475
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O285",
+        "NegativeResourceValue": -2147481449
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O287",
+        "NegativeResourceValue": -2147481433
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O262",
+        "NegativeResourceValue": -2147481425
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O263",
+        "NegativeResourceValue": -2147481406
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O290",
+        "NegativeResourceValue": -2147481392
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O288",
+        "NegativeResourceValue": -2147481329
+    },
+    {
+        "ParkName": "Fundy - Chignecto",
+        "PageTitle": "# 175 - 290",
+        "ResourceName": "O261",
+        "NegativeResourceValue": -2147481264
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O9",
+        "NegativeResourceValue": -2147477755
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O14",
+        "NegativeResourceValue": -2147477734
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O12",
+        "NegativeResourceValue": -2147477709
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O7",
+        "NegativeResourceValue": -2147477688
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O4",
+        "NegativeResourceValue": -2147477670
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O15",
+        "NegativeResourceValue": -2147477669
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O16",
+        "NegativeResourceValue": -2147477660
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O10",
+        "NegativeResourceValue": -2147477647
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O11",
+        "NegativeResourceValue": -2147477620
+    },
+    {
+        "ParkName": "Fundy - Point Wolfe",
+        "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+        "ResourceName": "O8",
+        "NegativeResourceValue": -2147477617
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O48",
+        "NegativeResourceValue": -2147476519
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O74",
+        "NegativeResourceValue": -2147476496
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O82",
+        "NegativeResourceValue": -2147476484
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O71",
+        "NegativeResourceValue": -2147476475
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O104",
+        "NegativeResourceValue": -2147476458
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O76",
+        "NegativeResourceValue": -2147476451
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O46",
+        "NegativeResourceValue": -2147476427
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O73",
+        "NegativeResourceValue": -2147476422
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O102",
+        "NegativeResourceValue": -2147476410
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O44",
+        "NegativeResourceValue": -2147476409
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O98",
+        "NegativeResourceValue": -2147476407
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O87",
+        "NegativeResourceValue": -2147476395
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O68",
+        "NegativeResourceValue": -2147476394
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O60",
+        "NegativeResourceValue": -2147476389
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O84",
+        "NegativeResourceValue": -2147476366
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O86",
+        "NegativeResourceValue": -2147476365
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O75",
+        "NegativeResourceValue": -2147476362
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O100",
+        "NegativeResourceValue": -2147476353
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O83",
+        "NegativeResourceValue": -2147476309
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O66",
+        "NegativeResourceValue": -2147476292
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O63",
+        "NegativeResourceValue": -2147476269
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O99",
+        "NegativeResourceValue": -2147476261
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O50",
+        "NegativeResourceValue": -2147476259
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O69",
+        "NegativeResourceValue": -2147476255
+    },
+    {
+        "ParkName": "Kouchibouguac - South",
+        "PageTitle": "Loops 1 & 2",
+        "ResourceName": "O49",
+        "NegativeResourceValue": -2147476254
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O4",
+        "NegativeResourceValue": -2147482053
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O1",
+        "NegativeResourceValue": -2147482022
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O6",
+        "NegativeResourceValue": -2147482000
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O3",
+        "NegativeResourceValue": -2147481978
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O2",
+        "NegativeResourceValue": -2147481963
+    },
+    {
+        "ParkName": "Prince Edward Island - Cavendish",
+        "PageTitle": "O1 - O7",
+        "ResourceName": "O5",
+        "NegativeResourceValue": -2147481863
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS1",
+        "NegativeResourceValue": -2147476231
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS7",
+        "NegativeResourceValue": -2147476220
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS5",
+        "NegativeResourceValue": -2147476219
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS3",
+        "NegativeResourceValue": -2147476205
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS6",
+        "NegativeResourceValue": -2147476171
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS2",
+        "NegativeResourceValue": -2147476170
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS8",
+        "NegativeResourceValue": -2147476131
+    },
+    {
+        "ParkName": "Prince Edward Island - Stanhope",
+        "PageTitle": "OS1 - OS8",
+        "ResourceName": "OS4",
+        "NegativeResourceValue": -2147476129
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 84 - 141",
+        "ResourceName": "O96",
+        "NegativeResourceValue": -2147482519
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 84 - 141",
+        "ResourceName": "O128",
+        "NegativeResourceValue": -2147482460
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 84 - 141",
+        "ResourceName": "BO118",
+        "NegativeResourceValue": -2147482432
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 84 - 141",
+        "ResourceName": "O95",
+        "NegativeResourceValue": -2147482425
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 142 - 201",
+        "ResourceName": "O185",
+        "NegativeResourceValue": -2147482528
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Broad Cove",
+        "PageTitle": "# 142 - 201",
+        "ResourceName": "O187",
+        "NegativeResourceValue": -2147482437
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+        "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+        "ResourceName": "O44",
+        "NegativeResourceValue": -2147482129
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+        "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+        "ResourceName": "O43",
+        "NegativeResourceValue": -2147482113
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+        "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+        "ResourceName": "O47",
+        "NegativeResourceValue": -2147482108
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+        "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+        "ResourceName": "O45",
+        "NegativeResourceValue": -2147482091
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+        "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+        "ResourceName": "O46",
+        "NegativeResourceValue": -2147482087
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O90",
+        "NegativeResourceValue": -2147481690
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O14",
+        "NegativeResourceValue": -2147481665
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O13",
+        "NegativeResourceValue": -2147481636
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O97",
+        "NegativeResourceValue": -2147481617
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O86",
+        "NegativeResourceValue": -2147481615
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O87",
+        "NegativeResourceValue": -2147481608
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O89",
+        "NegativeResourceValue": -2147481597
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O32",
+        "NegativeResourceValue": -2147481595
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O88",
+        "NegativeResourceValue": -2147481591
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Cheticamp",
+        "PageTitle": "Cheticamp",
+        "ResourceName": "O85",
+        "NegativeResourceValue": -2147481579
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Ingonish Beach",
+        "PageTitle": "1 - 34, 37 - 60",
+        "ResourceName": "O5",
+        "NegativeResourceValue": -2147480395
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Ingonish Beach",
+        "PageTitle": "O35 - O36",
+        "ResourceName": "O36",
+        "NegativeResourceValue": -2147480351
+    },
+    {
+        "ParkName": "Cape Breton Highlands - Ingonish Beach",
+        "PageTitle": "O35 - O36",
+        "ResourceName": "O35",
+        "NegativeResourceValue": -2147480344
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "2",
+        "NegativeResourceValue": -2147480689
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "7",
+        "NegativeResourceValue": -2147480688
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "5",
+        "NegativeResourceValue": -2147480687
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "8",
+        "NegativeResourceValue": -2147480686
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "3",
+        "NegativeResourceValue": -2147480685
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "6",
+        "NegativeResourceValue": -2147480684
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "4",
+        "NegativeResourceValue": -2147480683
+    },
+    {
+        "ParkName": "Grand-Pr\u00c3\u00a9",
+        "PageTitle": "1 - 8",
+        "ResourceName": "1",
+        "NegativeResourceValue": -2147480682
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "323",
+        "NegativeResourceValue": -2147480302
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "328",
+        "NegativeResourceValue": -2147480285
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "332",
+        "NegativeResourceValue": -2147480250
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "331",
+        "NegativeResourceValue": -2147480201
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "335",
+        "NegativeResourceValue": -2147480051
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "327",
+        "NegativeResourceValue": -2147480024
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "336",
+        "NegativeResourceValue": -2147480004
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "322",
+        "NegativeResourceValue": -2147479984
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "334",
+        "NegativeResourceValue": -2147479976
+    },
+    {
+        "ParkName": "Kejimkujik - JeremysBay & Jakes Landing",
+        "PageTitle": "oTENTik Village",
+        "ResourceName": "329",
+        "NegativeResourceValue": -2147479973
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "404",
+        "NegativeResourceValue": -2147480283
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "406",
+        "NegativeResourceValue": -2147480280
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "405",
+        "NegativeResourceValue": -2147480187
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "402",
+        "NegativeResourceValue": -2147480176
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "407",
+        "NegativeResourceValue": -2147480170
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "403",
+        "NegativeResourceValue": -2147480126
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "408",
+        "NegativeResourceValue": -2147480093
+    },
+    {
+        "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+        "PageTitle": "Jim Charles Point",
+        "ResourceName": "401",
+        "NegativeResourceValue": -2147480078
+    }
+]
