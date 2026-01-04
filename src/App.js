@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import './CalendarView.css';
+import CalendarView from './CalendarView';
 
 function App() {
   const [availabilityData, setAvailabilityData] = useState(null);
@@ -7,6 +9,7 @@ function App() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPark, setSelectedPark] = useState('all');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(false);
+  const [viewMode, setViewMode] = useState('list'); // 'list' or 'calendar'
 
   useEffect(() => {
     // Load the availability report
@@ -109,28 +112,48 @@ function App() {
       <div className="container">
         <div className="controls">
           <div className="control-group">
-            <label>Select Date:</label>
-            <select 
-              value={selectedDate} 
-              onChange={(e) => setSelectedDate(e.target.value)}
-              className="date-select"
-            >
-              {dates.map(date => {
-                const hasAvailability = availabilityData[date].some(site => site.status);
-                return (
-                  <option key={date} value={date}>
-                    {new Date(date).toLocaleDateString('en-US', { 
-                      weekday: 'short', 
-                      year: 'numeric', 
-                      month: 'short', 
-                      day: 'numeric' 
-                    })}
-                    {hasAvailability ? ' ✓' : ''}
-                  </option>
-                );
-              })}
-            </select>
+            <label>View Mode:</label>
+            <div className="view-toggle">
+              <button 
+                className={`toggle-btn ${viewMode === 'list' ? 'active' : ''}`}
+                onClick={() => setViewMode('list')}
+              >
+                📋 List View
+              </button>
+              <button 
+                className={`toggle-btn ${viewMode === 'calendar' ? 'active' : ''}`}
+                onClick={() => setViewMode('calendar')}
+              >
+                📅 Calendar View
+              </button>
+            </div>
           </div>
+
+          {viewMode === 'list' && (
+            <div className="control-group">
+              <label>Select Date:</label>
+              <select 
+                value={selectedDate} 
+                onChange={(e) => setSelectedDate(e.target.value)}
+                className="date-select"
+              >
+                {dates.map(date => {
+                  const hasAvailability = availabilityData[date].some(site => site.status);
+                  return (
+                    <option key={date} value={date}>
+                      {new Date(date).toLocaleDateString('en-US', { 
+                        weekday: 'short', 
+                        year: 'numeric', 
+                        month: 'short', 
+                        day: 'numeric' 
+                      })}
+                      {hasAvailability ? ' ✓' : ''}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+          )}
 
           <div className="control-group">
             <label>Filter by Park:</label>
@@ -147,85 +170,96 @@ function App() {
             </select>
           </div>
 
-          <div className="control-group checkbox-group">
-            <label>
-              <input 
-                type="checkbox" 
-                checked={showOnlyAvailable}
-                onChange={(e) => setShowOnlyAvailable(e.target.checked)}
-              />
-              Show only available
-            </label>
-          </div>
-        </div>
-
-        <div className="stats">
-          <div className="stat-card">
-            <div className="stat-value">{totalAvailable}</div>
-            <div className="stat-label">Available Sites</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-value">{totalSites}</div>
-            <div className="stat-label">Total Sites</div>
-          </div>
-          <div className="stat-card">
-            <div className="stat-value">
-              {totalSites > 0 ? Math.round((totalAvailable / totalSites) * 100) : 0}%
+          {viewMode === 'list' && (
+            <div className="control-group checkbox-group">
+              <label>
+                <input 
+                  type="checkbox" 
+                  checked={showOnlyAvailable}
+                  onChange={(e) => setShowOnlyAvailable(e.target.checked)}
+                />
+                Show only available
+              </label>
             </div>
-            <div className="stat-label">Availability Rate</div>
-          </div>
+          )}
         </div>
 
-        {datesWithAvailability.length > 0 && (
-          <div className="quick-nav">
-            <h3>Quick Jump to Available Dates:</h3>
-            <div className="quick-dates">
-              {datesWithAvailability.slice(0, 10).map(date => (
-                <button
-                  key={date}
-                  onClick={() => setSelectedDate(date)}
-                  className={`quick-date-btn ${date === selectedDate ? 'active' : ''}`}
-                >
-                  {new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                </button>
-              ))}
+        {viewMode === 'list' && (
+          <div className="stats">
+            <div className="stat-card">
+              <div className="stat-value">{totalAvailable}</div>
+              <div className="stat-label">Available Today</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-value">{totalSites}</div>
+              <div className="stat-label">Total Sites</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-value">{datesWithAvailability.length}</div>
+              <div className="stat-label">Days with Availability</div>
             </div>
           </div>
         )}
 
-        <div className="sites-grid">
-          {filteredData.length === 0 ? (
-            <div className="no-results">
-              <p>No sites match your filters</p>
-            </div>
-          ) : (
-            filteredData.map((site, index) => (
-              <div 
-                key={index} 
-                className={`site-card ${site.status ? 'available' : 'unavailable'}`}
-              >
-                <div className="site-status">
-                  {site.status ? '✓ Available' : '✗ Unavailable'}
+        {viewMode === 'calendar' ? (
+          <CalendarView 
+            availabilityData={availabilityData}
+            selectedPark={selectedPark}
+          />
+        ) : (
+          <>
+            {datesWithAvailability.length > 0 && (
+              <div className="quick-nav">
+                <h3>Quick Jump to Available Dates:</h3>
+                <div className="quick-dates">
+                  {datesWithAvailability.slice(0, 10).map(date => (
+                    <button
+                      key={date}
+                      onClick={() => setSelectedDate(date)}
+                      className={`quick-date-btn ${date === selectedDate ? 'active' : ''}`}
+                    >
+                      {new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    </button>
+                  ))}
                 </div>
-                <h3 className="site-name">{site.ResourceName}</h3>
-                <div className="site-details">
-                  <p className="park-name">{site.ParkName}</p>
-                  <p className="page-title">{site.PageTitle}</p>
-                </div>
-                {site.status && (
-                  <a 
-                    href={getBookingUrl(site, selectedDate)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="book-button"
-                  >
-                    Book Now →
-                  </a>
-                )}
               </div>
-            ))
-          )}
-        </div>
+            )}
+
+            <div className="sites-grid">
+              {filteredData.length === 0 ? (
+                <div className="no-results">
+                  <p>No sites match your filters</p>
+                </div>
+              ) : (
+                filteredData.map((site, index) => (
+                  <div 
+                    key={index} 
+                    className={`site-card ${site.status ? 'available' : 'unavailable'}`}
+                  >
+                    <div className="site-status">
+                      {site.status ? '✓ Available' : '✗ Unavailable'}
+                    </div>
+                    <h3 className="site-name">{site.ResourceName}</h3>
+                    <div className="site-details">
+                      <p className="park-name">{site.ParkName}</p>
+                      <p className="page-title">{site.PageTitle}</p>
+                    </div>
+                    {site.status && (
+                      <a 
+                        href={getBookingUrl(site, selectedDate)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="book-button"
+                      >
+                        Book Now →
+                      </a>
+                    )}
+                  </div>
+                ))
+              )}
+            </div>
+          </>
+        )}
       </div>
 
       <footer className="footer">

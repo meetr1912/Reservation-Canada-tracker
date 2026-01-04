@@ -27,7 +27,11 @@ def test():
         # Navigate to the site first to handle cookies and any bot detection.
         print("Initializing session...")
         page.goto(base_url, timeout=60000)
-        page.wait_for_load_state('networkidle')
+        try:
+            page.wait_for_load_state('networkidle', timeout=30000)
+        except Exception as e:
+            print(f"Network idle timeout (this is ok): {e}")
+            # Continue anyway - the page is likely loaded enough
 
         api_context = page.request
 
