@@ -64,6 +64,19 @@ function App() {
   // Get unique parks
   const parks = ['all', ...new Set(selectedDateData.map(site => site.ParkName))].sort();
   
+  // Generate booking URL for a site
+  const getBookingUrl = (site, date) => {
+    const baseUrl = 'https://reservation.pc.gc.ca/create-booking/results';
+    const params = new URLSearchParams({
+      bookingCategoryId: 4, // oTENTik category
+      startDate: date,
+      nights: 1,
+      isReserving: true,
+      partySize: 2
+    });
+    return `${baseUrl}?${params.toString()}`;
+  };
+  
   // Filter data based on selections
   let filteredData = selectedDateData;
   if (selectedPark !== 'all') {
@@ -195,6 +208,16 @@ function App() {
                   <p className="park-name">{site.ParkName}</p>
                   <p className="page-title">{site.PageTitle}</p>
                 </div>
+                {site.status && (
+                  <a 
+                    href={getBookingUrl(site, selectedDate)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="book-button"
+                  >
+                    Book Now →
+                  </a>
+                )}
               </div>
             ))
           )}
