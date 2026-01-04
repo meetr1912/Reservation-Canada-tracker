@@ -1,6 +1,5 @@
 from playwright.sync_api import sync_playwright
 import json
-import pandas as pd
 from datetime import datetime, timedelta
 
 def test():
@@ -9,11 +8,12 @@ def test():
     with open('otentiks.json', 'r') as f:
         otentiks_data = json.load(f)
 
-    availability_report = {}
+    # Track which sites are available on which dates
+    available_dates = set()
     
-    # Define date range for scanning
-    start_date = datetime(2026, 4, 1)
-    end_date = start_date + timedelta(days=90) # Scan for 90 days
+    # Define date range for scanning - next 6 months from today
+    start_date = datetime.now()
+    end_date = start_date + timedelta(days=180) # Scan for 6 months
     start_str = start_date.strftime("%Y-%m-%d")
     end_str = end_date.strftime("%Y-%m-%d")
 
@@ -58,17 +58,13 @@ def test():
                             if isinstance(details, dict) and details.get('availability') == 1:
                                 # Format date to YYYY-MM-DD
                                 clean_date = date.split('T')[0]
-                                if clean_date not in availability_report:
-                                    availability_report[clean_date] = []
-                                availability_report[clean_date].append(resource_name)
+                                available_dates.add((resource_id, clean_date))
                     elif isinstance(data, list):
                         for i, details in enumerate(data):
                             if isinstance(details, dict) and details.get('availability') == 1:
                                 current_date = start_date + timedelta(days=i)
                                 clean_date = current_date.strftime("%Y-%m-%d")
-                                if clean_date not in availability_report:
-                                    availability_report[clean_date] = []
-                                availability_report[clean_date].append(resource_name)
+                                available_dates.add((resource_id, clean_date))
                 else:
                     print(f"  -> Failed to fetch data for {resource_name}: {response.status} {response.status_text}")
 
@@ -77,28 +73,40 @@ def test():
 
         browser.close()
 
-    # Generate report
-    if availability_report:
-        print("\nGenerating availability report...")
-        # Create a DataFrame for a table-like structure
-        all_dates = sorted(availability_report.keys())
-        all_resources = sorted(list(set(res for resources in availability_report.values() for res in resources)))
+    # Generate JSON report
+    print("\nGenerating availability report...")
+    availability_report = {}
+    
+    # Generate report for the next 6 months (180 days)
+    for i in range(180):
+        current_date = start_date + timedelta(days=i)
+        date_str = current_date.strftime('%Y-%m-%d')
         
-        report_df = pd.DataFrame(index=all_dates, columns=all_resources)
-        
-        for date, resources in availability_report.items():
-            for resource in resources:
-                report_df.loc[date, resource] = "Available"
-        
-        report_df = report_df.fillna("Not Available")
-        
-        # Save to a markdown file
-        with open("availability_report.md", "w") as f:
-            f.write(report_df.to_markdown())
+        daily_availability = []
+        for otentik in otentiks_data:
+            resource_id = otentik['NegativeResourceValue']
             
-        print("Availability report generated in availability_report.md")
-    else:
-        print("\nNo availability found for the specified dates.")
+            # Check if this resource is available on this date
+            status = (resource_id, date_str) in available_dates
+            
+            daily_availability.append({
+                "ParkName": otentik.get("ParkName"),
+                "PageTitle": otentik.get("PageTitle"),
+                "ResourceName": otentik.get("ResourceName"),
+                "status": status
+            })
+        
+        availability_report[date_str] = daily_availability
+    
+    # Save to JSON file
+    with open("availability_report.json", "w") as f:
+        json.dump(availability_report, f, indent=2)
+        
+    print("Availability report generated in availability_report.json")
+    
+    # Count available slots for summary
+    available_count = len(available_dates)
+    print(f"Found {available_count} available slots across all oTENTiks for the next 6 months.")
 
 if __name__ == "__main__":
     test()
