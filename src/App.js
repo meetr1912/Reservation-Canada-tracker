@@ -264,7 +264,7 @@ function App() {
 
       <footer className="footer">
         <p>Last updated: {new Date().toLocaleString()}</p>
-        <p>Data updates hourly via automated scanning</p>
+        <p>Data updates daily via automated scanning</p>
         <p className="contact">For suggestions, contact: <a href="mailto:meetr1912@gmail.com">meetr1912@gmail.com</a></p>
       </footer>
     </div>
