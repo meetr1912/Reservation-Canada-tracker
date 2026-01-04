@@ -316,6 +316,21 @@
   margin: 5px 0;
 }
 
+.footer .contact {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.footer .contact a {
+  color: white;
+  text-decoration: underline;
+  transition: opacity 0.3s;
+}
+
+.footer .contact a:hover {
+  opacity: 1;
+}
+
 @media (max-width: 768px) {
   .App-header h1 {
     font-size: 2rem;
