@@ -2,7 +2,7 @@
   "name": "otentik-tracker",
   "version": "1.0.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://meetr1912.github.io/Reservation-Canada-tracker",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
