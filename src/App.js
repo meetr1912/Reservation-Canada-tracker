@@ -11,8 +11,17 @@ function App() {
   useEffect(() => {
     // Load the availability report
     fetch('/availability_report.json')
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => {
+        console.log('Loaded availability data:', Object.keys(data).length, 'dates');
+        if (!data || typeof data !== 'object' || Object.keys(data).length === 0) {
+          throw new Error('Invalid or empty data received');
+        }
         setAvailabilityData(data);
         setLoading(false);
         // Set the first date with availability as default

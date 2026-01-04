@@ -33,6 +33,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Verify availability report exists
+        run: |
+          if [ ! -f "public/availability_report.json" ]; then
+            echo "Error: availability_report.json not found in public folder!"
+            echo "Creating empty report as fallback..."
+            echo '{}' > public/availability_report.json
+          fi
+          echo "Availability report size: $(wc -c < public/availability_report.json) bytes"
+
       - name: Build React app
         run: npm run build
         env:
