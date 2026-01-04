@@ -1,6 +1,8 @@
 # Parks Canada oTENTik Availability Tracker
 
-A real-time availability tracker for Parks Canada oTENTik sites with automated daily scanning and a beautiful React dashboard.
+🔗 **Live Site:** https://meetr1912.github.io/Reservation-Canada-tracker/
+
+A real-time availability tracker for Parks Canada oTENTik sites with automated hourly scanning and a beautiful React dashboard.
 
 ## 🏕️ Coverage
 
