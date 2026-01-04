@@ -86,18 +86,6 @@ function App() {
   });
   const parks = ['all', ...Array.from(allParks)].sort();
   
-  const getBookingUrl = (site, date) => {
-    const baseUrl = 'https://reservation.pc.gc.ca/create-booking/results';
-    const params = new URLSearchParams({
-      bookingCategoryId: 4,
-      startDate: date,
-      nights: 1,
-      isReserving: true,
-      partySize: 2
-    });
-    return `${baseUrl}?${params.toString()}`;
-  };
-  
   let filteredData = selectedDateData;
   if (selectedPark !== 'all') {
     filteredData = filteredData.filter(site => site.ParkName === selectedPark);
@@ -372,7 +360,7 @@ function App() {
                           className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium text-sm sm:text-base"
                         >
                           <a 
-                            href={getBookingUrl(site, selectedDate)}
+                            href="https://reservation.pc.gc.ca/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
