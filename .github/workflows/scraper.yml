@@ -38,6 +38,7 @@ jobs:
         run: |
           mkdir -p public
           cp availability_report.json public/availability_report.json
+        shell: bash
 
       - name: Commit and push changes
         run: |
@@ -46,3 +47,4 @@ jobs:
           git add public/availability_report.json
           git diff --quiet && git diff --staged --quiet || git commit -m "Update availability report - $(date +'%Y-%m-%d %H:%M:%S')"
           git push
+        shell: bash
