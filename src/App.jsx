@@ -82,7 +82,12 @@ function App() {
   const dates = Object.keys(availabilityData).sort();
   const selectedDateData = availabilityData[selectedDate] || [];
   
-  const parks = ['all', ...new Set(selectedDateData.map(site => site.ParkName))].sort();
+  // Get all unique parks from all dates for calendar view
+  const allParks = new Set();
+  Object.values(availabilityData).forEach(dateData => {
+    dateData.forEach(site => allParks.add(site.ParkName));
+  });
+  const parks = ['all', ...Array.from(allParks)].sort();
   
   const getBookingUrl = (site, date) => {
     const baseUrl = 'https://reservation.pc.gc.ca/create-booking/results';
