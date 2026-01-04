@@ -3,8 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
 
 function CalendarView({ availabilityData, selectedPark }) {
-  if (!availabilityData) return null;
-
   // Group dates by month
   const datesByMonth = {};
   
@@ -75,15 +73,15 @@ function MonthCalendar({ monthKey, dates, availabilityData, selectedPark }) {
   };
 
   return (
-    <Card className="border-0 shadow-sm">
-      <CardHeader className="pb-4">
-        <CardTitle className="text-2xl font-semibold tracking-tight">{monthName}</CardTitle>
+    <Card>
+      <CardHeader>
+        <CardTitle className="text-2xl">{monthName}</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-7 gap-2">
           {/* Day headers */}
           {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-            <div key={day} className="text-center text-xs font-semibold text-gray-500 uppercase tracking-wider py-3">
+            <div key={day} className="text-center font-semibold text-sm text-muted-foreground py-2">
               {day}
             </div>
           ))}
@@ -97,28 +95,24 @@ function MonthCalendar({ monthKey, dates, availabilityData, selectedPark }) {
             const availability = getAvailabilityForDate(dateStr);
             const dayNum = new Date(dateStr).getDate();
             const hasAvailability = availability > 0;
-            const isToday = new Date(dateStr).toDateString() === new Date().toDateString();
             
             return (
               <div
                 key={dateStr}
                 className={`
-                  relative aspect-square rounded-xl p-3 flex flex-col items-center justify-center
-                  transition-all duration-200 cursor-pointer
+                  relative aspect-square border rounded-lg p-2 flex flex-col items-center justify-center
+                  transition-all hover:shadow-md cursor-pointer
                   ${hasAvailability 
-                    ? 'bg-green-50 hover:bg-green-100 border-2 border-green-200 hover:border-green-300 hover:shadow-md' 
-                    : 'bg-white hover:bg-gray-50 border border-gray-200'
+                    ? 'bg-gradient-to-br from-green-50 to-green-100 border-green-300 hover:from-green-100 hover:to-green-200' 
+                    : 'bg-gray-50 border-gray-200 hover:bg-gray-100'
                   }
-                  ${isToday ? 'ring-2 ring-gray-900 ring-offset-2' : ''}
                 `}
               >
-                <span className={`text-base font-semibold ${hasAvailability ? 'text-gray-900' : 'text-gray-400'}`}>
-                  {dayNum}
-                </span>
+                <div className="text-lg font-semibold">{dayNum}</div>
                 {hasAvailability && (
                   <Badge 
-                    variant="default"
-                    className="mt-1.5 px-2 py-0.5 text-xs font-semibold bg-green-600 hover:bg-green-700"
+                    variant="success" 
+                    className="text-xs mt-1 px-1.5 py-0"
                   >
                     {availability}
                   </Badge>

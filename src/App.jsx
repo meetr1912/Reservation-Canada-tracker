@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar as CalendarIcon, List, CheckCircle2, XCircle } from 'lucide-react';
+import { Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp } from 'lucide-react';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -53,26 +53,24 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-5">
-        <Card className="w-full max-w-md">
-          <CardContent className="pt-6">
-            <div className="flex flex-col items-center gap-4">
-              <div className="h-8 w-8 animate-spin rounded-full border-4 border-primary border-t-transparent"></div>
-              <p className="text-lg">Loading oTENTik availability...</p>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-white">
+        <div className="text-center animate-fade-in">
+          <div className="inline-flex items-center justify-center w-16 h-16 mb-6">
+            <div className="w-16 h-16 border-4 border-gray-200 border-t-gray-900 rounded-full animate-spin"></div>
+          </div>
+          <p className="text-lg font-medium text-gray-600">Loading availability data</p>
+        </div>
       </div>
     );
   }
 
   if (!availabilityData) {
     return (
-      <div className="min-h-screen flex items-center justify-center p-5">
-        <Card className="w-full max-w-md border-destructive">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-white p-6">
+        <Card className="max-w-md">
           <CardHeader>
-            <CardTitle className="text-destructive">Error loading data</CardTitle>
-            <CardDescription>Please ensure availability_report.json is available.</CardDescription>
+            <CardTitle className="text-destructive">Unable to load data</CardTitle>
+            <CardDescription>Please ensure the availability report is accessible.</CardDescription>
           </CardHeader>
         </Card>
       </div>
@@ -117,224 +115,285 @@ function App() {
   );
 
   return (
-    <div className="min-h-screen p-5">
-      <header className="text-center text-white mb-10 max-w-4xl mx-auto">
-        <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-10">
-          <h1 className="text-5xl font-bold mb-3 text-shadow">🏕️ Parks Canada oTENTik Tracker</h1>
-          <p className="text-xl opacity-90">Real-time availability for all oTENTik sites</p>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      {/* Hero Section */}
+      <header className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6 py-24 md:py-32">
+          <div className="text-center animate-slide-up">
+            <div className="inline-flex items-center justify-center w-20 h-20 mb-8 bg-white/10 backdrop-blur-xl rounded-3xl">
+              <span className="text-5xl">🏕️</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tighter">
+              Parks Canada
+              <br />
+              <span className="bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
+                oTENTik Tracker
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto font-light">
+              Real-time availability across all oTENTik sites
+            </p>
+          </div>
         </div>
       </header>
 
-      <div className="max-w-7xl mx-auto">
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <Tabs value={viewMode} onValueChange={setViewMode} className="w-full">
-          <Card className="mb-6">
-            <CardContent className="pt-6">
-              <div className="flex flex-col md:flex-row gap-4 items-start md:items-end">
-                <div className="w-full md:w-auto">
-                  <label className="block text-sm font-medium mb-2">View Mode</label>
-                  <TabsList>
-                    <TabsTrigger value="list" className="gap-2">
+          {/* Controls Card */}
+          <Card className="mb-8 border-0 shadow-sm">
+            <CardContent className="p-6">
+              <div className="flex flex-col space-y-6">
+                {/* View Mode Tabs */}
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-sm font-semibold text-gray-900 mb-1">View Mode</h3>
+                    <p className="text-xs text-gray-500">Choose how to explore availability</p>
+                  </div>
+                  <TabsList className="bg-gray-100">
+                    <TabsTrigger value="list" className="gap-2 data-[state=active]:bg-white">
                       <List className="h-4 w-4" />
-                      List View
+                      <span className="hidden sm:inline">List</span>
                     </TabsTrigger>
-                    <TabsTrigger value="calendar" className="gap-2">
+                    <TabsTrigger value="calendar" className="gap-2 data-[state=active]:bg-white">
                       <CalendarIcon className="h-4 w-4" />
-                      Calendar View
+                      <span className="hidden sm:inline">Calendar</span>
                     </TabsTrigger>
                   </TabsList>
                 </div>
 
-                {viewMode === 'list' && (
-                  <div className="w-full md:flex-1">
-                    <label className="block text-sm font-medium mb-2">Select Date</label>
-                    <Select value={selectedDate} onValueChange={setSelectedDate}>
-                      <SelectTrigger>
-                        <SelectValue placeholder="Select a date" />
+                {/* Filters */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {viewMode === 'list' && (
+                    <div className="space-y-2">
+                      <label className="text-sm font-medium text-gray-700">Date</label>
+                      <Select value={selectedDate} onValueChange={setSelectedDate}>
+                        <SelectTrigger className="bg-white">
+                          <SelectValue placeholder="Select a date" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {dates.map(date => {
+                            const hasAvailability = availabilityData[date].some(site => site.status);
+                            return (
+                              <SelectItem key={date} value={date}>
+                                <span className="flex items-center gap-2">
+                                  {new Date(date).toLocaleDateString('en-US', { 
+                                    weekday: 'short', 
+                                    month: 'short', 
+                                    day: 'numeric' 
+                                  })}
+                                  {hasAvailability && <span className="text-green-600">•</span>}
+                                </span>
+                              </SelectItem>
+                            );
+                          })}
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  )}
+
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-gray-700">Park</label>
+                    <Select value={selectedPark} onValueChange={setSelectedPark}>
+                      <SelectTrigger className="bg-white">
+                        <SelectValue placeholder="All parks" />
                       </SelectTrigger>
                       <SelectContent>
-                        {dates.map(date => {
-                          const hasAvailability = availabilityData[date].some(site => site.status);
-                          return (
-                            <SelectItem key={date} value={date}>
-                              {new Date(date).toLocaleDateString('en-US', { 
-                                weekday: 'short', 
-                                year: 'numeric', 
-                                month: 'short', 
-                                day: 'numeric' 
-                              })}
-                              {hasAvailability ? ' ✓' : ''}
-                            </SelectItem>
-                          );
-                        })}
+                        {parks.map(park => (
+                          <SelectItem key={park} value={park}>
+                            {park === 'all' ? 'All Parks' : park}
+                          </SelectItem>
+                        ))}
                       </SelectContent>
                     </Select>
                   </div>
-                )}
 
-                <div className="w-full md:flex-1">
-                  <label className="block text-sm font-medium mb-2">Filter by Park</label>
-                  <Select value={selectedPark} onValueChange={setSelectedPark}>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select a park" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {parks.map(park => (
-                        <SelectItem key={park} value={park}>
-                          {park === 'all' ? 'All Parks' : park}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
+                  {viewMode === 'list' && (
+                    <div className="flex items-end">
+                      <label className="flex items-center space-x-3 cursor-pointer">
+                        <Checkbox 
+                          id="available-only"
+                          checked={showOnlyAvailable}
+                          onCheckedChange={setShowOnlyAvailable}
+                          className="data-[state=checked]:bg-gray-900 data-[state=checked]:border-gray-900"
+                        />
+                        <span className="text-sm font-medium text-gray-700">
+                          Available only
+                        </span>
+                      </label>
+                    </div>
+                  )}
                 </div>
-
-                {viewMode === 'list' && (
-                  <div className="flex items-center space-x-2 pt-6">
-                    <Checkbox 
-                      id="available-only"
-                      checked={showOnlyAvailable}
-                      onCheckedChange={setShowOnlyAvailable}
-                    />
-                    <label
-                      htmlFor="available-only"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Show only available
-                    </label>
-                  </div>
-                )}
               </div>
             </CardContent>
           </Card>
 
-          <TabsContent value="list" className="mt-0">
-            {viewMode === 'list' && (
-              <>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                  <Card>
-                    <CardHeader className="pb-3">
-                      <CardDescription>Available Today</CardDescription>
-                      <CardTitle className="text-4xl text-primary">{totalAvailable}</CardTitle>
-                    </CardHeader>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-3">
-                      <CardDescription>Total Sites</CardDescription>
-                      <CardTitle className="text-4xl text-primary">{totalSites}</CardTitle>
-                    </CardHeader>
-                  </Card>
-                  <Card>
-                    <CardHeader className="pb-3">
-                      <CardDescription>Days with Availability</CardDescription>
-                      <CardTitle className="text-4xl text-primary">{datesWithAvailability.length}</CardTitle>
-                    </CardHeader>
-                  </Card>
-                </div>
+          <TabsContent value="list" className="mt-0 space-y-8">
+            {/* Stats Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600 mb-2">Available Today</p>
+                      <p className="text-4xl font-bold tracking-tight">{totalAvailable}</p>
+                    </div>
+                    <div className="w-12 h-12 rounded-2xl bg-green-50 flex items-center justify-center">
+                      <CheckCircle2 className="h-6 w-6 text-green-600" />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
-                {datesWithAvailability.length > 0 && (
-                  <Card className="mb-6">
-                    <CardHeader>
-                      <CardTitle>Quick Jump to Available Dates</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="flex flex-wrap gap-2">
-                        {datesWithAvailability.slice(0, 10).map(date => (
-                          <Button
-                            key={date}
-                            onClick={() => setSelectedDate(date)}
-                            variant={date === selectedDate ? "default" : "outline"}
-                            size="sm"
-                          >
-                            {new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
-                          </Button>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                )}
+              <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600 mb-2">Total Sites</p>
+                      <p className="text-4xl font-bold tracking-tight">{totalSites}</p>
+                    </div>
+                    <div className="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center">
+                      <List className="h-6 w-6 text-gray-600" />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {filteredData.length === 0 ? (
-                    <Card className="col-span-full">
-                      <CardContent className="pt-6">
-                        <p className="text-center text-muted-foreground">No sites match your filters</p>
-                      </CardContent>
-                    </Card>
-                  ) : (
-                    filteredData.map((site, index) => (
-                      <Card 
-                        key={index} 
-                        className={`transition-all hover:shadow-lg ${
-                          site.status 
-                            ? 'border-green-500 bg-gradient-to-br from-green-50 to-white' 
-                            : 'border-red-300 bg-gradient-to-br from-red-50 to-white'
-                        }`}
+              <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600 mb-2">Days Available</p>
+                      <p className="text-4xl font-bold tracking-tight">{datesWithAvailability.length}</p>
+                    </div>
+                    <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center">
+                      <TrendingUp className="h-6 w-6 text-blue-600" />
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Quick Dates */}
+            {datesWithAvailability.length > 0 && (
+              <Card className="border-0 shadow-sm">
+                <CardHeader className="pb-4">
+                  <CardTitle className="text-lg font-semibold">Quick Access</CardTitle>
+                  <CardDescription>Jump to dates with availability</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    {datesWithAvailability.slice(0, 10).map(date => (
+                      <Button
+                        key={date}
+                        onClick={() => setSelectedDate(date)}
+                        variant={date === selectedDate ? "default" : "outline"}
+                        size="sm"
+                        className="font-medium"
                       >
-                        <CardHeader>
-                          <div className="flex items-center justify-between">
-                            <Badge variant={site.status ? "success" : "destructive"} className="gap-1">
-                              {site.status ? (
-                                <>
-                                  <CheckCircle2 className="h-3 w-3" />
-                                  Available
-                                </>
-                              ) : (
-                                <>
-                                  <XCircle className="h-3 w-3" />
-                                  Unavailable
-                                </>
-                              )}
-                            </Badge>
-                          </div>
-                          <CardTitle className="text-lg mt-2">{site.ResourceName}</CardTitle>
-                          <CardDescription>{site.ParkName}</CardDescription>
-                          <CardDescription className="text-xs">{site.PageTitle}</CardDescription>
-                        </CardHeader>
-                        {site.status && (
-                          <CardContent>
-                            <Button 
-                              asChild 
-                              className="w-full"
-                            >
-                              <a 
-                                href={getBookingUrl(site, selectedDate)}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                              >
-                                Book Now →
-                              </a>
-                            </Button>
-                          </CardContent>
-                        )}
-                      </Card>
-                    ))
-                  )}
-                </div>
-              </>
+                        {new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                      </Button>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             )}
+
+            {/* Sites Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredData.length === 0 ? (
+                <Card className="col-span-full border-0 shadow-sm">
+                  <CardContent className="p-12 text-center">
+                    <XCircle className="h-12 w-12 mx-auto mb-4 text-gray-400" />
+                    <p className="text-gray-600 font-medium">No sites match your filters</p>
+                  </CardContent>
+                </Card>
+              ) : (
+                filteredData.map((site, index) => (
+                  <Card 
+                    key={index} 
+                    className={`group border-0 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden ${
+                      site.status 
+                        ? 'hover:border-green-200' 
+                        : 'opacity-75'
+                    }`}
+                  >
+                    <div className={`h-1 ${site.status ? 'bg-green-500' : 'bg-gray-300'}`}></div>
+                    <CardHeader className="pb-3">
+                      <div className="flex items-start justify-between mb-3">
+                        <Badge 
+                          variant={site.status ? "default" : "secondary"}
+                          className={`${site.status ? 'bg-green-50 text-green-700 hover:bg-green-100 border-green-200' : 'bg-gray-100 text-gray-600'}`}
+                        >
+                          {site.status ? (
+                            <><CheckCircle2 className="h-3 w-3 mr-1" />Available</>
+                          ) : (
+                            <><XCircle className="h-3 w-3 mr-1" />Unavailable</>
+                          )}
+                        </Badge>
+                      </div>
+                      <CardTitle className="text-lg leading-tight group-hover:text-gray-900 transition-colors">
+                        {site.ResourceName}
+                      </CardTitle>
+                      <CardDescription className="text-sm">{site.ParkName}</CardDescription>
+                      <p className="text-xs text-gray-500 mt-1">{site.PageTitle}</p>
+                    </CardHeader>
+                    {site.status && (
+                      <CardContent className="pt-0">
+                        <Button 
+                          asChild 
+                          className="w-full bg-gray-900 hover:bg-gray-800 text-white font-medium"
+                        >
+                          <a 
+                            href={getBookingUrl(site, selectedDate)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Book Now
+                          </a>
+                        </Button>
+                      </CardContent>
+                    )}
+                  </Card>
+                ))
+              )}
+            </div>
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            {viewMode === 'calendar' && (
-              <CalendarView 
-                availabilityData={availabilityData}
-                selectedPark={selectedPark}
-              />
-            )}
+            <CalendarView 
+              availabilityData={availabilityData}
+              selectedPark={selectedPark}
+            />
           </TabsContent>
         </Tabs>
-
-        <footer className="mt-10 text-center text-white">
-          <Card className="bg-white/10 backdrop-blur-lg border-white/20">
-            <CardContent className="pt-6">
-              <p className="text-sm opacity-90">Last updated: {new Date().toLocaleString()}</p>
-              <p className="text-sm opacity-90">Data updates daily via automated scanning</p>
-              <p className="text-sm opacity-90 mt-2">
-                For suggestions, contact: <a href="mailto:meetr1912@gmail.com" className="underline hover:opacity-80">meetr1912@gmail.com</a>
-              </p>
-            </CardContent>
-          </Card>
-        </footer>
       </div>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-200 mt-16">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          <div className="text-center space-y-3">
+            <p className="text-sm text-gray-600">
+              Data updates daily via automated scanning
+            </p>
+            <p className="text-xs text-gray-500">
+              Last updated: {new Date().toLocaleDateString('en-US', { 
+                month: 'long', 
+                day: 'numeric', 
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit'
+              })}
+            </p>
+            <p className="text-xs text-gray-500">
+              For inquiries: <a href="mailto:meetr1912@gmail.com" className="text-gray-900 hover:underline font-medium">meetr1912@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
