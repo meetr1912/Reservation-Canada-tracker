@@ -10,7 +10,11 @@ function App() {
 
   useEffect(() => {
     // Load the availability report
-    fetch('/availability_report.json')
+    // Use process.env.PUBLIC_URL for GitHub Pages compatibility
+    const reportUrl = `${process.env.PUBLIC_URL}/availability_report.json`;
+    console.log('Fetching from:', reportUrl);
+    
+    fetch(reportUrl)
       .then(response => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
