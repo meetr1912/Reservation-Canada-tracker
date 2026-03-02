@@ -1,738 +1,4 @@
 {
-  "2026-03-01": [
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#34 - 58",
-      "ResourceName": "O45",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#34 - 58",
-      "ResourceName": "O48",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#34 - 58",
-      "ResourceName": "O46",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O75",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O70",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O78",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O81",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O74",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O85",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Headquarters",
-      "PageTitle": "#59 - 124",
-      "ResourceName": "O72",
-      "status": true
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 80 - 161",
-      "ResourceName": "O123",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 80 - 161",
-      "ResourceName": "O124",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 80 - 161",
-      "ResourceName": "O131",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O264",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O286",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O289",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O285",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O287",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O262",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O263",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O290",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O288",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Chignecto",
-      "PageTitle": "# 175 - 290",
-      "ResourceName": "O261",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O9",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O14",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O12",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O7",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O4",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O15",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O16",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O10",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O11",
-      "status": false
-    },
-    {
-      "ParkName": "Fundy - Point Wolfe",
-      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
-      "ResourceName": "O8",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O48",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O74",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O82",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O71",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O104",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O76",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O46",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O73",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O102",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O44",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O98",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O87",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O68",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O60",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O84",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O86",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O75",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O100",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O83",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O66",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O63",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O99",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O50",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O69",
-      "status": false
-    },
-    {
-      "ParkName": "Kouchibouguac - South",
-      "PageTitle": "Loops 1 & 2",
-      "ResourceName": "O49",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O4",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O1",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O6",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O3",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O2",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Cavendish",
-      "PageTitle": "O1 - O7",
-      "ResourceName": "O5",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS1",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS7",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS5",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS3",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS6",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS2",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS8",
-      "status": false
-    },
-    {
-      "ParkName": "Prince Edward Island - Stanhope",
-      "PageTitle": "OS1 - OS8",
-      "ResourceName": "OS4",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 84 - 141",
-      "ResourceName": "O96",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 84 - 141",
-      "ResourceName": "O128",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 84 - 141",
-      "ResourceName": "BO118",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 84 - 141",
-      "ResourceName": "O95",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 142 - 201",
-      "ResourceName": "O185",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Broad Cove",
-      "PageTitle": "# 142 - 201",
-      "ResourceName": "O187",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
-      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
-      "ResourceName": "O44",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
-      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
-      "ResourceName": "O43",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
-      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
-      "ResourceName": "O47",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
-      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
-      "ResourceName": "O45",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
-      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
-      "ResourceName": "O46",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O90",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O14",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O13",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O97",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O86",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O87",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O89",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O32",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O88",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Cheticamp",
-      "PageTitle": "Cheticamp",
-      "ResourceName": "O85",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Ingonish Beach",
-      "PageTitle": "1 - 34, 37 - 60",
-      "ResourceName": "O5",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Ingonish Beach",
-      "PageTitle": "O35 - O36",
-      "ResourceName": "O36",
-      "status": false
-    },
-    {
-      "ParkName": "Cape Breton Highlands - Ingonish Beach",
-      "PageTitle": "O35 - O36",
-      "ResourceName": "O35",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "2",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "7",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "5",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "8",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "3",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "6",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "4",
-      "status": false
-    },
-    {
-      "ParkName": "Grand-Pr\u00c3\u00a9",
-      "PageTitle": "1 - 8",
-      "ResourceName": "1",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "323",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "328",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "332",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "331",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "335",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "327",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "336",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "322",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "334",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "oTENTik Village",
-      "ResourceName": "329",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "404",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "406",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "405",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "402",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "407",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "403",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "408",
-      "status": false
-    },
-    {
-      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
-      "PageTitle": "Jim Charles Point",
-      "ResourceName": "401",
-      "status": false
-    }
-  ],
   "2026-03-02": [
     {
       "ParkName": "Fundy - Headquarters",
@@ -768,7 +34,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#59 - 124",
       "ResourceName": "O78",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -1502,7 +768,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#59 - 124",
       "ResourceName": "O78",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -8114,7 +7380,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#59 - 124",
       "ResourceName": "O81",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -8132,7 +7398,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#59 - 124",
       "ResourceName": "O72",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Chignecto",
@@ -60252,7 +59518,7 @@
       "ParkName": "Fundy - Chignecto",
       "PageTitle": "# 80 - 161",
       "ResourceName": "O123",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Chignecto",
@@ -60986,7 +60252,7 @@
       "ParkName": "Fundy - Chignecto",
       "PageTitle": "# 80 - 161",
       "ResourceName": "O123",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Chignecto",
@@ -71208,7 +70474,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#34 - 58",
       "ResourceName": "O48",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -71942,7 +71208,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#34 - 58",
       "ResourceName": "O48",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -74588,7 +73854,7 @@
       "ParkName": "Cape Breton Highlands - Broad Cove",
       "PageTitle": "# 84 - 141",
       "ResourceName": "O95",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -75322,7 +74588,7 @@
       "ParkName": "Cape Breton Highlands - Broad Cove",
       "PageTitle": "# 84 - 141",
       "ResourceName": "O95",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -76056,7 +75322,7 @@
       "ParkName": "Cape Breton Highlands - Broad Cove",
       "PageTitle": "# 84 - 141",
       "ResourceName": "O95",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -76586,7 +75852,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O102",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -80792,7 +80058,7 @@
       "ParkName": "Fundy - Headquarters",
       "PageTitle": "#59 - 124",
       "ResourceName": "O85",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Headquarters",
@@ -83348,7 +82614,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS3",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -83372,7 +82638,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS4",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -84082,7 +83348,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS3",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -84106,7 +83372,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS4",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -84816,7 +84082,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS3",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -84882,7 +84148,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -85448,7 +84714,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O100",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -85550,7 +84816,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS3",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -85616,7 +84882,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -86182,7 +85448,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O100",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -86446,7 +85712,7 @@
       "ParkName": "Cape Breton Highlands - Ingonish Beach",
       "PageTitle": "O35 - O36",
       "ResourceName": "O36",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -88576,7 +87842,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O46",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -94298,7 +93564,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O49",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Cavendish",
@@ -95032,7 +94298,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O49",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Cavendish",
@@ -95338,7 +94604,7 @@
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
       "PageTitle": "oTENTik Village",
       "ResourceName": "335",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
@@ -95766,7 +95032,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O49",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Cavendish",
@@ -96072,7 +95338,7 @@
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
       "PageTitle": "oTENTik Village",
       "ResourceName": "335",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
@@ -100320,7 +99586,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O46",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -100736,7 +100002,7 @@
       "ParkName": "Fundy - Point Wolfe",
       "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
       "ResourceName": "O16",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Point Wolfe",
@@ -101054,7 +100320,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O46",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -101240,7 +100506,7 @@
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
       "PageTitle": "oTENTik Village",
       "ResourceName": "329",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
@@ -107636,7 +106902,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -108370,7 +107636,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -109104,7 +108370,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -109838,7 +109104,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O44",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -110164,7 +109430,7 @@
       "ParkName": "Fundy - Chignecto",
       "PageTitle": "# 80 - 161",
       "ResourceName": "O123",
-      "status": true
+      "status": false
     },
     {
       "ParkName": "Fundy - Chignecto",
@@ -110982,7 +110248,7 @@
       "ParkName": "Fundy - Point Wolfe",
       "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
       "ResourceName": "O14",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Point Wolfe",
@@ -111740,7 +111006,7 @@
       "ParkName": "Fundy - Point Wolfe",
       "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
       "ResourceName": "O15",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Point Wolfe",
@@ -112786,7 +112052,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O47",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -113256,7 +112522,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O71",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -113990,7 +113256,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O71",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -114724,7 +113990,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O71",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -117184,7 +116450,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O43",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -117918,7 +117184,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O43",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -126726,7 +125992,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O43",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -127460,7 +126726,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O43",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -127876,7 +127142,7 @@
       "ParkName": "Fundy - Point Wolfe",
       "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
       "ResourceName": "O7",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Fundy - Point Wolfe",
@@ -128194,7 +127460,7 @@
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
       "PageTitle": "Mkwesaqtuk/Cap-Rouge",
       "ResourceName": "O43",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -129428,7 +128694,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O73",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -130252,7 +129518,7 @@
       "ParkName": "Kouchibouguac - South",
       "PageTitle": "Loops 1 & 2",
       "ResourceName": "O50",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Kouchibouguac - South",
@@ -131064,7 +130330,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS6",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -131798,7 +131064,7 @@
       "ParkName": "Prince Edward Island - Stanhope",
       "PageTitle": "OS1 - OS8",
       "ResourceName": "OS6",
-      "status": false
+      "status": true
     },
     {
       "ParkName": "Prince Edward Island - Stanhope",
@@ -132081,6 +131347,740 @@
       "PageTitle": "Jim Charles Point",
       "ResourceName": "406",
       "status": false
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "405",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "402",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "407",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "403",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "408",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "401",
+      "status": true
+    }
+  ],
+  "2026-08-28": [
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#34 - 58",
+      "ResourceName": "O45",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#34 - 58",
+      "ResourceName": "O48",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#34 - 58",
+      "ResourceName": "O46",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O75",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O70",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O78",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O81",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O74",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O85",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Headquarters",
+      "PageTitle": "#59 - 124",
+      "ResourceName": "O72",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 80 - 161",
+      "ResourceName": "O123",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 80 - 161",
+      "ResourceName": "O124",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 80 - 161",
+      "ResourceName": "O131",
+      "status": false
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O264",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O286",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O289",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O285",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O287",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O262",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O263",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O290",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O288",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Chignecto",
+      "PageTitle": "# 175 - 290",
+      "ResourceName": "O261",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O9",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O14",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O12",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O7",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O4",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O15",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O16",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O10",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O11",
+      "status": true
+    },
+    {
+      "ParkName": "Fundy - Point Wolfe",
+      "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
+      "ResourceName": "O8",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O48",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O74",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O82",
+      "status": false
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O71",
+      "status": false
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O104",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O76",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O46",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O73",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O102",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O44",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O98",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O87",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O68",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O60",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O84",
+      "status": false
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O86",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O75",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O100",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O83",
+      "status": false
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O66",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O63",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O99",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O50",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O69",
+      "status": true
+    },
+    {
+      "ParkName": "Kouchibouguac - South",
+      "PageTitle": "Loops 1 & 2",
+      "ResourceName": "O49",
+      "status": false
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O4",
+      "status": false
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O1",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O6",
+      "status": false
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O3",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O2",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Cavendish",
+      "PageTitle": "O1 - O7",
+      "ResourceName": "O5",
+      "status": false
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS1",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS7",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS5",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS3",
+      "status": false
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS6",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS2",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS8",
+      "status": true
+    },
+    {
+      "ParkName": "Prince Edward Island - Stanhope",
+      "PageTitle": "OS1 - OS8",
+      "ResourceName": "OS4",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 84 - 141",
+      "ResourceName": "O96",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 84 - 141",
+      "ResourceName": "O128",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 84 - 141",
+      "ResourceName": "BO118",
+      "status": false
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 84 - 141",
+      "ResourceName": "O95",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 142 - 201",
+      "ResourceName": "O185",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Broad Cove",
+      "PageTitle": "# 142 - 201",
+      "ResourceName": "O187",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+      "ResourceName": "O44",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+      "ResourceName": "O43",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+      "ResourceName": "O47",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+      "ResourceName": "O45",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
+      "PageTitle": "Mkwesaqtuk/Cap-Rouge",
+      "ResourceName": "O46",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O90",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O14",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O13",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O97",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O86",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O87",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O89",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O32",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O88",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Cheticamp",
+      "PageTitle": "Cheticamp",
+      "ResourceName": "O85",
+      "status": false
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Ingonish Beach",
+      "PageTitle": "1 - 34, 37 - 60",
+      "ResourceName": "O5",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Ingonish Beach",
+      "PageTitle": "O35 - O36",
+      "ResourceName": "O36",
+      "status": true
+    },
+    {
+      "ParkName": "Cape Breton Highlands - Ingonish Beach",
+      "PageTitle": "O35 - O36",
+      "ResourceName": "O35",
+      "status": true
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "2",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "7",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "5",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "8",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "3",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "6",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "4",
+      "status": false
+    },
+    {
+      "ParkName": "Grand-Pr\u00c3\u00a9",
+      "PageTitle": "1 - 8",
+      "ResourceName": "1",
+      "status": false
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "323",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "328",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "332",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "331",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "335",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "327",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "336",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "322",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "334",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "oTENTik Village",
+      "ResourceName": "329",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "404",
+      "status": true
+    },
+    {
+      "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
+      "PageTitle": "Jim Charles Point",
+      "ResourceName": "406",
+      "status": true
     },
     {
       "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
