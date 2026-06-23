@@ -95,6 +95,7 @@
   <div class="grp">Hands-On Guides</div>
   <a href="#observe-live">18 · Watch It Live (telemetry)</a>
   <a href="#journey">19 · Zero → Production</a>
+  <a href="#anomaly">20 · Live Data &amp; Anomalies</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -926,6 +927,73 @@ docker run -it --rm -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
 
   <div class="callout blue"><div class="ic">🧪</div><p><b>Worked example:</b> the text-to-SQL agent in this repo (<code>nemo-sql-agent/</code>) walks Stages 0–4 literally — a LangGraph agent → <code>@register_function</code> → LangSmith tracing → a custom <code>sql_execution_accuracy</code> evaluator → <code>nat optimize</code> over the proven technique switches. Its <code>docs/GUIDE.md</code> is the evidence base for <i>which</i> improvements to make in Stage&nbsp;4.</p></div>
 </section>
+
+<!-- 20 LIVE DATA & ANOMALY DETECTION -->
+<section id="anomaly">
+  <h2><span class="ix">20</span> Live Data &amp; Anomaly Detection</h2>
+  <div class="callout red"><div class="ic">⚠️</div><p><b>Architectural truth first:</b> NAT is <b>request/response</b> — no native stream engine, no scheduler/cron, no always-on listener (the <code>front_ends/cron/</code> dir is an empty stub). "Live data" means either you <b>push</b> events to the API, or the agent <b>pulls</b> via tools. NVIDIA's own <code>alert_triage_agent</code> proves it: its "live" mode is a <i>custom external Flask server</i> that calls the workflow per alert.</p></div>
+
+  <p class="lead">The proven pattern (from <code>alert_triage_agent</code>): a cheap deterministic <b>gate + detector</b> turns a stream of events into a few candidate alerts; the <b>agent</b> investigates only those, then a <b>categorizer</b> labels and prioritizes them for a human. The LLM is spent only on what survived the filters.</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 250" role="img" aria-label="Live anomaly triage architecture">
+      <defs><marker id="ana" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="10.5" text-anchor="middle">
+        <!-- ingestion -->
+        <rect x="20" y="96" width="150" height="58" rx="12" fill="#0d1626" stroke="#28385a"/>
+        <text x="95" y="118" fill="#7dd3fc" font-weight="700">live feed</text>
+        <text x="95" y="134" fill="#9fb0c9" font-size="9.5">PUSH (API/WS) or</text>
+        <text x="95" y="146" fill="#9fb0c9" font-size="9.5">PULL (tool/MCP)</text>
+        <!-- gate -->
+        <rect x="200" y="96" width="120" height="58" rx="12" fill="#1a0f12" stroke="#7a2c2c"/>
+        <text x="260" y="120" fill="#f87171" font-weight="700">benign gate</text>
+        <text x="260" y="136" fill="#9fb0c9" font-size="9.5">expected? → stop</text>
+        <!-- detector -->
+        <rect x="350" y="96" width="130" height="58" rx="12" fill="#0d1626" stroke="#fbbf24"/>
+        <text x="415" y="120" fill="#fbbf24" font-weight="700">detector tool</text>
+        <text x="415" y="136" fill="#9fb0c9" font-size="9.5">numeric anomaly</text>
+        <!-- agent -->
+        <rect x="510" y="96" width="140" height="58" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+        <text x="580" y="120" fill="#a4e028" font-weight="700">agent loop</text>
+        <text x="580" y="136" fill="#9fb0c9" font-size="9.5">pull context, reason</text>
+        <!-- categorizer -->
+        <rect x="680" y="96" width="120" height="58" rx="12" fill="#0d1626" stroke="#a78bfa"/>
+        <text x="740" y="120" fill="#a78bfa" font-weight="700">categorize</text>
+        <text x="740" y="136" fill="#9fb0c9" font-size="9.5">label + severity</text>
+        <!-- human -->
+        <rect x="822" y="96" width="58" height="58" rx="12" fill="#0d1626" stroke="#28385a"/>
+        <text x="851" y="122" fill="#e9eef7" font-weight="700">HITL</text>
+        <text x="851" y="138" fill="#9fb0c9" font-size="9">review</text>
+        <line x1="170" y1="125" x2="198" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="320" y1="125" x2="348" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="480" y1="125" x2="508" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="650" y1="125" x2="678" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="800" y1="125" x2="820" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <text x="260" y="180" fill="#5f7390" font-size="9">benign → drop (cheap)</text>
+        <text x="415" y="180" fill="#5f7390" font-size="9">only candidates pass</text>
+        <text x="580" y="180" fill="#5f7390" font-size="9">LLM spent here only</text>
+      </g>
+    </svg>
+    <div class="figcap">Gate + detector are deterministic and always-on; the LLM agent only sees what they flag. This is the alert_triage_agent shape — and the repo's runnable <code>nemo-sql-agent/anomaly/</code> demo.</div>
+  </div>
+
+  <h3>Ways to feed it live data</h3>
+  <table>
+    <tr><th>Shape</th><th>Mechanism</th><th>Use when</th></tr>
+    <tr><td>Push · sync</td><td><code>POST /v1/workflow</code></td><td>one event → verdict</td></tr>
+    <tr><td>Push · stream</td><td><code>/v1/workflow/stream</code> · <code>/full</code> (SSE)</td><td>watch steps live</td></tr>
+    <tr><td>Push · batch</td><td><code>/v1/workflow/async</code> + poll (Dask, <code>[async_endpoints]</code>)</td><td>fan-out / long jobs</td></tr>
+    <tr><td>Push · channel</td><td>WebSocket <code>/websocket</code> (stream of <code>user_message</code>s)</td><td>dashboards, HITL</td></tr>
+    <tr><td>Pull</td><td>tool / <code>mcp_client</code> / retriever queries your live source each run</td><td>agent fetches context</td></tr>
+    <tr><td>State</td><td><code>*_memory</code> (mem0/redis/zep) rolling baseline</td><td>"is this unusual vs history?"</td></tr>
+    <tr><td>Schedule</td><td>cron / queue consumer → <code>nat run</code> / REST</td><td>periodic sweeps (no built-in scheduler)</td></tr>
+  </table>
+
+  <div class="callout gold"><div class="ic">🧪</div><p><b>Runnable proof in this repo:</b> <code>nemo-sql-agent/anomaly/anomaly_demo.py</code> replays the oTENTik feed, runs a rolling robust-baseline detector + data-quality rules, and triages each alert (severity + action) — key-free. <code>--inject</code> adds a synthetic spike; verified <b>caught</b> (Fundy, z=23). Open <code>anomaly/out/anomaly_report.html</code>. <b>Anomaly detection itself is a tool</b> the agent calls — NAT's triage is LLM-reasoning + a hard gate, not a built-in detector.</p></div>
+
+  <div class="callout"><div class="ic">📡</div><p><b>Two kinds of anomaly to watch:</b> <b>business-data</b> (unusual availability — this demo) and <b>runtime</b> (the profiler's <code>concurrency_spike_analysis</code>/<code>spike_threshold</code> + <code>workflow_runtime_forecast</code>, plus <code>nat eval</code> in CI to catch quality regressions).</p></div>
+</section>
+
 
 <section id="sources">
   <h2>Sources &amp; confidence</h2>
