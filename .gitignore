@@ -48,3 +48,4 @@ categories.txt
 
 # generated observability artifacts
 nemo-sql-agent/observability/out/
+nemo-sql-agent/anomaly/out/
