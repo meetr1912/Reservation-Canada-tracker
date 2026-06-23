@@ -92,6 +92,9 @@
   <a href="#security">15 · Security &amp; Guardrails</a>
   <a href="#ops">16 · Registry · Store · Dynamo · Deploy</a>
   <a href="#examples">17 · Examples &amp; Learning Path</a>
+  <div class="grp">Hands-On Guides</div>
+  <a href="#observe-live">18 · Watch It Live (telemetry)</a>
+  <a href="#journey">19 · Zero → Production</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -620,6 +623,203 @@ ok = <span class="s">"yes"</span> <span class="k">in</span> resp.content.text.lo
   <div class="toc-mini">
     <p><b>getting_started</b> · <b>agents</b> (react, rewoo, tool_calling, mixture_of_agents) · <b>advanced_agents</b> · <b>frameworks</b> (semantic_kernel, adk, autogen, agno, strands, langchain/haystack deep research) · <b>RAG</b> (simple_rag) · <b>memory</b> (redis, memmachine) · <b>evaluation_and_profiling</b> (email_phishing_analyzer, simple_*_eval) · <b>finetuning</b> (dpo_tic_tac_toe, rl_with_openpipe_art) · <b>HITL</b> (simple_calculator_hitl, por_to_jiratickets) · <b>safety_and_security</b> (retail_agent) · <b>MCP</b> · <b>A2A</b> · <b>front_ends</b> (simple_auth) · <b>observability</b> · <b>object_store</b> · <b>control_flow</b> · <b>custom_functions</b> · <b>dynamo_integration</b> · <b>config_inheritance</b> · <b>deploy</b> · <b>notebooks</b>.</p>
   </div>
+</section>
+
+<!-- 18 WATCH IT LIVE -->
+<section id="observe-live">
+  <h2><span class="ix">18</span> Watch It Live: opt into telemetry &amp; visualize every run</h2>
+  <p class="lead">Observability is <b>opt-in</b> and code-free: add an exporter under <code>general.telemetry.tracing</code>, point it at a viewer, and every LLM call, tool call, latency and token count streams into a UI as the agent runs. Multiple exporters can run at once; under the hood it's OpenTelemetry/OTLP (Weave uses the W&amp;B SDK).</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 230" role="img" aria-label="Live tracing flow">
+      <defs><marker id="oa" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a78bfa"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="11" text-anchor="middle">
+        <rect x="30" y="90" width="170" height="56" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+        <text x="115" y="114" fill="#a4e028" font-weight="700">nat run / serve</text><text x="115" y="132" fill="#9fb0c9" font-size="10">agent executes</text>
+        <rect x="250" y="90" width="150" height="56" rx="12" fill="#0d1626" stroke="#a78bfa"/>
+        <text x="325" y="114" fill="#a78bfa" font-weight="700">spans / events</text><text x="325" y="132" fill="#9fb0c9" font-size="10">OTLP exporters</text>
+        <line x1="200" y1="118" x2="248" y2="118" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#oa)"/>
+        <!-- fan out -->
+        <rect x="470" y="20" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="46" fill="#7dd3fc">Phoenix :6006</text>
+        <rect x="470" y="74" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="100" fill="#fbbf24">Weave (W&amp;B)</text>
+        <rect x="470" y="128" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="154" fill="#fb923c">LangSmith</text>
+        <rect x="470" y="182" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="208" fill="#f472b6">Langfuse / OTel</text>
+        <line x1="400" y1="110" x2="468" y2="41" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="116" x2="468" y2="95" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="122" x2="468" y2="149" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="128" x2="468" y2="203" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <!-- trace waterfall mock -->
+        <g transform="translate(680,30)">
+          <text x="100" y="0" fill="#9fb0c9" font-size="10">what you see — a trace waterfall</text>
+          <rect x="0" y="12" width="180" height="14" rx="3" fill="#2c5314"/><text x="6" y="23" fill="#a4e028" font-size="9" text-anchor="start">workflow 1.8s</text>
+          <rect x="14" y="32" width="120" height="12" rx="3" fill="#1f3d5a"/><text x="20" y="42" fill="#7dd3fc" font-size="9" text-anchor="start">llm call 0.9s · 1.2k tok</text>
+          <rect x="14" y="50" width="70" height="12" rx="3" fill="#3a2c5a"/><text x="20" y="60" fill="#a78bfa" font-size="9" text-anchor="start">tool: search</text>
+          <rect x="90" y="50" width="80" height="12" rx="3" fill="#1f3d5a"/><text x="96" y="60" fill="#7dd3fc" font-size="9" text-anchor="start">llm: correct</text>
+          <rect x="14" y="68" width="40" height="12" rx="3" fill="#3a2c5a"/><text x="20" y="78" fill="#a78bfa" font-size="9" text-anchor="start">execute</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">One run, fanned out to any number of viewers. Each shows the same span tree with per-step latency and token counts.</div>
+  </div>
+
+  <h3>⚡ Fastest path — local Phoenix in 3 steps</h3>
+  <pre><span class="c"># 1 · install the exporter</span>
+pip install <span class="s">"nvidia-nat[phoenix]"</span>
+
+<span class="c"># 2 · launch a local Phoenix viewer (UI at http://localhost:6006)</span>
+docker run -it --rm -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
+
+<span class="c"># 3 · add this block to your config, then `nat run` / `nat serve` as usual</span>
+<span class="k">general</span>:
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: my-agent</pre>
+  <div class="callout blue"><div class="ic">🔭</div><p>Open <b>http://localhost:6006</b>, pick your <code>project</code>, and watch traces appear in real time as you run the agent. Each trace is a <b>span waterfall</b> — the LLM and tool calls with their latency, token counts, inputs/outputs, and the exact call tree. This is how you find <i>where</i> time and tokens actually go.</p></div>
+
+  <h3>🎛️ All viewers — pick what fits</h3>
+  <table>
+    <tr><th>Viewer</th><th>Install</th><th><code>_type</code> + key fields</th><th>Auth / where to view</th></tr>
+    <tr><td><b>Phoenix</b> (local, easiest)</td><td><code>nvidia-nat[phoenix]</code></td><td><code>phoenix</code> · <code>endpoint</code>, <code>project</code></td><td>none · http://localhost:6006</td></tr>
+    <tr><td><b>W&amp;B Weave</b></td><td><code>nvidia-nat[weave]</code></td><td><code>weave</code> · <code>project</code></td><td><code>WANDB_API_KEY</code> · prints a 🍩 URL to wandb.ai</td></tr>
+    <tr><td><b>LangSmith</b></td><td><code>nvidia-nat[langchain]</code></td><td><code>langsmith</code> · <code>project</code>, <code>endpoint?</code></td><td><code>LANGSMITH_API_KEY</code> · smith.langchain.com</td></tr>
+    <tr><td><b>Langfuse</b></td><td><code>nvidia-nat[opentelemetry]</code></td><td><code>langfuse</code> · <code>endpoint</code>, <code>public_key</code>, <code>secret_key</code></td><td>env keys · Langfuse UI (path <code>/api/public/otel/v1/traces</code>)</td></tr>
+    <tr><td><b>OTel Collector</b></td><td><code>nvidia-nat[opentelemetry]</code></td><td><code>otelcollector</code> · <code>endpoint</code>, <code>project</code></td><td>your backend · default <code>:4318/v1/traces</code></td></tr>
+    <tr><td><b>Console / File</b></td><td>built-in</td><td><code>console</code> (<code>level</code>) · <code>file</code> (<code>path</code>, <code>level</code>)</td><td>terminal / log file</td></tr>
+  </table>
+  <p class="src">Also available as tracing exporters: Arize AX, Galileo, Patronus, Dynatrace, Data Flywheel. List what's installed with <code>nat info components -t tracing</code>.</p>
+
+  <h3>🧩 Run several at once (e.g. local Phoenix + team Langfuse)</h3>
+  <pre><span class="k">general</span>:
+  telemetry:
+    logging:
+      console: {<span class="k">_type</span>: console, level: WARN}
+      file:    {<span class="k">_type</span>: file, path: ./.tmp/workflow.log, level: DEBUG}
+    tracing:
+      phoenix:   {<span class="k">_type</span>: phoenix, endpoint: http://localhost:6006/v1/traces, project: my-agent}
+      langfuse:  {<span class="k">_type</span>: langfuse, endpoint: ${LANGFUSE_HOST}/api/public/otel/v1/traces,
+                  public_key: ${LANGFUSE_PUBLIC_KEY}, secret_key: ${LANGFUSE_SECRET_KEY}}</pre>
+
+  <h3>📊 Offline visuals — the profiler (<code>nat eval</code>)</h3>
+  <p>For deeper, statistical views (not live traces but reproducible reports), enable <code>eval.general.profiler</code> and run <code>nat eval</code>. It writes, into <code>output_dir</code>:</p>
+  <div class="grid c2">
+    <div class="card"><h4>🖼️ <code>gantt_chart.png</code></h4><p>A timeline/Gantt waterfall of every LLM &amp; tool span (from <code>bottleneck_analysis: {enable_nested_stack: true}</code>). Open it as a normal image.</p></div>
+    <div class="card"><h4>📈 <code>inference_optimization.json</code></h4><p>Latency, throughput &amp; runtime with 90/95/99% confidence intervals — the across-run statistical comparison.</p></div>
+    <div class="card"><h4>🧾 <code>standardized_data_all.csv</code></h4><p>Per-call prompt/completion tokens, framework, metadata — load into a notebook/spreadsheet for custom charts.</p></div>
+    <div class="card"><h4>📝 <code>workflow_profiling_report.txt</code></h4><p>Human-readable bottleneck &amp; concurrency-spike report. Plus <code>all_requests_profiler_traces.json</code> for raw data.</p></div>
+  </div>
+  <div class="callout"><div class="ic">💡</div><p><b>Live vs offline:</b> use a <b>tracing exporter</b> (Phoenix/Weave/…) to <i>watch</i> individual runs while developing, and the <b>profiler</b> (<code>nat eval</code>) to get <i>repeatable, statistical</i> reports you can diff across versions. Together they cover Stage&nbsp;2 (Observe) of the journey below.</p></div>
+</section>
+
+<!-- 19 ZERO TO PRODUCTION -->
+<section id="journey">
+  <h2><span class="ix">19</span> Zero → Production: the full journey</h2>
+  <p class="lead">The toolkit's features make sense as <b>stages of one journey</b>. Here's the path from a blank folder to a hardened, observable, self-improving production agent — with the command and the "done when" for each stage. (The text-to-SQL example in this repo walks the same path end to end.)</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 920 360" role="img" aria-label="Zero to production roadmap">
+      <defs>
+        <marker id="ja" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#76b900"/></marker>
+        <linearGradient id="jg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f2c44"/><stop offset="1" stop-color="#76b900"/></linearGradient>
+      </defs>
+      <!-- rising path -->
+      <path d="M40 320 C 250 320, 250 60, 880 60" fill="none" stroke="url(#jg)" stroke-width="3" stroke-dasharray="2 0" opacity=".5"/>
+      <g font-family="ui-sans-serif" font-size="11" text-anchor="middle">
+        <!-- stage nodes along the curve -->
+        <g>
+          <circle cx="70" cy="312" r="16" fill="#0f1a10" stroke="#2c5314"/><text x="70" y="316" fill="#a4e028" font-weight="800">0</text>
+          <text x="70" y="345" fill="#9fb0c9">Prototype</text>
+        </g>
+        <g>
+          <circle cx="180" cy="278" r="16" fill="#0f1a10" stroke="#2c5314"/><text x="180" y="282" fill="#a4e028" font-weight="800">1</text>
+          <text x="180" y="255" fill="#9fb0c9">Make it a</text><text x="180" y="240" fill="#9fb0c9">NAT function</text>
+        </g>
+        <g>
+          <circle cx="300" cy="232" r="16" fill="#10131f" stroke="#a78bfa"/><text x="300" y="236" fill="#a78bfa" font-weight="800">2</text>
+          <text x="300" y="208" fill="#9fb0c9">Observe</text>
+        </g>
+        <g>
+          <circle cx="420" cy="200" r="16" fill="#10131f" stroke="#fb923c"/><text x="420" y="204" fill="#fb923c" font-weight="800">3</text>
+          <text x="420" y="176" fill="#9fb0c9">Measure</text>
+        </g>
+        <g>
+          <circle cx="540" cy="160" r="16" fill="#10131f" stroke="#fb923c"/><text x="540" y="164" fill="#fb923c" font-weight="800">4</text>
+          <text x="540" y="136" fill="#9fb0c9">Improve</text>
+        </g>
+        <g>
+          <circle cx="660" cy="120" r="16" fill="#1a0f12" stroke="#7a2c2c"/><text x="660" y="124" fill="#f87171" font-weight="800">5</text>
+          <text x="660" y="96" fill="#9fb0c9">Harden</text>
+        </g>
+        <g>
+          <circle cx="770" cy="86" r="16" fill="#0d1626" stroke="#28385a"/><text x="770" y="90" fill="#7dd3fc" font-weight="800">6</text>
+          <text x="770" y="62" fill="#9fb0c9">Serve &amp; scale</text>
+        </g>
+        <g>
+          <circle cx="878" cy="60" r="17" fill="#0f1a10" stroke="#76b900"/><text x="878" y="64" fill="#a4e028" font-weight="800">7</text>
+          <text x="858" y="36" fill="#a4e028" font-weight="700">Compound</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">Each stage adds one capability and has a concrete exit criterion. You don't skip ahead — you can't improve what you can't measure, and you don't ship what you haven't observed.</div>
+  </div>
+
+  <table>
+    <tr><th>Stage</th><th>What you do</th><th>Command / config added</th><th>✅ Done when</th></tr>
+    <tr>
+      <td><b>0 · Prototype</b></td>
+      <td>Write the agent in your framework (e.g. LangGraph). Scaffold a package. Minimal config: one <code>llm</code> + a <code>workflow</code>.</td>
+      <td><code>nat workflow create my_agent</code><br><code>nat run --config_file config.yml --input "…"</code></td>
+      <td>It returns <i>an</i> answer to a hardcoded question.</td>
+    </tr>
+    <tr>
+      <td><b>1 · Make it a NAT function</b></td>
+      <td>Register the agent with <code>@register_function</code>; let the toolkit inject the LLM from <code>llms:</code>. Turn on console logging.</td>
+      <td><code>general.telemetry.logging.console</code></td>
+      <td>It runs purely from YAML; you can swap models/providers without touching code.</td>
+    </tr>
+    <tr>
+      <td><b>2 · Observe</b> 👁️</td>
+      <td>Add a tracing exporter (Phoenix is easiest) and watch every LLM call, tool call, latency and token count <i>live</i> as it runs. (See §18.)</td>
+      <td><code>tracing: { phoenix: { _type: phoenix } }</code> + launch Phoenix</td>
+      <td>You can see <i>where</i> time and tokens go, step by step.</td>
+    </tr>
+    <tr>
+      <td><b>3 · Measure</b> 📊</td>
+      <td>Build an eval dataset; add an evaluator that scores what matters (e.g. a custom execution-accuracy evaluator for SQL). Get a baseline of accuracy + latency + token cost.</td>
+      <td><code>nat eval --config_file eval.yml --reps 3</code></td>
+      <td>You have a quantified baseline you can beat.</td>
+    </tr>
+    <tr>
+      <td><b>4 · Improve</b> 📈</td>
+      <td>Apply high-value techniques, then let the optimizer search the space (Pareto of accuracy↑ / tokens↓ / latency↓). Optionally fine-tune a smaller model.</td>
+      <td><code>nat optimize --config_file optimizer.yml</code><br>(then <code>nat finetune …</code>)</td>
+      <td>Measurably better than the Stage-3 baseline, at acceptable cost.</td>
+    </tr>
+    <tr>
+      <td><b>5 · Harden</b> 🛡️</td>
+      <td>Add human-in-the-loop for risky actions; add defense middleware / guardrails (PII, content safety, injection); add auth. Red-team it.</td>
+      <td><code>middleware:</code> + <code>authentication:</code> + HITL tool<br><code>nat red-team --red_team_config …</code></td>
+      <td>Safe under adversarial input; risky actions need approval.</td>
+    </tr>
+    <tr>
+      <td><b>6 · Serve &amp; scale</b> 🌐</td>
+      <td>Serve as a FastAPI app behind an auth proxy; expose as MCP/A2A; size for target concurrency; use Dynamo for KV-cache reuse.</td>
+      <td><code>nat serve --workers 4 --use_gunicorn true</code><br><code>nat sizing calc …</code> · Docker</td>
+      <td>Handles target users within your latency budget.</td>
+    </tr>
+    <tr>
+      <td><b>7 · Compound</b> 🔁</td>
+      <td>Keep production tracing on; feed good traces back (data flywheel → grow few-shot / re-finetune); re-eval on a schedule; share components via the registry.</td>
+      <td>data-flywheel · scheduled <code>nat eval</code> · <code>nat registry publish</code></td>
+      <td>The agent improves on its own, continuously.</td>
+    </tr>
+  </table>
+
+  <div class="callout"><div class="ic">🧭</div><p><b>The one rule:</b> never skip a stage. <i>You can't improve (4) what you can't measure (3), and you can't measure what you can't observe (2).</i> Most agents that "work in a demo but fail in production" jumped from Stage&nbsp;1 to Stage&nbsp;6.</p></div>
+
+  <div class="callout blue"><div class="ic">🧪</div><p><b>Worked example:</b> the text-to-SQL agent in this repo (<code>nemo-sql-agent/</code>) walks Stages 0–4 literally — a LangGraph agent → <code>@register_function</code> → LangSmith tracing → a custom <code>sql_execution_accuracy</code> evaluator → <code>nat optimize</code> over the proven technique switches. Its <code>docs/GUIDE.md</code> is the evidence base for <i>which</i> improvements to make in Stage&nbsp;4.</p></div>
 </section>
 
 <section id="sources">
