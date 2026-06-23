@@ -1,0 +1,114 @@
+{
+  "description": "Natural-language -> gold SQL pairs over the oTENTik availability DB. Used for execution-accuracy evaluation (compare result sets, not SQL strings).",
+  "db": "otentiks.db",
+  "items": [
+    {
+      "id": "q01",
+      "difficulty": "easy",
+      "question": "How many oTENTik units are there in total?",
+      "gold_sql": "SELECT COUNT(*) FROM otentiks;"
+    },
+    {
+      "id": "q02",
+      "difficulty": "easy",
+      "question": "List the distinct provinces that have oTENTiks.",
+      "gold_sql": "SELECT DISTINCT province FROM parks ORDER BY province;"
+    },
+    {
+      "id": "q03",
+      "difficulty": "easy",
+      "question": "How many park locations are in Nova Scotia?",
+      "gold_sql": "SELECT COUNT(*) FROM parks WHERE province = 'Nova Scotia';"
+    },
+    {
+      "id": "q04",
+      "difficulty": "medium",
+      "question": "How many oTENTik units does Fundy National Park have?",
+      "gold_sql": "SELECT COUNT(*) FROM otentiks o JOIN parks p ON o.park_id = p.park_id WHERE p.park_group = 'Fundy National Park';"
+    },
+    {
+      "id": "q05",
+      "difficulty": "medium",
+      "question": "Which park group has the most oTENTik units? Return the group name and the count.",
+      "gold_sql": "SELECT p.park_group, COUNT(*) AS n FROM otentiks o JOIN parks p ON o.park_id = p.park_id GROUP BY p.park_group ORDER BY n DESC LIMIT 1;"
+    },
+    {
+      "id": "q06",
+      "difficulty": "medium",
+      "question": "How many oTENTiks are available on 2026-07-01?",
+      "gold_sql": "SELECT COUNT(*) FROM availability WHERE date = '2026-07-01' AND is_available = 1;"
+    },
+    {
+      "id": "q07",
+      "difficulty": "hard",
+      "question": "Which park groups have at least one oTENTik available on 2026-07-01? List the group names.",
+      "gold_sql": "SELECT DISTINCT p.park_group FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id WHERE a.date = '2026-07-01' AND a.is_available = 1 ORDER BY p.park_group;"
+    },
+    {
+      "id": "q08",
+      "difficulty": "hard",
+      "question": "For each province, how many oTENTik-nights are available in total across all scanned dates?",
+      "gold_sql": "SELECT p.province, SUM(a.is_available) AS nights FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id GROUP BY p.province ORDER BY nights DESC;"
+    },
+    {
+      "id": "q09",
+      "difficulty": "hard",
+      "question": "Which oTENTik unit has the most available nights overall? Give the resource name, its park group, and the number of available nights.",
+      "gold_sql": "SELECT o.resource_name, p.park_group, SUM(a.is_available) AS nights FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id GROUP BY o.resource_id ORDER BY nights DESC LIMIT 1;"
+    },
+    {
+      "id": "q10",
+      "difficulty": "hard",
+      "question": "Count the distinct dates on which at least one oTENTik in Cape Breton Highlands National Park is available.",
+      "gold_sql": "SELECT COUNT(DISTINCT a.date) FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id WHERE p.park_group = 'Cape Breton Highlands National Park' AND a.is_available = 1;"
+    },
+    {
+      "id": "q11",
+      "difficulty": "medium",
+      "question": "List the resource names of all oTENTiks at the Cavendish location.",
+      "gold_sql": "SELECT o.resource_name FROM otentiks o JOIN parks p ON o.park_id = p.park_id WHERE p.location = 'Cavendish' ORDER BY o.resource_name;"
+    },
+    {
+      "id": "q12",
+      "difficulty": "hard",
+      "question": "On which date is the largest number of oTENTiks available? Return the date and the count.",
+      "gold_sql": "SELECT date, SUM(is_available) AS n FROM availability GROUP BY date ORDER BY n DESC, date ASC LIMIT 1;"
+    },
+    {
+      "id": "q13",
+      "difficulty": "hard",
+      "question": "How many oTENTiks in New Brunswick are available on 2026-06-15?",
+      "gold_sql": "SELECT COUNT(*) FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id WHERE p.province = 'New Brunswick' AND a.date = '2026-06-15' AND a.is_available = 1;"
+    },
+    {
+      "id": "q14",
+      "difficulty": "medium",
+      "question": "Which park locations have no availability at all across the entire scan window?",
+      "gold_sql": "SELECT p.park_name FROM parks p WHERE NOT EXISTS (SELECT 1 FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id WHERE o.park_id = p.park_id AND a.is_available = 1) ORDER BY p.park_name;"
+    },
+    {
+      "id": "q15",
+      "difficulty": "hard",
+      "question": "What is the average number of available oTENTiks per day in June 2026?",
+      "gold_sql": "SELECT AVG(daily) FROM (SELECT date, SUM(is_available) AS daily FROM availability WHERE date >= '2026-06-01' AND date <= '2026-06-30' GROUP BY date);"
+    },
+    {
+      "id": "q16",
+      "difficulty": "medium",
+      "question": "List each park group together with the number of oTENTik units it has, ordered from most to fewest.",
+      "gold_sql": "SELECT p.park_group, COUNT(*) AS units FROM otentiks o JOIN parks p ON o.park_id = p.park_id GROUP BY p.park_group ORDER BY units DESC, p.park_group;"
+    },
+    {
+      "id": "q17",
+      "difficulty": "hard",
+      "question": "Find the earliest date on which any oTENTik in Prince Edward Island National Park is available.",
+      "gold_sql": "SELECT MIN(a.date) FROM availability a JOIN otentiks o ON a.resource_id = o.resource_id JOIN parks p ON o.park_id = p.park_id WHERE p.park_group = 'Prince Edward Island National Park' AND a.is_available = 1;"
+    },
+    {
+      "id": "q18",
+      "difficulty": "hard",
+      "question": "How many oTENTiks have never been available on any scanned date?",
+      "gold_sql": "SELECT COUNT(*) FROM otentiks o WHERE NOT EXISTS (SELECT 1 FROM availability a WHERE a.resource_id = o.resource_id AND a.is_available = 1);"
+    }
+  ]
+}

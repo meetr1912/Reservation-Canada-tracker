@@ -1,0 +1,48 @@
+# NeMo Agent Toolkit workflow: self-correcting text-to-SQL over the oTENTik DB.
+#
+#   nat run   --config_file nemo-sql-agent/configs/text_to_sql.yml \
+#             --input "Which park groups have an oTENTik available on 2026-07-01?"
+#   nat serve --config_file nemo-sql-agent/configs/text_to_sql.yml   # REST endpoint
+#   nat mcp serve --config_file nemo-sql-agent/configs/text_to_sql.yml  # expose as MCP tool
+#
+# Requires: pip install "nvidia-nat[langchain]" langgraph   and this package
+# installed so the `text_to_sql_agent` component is discoverable (see pyproject).
+
+general:
+  # LangSmith tracing is OpenTelemetry-based; set LANGSMITH_API_KEY in the env.
+  # Drop or swap this block for phoenix/weave/langfuse without touching code.
+  telemetry:
+    logging:
+      console:
+        _type: console
+        level: WARN
+    tracing:
+      langsmith:
+        _type: langsmith
+        project: otentik-text-to-sql
+
+llms:
+  # Point at any NVIDIA NIM model (set NVIDIA_API_KEY). Swap `_type: openai`
+  # with a base_url to use another provider — no code change required.
+  sql_llm:
+    _type: nim
+    model_name: meta/llama-3.3-70b-instruct
+    temperature: 0.0
+    max_tokens: 1024
+  # A hotter model is useful when self_consistency_n > 1 (diverse samples).
+  sql_llm_sampler:
+    _type: nim
+    model_name: meta/llama-3.3-70b-instruct
+    temperature: 0.5
+    max_tokens: 1024
+
+workflow:
+  _type: text_to_sql_agent
+  llm_name: sql_llm
+  db_path: nemo-sql-agent/data/otentiks.db
+  # The proven-technique switches (see docs/GUIDE.md). This is the strong config.
+  use_schema_linking: true
+  num_few_shot: 3
+  use_cot: true
+  max_corrections: 2
+  self_consistency_n: 1
