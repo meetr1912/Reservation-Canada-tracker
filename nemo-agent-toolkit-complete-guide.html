@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>NVIDIA NeMo Agent Toolkit — The Complete Visual Guide</title>
+<style>
+  :root{
+    --bg:#0a0e14; --bg2:#0e141f; --panel:#111927; --panel2:#0c1320; --ink:#e9eef7; --muted:#9fb0c9;
+    --line:#1f2c44; --line2:#28385a; --nv:#76b900; --nv2:#a4e028; --cyan:#38bdf8; --pur:#a78bfa;
+    --org:#fb923c; --red:#f87171; --gold:#fbbf24; --pink:#f472b6;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; --sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;font-size:15px}
+  a{color:var(--nv2);text-decoration:none} a:hover{text-decoration:underline}
+  code{font-family:var(--mono);background:#0a1322;border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:.86em;color:#cfe3ff}
+  pre{background:#070d18;border:1px solid var(--line);border-radius:12px;padding:16px;overflow:auto;font-family:var(--mono);font-size:13px;line-height:1.5}
+  pre .k{color:var(--nv2)} pre .c{color:#5f7390} pre .s{color:#7dd3fc}
+  .layout{display:grid;grid-template-columns:262px 1fr;min-height:100vh}
+  /* sidebar */
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:linear-gradient(180deg,#0c121d,#0a0e14);border-right:1px solid var(--line);padding:22px 16px}
+  nav.side .brand{font-weight:800;font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:4px}
+  nav.side .brand .dot{width:12px;height:12px;background:var(--nv);border-radius:3px;box-shadow:0 0 12px var(--nv)}
+  nav.side .tag{color:var(--muted);font-size:11px;margin-bottom:16px}
+  nav.side a{display:block;color:var(--muted);font-size:13px;padding:6px 10px;border-radius:8px;border-left:2px solid transparent}
+  nav.side a:hover{background:#0f1828;color:var(--ink);text-decoration:none}
+  nav.side a.active{color:var(--nv2);border-left-color:var(--nv);background:#0f1a10}
+  nav.side .grp{color:#67789a;font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin:14px 10px 4px}
+  main{max-width:1000px;margin:0 auto;padding:0 32px 120px;width:100%}
+  header.hero{padding:64px 0 26px}
+  .kick{color:var(--nv2);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+  h1{font-size:clamp(30px,4.6vw,50px);line-height:1.05;margin:.2em 0 .25em}
+  h1 .g{color:var(--nv)}
+  .sub{color:var(--muted);font-size:18px;max-width:760px}
+  section{padding:34px 0;border-top:1px solid var(--line)}
+  h2{font-size:26px;margin:0 0 4px;display:flex;gap:10px;align-items:center}
+  h2 .ix{font-family:var(--mono);color:var(--nv);font-size:15px;background:#0f1a10;border:1px solid #1f3d12;border-radius:7px;padding:2px 8px}
+  .lead{color:var(--muted);margin:6px 0 20px;max-width:820px}
+  h3{font-size:17px;margin:26px 0 8px}
+  .grid{display:grid;gap:14px}
+  .c2{grid-template-columns:1fr 1fr} .c3{grid-template-columns:repeat(3,1fr)} .c4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:900px){.layout{grid-template-columns:1fr}nav.side{display:none}.c2,.c3,.c4{grid-template-columns:1fr}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:14px;padding:16px}
+  .card h4{margin:0 0 6px;font-size:15px;display:flex;gap:8px;align-items:center}
+  .card p{margin:4px 0 0;color:var(--muted);font-size:13.5px}
+  .callout{display:flex;gap:12px;background:#0d1626;border:1px solid var(--line2);border-left:4px solid var(--nv);border-radius:12px;padding:14px 16px;margin:16px 0}
+  .callout .ic{font-size:20px;line-height:1.2} .callout.blue{border-left-color:var(--cyan)} .callout.pur{border-left-color:var(--pur)}
+  .callout.org{border-left-color:var(--org)} .callout.red{border-left-color:var(--red)} .callout.gold{border-left-color:var(--gold)}
+  .callout p{margin:0;font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px;margin:10px 0}
+  th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:#8aa0c4;font-size:11px;text-transform:uppercase;letter-spacing:.05em;background:#0c1525}
+  tr:hover td{background:#0c1424}
+  .pill{display:inline-block;font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:999px;border:1px solid var(--line2);color:#bcd; background:#0b1424}
+  .pill.nv{color:var(--nv2);border-color:#2c5314;background:#0f1a0d}
+  .yes{color:var(--nv2);font-weight:700}.no{color:#5f7390}.exp{color:var(--gold)}
+  svg{max-width:100%;height:auto;display:block}
+  .figwrap{background:radial-gradient(700px 300px at 30% 0,#10203a 0,var(--panel2) 70%);border:1px solid var(--line);border-radius:16px;padding:18px;margin:16px 0}
+  .figcap{color:var(--muted);font-size:12.5px;margin-top:8px;text-align:center}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;color:var(--muted);font-size:12px;margin-top:8px}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:middle}
+  footer{color:#67789a;font-size:12.5px;padding:30px 0 0;border-top:1px solid var(--line)}
+  .src{font-size:12px;color:#67789a}
+  .toc-mini{columns:2;gap:18px;color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="layout">
+<nav class="side">
+  <div class="brand"><span class="dot"></span>NeMo Agent Toolkit</div>
+  <div class="tag">Complete Visual Guide · v1.8-dev (2026)</div>
+  <div class="grp">Foundations</div>
+  <a href="#overview">1 · Overview &amp; Identity</a>
+  <a href="#pillars">2 · The Four Pillars</a>
+  <a href="#arch">3 · Architecture</a>
+  <a href="#config">4 · Configuration</a>
+  <a href="#cli">5 · The <code style="background:none;border:none;padding:0;color:inherit">nat</code> CLI</a>
+  <div class="grp">Building</div>
+  <a href="#frameworks">6 · Integrations &amp; Providers</a>
+  <a href="#agents">7 · Agents &amp; Tools</a>
+  <a href="#rag">8 · RAG &amp; Retrieval</a>
+  <a href="#memory">9 · Memory</a>
+  <a href="#hitl">10 · Human-in-the-Loop</a>
+  <div class="grp">Insights &amp; Optimization</div>
+  <a href="#observe">11 · Observability &amp; Profiling</a>
+  <a href="#eval">12 · Evaluation &amp; Sizing</a>
+  <a href="#improve">13 · Self-Improvement</a>
+  <div class="grp">Serving &amp; Ops</div>
+  <a href="#serve">14 · Serving · MCP · A2A · UI · Auth</a>
+  <a href="#security">15 · Security &amp; Guardrails</a>
+  <a href="#ops">16 · Registry · Store · Dynamo · Deploy</a>
+  <a href="#examples">17 · Examples &amp; Learning Path</a>
+  <div class="grp">Hands-On Guides</div>
+  <a href="#observe-live">18 · Watch It Live (telemetry)</a>
+  <a href="#journey">19 · Zero → Production</a>
+  <a href="#anomaly">20 · Live Data &amp; Anomalies</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<main>
+<header class="hero">
+  <div class="kick">NVIDIA · Open Source · Framework-Agnostic</div>
+  <h1>NeMo Agent Toolkit<br><span class="g">The Complete Visual Guide</span></h1>
+  <p class="sub">Everything the toolkit offers — every command, integration, and feature — drawn out visually and grounded in NVIDIA's own documentation.</p>
+  <div class="callout"><div class="ic">🎯</div><p><b>What it is —</b> <i>“a flexible, lightweight, and unifying library that lets you easily connect existing enterprise agents to data sources and tools across any framework.”</i> It adds intelligence to agents through enterprise-grade instrumentation, observability, and continuous learning.</p></div>
+</header>
+
+<!-- 1 OVERVIEW -->
+<section id="overview">
+  <h2><span class="ix">01</span> Overview &amp; Identity</h2>
+  <p class="lead">NAT does not replace your agent framework — it wraps and supercharges it. The core insight: <b>every agent, tool, and workflow is a composable <code>function</code></b>, defined in YAML and discoverable across the whole ecosystem.</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 920 150" role="img" aria-label="Rename timeline">
+      <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <line x1="60" y1="75" x2="860" y2="75" stroke="#28385a" stroke-width="2" marker-end="url(#ar)"/>
+      <g font-family="ui-sans-serif" text-anchor="middle">
+        <circle cx="130" cy="75" r="8" fill="#fb923c"/><text x="130" y="48" fill="#e9eef7" font-size="13" font-weight="700">AgentIQ</text><text x="130" y="105" fill="#9fb0c9" font-size="11">GTC, Mar 2025</text>
+        <circle cx="370" cy="75" r="8" fill="#fbbf24"/><text x="370" y="48" fill="#e9eef7" font-size="13" font-weight="700">AIQ Toolkit</text><text x="370" y="105" fill="#9fb0c9" font-size="11">Agent Intelligence · OSS Apr 2025</text>
+        <circle cx="650" cy="75" r="9" fill="#76b900"/><text x="650" y="48" fill="#a4e028" font-size="13" font-weight="800">NeMo Agent Toolkit</text><text x="650" y="105" fill="#9fb0c9" font-size="11">rename @ v1.2 · pip nvidia-nat</text>
+        <circle cx="820" cy="75" r="7" fill="#76b900"/><text x="820" y="48" fill="#e9eef7" font-size="12" font-weight="700">v1.5+</text><text x="820" y="105" fill="#9fb0c9" font-size="11">aiq aliases removed</text>
+      </g>
+    </svg>
+    <div class="figcap">Naming history — old <code>aiq</code> command &amp; <code>AIQ*</code> classes are pre-v1.2. Today it's <code>nat</code> / <code>nvidia-nat</code> / <code>nat.*</code>.</div>
+  </div>
+
+  <table>
+    <tr><th>Attribute</th><th>Value</th></tr>
+    <tr><td>Current name</td><td><b>NVIDIA NeMo Agent Toolkit</b></td></tr>
+    <tr><td>PyPI package</td><td><span class="pill nv">nvidia-nat</span> (meta-package; core code in <code>nvidia-nat-core</code>)</td></tr>
+    <tr><td>Namespace / CLI</td><td><code>nat.*</code> / <code>nat</code></td></tr>
+    <tr><td>Python</td><td>3.11 · 3.12 · 3.13 &nbsp; (<code>&gt;=3.11,&lt;3.14</code>)</td></tr>
+    <tr><td>Default LLM</td><td>NVIDIA NIM (needs <code>NVIDIA_API_KEY</code>); no GPU required by default</td></tr>
+    <tr><td>License / repo</td><td>Open source · <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit">NVIDIA/NeMo-Agent-Toolkit</a></td></tr>
+  </table>
+  <div class="callout gold"><div class="ic">⚠️</div><p><b>Install gotcha:</b> there is <b>no <code>[all]</code> extra</b>. The broad bundle is <code>nvidia-nat[most]</code> (all framework integrations except <code>openpipe-art</code>, <code>a365</code>, and <code>autogen</code>).</p></div>
+</section>
+
+<!-- 2 PILLARS -->
+<section id="pillars">
+  <h2><span class="ix">02</span> The Four Pillars</h2>
+  <p class="lead">NVIDIA groups the toolkit's nine headline features into four pillars. The radar shows breadth across all nine.</p>
+  <div class="grid c2">
+    <div class="figwrap">
+      <svg viewBox="0 0 360 320" role="img" aria-label="Feature radar">
+        <g transform="translate(180,160)" font-family="ui-sans-serif">
+          <!-- rings -->
+          <g fill="none" stroke="#1f2c44">
+            <polygon points="0,-110 95,-55 95,55 0,110 -95,55 -95,-55"/>
+            <polygon points="0,-73 63,-37 63,37 0,73 -63,37 -63,-37"/>
+            <polygon points="0,-37 32,-18 32,18 0,37 -32,18 -32,-18"/>
+          </g>
+          <!-- 9 axes labels (use 6 vertices doubled conceptually -> show 9 as text ring) -->
+          <polygon points="0,-104 90,-30 78,70 0,100 -84,58 -88,-44" fill="rgba(118,185,0,.28)" stroke="#76b900" stroke-width="2"/>
+          <g fill="#cfe3ff" font-size="10" text-anchor="middle">
+            <text x="0" y="-118">Framework-agnostic</text>
+            <text x="112" y="-44">Reusability</text>
+            <text x="104" y="86">Rapid dev</text>
+            <text x="0" y="124">Profiling</text>
+            <text x="-104" y="86">Observability</text>
+            <text x="-110" y="-44">Evaluation</text>
+          </g>
+          <g fill="#9fb0c9" font-size="9.5" text-anchor="middle">
+            <text x="0" y="138">+ UI · MCP · A2A</text>
+          </g>
+        </g>
+      </svg>
+      <div class="figcap">Nine official features — Framework-agnostic · Reusability · Rapid dev · Profiling · Observability · Evaluation · UI · MCP · A2A.</div>
+    </div>
+    <div class="grid" style="gap:10px">
+      <div class="card" style="border-left:3px solid var(--nv)"><h4>🏗️ Building Agents</h4><p>Framework-agnostic · reuse components everywhere · YAML-rapid dev · built-in chat UI.</p></div>
+      <div class="card" style="border-left:3px solid var(--pur)"><h4>👁️ Agent Insights</h4><p>Profiling from agent down to <i>individual tokens</i> · production observability/tracing.</p></div>
+      <div class="card" style="border-left:3px solid var(--org)"><h4>📈 Agent Optimization</h4><p>Eval system · prompt+hyperparam optimizer · RL fine-tuning · Dynamo · Agent Performance Primitives.</p></div>
+      <div class="card" style="border-left:3px solid var(--gold)"><h4>🔌 Protocol Support</h4><p>Full <b>MCP</b> (client+server) &amp; <b>A2A</b> (agent-to-agent), incl. authentication.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 ARCHITECTURE -->
+<section id="arch">
+  <h2><span class="ix">03</span> Architecture</h2>
+  <p class="lead">A config file is parsed by the <b>Builder</b>, which instantiates LLMs, embedders, memory, tools, and the workflow — then a <b>front end</b> drives it. Telemetry, eval, and optimization wrap the whole thing.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 920 430" role="img" aria-label="Architecture diagram">
+      <defs>
+        <marker id="a2" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#5f7390"/></marker>
+        <marker id="a3" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#76b900"/></marker>
+      </defs>
+      <!-- config -->
+      <rect x="30" y="40" width="150" height="150" rx="12" fill="#0d1626" stroke="#28385a"/>
+      <text x="105" y="64" text-anchor="middle" fill="#a4e028" font-size="13" font-weight="700" font-family="ui-monospace">workflow.yml</text>
+      <g font-family="ui-monospace" font-size="10.5" fill="#cfe3ff">
+        <text x="46" y="88">general:</text><text x="46" y="106">llms:</text><text x="46" y="124">embedders:</text><text x="46" y="142">functions:</text><text x="46" y="160">workflow:</text><text x="46" y="178">eval:</text>
+      </g>
+      <!-- builder -->
+      <rect x="250" y="60" width="160" height="110" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+      <text x="330" y="100" text-anchor="middle" fill="#a4e028" font-size="14" font-weight="800">Builder</text>
+      <text x="330" y="122" text-anchor="middle" fill="#9fb0c9" font-size="10.5">resolves refs,</text>
+      <text x="330" y="138" text-anchor="middle" fill="#9fb0c9" font-size="10.5">wires components</text>
+      <line x1="180" y1="115" x2="248" y2="115" stroke="#76b900" stroke-width="2" marker-end="url(#a3)"/>
+      <!-- components column -->
+      <g>
+        <rect x="470" y="30" width="130" height="34" rx="8" fill="#0d1626" stroke="#28385a"/><text x="535" y="52" text-anchor="middle" fill="#7dd3fc" font-size="11">LLMs / Embedders</text>
+        <rect x="470" y="74" width="130" height="34" rx="8" fill="#0d1626" stroke="#28385a"/><text x="535" y="96" text-anchor="middle" fill="#a78bfa" font-size="11">Memory · RAG</text>
+        <rect x="470" y="118" width="130" height="34" rx="8" fill="#0d1626" stroke="#28385a"/><text x="535" y="140" text-anchor="middle" fill="#fbbf24" font-size="11">Functions / Tools</text>
+        <rect x="470" y="162" width="130" height="34" rx="8" fill="#0d1626" stroke="#28385a"/><text x="535" y="184" text-anchor="middle" fill="#fb923c" font-size="11">MCP / A2A tools</text>
+      </g>
+      <line x1="410" y1="115" x2="468" y2="60" stroke="#5f7390" stroke-width="1.5" marker-end="url(#a2)"/>
+      <line x1="410" y1="115" x2="468" y2="135" stroke="#5f7390" stroke-width="1.5" marker-end="url(#a2)"/>
+      <!-- workflow -->
+      <rect x="660" y="74" width="150" height="82" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+      <text x="735" y="108" text-anchor="middle" fill="#a4e028" font-size="14" font-weight="800">Workflow</text>
+      <text x="735" y="128" text-anchor="middle" fill="#9fb0c9" font-size="10.5">(an agent = a function)</text>
+      <line x1="600" y1="115" x2="658" y2="115" stroke="#76b900" stroke-width="2" marker-end="url(#a3)"/>
+      <!-- front ends -->
+      <rect x="660" y="200" width="150" height="60" rx="10" fill="#0d1626" stroke="#28385a"/>
+      <text x="735" y="224" text-anchor="middle" fill="#e9eef7" font-size="11.5" font-weight="700">Front ends</text>
+      <text x="735" y="244" text-anchor="middle" fill="#9fb0c9" font-size="10">console · fastapi · mcp · a2a · ui</text>
+      <line x1="735" y1="156" x2="735" y2="198" stroke="#5f7390" stroke-width="1.5" marker-end="url(#a2)"/>
+      <!-- wrap loops -->
+      <rect x="250" y="300" width="170" height="56" rx="10" fill="#10131f" stroke="#a78bfa"/><text x="335" y="324" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="700">Telemetry</text><text x="335" y="342" text-anchor="middle" fill="#9fb0c9" font-size="10">Phoenix·Weave·LangSmith…</text>
+      <rect x="450" y="300" width="150" height="56" rx="10" fill="#10131f" stroke="#fb923c"/><text x="525" y="324" text-anchor="middle" fill="#fb923c" font-size="12" font-weight="700">Evaluation</text><text x="525" y="342" text-anchor="middle" fill="#9fb0c9" font-size="10">datasets · evaluators</text>
+      <rect x="630" y="300" width="180" height="56" rx="10" fill="#10131f" stroke="#76b900"/><text x="720" y="324" text-anchor="middle" fill="#a4e028" font-size="12" font-weight="700">Optimize / Finetune</text><text x="720" y="342" text-anchor="middle" fill="#9fb0c9" font-size="10">Optuna · GA · RL</text>
+      <path d="M735 260 C 735 285, 525 280, 525 298" fill="none" stroke="#5f7390" stroke-dasharray="4 3" stroke-width="1.5" marker-end="url(#a2)"/>
+      <path d="M525 356 C 525 390, 105 400, 105 192" fill="none" stroke="#76b900" stroke-dasharray="5 4" stroke-width="1.5" marker-end="url(#a3)"/>
+      <text x="300" y="408" fill="#76b900" font-size="11" font-style="italic">measure → improve → re-run (the compounding loop)</text>
+    </svg>
+    <div class="figcap">The build-and-improve pipeline. Green = data/build flow; purple/orange = the instrumentation &amp; optimization wrap.</div>
+  </div>
+</section>
+
+<!-- 4 CONFIG -->
+<section id="config">
+  <h2><span class="ix">04</span> Configuration (YAML)</h2>
+  <p class="lead">One declarative file describes the whole application. Each block is a map of instance-names → objects, and a <code>_type</code> discriminator selects the implementation.</p>
+  <pre><span class="c"># every block keyed by your chosen name; _type picks the implementation</span>
+<span class="k">general</span>:
+  telemetry:
+    tracing: { phoenix: { _type: phoenix } }      <span class="c"># observability</span>
+<span class="k">llms</span>:
+  main: { _type: nim, model_name: meta/llama-3.3-70b-instruct, temperature: 0.0 }
+<span class="k">embedders</span>:
+  emb:  { _type: nim, model_name: nvidia/nv-embedqa-e5-v5 }
+<span class="k">retrievers</span>:
+  vs:   { _type: milvus_retriever, uri: http://localhost:19530, embedding_model: emb }
+<span class="k">memory</span>:
+  saas_memory: { _type: redis_memory, host: localhost, embedder: emb }
+<span class="k">functions</span>:
+  search: { _type: nat_retriever, retriever: vs, topic: docs }
+<span class="k">workflow</span>:               <span class="c"># the top-level agent IS a function</span>
+  _type: react_agent
+  llm_name: main
+  tool_names: [search]
+<span class="k">eval</span>: { ... }            <span class="c"># datasets + evaluators (see §12)</span></pre>
+  <div class="grid c2">
+    <div class="card"><h4>🧬 Config inheritance</h4><p>Top-level <code>base:</code> key names a parent config; deep-merge override. Supports chained inheritance and circular/missing-base detection.</p></div>
+    <div class="card"><h4>🔧 <code>--override</code></h4><p><code>--override llms.main.temperature 0.7</code> — dotted path uses the <i>instance key</i>, value is type-coerced. Repeatable.</p></div>
+    <div class="card"><h4>🔑 Interpolation</h4><p><code>${VAR}</code>, <code>${VAR:-default}</code> only (no bare <code>$VAR</code>). <code>file://path.txt</code> loads file content into a string field.</p></div>
+    <div class="card"><h4>📄 <code>.env</code> + validate</h4><p>CLI auto-loads <code>.env</code> (exported vars win). <code>nat validate --config_file F</code> checks a config before running.</p></div>
+  </div>
+</section>
+
+<!-- 5 CLI -->
+<section id="cli">
+  <h2><span class="ix">05</span> The <code>nat</code> CLI — Full Reference</h2>
+  <p class="lead">One binary covers the entire lifecycle. Grouped by what you're doing.</p>
+  <div class="grid c2">
+    <div class="card"><h4>▶️ Run &amp; serve</h4>
+      <p><code>nat run</code> (= <code>start console</code>) · <code>nat serve</code> (= <code>start fastapi</code>) · <code>nat start {console|fastapi|a2a|mcp|fastmcp}</code></p></div>
+    <div class="card"><h4>📊 Improve</h4>
+      <p><code>nat eval</code> · <code>nat optimize</code> (Optuna + GA prompt) · <code>nat finetune</code> (RL) · <code>nat sizing calc</code> (GPU sizing)</p></div>
+    <div class="card"><h4>🧱 Build &amp; inspect</h4>
+      <p><code>nat workflow {create|reinstall|delete}</code> · <code>nat info {components|channels}</code> · <code>nat validate</code> · <code>nat uninstall</code></p></div>
+    <div class="card"><h4>🔁 Interop</h4>
+      <p><code>nat mcp serve</code> · <code>nat mcp client {tool list|tool call|ping}</code> · <code>nat a2a {serve|client}</code> · <code>nat fastmcp server {run|dev|install}</code></p></div>
+    <div class="card"><h4>📦 Share &amp; store</h4>
+      <p><code>nat registry {publish|search|pull|remove}</code> · <code>nat configure channel {add|update|remove}</code> · <code>nat object-store {mysql|redis|s3} {upload|delete}</code></p></div>
+    <div class="card"><h4>🛡️ Security</h4>
+      <p><code>nat red-team --red_team_config &lt;yml&gt;</code> (from <code>nvidia-nat-security</code>)</p></div>
+  </div>
+  <pre><span class="c"># the improvement loop in four commands</span>
+nat run   --config_file workflow.yml --input <span class="s">"…"</span>   <span class="c"># produce</span>
+nat eval  --config_file eval.yml      --reps 3        <span class="c"># measure (+traces)</span>
+nat optimize --config_file optimizer.yml             <span class="c"># improve (search)</span>
+nat serve --config_file workflow.yml --workers 4 --use_gunicorn true  <span class="c"># ship</span></pre>
+</section>
+
+<!-- 6 FRAMEWORKS -->
+<section id="frameworks">
+  <h2><span class="ix">06</span> Integrations &amp; Providers</h2>
+  <p class="lead">NAT is genuinely framework-agnostic: it wraps your existing agents rather than forcing a rewrite. Breadth is the headline feature.</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 220" role="img" aria-label="Breadth bar chart">
+      <g font-family="ui-sans-serif">
+        <!-- bars: category, count -->
+        <g>
+          <text x="20" y="30" fill="#9fb0c9" font-size="12">Agent frameworks</text>
+          <rect x="190" y="18" width="396" height="16" rx="4" fill="#76b900"/><text x="596" y="31" fill="#a4e028" font-size="12" font-weight="700">9</text>
+          <text x="20" y="60" fill="#9fb0c9" font-size="12">LLM providers</text>
+          <rect x="190" y="48" width="440" height="16" rx="4" fill="#38bdf8"/><text x="640" y="61" fill="#7dd3fc" font-size="12" font-weight="700">10</text>
+          <text x="20" y="90" fill="#9fb0c9" font-size="12">Telemetry exporters</text>
+          <rect x="190" y="78" width="440" height="16" rx="4" fill="#a78bfa"/><text x="640" y="91" fill="#a78bfa" font-size="12" font-weight="700">10</text>
+          <text x="20" y="120" fill="#9fb0c9" font-size="12">Memory backends</text>
+          <rect x="190" y="108" width="176" height="16" rx="4" fill="#fb923c"/><text x="376" y="121" fill="#fb923c" font-size="12" font-weight="700">4</text>
+          <text x="20" y="150" fill="#9fb0c9" font-size="12">Embedder providers</text>
+          <rect x="190" y="138" width="176" height="16" rx="4" fill="#fbbf24"/><text x="376" y="151" fill="#fbbf24" font-size="12" font-weight="700">4</text>
+          <text x="20" y="180" fill="#9fb0c9" font-size="12">Built-in agent types</text>
+          <rect x="190" y="168" width="352" height="16" rx="4" fill="#f472b6"/><text x="542" y="181" fill="#f472b6" font-size="12" font-weight="700">8</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">Approximate breadth of first-party integrations (each ships as its own <code>nvidia-nat-*</code> plugin package).</div>
+  </div>
+
+  <h3>Agent frameworks (wrap existing agents)</h3>
+  <p>LangChain · <b>LangGraph</b> · LlamaIndex · CrewAI · Microsoft Semantic Kernel · Google ADK · Agno · Strands · AutoGen · Haystack — via extras like <code>nvidia-nat[langchain]</code>. LangGraph agents can be run directly via the <code>langgraph_wrapper</code> workflow type.</p>
+
+  <h3>LLM providers — <code>llms:</code> <code>_type</code></h3>
+  <table>
+    <tr><th><code>_type</code></th><th>Provider</th><th>Notes</th></tr>
+    <tr><td><span class="pill nv">nim</span></td><td>NVIDIA NIM</td><td>default; env <code>NVIDIA_API_KEY</code></td></tr>
+    <tr><td><code>openai</code></td><td>OpenAI</td><td><code>seed</code>, <code>request_timeout</code></td></tr>
+    <tr><td><code>aws_bedrock</code></td><td>AWS Bedrock</td><td>not <code>bedrock</code> — <code>region_name</code>, <code>credentials_profile_name</code></td></tr>
+    <tr><td><code>azure_openai</code></td><td>Azure OpenAI</td><td>no bare <code>azure</code>; <code>azure_endpoint</code>, <code>azure_deployment</code></td></tr>
+    <tr><td><code>oci</code></td><td>Oracle OCI GenAI</td><td><code>compartment_id</code>, <code>auth_type</code></td></tr>
+    <tr><td><code>litellm</code></td><td>LiteLLM gateway</td><td>any LiteLLM-routable model</td></tr>
+    <tr><td><code>huggingface</code> / <code>huggingface_inference</code></td><td>HF local / TGI</td><td>local transformers or inference endpoint</td></tr>
+    <tr><td><code>dynamo</code> <span class="exp">(experimental)</span></td><td>NVIDIA Dynamo</td><td>KV-cache-aware; see §16</td></tr>
+  </table>
+  <p class="src">Embedders (<code>embedders:</code>) support only four <code>_type</code>s: <code>nim</code>, <code>openai</code>, <code>azure_openai</code>, <code>huggingface</code>. Canonical NIM embed models: <code>nvidia/nv-embedqa-e5-v5</code>, <code>nvidia/llama-nemotron-embed-1b-v2</code>.</p>
+</section>
+
+<!-- 7 AGENTS -->
+<section id="agents">
+  <h2><span class="ix">07</span> Agents &amp; Tools</h2>
+  <p class="lead">NAT ships eight built-in agent types (each is itself a function, so agents can nest as tools of other agents). <b><code>mixture_of_agents</code> is an example pattern, not a type.</b></p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 250" role="img" aria-label="Agent decision flow">
+      <defs><marker id="aa" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="11.5">
+        <rect x="350" y="14" width="200" height="40" rx="10" fill="#0f1a10" stroke="#2c5314"/><text x="450" y="39" text-anchor="middle" fill="#a4e028" font-weight="700">Which agent?</text>
+        <!-- branches -->
+        <rect x="20" y="100" width="150" height="58" rx="10" fill="#0d1626" stroke="#28385a"/><text x="95" y="124" text-anchor="middle" fill="#e9eef7" font-weight="700">react_agent</text><text x="95" y="142" text-anchor="middle" fill="#9fb0c9" font-size="10">iterative Thought→Act→Obs</text>
+        <rect x="190" y="100" width="150" height="58" rx="10" fill="#0d1626" stroke="#28385a"/><text x="265" y="124" text-anchor="middle" fill="#e9eef7" font-weight="700">tool_calling</text><text x="265" y="142" text-anchor="middle" fill="#9fb0c9" font-size="10">native fn-calling</text>
+        <rect x="360" y="100" width="150" height="58" rx="10" fill="#0d1626" stroke="#28385a"/><text x="435" y="124" text-anchor="middle" fill="#e9eef7" font-weight="700">rewoo_agent</text><text x="435" y="142" text-anchor="middle" fill="#9fb0c9" font-size="10">plan upfront, then exec</text>
+        <rect x="530" y="100" width="150" height="58" rx="10" fill="#0d1626" stroke="#28385a"/><text x="605" y="124" text-anchor="middle" fill="#e9eef7" font-weight="700">reasoning_agent</text><text x="605" y="142" text-anchor="middle" fill="#9fb0c9" font-size="10">thinks, wraps a fn</text>
+        <rect x="700" y="100" width="180" height="58" rx="10" fill="#0d1626" stroke="#28385a"/><text x="790" y="124" text-anchor="middle" fill="#e9eef7" font-weight="700">router_agent</text><text x="790" y="142" text-anchor="middle" fill="#9fb0c9" font-size="10">classify → one branch</text>
+        <line x1="450" y1="54" x2="95" y2="98" stroke="#76b900" stroke-width="1.3" marker-end="url(#aa)"/>
+        <line x1="450" y1="54" x2="265" y2="98" stroke="#76b900" stroke-width="1.3" marker-end="url(#aa)"/>
+        <line x1="450" y1="54" x2="435" y2="98" stroke="#76b900" stroke-width="1.3" marker-end="url(#aa)"/>
+        <line x1="450" y1="54" x2="605" y2="98" stroke="#76b900" stroke-width="1.3" marker-end="url(#aa)"/>
+        <line x1="450" y1="54" x2="790" y2="98" stroke="#76b900" stroke-width="1.3" marker-end="url(#aa)"/>
+        <!-- executors row -->
+        <rect x="180" y="195" width="200" height="44" rx="10" fill="#10131f" stroke="#28385a"/><text x="280" y="221" text-anchor="middle" fill="#7dd3fc" font-size="11">sequential_executor</text>
+        <rect x="400" y="195" width="200" height="44" rx="10" fill="#10131f" stroke="#28385a"/><text x="500" y="221" text-anchor="middle" fill="#a78bfa" font-size="11">parallel_executor</text>
+        <rect x="620" y="195" width="220" height="44" rx="10" fill="#10131f" stroke="#28385a"/><text x="730" y="221" text-anchor="middle" fill="#fbbf24" font-size="11">responses_api_agent</text>
+      </g>
+    </svg>
+    <div class="figcap">The eight built-ins. Plus deterministic <b>sequential</b>/<b>parallel</b> executors and the OpenAI <b>responses_api_agent</b>.</div>
+  </div>
+
+  <table>
+    <tr><th>Agent</th><th>Strategy</th><th>Best for</th><th>Watch out</th></tr>
+    <tr><td><b>react_agent</b></td><td>ReAct loop (text-parsed)</td><td>complex iterative reasoning</td><td>costly, prompt-sensitive; field names changed in 1.4+</td></tr>
+    <tr><td><b>tool_calling_agent</b></td><td>native <code>bind_tools</code></td><td>fast, models with tool-calling</td><td>uses <code>max_iterations</code> (def 15)</td></tr>
+    <tr><td><b>rewoo_agent</b></td><td>Planner→tools→Solver</td><td>stable plans, fewer LLM calls</td><td>can't adapt to tool failures</td></tr>
+    <tr><td><b>reasoning_agent</b></td><td>think (&lt;think&gt;) then delegate</td><td>wrap a fn with upfront planning</td><td>no mid-execution revision; needs reasoning LLM</td></tr>
+    <tr><td><b>router_agent</b></td><td>single-pass classifier</td><td>route to exactly one branch</td><td>no multi-step</td></tr>
+    <tr><td><b>sequential / parallel_executor</b></td><td>deterministic chain / fan-out</td><td>fixed pipelines</td><td>no LLM planning</td></tr>
+    <tr><td><b>responses_api_agent</b></td><td>OpenAI Responses API</td><td>OpenAI-native tools</td><td>needs <code>api_type: responses</code></td></tr>
+  </table>
+  <div class="callout blue"><div class="ic">🧩</div><p><b>Composition:</b> the canonical <code>mixture_of_agents</code> example wires a <code>react_agent</code> orchestrating several <code>tool_calling_agent</code> instances exposed as tools — agents-as-tools, no special type required.</p></div>
+</section>
+
+<!-- 8 RAG -->
+<section id="rag">
+  <h2><span class="ix">08</span> RAG &amp; Retrieval</h2>
+  <p class="lead">Retrievers are configured under <code>retrievers:</code> and surfaced to agents through the <code>nat_retriever</code> function-tool. Two built-in backends; an advanced <code>nvidia-nat-rag</code> plugin adds reranking, citations, and query rewriting.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 150" role="img" aria-label="RAG pipeline">
+      <defs><marker id="ra" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#38bdf8"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="11" text-anchor="middle">
+        <rect x="20" y="55" width="120" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="80" y="82" fill="#e9eef7">Question</text>
+        <rect x="180" y="55" width="130" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="245" y="76" fill="#fbbf24">Embedder</text><text x="245" y="91" fill="#9fb0c9" font-size="9.5">nim · nv-embedqa</text>
+        <rect x="350" y="55" width="150" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="425" y="76" fill="#7dd3fc">Retriever</text><text x="425" y="91" fill="#9fb0c9" font-size="9.5">milvus / nemo</text>
+        <rect x="540" y="55" width="150" height="44" rx="10" fill="#0d1626" stroke="#2c5314"/><text x="615" y="76" fill="#a4e028">nat_retriever</text><text x="615" y="91" fill="#9fb0c9" font-size="9.5">tool wrapper</text>
+        <rect x="730" y="55" width="140" height="44" rx="10" fill="#0f1a10" stroke="#2c5314"/><text x="800" y="82" fill="#a4e028">Agent</text>
+        <line x1="140" y1="77" x2="178" y2="77" stroke="#38bdf8" stroke-width="1.6" marker-end="url(#ra)"/>
+        <line x1="310" y1="77" x2="348" y2="77" stroke="#38bdf8" stroke-width="1.6" marker-end="url(#ra)"/>
+        <line x1="500" y1="77" x2="538" y2="77" stroke="#38bdf8" stroke-width="1.6" marker-end="url(#ra)"/>
+        <line x1="690" y1="77" x2="728" y2="77" stroke="#38bdf8" stroke-width="1.6" marker-end="url(#ra)"/>
+      </g>
+    </svg>
+    <div class="figcap">The <code>simple_rag</code> example: Milvus + NIM embedder + ReAct agent over CUDA/MCP docs.</div>
+  </div>
+  <table>
+    <tr><th>Retriever <code>_type</code></th><th>Backend</th><th>Key fields</th></tr>
+    <tr><td><code>milvus_retriever</code></td><td>Milvus (client-side embed)</td><td><code>uri</code>, <code>embedding_model</code>, <code>collection_name</code>, <code>top_k</code>, <code>search_params</code></td></tr>
+    <tr><td><code>nemo_retriever</code></td><td>NVIDIA NeMo Retriever (server-side embed)</td><td><code>uri</code>, <code>collection_name</code>, <code>top_k</code>, <code>nvidia_api_key</code></td></tr>
+  </table>
+  <div class="callout"><div class="ic">🚀</div><p><b>Advanced RAG</b> = separate <code>nvidia-nat-rag</code> plugin exposing a <code>nat_rag</code> function group with reranking (<code>nvidia/llama-nemotron-rerank-1b-v2</code>), citations, confidence thresholds, and query rewriting.</p></div>
+</section>
+
+<!-- 9 MEMORY -->
+<section id="memory">
+  <h2><span class="ix">09</span> Memory</h2>
+  <p class="lead">A <code>memory:</code> block plus built-in <code>add_memory</code>/<code>get_memory</code>/<code>delete_memory</code> tools. The editor interface is <code>add_items</code> / <code>search</code> / <code>remove_items</code> (retrieval = <code>search</code>, there's no <code>get</code> method).</p>
+  <table>
+    <tr><th>Provider</th><th><code>_type</code></th><th>pip extra</th><th>Auth</th></tr>
+    <tr><td>Mem0</td><td><code>mem0_memory</code></td><td><code>mem0ai</code></td><td>env <code>MEM0_API_KEY</code></td></tr>
+    <tr><td>Redis</td><td><code>redis_memory</code></td><td><code>redis</code></td><td>none (needs an <code>embedder</code> ref → vector index)</td></tr>
+    <tr><td>Zep Cloud</td><td><code>zep_memory</code></td><td><code>zep-cloud</code></td><td>env <code>ZEP_API_KEY</code></td></tr>
+    <tr><td>MemMachine <span class="exp">(experimental)</span></td><td><code>memmachine_memory</code></td><td><code>memmachine</code></td><td><code>base_url</code></td></tr>
+  </table>
+  <div class="callout"><div class="ic">🧠</div><p>An <b>auto-memory wrapper</b> (<code>auto_memory_agent</code>) transparently saves user/AI messages and retrieves context every turn, with per-user isolation via the <code>X-User-ID</code> header / <code>--conversation_id</code>.</p></div>
+</section>
+
+<!-- 10 HITL -->
+<section id="hitl">
+  <h2><span class="ix">10</span> Human-in-the-Loop</h2>
+  <p class="lead">Any function can pause to ask a human, via <code>Context.get().user_interaction_manager.prompt_user_input(...)</code>. No global "enable HITL" flag — you wire an approval tool and reference it.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 210" role="img" aria-label="HITL sequence">
+      <defs><marker id="ha" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a78bfa"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="11">
+        <text x="120" y="24" text-anchor="middle" fill="#a4e028" font-weight="700">Tool / Function</text>
+        <text x="450" y="24" text-anchor="middle" fill="#7dd3fc" font-weight="700">FastAPI server</text>
+        <text x="780" y="24" text-anchor="middle" fill="#fbbf24" font-weight="700">UI (WebSocket)</text>
+        <line x1="120" y1="34" x2="120" y2="190" stroke="#28385a"/><line x1="450" y1="34" x2="450" y2="190" stroke="#28385a"/><line x1="780" y1="34" x2="780" y2="190" stroke="#28385a"/>
+        <line x1="122" y1="60" x2="448" y2="60" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#ha)"/><text x="285" y="53" text-anchor="middle" fill="#9fb0c9" font-size="10">prompt_user_input(HumanPromptText)</text>
+        <line x1="452" y1="92" x2="778" y2="92" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#ha)"/><text x="615" y="85" text-anchor="middle" fill="#9fb0c9" font-size="10">system_interaction_message</text>
+        <line x1="778" y1="128" x2="452" y2="128" stroke="#76b900" stroke-width="1.5" marker-end="url(#ha)"/><text x="615" y="121" text-anchor="middle" fill="#9fb0c9" font-size="10">user_interaction_message (reply)</text>
+        <line x1="448" y1="162" x2="122" y2="162" stroke="#76b900" stroke-width="1.5" marker-end="url(#ha)"/><text x="285" y="155" text-anchor="middle" fill="#9fb0c9" font-size="10">await resolves → resume</text>
+      </g>
+    </svg>
+    <div class="figcap">Prompt types: text · binary_choice · radio · checkbox · dropdown · notification · oauth_consent. <code>nat serve</code> supports all; <code>nat run</code> supports text only.</div>
+  </div>
+  <pre><span class="c"># inside a @register_function tool</span>
+<span class="k">from</span> nat.builder.context <span class="k">import</span> Context
+<span class="k">from</span> nat.data_models.interactive <span class="k">import</span> HumanPromptText
+resp = <span class="k">await</span> Context.get().user_interaction_manager.prompt_user_input(
+    HumanPromptText(text=<span class="s">"Approve? (yes/no)"</span>, required=<span class="k">True</span>, timeout=<span class="s">60</span>))
+ok = <span class="s">"yes"</span> <span class="k">in</span> resp.content.text.lower()</pre>
+</section>
+
+<!-- 11 OBSERVE -->
+<section id="observe">
+  <h2><span class="ix">11</span> Observability &amp; Profiling</h2>
+  <p class="lead">Telemetry is OpenTelemetry-based under <code>general.telemetry</code>; multiple exporters can run at once. The profiler drills from the agent down to individual tokens.</p>
+  <h3>Tracing exporters (<code>tracing:</code> <code>_type</code>)</h3>
+  <p><span class="pill">phoenix</span> <span class="pill">weave</span> <span class="pill">langfuse</span> <span class="pill">langsmith</span> <span class="pill">otel-collector</span> <span class="pill">arize-ax</span> <span class="pill">galileo</span> <span class="pill">patronus</span> <span class="pill">dynatrace</span> <span class="pill">data-flywheel</span> + console/file logging.</p>
+  <pre><span class="k">general</span>:
+  telemetry:
+    tracing:
+      langsmith: { _type: langsmith, project: my-agent }   <span class="c"># env LANGSMITH_API_KEY</span></pre>
+  <h3>Profiler (<code>eval.general.profiler</code>)</h3>
+  <div class="grid c3">
+    <div class="card"><h4>⏱️ Forecasts</h4><p><code>workflow_runtime_forecast</code>, <code>token_uniqueness_forecast</code>, <code>compute_llm_metrics</code> (latency/throughput).</p></div>
+    <div class="card"><h4>🧱 Bottlenecks</h4><p><code>bottleneck_analysis</code> (nested/simple stack) → Gantt charts; <code>concurrency_spike_analysis</code>.</p></div>
+    <div class="card"><h4>🗃️ Caching &amp; routing</h4><p><code>prompt_caching_prefixes</code> (KV reuse); <code>prediction_trie</code> → Dynamo routing hints (§16).</p></div>
+  </div>
+  <p class="src">Outputs: <code>all_requests_profiler_traces.json</code>, <code>inference_optimization.json</code> (p90/p95/p99 CIs), <code>standardized_data_all.csv</code>, Gantt PNGs, <code>prediction_trie.json</code>. Custom spans via the <code>@track_function</code> decorator.</p>
+</section>
+
+<!-- 12 EVAL -->
+<section id="eval">
+  <h2><span class="ix">12</span> Evaluation &amp; Sizing</h2>
+  <p class="lead">Run a workflow over a dataset and score it with one or more evaluators. Datasets: <code>json · jsonl · csv · xls · parquet · custom</code> (incl. <code>hf://</code> + allow/deny filtering).</p>
+  <table>
+    <tr><th>Evaluator <code>_type</code></th><th>What it measures</th></tr>
+    <tr><td><code>ragas</code></td><td>AnswerAccuracy · ContextRelevance · ResponseGroundedness · FactualCorrectness (judge LLM)</td></tr>
+    <tr><td><code>trajectory</code></td><td>agent trajectory quality (LangChain trajectory eval)</td></tr>
+    <tr><td><code>tunable_rag_evaluator</code></td><td>custom-weighted coverage/correctness/relevance via judge prompt</td></tr>
+    <tr><td><code>langsmith</code> / <code>_custom</code> / <code>_judge</code></td><td>openevals exact-match / imported / LLM-as-judge</td></tr>
+    <tr><td><code>avg_llm_latency</code>, <code>avg_tokens_per_llm_end</code></td><td>cost &amp; latency (great as optimizer objectives)</td></tr>
+    <tr><td><b>custom</b> via <code>@register_evaluator</code></td><td>anything — e.g. SQL execution accuracy (run-and-compare)</td></tr>
+  </table>
+  <div class="callout"><div class="ic">📏</div><p><b>Sizing calculator</b> (<code>nat sizing calc</code>): runs your workflow at several concurrency levels, fits a least-squares line on p95 latency, and estimates GPU count for target users/runtime. Slope &gt;1 ⇒ worse-than-linear scaling.</p></div>
+</section>
+
+<!-- 13 IMPROVE -->
+<section id="improve">
+  <h2><span class="ix">13</span> Self-Improvement</h2>
+  <p class="lead">Three escalating levers — all driven by the same eval metrics.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 170" role="img" aria-label="Improvement levers">
+      <g font-family="ui-sans-serif" font-size="11.5" text-anchor="middle">
+        <rect x="40" y="50" width="240" height="70" rx="12" fill="#0d1626" stroke="#2c5314"/><text x="160" y="80" fill="#a4e028" font-weight="700">nat optimize</text><text x="160" y="100" fill="#9fb0c9" font-size="10.5">Optuna numeric + GA prompt evolution</text>
+        <rect x="330" y="50" width="240" height="70" rx="12" fill="#0d1626" stroke="#28385a"/><text x="450" y="80" fill="#7dd3fc" font-weight="700">nat finetune</text><text x="450" y="100" fill="#9fb0c9" font-size="10.5">RL on the workflow (OpenPipe ART) · DPO</text>
+        <rect x="620" y="50" width="240" height="70" rx="12" fill="#0d1626" stroke="#28385a"/><text x="740" y="80" fill="#fb923c" font-weight="700">Data flywheel</text><text x="740" y="100" fill="#9fb0c9" font-size="10.5">collect good traces → retrain (NeMo Customizer)</text>
+        <text x="450" y="30" fill="#76b900" font-weight="700">multi-objective: accuracy ↑ · tokens ↓ · latency ↓</text>
+        <text x="450" y="150" fill="#9fb0c9" font-size="11" font-style="italic">prompt-only → config search → weight updates → production loop</text>
+      </g>
+    </svg>
+    <div class="figcap">The optimizer searches <code>optimizable_params</code>+<code>search_space</code> on functions/LLMs and keeps the Pareto front of your <code>eval_metrics</code>.</div>
+  </div>
+  <pre><span class="k">llms</span>:
+  main:
+    _type: nim
+    optimizable_params: [temperature, model_name]
+    search_space: { temperature: { values: [0.0, 0.3, 0.6] } }
+<span class="k">optimizer</span>:
+  eval_metrics:
+    accuracy: { evaluator_name: accuracy, direction: maximize }
+    token_efficiency: { evaluator_name: token_efficiency, direction: minimize }
+  numeric: { enabled: true, n_trials: 24 }
+  prompt:  { enabled: true, ga_generations: 3, ga_population_size: 3 }</pre>
+
+  <h3>📊 Before → After, measured on the demo agent</h3>
+  <p class="lead">Running the repo's text-to-SQL agent twice — a weak baseline vs the tuned pipeline — over the 18-question eval set. This is the accuracy↔cost trade-off you tune (illustrative replay model; real magnitudes are in the SQL guide's BIRD/Spider tables).</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 760 300" role="img" aria-label="Before/after solved-by-difficulty">
+      <g font-family="ui-sans-serif">
+        <!-- axes -->
+        <line x1="52" y1="30" x2="52" y2="252" stroke="#28385a"/>
+        <line x1="52" y1="252" x2="720" y2="252" stroke="#28385a"/>
+        <g fill="#9fb0c9" font-size="10" text-anchor="end">
+          <text x="46" y="35">100%</text><text x="46" y="145">50%</text><text x="46" y="255">0%</text>
+        </g>
+        <line x1="52" y1="141" x2="720" y2="141" stroke="#13203a"/>
+        <!-- groups: easy / medium / hard ; baseline (gray) vs tuned (green) -->
+        <!-- easy 100% vs 100% -->
+        <rect x="110" y="32" width="46" height="220" rx="3" fill="#5f7390"/>
+        <rect x="164" y="32" width="46" height="220" rx="3" fill="#76b900"/>
+        <text x="160" y="270" fill="#cbd5e1" font-size="12" text-anchor="middle">easy</text>
+        <text x="133" y="26" fill="#9fb0c9" font-size="9" text-anchor="middle">3/3</text>
+        <text x="187" y="26" fill="#a4e028" font-size="9" text-anchor="middle">3/3</text>
+        <!-- medium 0% vs 100% -->
+        <rect x="350" y="248" width="46" height="4" rx="2" fill="#5f7390"/>
+        <rect x="404" y="32" width="46" height="220" rx="3" fill="#76b900"/>
+        <text x="400" y="270" fill="#cbd5e1" font-size="12" text-anchor="middle">medium</text>
+        <text x="373" y="244" fill="#9fb0c9" font-size="9" text-anchor="middle">0/6</text>
+        <text x="427" y="26" fill="#a4e028" font-size="9" text-anchor="middle">6/6</text>
+        <!-- hard 0% vs 100% -->
+        <rect x="590" y="248" width="46" height="4" rx="2" fill="#5f7390"/>
+        <rect x="644" y="32" width="46" height="220" rx="3" fill="#76b900"/>
+        <text x="640" y="270" fill="#cbd5e1" font-size="12" text-anchor="middle">hard</text>
+        <text x="613" y="244" fill="#9fb0c9" font-size="9" text-anchor="middle">0/9</text>
+        <text x="667" y="26" fill="#a4e028" font-size="9" text-anchor="middle">9/9</text>
+      </g>
+    </svg>
+    <div class="legend"><span><i style="background:#5f7390"></i>baseline (no techniques)</span><span><i style="background:#76b900"></i>tuned (schema-link + CoT + few-shot + self-correct)</span></div>
+    <div class="figcap">% of questions solved, by difficulty. The baseline only gets the easy ones; the tuned pipeline clears medium and hard.</div>
+  </div>
+  <div class="grid c4">
+    <div class="card"><h4>🎯 Accuracy</h4><p><span style="color:#5f7390">17%</span> → <b style="color:#a4e028">100%</b><br>(3/18 → 18/18)</p></div>
+    <div class="card"><h4>🪙 Tokens / run</h4><p><span style="color:#5f7390">321</span> → <b style="color:#fbbf24">461</b><br>+44% (richer prompt)</p></div>
+    <div class="card"><h4>⏱️ Latency</h4><p><span style="color:#5f7390">0.57s</span> → <b>0.58s</b><br>~unchanged here</p></div>
+    <div class="card"><h4>🔁 Self-correction</h4><p>off → <b style="color:#a4e028">on</b><br>repairs failed SQL</p></div>
+  </div>
+  <div class="callout gold"><div class="ic">📌</div><p><b>Honesty note:</b> these numbers come from a key-free <i>replay</i> model whose ability scales with the techniques (run it yourself: <code>nemo-sql-agent/observability/before_after.py</code>). The <i>shape</i> is real — techniques lift the hard questions and cost more tokens — but real-model magnitudes are the BIRD/Spider figures in <code>nemo-sql-agent/docs/GUIDE.md</code> (e.g. ~46% → ~73% on BIRD).</p></div>
+
+</section>
+
+<!-- 14 SERVE -->
+<section id="serve">
+  <h2><span class="ix">14</span> Serving · MCP · A2A · UI · Auth</h2>
+  <p class="lead"><code>nat serve</code> exposes a FastAPI server (default <code>localhost:8000</code>, Swagger at <code>/docs</code>). Versioned + legacy routes, SSE streaming, WebSocket, and an OpenAI-compatible endpoint.</p>
+  <table>
+    <tr><th>Purpose</th><th>Versioned</th><th>Legacy</th></tr>
+    <tr><td>Generate</td><td><code>/v1/workflow</code> (+ <code>/stream</code>, <code>/full</code>, <code>/async</code>)</td><td><code>/generate…</code></td></tr>
+    <tr><td>Chat</td><td><code>/v1/chat</code> (+ <code>/stream</code>)</td><td><code>/chat…</code></td></tr>
+    <tr><td>OpenAI-compatible</td><td><code>/v1/chat/completions</code></td><td>—</td></tr>
+    <tr><td>Feedback / monitor</td><td><code>/feedback</code> · <code>/monitor/users</code></td><td>—</td></tr>
+    <tr><td>Evaluate API</td><td><code>POST /evaluate</code> · <code>GET /evaluate/job/{id}</code></td><td>—</td></tr>
+  </table>
+  <div class="grid c2">
+    <div class="card"><h4>🔌 MCP &amp; A2A</h4><p><code>nat mcp serve</code> publishes tools (default <code>:9901/mcp</code>); acts as MCP client too. <code>nat a2a serve</code> (default <code>:10000</code>) for agent-to-agent.</p></div>
+    <div class="card"><h4>🖥️ Chat UI</h4><p>Separate repo <code>NeMo-Agent-Toolkit-UI</code> (port 3000). Talks to the server over HTTP or WebSocket (WebSocket required for HITL).</p></div>
+  </div>
+  <h3>Authentication (<code>authentication:</code>)</h3>
+  <table>
+    <tr><th><code>_type</code></th><th>Flow</th></tr>
+    <tr><td><code>oauth2_auth_code_flow</code></td><td>OAuth2 auth-code (+ PKCE, <code>preflight_auth</code>)</td></tr>
+    <tr><td><code>api_key</code></td><td>header injection (BEARER / X_API_KEY / BASIC / CUSTOM)</td></tr>
+    <tr><td><code>http_basic_auth</code></td><td>HTTP Basic (console)</td></tr>
+    <tr><td><code>mcp_oauth2</code></td><td>auth to remote MCP servers (dynamic client registration)</td></tr>
+  </table>
+  <div class="callout red"><div class="ic">🔓</div><p><b>Security note:</b> the FastAPI server is <b>open by default</b> and decodes JWTs with <code>verify_signature=False</code>. Put an authenticating reverse proxy in front for production.</p></div>
+</section>
+
+<!-- 15 SECURITY -->
+<section id="security">
+  <h2><span class="ix">15</span> Security &amp; Guardrails</h2>
+  <p class="lead">The <code>nvidia-nat-security</code> package adds red-teaming, defense middleware, and a NeMo Guardrails bridge — configured under a top-level <code>middleware:</code> block.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 130" role="img" aria-label="Guardrails pipeline">
+      <defs><marker id="ga" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#f87171"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="10.5" text-anchor="middle">
+        <rect x="20" y="45" width="110" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="75" y="72" fill="#e9eef7">Input</text>
+        <rect x="160" y="45" width="140" height="44" rx="10" fill="#1a0f12" stroke="#7a2c2c"/><text x="230" y="66" fill="#f87171">pre_tool_verifier</text><text x="230" y="82" fill="#9fb0c9" font-size="9">injection detect</text>
+        <rect x="330" y="45" width="120" height="44" rx="10" fill="#1a0f12" stroke="#7a2c2c"/><text x="390" y="66" fill="#f87171">pii_defense</text><text x="390" y="82" fill="#9fb0c9" font-size="9">Presidio</text>
+        <rect x="480" y="45" width="150" height="44" rx="10" fill="#0f1a10" stroke="#2c5314"/><text x="555" y="72" fill="#a4e028">Agent + tools</text>
+        <rect x="660" y="45" width="150" height="44" rx="10" fill="#1a0f12" stroke="#7a2c2c"/><text x="735" y="66" fill="#f87171">content_safety_guard</text><text x="735" y="82" fill="#9fb0c9" font-size="9">+ output_verifier</text>
+        <rect x="840" y="45" width="50" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="865" y="72" fill="#e9eef7">Out</text>
+        <line x1="130" y1="67" x2="158" y2="67" stroke="#f87171" stroke-width="1.4" marker-end="url(#ga)"/>
+        <line x1="300" y1="67" x2="328" y2="67" stroke="#f87171" stroke-width="1.4" marker-end="url(#ga)"/>
+        <line x1="450" y1="67" x2="478" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#ga)"/>
+        <line x1="630" y1="67" x2="658" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#ga)"/>
+        <line x1="810" y1="67" x2="838" y2="67" stroke="#f87171" stroke-width="1.4" marker-end="url(#ga)"/>
+      </g>
+    </svg>
+    <div class="figcap">Defense middleware (<code>action</code>: log / refuse / redirect). The <code>retail_agent</code> example cuts attack success 55.6% → 0.0% with defenses on.</div>
+  </div>
+  <div class="grid c2">
+    <div class="card"><h4>🧱 Defense middleware</h4><p><code>pii_defense</code> (Presidio), <code>content_safety_guard</code>, <code>output_verifier</code>, <code>pre_tool_verifier</code> — each targets a function + input/output field.</p></div>
+    <div class="card"><h4>🛡️ NeMo Guardrails</h4><p><code>_type: guardrails</code> bridges Colang rails (content-safety <code>S1–S23</code> via <code>nemoguard-8b</code>, jailbreak detection, sensitive-data masking).</p></div>
+    <div class="card"><h4>🎯 Red-team</h4><p>Middleware <code>red_teaming</code> + <code>red_teaming_evaluator</code>, run with <code>nat red-team</code>.</p></div>
+    <div class="card"><h4>📦 Install</h4><p><code>nvidia-nat[security,defense,guardrails]</code> (Presidio+spaCy for PII; NeMo Guardrails).</p></div>
+  </div>
+</section>
+
+<!-- 16 OPS -->
+<section id="ops">
+  <h2><span class="ix">16</span> Registry · Object Store · Dynamo · Deploy</h2>
+  <div class="grid c2">
+    <div class="card"><h4>📦 Registry &amp; sharing</h4><p>Every component is packaged + sharable. Remote registries via <code>nat configure channel add {rest|pypi}</code>, then <code>nat registry {publish|search|pull|remove} -c &lt;channel&gt;</code>. <code>DiscoveryMetadata</code> makes components findable.</p></div>
+    <div class="card"><h4>🗄️ Object store</h4><p><code>object_stores:</code> with <code>_type</code> <code>in_memory</code> / <code>s3</code> / <code>mysql</code> / <code>redis</code> for binary data + metadata. CLI: <code>nat object-store &lt;backend&gt; BUCKET {upload|delete}</code>.</p></div>
+  </div>
+  <h3>NVIDIA Dynamo (inference at scale)</h3>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 130" role="img" aria-label="Dynamo prediction trie">
+      <defs><marker id="da" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="10.5" text-anchor="middle">
+        <rect x="30" y="45" width="170" height="48" rx="10" fill="#0d1626" stroke="#a78bfa"/><text x="115" y="66" fill="#a78bfa">Profiler</text><text x="115" y="82" fill="#9fb0c9" font-size="9">builds prediction_trie.json</text>
+        <rect x="270" y="45" width="200" height="48" rx="10" fill="#0d1626" stroke="#28385a"/><text x="370" y="66" fill="#e9eef7">Predicted: remaining calls,</text><text x="370" y="82" fill="#9fb0c9" font-size="9">output-tokens p90, IAT, sensitivity</text>
+        <rect x="540" y="45" width="160" height="48" rx="10" fill="#0d1626" stroke="#2c5314"/><text x="620" y="66" fill="#a4e028">nvext.agent_hints</text><text x="620" y="82" fill="#9fb0c9" font-size="9">+ cache_control</text>
+        <rect x="770" y="45" width="110" height="48" rx="10" fill="#0f1a10" stroke="#2c5314"/><text x="825" y="66" fill="#a4e028">Dynamo</text><text x="825" y="82" fill="#9fb0c9" font-size="9">KV-aware router</text>
+        <line x1="200" y1="69" x2="268" y2="69" stroke="#76b900" stroke-width="1.4" marker-end="url(#da)"/>
+        <line x1="470" y1="69" x2="538" y2="69" stroke="#76b900" stroke-width="1.4" marker-end="url(#da)"/>
+        <line x1="700" y1="69" x2="768" y2="69" stroke="#76b900" stroke-width="1.4" marker-end="url(#da)"/>
+      </g>
+    </svg>
+    <div class="figcap">The profiler's <code>prediction_trie</code> feeds the agent-aware Dynamo router to improve KV-cache reuse and worker latency (LLM <code>_type: dynamo</code>, experimental).</div>
+  </div>
+  <h3>Deployment</h3>
+  <div class="grid c3">
+    <div class="card"><h4>🐳 Docker</h4><p>Top-level <code>docker/Dockerfile</code> (NVIDIA Ubuntu base, <code>ENTRYPOINT ["nat"]</code>). Append <code>serve --config_file …</code>.</p></div>
+    <div class="card"><h4>⚙️ Workers</h4><p><code>nat serve --workers 4 --use_gunicorn true</code> (Gunicorn + Uvicorn workers).</p></div>
+    <div class="card"><h4>📨 Async jobs</h4><p><code>nvidia-nat[async_endpoints]</code> adds Dask-backed background jobs &amp; job-status endpoints.</p></div>
+  </div>
+  <p class="src">No first-party Kubernetes manifests ship in-repo; the documented production story is a containerized app with <code>nat serve</code> as entrypoint.</p>
+</section>
+
+<!-- 17 EXAMPLES -->
+<section id="examples">
+  <h2><span class="ix">17</span> Examples &amp; Learning Path</h2>
+  <p class="lead">The <code>examples/</code> tree is the fastest way to learn. A suggested zero-to-production path:</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 120" role="img" aria-label="Learning path">
+      <defs><marker id="la" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="10.5" text-anchor="middle">
+        <rect x="10" y="45" width="150" height="44" rx="10" fill="#0f1a10" stroke="#2c5314"/><text x="85" y="66" fill="#a4e028">1 · simple_calculator</text><text x="85" y="82" fill="#9fb0c9" font-size="9">ReAct + tools</text>
+        <rect x="185" y="45" width="150" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="260" y="66" fill="#e9eef7">2 · simple_web_query</text><text x="260" y="82" fill="#9fb0c9" font-size="9">RAG basics</text>
+        <rect x="360" y="45" width="150" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="435" y="66" fill="#e9eef7">3 · evaluation_and_profiling</text><text x="435" y="82" fill="#9fb0c9" font-size="9">measure</text>
+        <rect x="535" y="45" width="150" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="610" y="66" fill="#e9eef7">4 · optimizer config</text><text x="610" y="82" fill="#9fb0c9" font-size="9">improve</text>
+        <rect x="710" y="45" width="180" height="44" rx="10" fill="#0d1626" stroke="#28385a"/><text x="800" y="66" fill="#e9eef7">5 · HITL / safety / deploy</text><text x="800" y="82" fill="#9fb0c9" font-size="9">production</text>
+        <line x1="160" y1="67" x2="183" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#la)"/>
+        <line x1="335" y1="67" x2="358" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#la)"/>
+        <line x1="510" y1="67" x2="533" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#la)"/>
+        <line x1="685" y1="67" x2="708" y2="67" stroke="#76b900" stroke-width="1.4" marker-end="url(#la)"/>
+      </g>
+    </svg>
+  </div>
+  <div class="toc-mini">
+    <p><b>getting_started</b> · <b>agents</b> (react, rewoo, tool_calling, mixture_of_agents) · <b>advanced_agents</b> · <b>frameworks</b> (semantic_kernel, adk, autogen, agno, strands, langchain/haystack deep research) · <b>RAG</b> (simple_rag) · <b>memory</b> (redis, memmachine) · <b>evaluation_and_profiling</b> (email_phishing_analyzer, simple_*_eval) · <b>finetuning</b> (dpo_tic_tac_toe, rl_with_openpipe_art) · <b>HITL</b> (simple_calculator_hitl, por_to_jiratickets) · <b>safety_and_security</b> (retail_agent) · <b>MCP</b> · <b>A2A</b> · <b>front_ends</b> (simple_auth) · <b>observability</b> · <b>object_store</b> · <b>control_flow</b> · <b>custom_functions</b> · <b>dynamo_integration</b> · <b>config_inheritance</b> · <b>deploy</b> · <b>notebooks</b>.</p>
+  </div>
+</section>
+
+<!-- 18 WATCH IT LIVE -->
+<section id="observe-live">
+  <h2><span class="ix">18</span> Watch It Live: opt into telemetry &amp; visualize every run</h2>
+  <p class="lead">Observability is <b>opt-in</b> and code-free: add an exporter under <code>general.telemetry.tracing</code>, point it at a viewer, and every LLM call, tool call, latency and token count streams into a UI as the agent runs. Multiple exporters can run at once; under the hood it's OpenTelemetry/OTLP (Weave uses the W&amp;B SDK).</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 230" role="img" aria-label="Live tracing flow">
+      <defs><marker id="oa" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#a78bfa"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="11" text-anchor="middle">
+        <rect x="30" y="90" width="170" height="56" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+        <text x="115" y="114" fill="#a4e028" font-weight="700">nat run / serve</text><text x="115" y="132" fill="#9fb0c9" font-size="10">agent executes</text>
+        <rect x="250" y="90" width="150" height="56" rx="12" fill="#0d1626" stroke="#a78bfa"/>
+        <text x="325" y="114" fill="#a78bfa" font-weight="700">spans / events</text><text x="325" y="132" fill="#9fb0c9" font-size="10">OTLP exporters</text>
+        <line x1="200" y1="118" x2="248" y2="118" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#oa)"/>
+        <!-- fan out -->
+        <rect x="470" y="20" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="46" fill="#7dd3fc">Phoenix :6006</text>
+        <rect x="470" y="74" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="100" fill="#fbbf24">Weave (W&amp;B)</text>
+        <rect x="470" y="128" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="154" fill="#fb923c">LangSmith</text>
+        <rect x="470" y="182" width="160" height="42" rx="10" fill="#0d1626" stroke="#28385a"/><text x="550" y="208" fill="#f472b6">Langfuse / OTel</text>
+        <line x1="400" y1="110" x2="468" y2="41" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="116" x2="468" y2="95" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="122" x2="468" y2="149" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <line x1="400" y1="128" x2="468" y2="203" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#oa)"/>
+        <!-- trace waterfall mock -->
+        <g transform="translate(680,30)">
+          <text x="100" y="0" fill="#9fb0c9" font-size="10">what you see — a trace waterfall</text>
+          <rect x="0" y="12" width="180" height="14" rx="3" fill="#2c5314"/><text x="6" y="23" fill="#a4e028" font-size="9" text-anchor="start">workflow 1.8s</text>
+          <rect x="14" y="32" width="120" height="12" rx="3" fill="#1f3d5a"/><text x="20" y="42" fill="#7dd3fc" font-size="9" text-anchor="start">llm call 0.9s · 1.2k tok</text>
+          <rect x="14" y="50" width="70" height="12" rx="3" fill="#3a2c5a"/><text x="20" y="60" fill="#a78bfa" font-size="9" text-anchor="start">tool: search</text>
+          <rect x="90" y="50" width="80" height="12" rx="3" fill="#1f3d5a"/><text x="96" y="60" fill="#7dd3fc" font-size="9" text-anchor="start">llm: correct</text>
+          <rect x="14" y="68" width="40" height="12" rx="3" fill="#3a2c5a"/><text x="20" y="78" fill="#a78bfa" font-size="9" text-anchor="start">execute</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">One run, fanned out to any number of viewers. Each shows the same span tree with per-step latency and token counts.</div>
+  </div>
+
+  <h3>⚡ Fastest path — local Phoenix in 3 steps</h3>
+  <pre><span class="c"># 1 · install the exporter</span>
+pip install <span class="s">"nvidia-nat[phoenix]"</span>
+
+<span class="c"># 2 · launch a local Phoenix viewer (UI at http://localhost:6006)</span>
+docker run -it --rm -p 6006:6006 -p 4317:4317 arizephoenix/phoenix:latest
+
+<span class="c"># 3 · add this block to your config, then `nat run` / `nat serve` as usual</span>
+<span class="k">general</span>:
+  telemetry:
+    tracing:
+      phoenix:
+        _type: phoenix
+        endpoint: http://localhost:6006/v1/traces
+        project: my-agent</pre>
+  <div class="callout blue"><div class="ic">🔭</div><p>Open <b>http://localhost:6006</b>, pick your <code>project</code>, and watch traces appear in real time as you run the agent. Each trace is a <b>span waterfall</b> — the LLM and tool calls with their latency, token counts, inputs/outputs, and the exact call tree. This is how you find <i>where</i> time and tokens actually go.</p></div>
+
+  <h3>🎛️ All viewers — pick what fits</h3>
+  <table>
+    <tr><th>Viewer</th><th>Install</th><th><code>_type</code> + key fields</th><th>Auth / where to view</th></tr>
+    <tr><td><b>Phoenix</b> (local, easiest)</td><td><code>nvidia-nat[phoenix]</code></td><td><code>phoenix</code> · <code>endpoint</code>, <code>project</code></td><td>none · http://localhost:6006</td></tr>
+    <tr><td><b>W&amp;B Weave</b></td><td><code>nvidia-nat[weave]</code></td><td><code>weave</code> · <code>project</code></td><td><code>WANDB_API_KEY</code> · prints a 🍩 URL to wandb.ai</td></tr>
+    <tr><td><b>LangSmith</b></td><td><code>nvidia-nat[langchain]</code></td><td><code>langsmith</code> · <code>project</code>, <code>endpoint?</code></td><td><code>LANGSMITH_API_KEY</code> · smith.langchain.com</td></tr>
+    <tr><td><b>Langfuse</b></td><td><code>nvidia-nat[opentelemetry]</code></td><td><code>langfuse</code> · <code>endpoint</code>, <code>public_key</code>, <code>secret_key</code></td><td>env keys · Langfuse UI (path <code>/api/public/otel/v1/traces</code>)</td></tr>
+    <tr><td><b>OTel Collector</b></td><td><code>nvidia-nat[opentelemetry]</code></td><td><code>otelcollector</code> · <code>endpoint</code>, <code>project</code></td><td>your backend · default <code>:4318/v1/traces</code></td></tr>
+    <tr><td><b>Console / File</b></td><td>built-in</td><td><code>console</code> (<code>level</code>) · <code>file</code> (<code>path</code>, <code>level</code>)</td><td>terminal / log file</td></tr>
+  </table>
+  <p class="src">Also available as tracing exporters: Arize AX, Galileo, Patronus, Dynatrace, Data Flywheel. List what's installed with <code>nat info components -t tracing</code>.</p>
+
+  <h3>🧩 Run several at once (e.g. local Phoenix + team Langfuse)</h3>
+  <pre><span class="k">general</span>:
+  telemetry:
+    logging:
+      console: {<span class="k">_type</span>: console, level: WARN}
+      file:    {<span class="k">_type</span>: file, path: ./.tmp/workflow.log, level: DEBUG}
+    tracing:
+      phoenix:   {<span class="k">_type</span>: phoenix, endpoint: http://localhost:6006/v1/traces, project: my-agent}
+      langfuse:  {<span class="k">_type</span>: langfuse, endpoint: ${LANGFUSE_HOST}/api/public/otel/v1/traces,
+                  public_key: ${LANGFUSE_PUBLIC_KEY}, secret_key: ${LANGFUSE_SECRET_KEY}}</pre>
+
+
+  <h3>👀 Reading the Phoenix UI (annotated)</h3>
+  <p class="lead">This is the actual layout you get after running <code>observability/phoenix_live.py</code> — <b>verified: 32 spans ingested, no API key needed</b>. Here's where to click and what each panel tells you.</p>
+  <div class="figwrap">
+    <svg viewBox="0 0 900 320" role="img" aria-label="Annotated Phoenix UI mock">
+      <g font-family="ui-sans-serif">
+        <!-- window -->
+        <rect x="20" y="20" width="860" height="284" rx="10" fill="#0b1322" stroke="#28385a"/>
+        <rect x="20" y="20" width="860" height="26" rx="10" fill="#0e1730"/>
+        <text x="34" y="37" fill="#9fb0c9" font-size="11" font-family="ui-monospace">localhost:6006 · project: otentik-sql-agent</text>
+        <!-- left: trace list -->
+        <rect x="32" y="56" width="200" height="236" rx="6" fill="#0e141f" stroke="#1f2c44"/>
+        <text x="44" y="74" fill="#9fb0c9" font-size="10">TRACES</text>
+        <g font-family="ui-monospace" font-size="10.5">
+          <rect x="40" y="82" width="184" height="22" rx="4" fill="#0f1a10" stroke="#2c5314"/><text x="48" y="97" fill="#a4e028">sql_agent:q01  1.06s</text>
+          <text x="48" y="120" fill="#cbd5e1">sql_agent:q05  0.75s</text>
+          <text x="48" y="140" fill="#cbd5e1">sql_agent:q07  0.69s</text>
+          <text x="48" y="160" fill="#cbd5e1">sql_agent:q08  0.61s</text>
+          <text x="48" y="180" fill="#cbd5e1">sql_agent:q12  0.66s</text>
+        </g>
+        <!-- center: waterfall -->
+        <rect x="244" y="56" width="372" height="236" rx="6" fill="#0e141f" stroke="#1f2c44"/>
+        <text x="256" y="74" fill="#9fb0c9" font-size="10">TRACE WATERFALL — q01</text>
+        <g font-family="ui-monospace" font-size="9.5">
+          <rect x="256" y="84" width="340" height="12" rx="2" fill="#2c5314"/><text x="260" y="93" fill="#a4e028">workflow 1.06s</text>
+          <rect x="266" y="100" width="20" height="11" rx="2" fill="#1f3d5a"/><text x="292" y="109" fill="#7dd3fc">link_schema 70ms</text>
+          <rect x="266" y="116" width="172" height="11" rx="2" fill="#1f3d5a"/><text x="444" y="125" fill="#7dd3fc">generate 546ms · 464→9 tok</text>
+          <rect x="266" y="132" width="8" height="11" rx="2" fill="#7a2c2c"/><text x="280" y="141" fill="#f87171">execute ✗ no such table</text>
+          <rect x="274" y="148" width="140" height="11" rx="2" fill="#3a2c5a"/><text x="420" y="157" fill="#f87171">correct 442ms · 495→10 tok</text>
+          <rect x="274" y="164" width="8" height="11" rx="2" fill="#1f5a2c"/><text x="288" y="173" fill="#a4e028">execute ✓</text>
+          <rect x="274" y="180" width="6" height="11" rx="2" fill="#3a2c5a"/><text x="286" y="189" fill="#a78bfa">vote</text>
+        </g>
+        <!-- right: span detail -->
+        <rect x="628" y="56" width="240" height="236" rx="6" fill="#0e141f" stroke="#1f2c44"/>
+        <text x="640" y="74" fill="#9fb0c9" font-size="10">SPAN DETAIL — execute</text>
+        <g font-family="ui-monospace" font-size="10">
+          <text x="640" y="96" fill="#cbd5e1">kind: TOOL</text>
+          <text x="640" y="116" fill="#f87171">execute.ok: false</text>
+          <text x="640" y="136" fill="#cbd5e1">execute.error:</text>
+          <text x="640" y="150" fill="#fbbf24">no such table:</text>
+          <text x="640" y="163" fill="#fbbf24">otentik</text>
+          <text x="640" y="186" fill="#cbd5e1">sql: SELECT COUNT(*)</text>
+          <text x="640" y="199" fill="#cbd5e1">FROM otentik</text>
+          <text x="640" y="226" fill="#9fb0c9">↑ this error is what</text>
+          <text x="640" y="239" fill="#9fb0c9">triggered the correct</text>
+          <text x="640" y="252" fill="#9fb0c9">span above</text>
+        </g>
+        <!-- callouts -->
+        <g font-family="ui-sans-serif" font-size="10" fill="#fbbf24">
+          <text x="44" y="290">① pick the trace</text>
+          <text x="256" y="290">② read widths = time</text>
+          <text x="500" y="290">③ red = a failed step</text>
+          <text x="640" y="290">④ click span → attrs</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">Left: every run as a trace. Center: the span waterfall — bar width = duration, with token counts. Right: click any span for its attributes (here, the exact DB error that triggered self-correction).</div>
+  </div>
+  <div class="callout blue"><div class="ic">🧭</div><p><b>Your reading routine:</b> ① sort traces by latency to find the slow ones → ② open the waterfall and spot the widest bar (the bottleneck) → ③ look for red <code>execute</code> bars (failures that forced a <code>correct</code> round) → ④ click the failing span to read <code>execute.error</code> — that tells you <i>what</i> the model got wrong, which is your next few-shot/training target. (Run it: <code>PYTHONPATH=src python observability/phoenix_live.py</code>.)</p></div>
+
+  <h3>📊 Offline visuals — the profiler (<code>nat eval</code>)</h3>
+  <p>For deeper, statistical views (not live traces but reproducible reports), enable <code>eval.general.profiler</code> and run <code>nat eval</code>. It writes, into <code>output_dir</code>:</p>
+  <div class="grid c2">
+    <div class="card"><h4>🖼️ <code>gantt_chart.png</code></h4><p>A timeline/Gantt waterfall of every LLM &amp; tool span (from <code>bottleneck_analysis: {enable_nested_stack: true}</code>). Open it as a normal image.</p></div>
+    <div class="card"><h4>📈 <code>inference_optimization.json</code></h4><p>Latency, throughput &amp; runtime with 90/95/99% confidence intervals — the across-run statistical comparison.</p></div>
+    <div class="card"><h4>🧾 <code>standardized_data_all.csv</code></h4><p>Per-call prompt/completion tokens, framework, metadata — load into a notebook/spreadsheet for custom charts.</p></div>
+    <div class="card"><h4>📝 <code>workflow_profiling_report.txt</code></h4><p>Human-readable bottleneck &amp; concurrency-spike report. Plus <code>all_requests_profiler_traces.json</code> for raw data.</p></div>
+  </div>
+  <div class="callout"><div class="ic">💡</div><p><b>Live vs offline:</b> use a <b>tracing exporter</b> (Phoenix/Weave/…) to <i>watch</i> individual runs while developing, and the <b>profiler</b> (<code>nat eval</code>) to get <i>repeatable, statistical</i> reports you can diff across versions. Together they cover Stage&nbsp;2 (Observe) of the journey below.</p></div>
+</section>
+
+<!-- 19 ZERO TO PRODUCTION -->
+<section id="journey">
+  <h2><span class="ix">19</span> Zero → Production: the full journey</h2>
+  <p class="lead">The toolkit's features make sense as <b>stages of one journey</b>. Here's the path from a blank folder to a hardened, observable, self-improving production agent — with the command and the "done when" for each stage. (The text-to-SQL example in this repo walks the same path end to end.)</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 920 360" role="img" aria-label="Zero to production roadmap">
+      <defs>
+        <marker id="ja" markerWidth="10" markerHeight="10" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#76b900"/></marker>
+        <linearGradient id="jg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f2c44"/><stop offset="1" stop-color="#76b900"/></linearGradient>
+      </defs>
+      <!-- rising path -->
+      <path d="M40 320 C 250 320, 250 60, 880 60" fill="none" stroke="url(#jg)" stroke-width="3" stroke-dasharray="2 0" opacity=".5"/>
+      <g font-family="ui-sans-serif" font-size="11" text-anchor="middle">
+        <!-- stage nodes along the curve -->
+        <g>
+          <circle cx="70" cy="312" r="16" fill="#0f1a10" stroke="#2c5314"/><text x="70" y="316" fill="#a4e028" font-weight="800">0</text>
+          <text x="70" y="345" fill="#9fb0c9">Prototype</text>
+        </g>
+        <g>
+          <circle cx="180" cy="278" r="16" fill="#0f1a10" stroke="#2c5314"/><text x="180" y="282" fill="#a4e028" font-weight="800">1</text>
+          <text x="180" y="255" fill="#9fb0c9">Make it a</text><text x="180" y="240" fill="#9fb0c9">NAT function</text>
+        </g>
+        <g>
+          <circle cx="300" cy="232" r="16" fill="#10131f" stroke="#a78bfa"/><text x="300" y="236" fill="#a78bfa" font-weight="800">2</text>
+          <text x="300" y="208" fill="#9fb0c9">Observe</text>
+        </g>
+        <g>
+          <circle cx="420" cy="200" r="16" fill="#10131f" stroke="#fb923c"/><text x="420" y="204" fill="#fb923c" font-weight="800">3</text>
+          <text x="420" y="176" fill="#9fb0c9">Measure</text>
+        </g>
+        <g>
+          <circle cx="540" cy="160" r="16" fill="#10131f" stroke="#fb923c"/><text x="540" y="164" fill="#fb923c" font-weight="800">4</text>
+          <text x="540" y="136" fill="#9fb0c9">Improve</text>
+        </g>
+        <g>
+          <circle cx="660" cy="120" r="16" fill="#1a0f12" stroke="#7a2c2c"/><text x="660" y="124" fill="#f87171" font-weight="800">5</text>
+          <text x="660" y="96" fill="#9fb0c9">Harden</text>
+        </g>
+        <g>
+          <circle cx="770" cy="86" r="16" fill="#0d1626" stroke="#28385a"/><text x="770" y="90" fill="#7dd3fc" font-weight="800">6</text>
+          <text x="770" y="62" fill="#9fb0c9">Serve &amp; scale</text>
+        </g>
+        <g>
+          <circle cx="878" cy="60" r="17" fill="#0f1a10" stroke="#76b900"/><text x="878" y="64" fill="#a4e028" font-weight="800">7</text>
+          <text x="858" y="36" fill="#a4e028" font-weight="700">Compound</text>
+        </g>
+      </g>
+    </svg>
+    <div class="figcap">Each stage adds one capability and has a concrete exit criterion. You don't skip ahead — you can't improve what you can't measure, and you don't ship what you haven't observed.</div>
+  </div>
+
+  <table>
+    <tr><th>Stage</th><th>What you do</th><th>Command / config added</th><th>✅ Done when</th></tr>
+    <tr>
+      <td><b>0 · Prototype</b></td>
+      <td>Write the agent in your framework (e.g. LangGraph). Scaffold a package. Minimal config: one <code>llm</code> + a <code>workflow</code>.</td>
+      <td><code>nat workflow create my_agent</code><br><code>nat run --config_file config.yml --input "…"</code></td>
+      <td>It returns <i>an</i> answer to a hardcoded question.</td>
+    </tr>
+    <tr>
+      <td><b>1 · Make it a NAT function</b></td>
+      <td>Register the agent with <code>@register_function</code>; let the toolkit inject the LLM from <code>llms:</code>. Turn on console logging.</td>
+      <td><code>general.telemetry.logging.console</code></td>
+      <td>It runs purely from YAML; you can swap models/providers without touching code.</td>
+    </tr>
+    <tr>
+      <td><b>2 · Observe</b> 👁️</td>
+      <td>Add a tracing exporter (Phoenix is easiest) and watch every LLM call, tool call, latency and token count <i>live</i> as it runs. (See §18.)</td>
+      <td><code>tracing: { phoenix: { _type: phoenix } }</code> + launch Phoenix</td>
+      <td>You can see <i>where</i> time and tokens go, step by step.</td>
+    </tr>
+    <tr>
+      <td><b>3 · Measure</b> 📊</td>
+      <td>Build an eval dataset; add an evaluator that scores what matters (e.g. a custom execution-accuracy evaluator for SQL). Get a baseline of accuracy + latency + token cost.</td>
+      <td><code>nat eval --config_file eval.yml --reps 3</code></td>
+      <td>You have a quantified baseline you can beat.</td>
+    </tr>
+    <tr>
+      <td><b>4 · Improve</b> 📈</td>
+      <td>Apply high-value techniques, then let the optimizer search the space (Pareto of accuracy↑ / tokens↓ / latency↓). Optionally fine-tune a smaller model.</td>
+      <td><code>nat optimize --config_file optimizer.yml</code><br>(then <code>nat finetune …</code>)</td>
+      <td>Measurably better than the Stage-3 baseline, at acceptable cost.</td>
+    </tr>
+    <tr>
+      <td><b>5 · Harden</b> 🛡️</td>
+      <td>Add human-in-the-loop for risky actions; add defense middleware / guardrails (PII, content safety, injection); add auth. Red-team it.</td>
+      <td><code>middleware:</code> + <code>authentication:</code> + HITL tool<br><code>nat red-team --red_team_config …</code></td>
+      <td>Safe under adversarial input; risky actions need approval.</td>
+    </tr>
+    <tr>
+      <td><b>6 · Serve &amp; scale</b> 🌐</td>
+      <td>Serve as a FastAPI app behind an auth proxy; expose as MCP/A2A; size for target concurrency; use Dynamo for KV-cache reuse.</td>
+      <td><code>nat serve --workers 4 --use_gunicorn true</code><br><code>nat sizing calc …</code> · Docker</td>
+      <td>Handles target users within your latency budget.</td>
+    </tr>
+    <tr>
+      <td><b>7 · Compound</b> 🔁</td>
+      <td>Keep production tracing on; feed good traces back (data flywheel → grow few-shot / re-finetune); re-eval on a schedule; share components via the registry.</td>
+      <td>data-flywheel · scheduled <code>nat eval</code> · <code>nat registry publish</code></td>
+      <td>The agent improves on its own, continuously.</td>
+    </tr>
+  </table>
+
+  <div class="callout"><div class="ic">🧭</div><p><b>The one rule:</b> never skip a stage. <i>You can't improve (4) what you can't measure (3), and you can't measure what you can't observe (2).</i> Most agents that "work in a demo but fail in production" jumped from Stage&nbsp;1 to Stage&nbsp;6.</p></div>
+
+  <div class="callout blue"><div class="ic">🧪</div><p><b>Worked example:</b> the text-to-SQL agent in this repo (<code>nemo-sql-agent/</code>) walks Stages 0–4 literally — a LangGraph agent → <code>@register_function</code> → LangSmith tracing → a custom <code>sql_execution_accuracy</code> evaluator → <code>nat optimize</code> over the proven technique switches. Its <code>docs/GUIDE.md</code> is the evidence base for <i>which</i> improvements to make in Stage&nbsp;4.</p></div>
+</section>
+
+<!-- 20 LIVE DATA & ANOMALY DETECTION -->
+<section id="anomaly">
+  <h2><span class="ix">20</span> Live Data &amp; Anomaly Detection</h2>
+  <div class="callout red"><div class="ic">⚠️</div><p><b>Architectural truth first:</b> NAT is <b>request/response</b> — no native stream engine, no scheduler/cron, no always-on listener (the <code>front_ends/cron/</code> dir is an empty stub). "Live data" means either you <b>push</b> events to the API, or the agent <b>pulls</b> via tools. NVIDIA's own <code>alert_triage_agent</code> proves it: its "live" mode is a <i>custom external Flask server</i> that calls the workflow per alert.</p></div>
+
+  <p class="lead">The proven pattern (from <code>alert_triage_agent</code>): a cheap deterministic <b>gate + detector</b> turns a stream of events into a few candidate alerts; the <b>agent</b> investigates only those, then a <b>categorizer</b> labels and prioritizes them for a human. The LLM is spent only on what survived the filters.</p>
+
+  <div class="figwrap">
+    <svg viewBox="0 0 900 250" role="img" aria-label="Live anomaly triage architecture">
+      <defs><marker id="ana" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#76b900"/></marker></defs>
+      <g font-family="ui-sans-serif" font-size="10.5" text-anchor="middle">
+        <!-- ingestion -->
+        <rect x="20" y="96" width="150" height="58" rx="12" fill="#0d1626" stroke="#28385a"/>
+        <text x="95" y="118" fill="#7dd3fc" font-weight="700">live feed</text>
+        <text x="95" y="134" fill="#9fb0c9" font-size="9.5">PUSH (API/WS) or</text>
+        <text x="95" y="146" fill="#9fb0c9" font-size="9.5">PULL (tool/MCP)</text>
+        <!-- gate -->
+        <rect x="200" y="96" width="120" height="58" rx="12" fill="#1a0f12" stroke="#7a2c2c"/>
+        <text x="260" y="120" fill="#f87171" font-weight="700">benign gate</text>
+        <text x="260" y="136" fill="#9fb0c9" font-size="9.5">expected? → stop</text>
+        <!-- detector -->
+        <rect x="350" y="96" width="130" height="58" rx="12" fill="#0d1626" stroke="#fbbf24"/>
+        <text x="415" y="120" fill="#fbbf24" font-weight="700">detector tool</text>
+        <text x="415" y="136" fill="#9fb0c9" font-size="9.5">numeric anomaly</text>
+        <!-- agent -->
+        <rect x="510" y="96" width="140" height="58" rx="12" fill="#0f1a10" stroke="#2c5314"/>
+        <text x="580" y="120" fill="#a4e028" font-weight="700">agent loop</text>
+        <text x="580" y="136" fill="#9fb0c9" font-size="9.5">pull context, reason</text>
+        <!-- categorizer -->
+        <rect x="680" y="96" width="120" height="58" rx="12" fill="#0d1626" stroke="#a78bfa"/>
+        <text x="740" y="120" fill="#a78bfa" font-weight="700">categorize</text>
+        <text x="740" y="136" fill="#9fb0c9" font-size="9.5">label + severity</text>
+        <!-- human -->
+        <rect x="822" y="96" width="58" height="58" rx="12" fill="#0d1626" stroke="#28385a"/>
+        <text x="851" y="122" fill="#e9eef7" font-weight="700">HITL</text>
+        <text x="851" y="138" fill="#9fb0c9" font-size="9">review</text>
+        <line x1="170" y1="125" x2="198" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="320" y1="125" x2="348" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="480" y1="125" x2="508" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="650" y1="125" x2="678" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <line x1="800" y1="125" x2="820" y2="125" stroke="#76b900" stroke-width="1.4" marker-end="url(#ana)"/>
+        <text x="260" y="180" fill="#5f7390" font-size="9">benign → drop (cheap)</text>
+        <text x="415" y="180" fill="#5f7390" font-size="9">only candidates pass</text>
+        <text x="580" y="180" fill="#5f7390" font-size="9">LLM spent here only</text>
+      </g>
+    </svg>
+    <div class="figcap">Gate + detector are deterministic and always-on; the LLM agent only sees what they flag. This is the alert_triage_agent shape — and the repo's runnable <code>nemo-sql-agent/anomaly/</code> demo.</div>
+  </div>
+
+  <h3>Ways to feed it live data</h3>
+  <table>
+    <tr><th>Shape</th><th>Mechanism</th><th>Use when</th></tr>
+    <tr><td>Push · sync</td><td><code>POST /v1/workflow</code></td><td>one event → verdict</td></tr>
+    <tr><td>Push · stream</td><td><code>/v1/workflow/stream</code> · <code>/full</code> (SSE)</td><td>watch steps live</td></tr>
+    <tr><td>Push · batch</td><td><code>/v1/workflow/async</code> + poll (Dask, <code>[async_endpoints]</code>)</td><td>fan-out / long jobs</td></tr>
+    <tr><td>Push · channel</td><td>WebSocket <code>/websocket</code> (stream of <code>user_message</code>s)</td><td>dashboards, HITL</td></tr>
+    <tr><td>Pull</td><td>tool / <code>mcp_client</code> / retriever queries your live source each run</td><td>agent fetches context</td></tr>
+    <tr><td>State</td><td><code>*_memory</code> (mem0/redis/zep) rolling baseline</td><td>"is this unusual vs history?"</td></tr>
+    <tr><td>Schedule</td><td>cron / queue consumer → <code>nat run</code> / REST</td><td>periodic sweeps (no built-in scheduler)</td></tr>
+  </table>
+
+  <div class="callout gold"><div class="ic">🧪</div><p><b>Runnable proof in this repo:</b> <code>nemo-sql-agent/anomaly/anomaly_demo.py</code> replays the oTENTik feed, runs a rolling robust-baseline detector + data-quality rules, and triages each alert (severity + action) — key-free. <code>--inject</code> adds a synthetic spike; verified <b>caught</b> (Fundy, z=23). Open <code>anomaly/out/anomaly_report.html</code>. <b>Anomaly detection itself is a tool</b> the agent calls — NAT's triage is LLM-reasoning + a hard gate, not a built-in detector.</p></div>
+
+  <div class="callout"><div class="ic">📡</div><p><b>Two kinds of anomaly to watch:</b> <b>business-data</b> (unusual availability — this demo) and <b>runtime</b> (the profiler's <code>concurrency_spike_analysis</code>/<code>spike_threshold</code> + <code>workflow_runtime_forecast</code>, plus <code>nat eval</code> in CI to catch quality regressions).</p></div>
+</section>
+
+
+<section id="sources">
+  <h2>Sources &amp; confidence</h2>
+  <p class="lead">All facts compiled from NVIDIA's official documentation (<code>develop</code> branch markdown) and repository source, June 2026.</p>
+  <ul class="src">
+    <li>Repo &amp; docs source: <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit">github.com/NVIDIA/NeMo-Agent-Toolkit</a> · <a href="https://docs.nvidia.com/nemo/agent-toolkit/latest/">docs.nvidia.com/nemo/agent-toolkit</a></li>
+    <li>Chat UI: <a href="https://github.com/NVIDIA/NeMo-Agent-Toolkit-UI">github.com/NVIDIA/NeMo-Agent-Toolkit-UI</a></li>
+    <li>Key doc areas: <code>get-started/</code>, <code>build-workflows/</code> (llms, embedders, retrievers, memory, object-store, configuration), <code>components/agents/</code>, <code>components/auth/</code>, <code>run-workflows/</code> (observe, mcp, launching-ui), <code>improve-workflows/</code> (evaluate, profiler, optimizer, sizing-calc), <code>reference/cli.md</code>, <code>reference/rest-api/</code>.</li>
+  </ul>
+  <div class="callout gold"><div class="ic">📌</div><p>Field/feature names reflect the fast-moving <code>develop</code> branch (~v1.8-dev). A few values (ReAct field names, some <code>_type</code> spellings) changed across 1.x — always verify against your installed version with <code>nat info components</code>.</p></div>
+  <footer>NVIDIA NeMo Agent Toolkit — Complete Visual Guide · self-study reference · generated June 2026. Not an official NVIDIA document.</footer>
+</section>
+</main>
+</div>
+
+<script>
+// active-section highlight in sidebar
+const links=[...document.querySelectorAll('nav.side a')];
+const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+const obs=new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ links.forEach(l=>l.classList.remove('active')); const a=map.get(e.target.id); if(a)a.classList.add('active'); });
+},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
+</script>
+</body>
+</html>

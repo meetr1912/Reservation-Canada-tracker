@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Improving a SQL-Writing Agent — Compounding Returns with the NeMo Agent Toolkit</title>
+<style>
+  :root{
+    --bg:#0b1020; --panel:#121a30; --panel2:#0f1730; --ink:#e8ecf6; --muted:#9aa6c4;
+    --line:#243056; --accent:#4ade80; --accent2:#38bdf8; --warn:#f87171; --gold:#fbbf24;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,#16203f 0,var(--bg) 60%);
+       color:var(--ink);font-family:var(--sans);line-height:1.55}
+  header{padding:56px 24px 28px;max-width:1080px;margin:0 auto}
+  .kicker{color:var(--accent2);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+  h1{font-size:clamp(28px,4.5vw,46px);margin:.25em 0 .2em;line-height:1.08}
+  .sub{color:var(--muted);max-width:760px;font-size:18px}
+  main{max-width:1080px;margin:0 auto;padding:0 24px 80px}
+  section{margin:42px 0}
+  h2{font-size:24px;margin:0 0 6px;display:flex;gap:10px;align-items:baseline}
+  h2 .n{color:var(--accent);font-family:var(--mono);font-size:16px}
+  .lead{color:var(--muted);margin:0 0 18px;max-width:780px}
+  .panel{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+         border-radius:16px;padding:22px}
+  .grid{display:grid;gap:16px}
+  @media(min-width:760px){.cols-2{grid-template-columns:1fr 1fr}.cols-3{grid-template-columns:repeat(3,1fr)}}
+  .builder{display:grid;gap:18px}
+  @media(min-width:860px){.builder{grid-template-columns:340px 1fr}}
+  .switch{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 12px;
+          border:1px solid var(--line);border-radius:11px;background:#0e1630;cursor:pointer;user-select:none}
+  .switch:hover{border-color:#33437a}
+  .switch .lbl{font-size:14px}
+  .switch .delta{font-family:var(--mono);font-size:12px;color:var(--muted)}
+  .switch[data-on="1"]{border-color:#2c6e4d;background:#0f2418}
+  .switch[data-on="1"] .delta{color:var(--accent)}
+  .switch.neg[data-on="1"]{border-color:#7a2c2c;background:#26110f}
+  .switch.neg[data-on="1"] .delta{color:var(--warn)}
+  .knob{width:38px;height:22px;border-radius:20px;background:#26304f;position:relative;flex:0 0 auto;transition:.15s}
+  .knob::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;
+               background:#7e8bb5;transition:.15s}
+  .switch[data-on="1"] .knob{background:#1f7a4d}
+  .switch.neg[data-on="1"] .knob{background:#7a2c2c}
+  .switch[data-on="1"] .knob::after{left:19px;background:#dffbe9}
+  .score{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
+  .score .big{font-size:54px;font-weight:800;font-family:var(--mono);color:var(--accent)}
+  .score .unit{color:var(--muted)}
+  .chartwrap{margin-top:8px}
+  svg{width:100%;height:auto;display:block}
+  .hint{color:var(--muted);font-size:13px;margin-top:10px}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+        border-radius:14px;padding:16px}
+  .card h3{margin:0 0 6px;font-size:16px}
+  .card .ev{font-family:var(--mono);font-size:13px;color:var(--accent);margin:6px 0}
+  .card.neg .ev{color:var(--warn)}
+  .card p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .card a{color:var(--accent2);text-decoration:none}
+  .tag{display:inline-block;font-size:11px;font-family:var(--mono);padding:2px 7px;border-radius:999px;
+       border:1px solid var(--line);color:var(--muted);margin-right:6px}
+  .flow{display:grid;gap:10px}
+  @media(min-width:760px){.flow{grid-template-columns:repeat(5,1fr)}}
+  .step{background:#0e1630;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+  .step .cmd{font-family:var(--mono);font-size:12px;color:var(--accent2);display:block;margin-top:6px;word-break:break-word}
+  .step .num{font-family:var(--mono);color:var(--accent);font-size:12px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  td.n{font-family:var(--mono);text-align:right}
+  .pos{color:var(--accent)} .negc{color:var(--warn)}
+  footer{max-width:1080px;margin:0 auto;padding:24px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+  code{font-family:var(--mono);background:#0e1630;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="kicker">NeMo Agent Toolkit · LangGraph · LangSmith</div>
+  <h1>Improving an Agent That Writes SQL</h1>
+  <p class="sub">An interactive, evidence-based map of what actually moves text-to-SQL accuracy —
+  which techniques compound, which saturate, and which backfire — wired to a runnable
+  self-improving agent over the Parks Canada oTENTik availability database.</p>
+</header>
+<main>
+
+  <section>
+    <h2><span class="n">01</span> Build your pipeline — watch the returns compound (and saturate)</h2>
+    <p class="lead">Toggle techniques in the order the evidence recommends. Each adds its
+    published effect size, <em>damped</em> as the stack grows (returns diminish). The last
+    switch shows a real negative result: piling on too many few-shot examples.</p>
+    <div class="panel builder">
+      <div id="switches"></div>
+      <div>
+        <div class="score">
+          <span class="big" id="exScore">46.0</span><span class="unit">execution accuracy (EX, est.)</span>
+        </div>
+        <div class="chartwrap"><svg id="chart" viewBox="0 0 720 280" preserveAspectRatio="xMidYMid meet"></svg></div>
+        <p class="hint">Illustrative curve calibrated to the cited BIRD/Spider deltas. Reproduce real
+        numbers on your own data with <code>eval.run_ablation</code> (live LLM) — the same switches map 1:1
+        to the agent's <code>AgentConfig</code> flags.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">02</span> The evidence, technique by technique</h2>
+    <p class="lead">Direction, magnitude, and benchmark for each lever. Green = net-positive; red = where it stops working.</p>
+    <div class="grid cols-2" id="cards"></div>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span> Compounding returns are real — but they saturate</h2>
+    <p class="lead">Returns are diminishing, not additive. Once a strong base model plus
+    execution-grounded correction and good candidate selection are in place, marginal gains
+    shrink — and CHASE-SQL shows a ~10-point <em>oracle gap</em>: the right query is often
+    generated but not <em>selected</em>.</p>
+    <div class="panel">
+      <table>
+        <thead><tr><th>Stage</th><th>EX</th><th>Marginal</th><th>Evidence</th></tr></thead>
+        <tbody id="ladderTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">04</span> End to end with the NeMo Agent Toolkit</h2>
+    <p class="lead">The toolkit makes the measure → improve → re-measure loop into config + CLI,
+    wrapped around the existing LangGraph agent — no rewrite.</p>
+    <div class="panel flow">
+      <div class="step"><span class="num">1 · run</span><br>Wrap the LangGraph agent as a NAT function<span class="cmd">nat run --config_file configs/text_to_sql.yml</span></div>
+      <div class="step"><span class="num">2 · observe</span><br>Stream traces to LangSmith (OpenTelemetry)<span class="cmd">general.telemetry.tracing.langsmith</span></div>
+      <div class="step"><span class="num">3 · eval</span><br>Score execution accuracy + cost<span class="cmd">nat eval --config_file configs/eval.yml</span></div>
+      <div class="step"><span class="num">4 · optimize</span><br>Search the technique switches (Pareto)<span class="cmd">nat optimize --config_file configs/optimizer.yml</span></div>
+      <div class="step"><span class="num">5 · flywheel</span><br>Promote verified queries to few-shot bank<span class="cmd">self_improve.run_flywheel()</span></div>
+    </div>
+  </section>
+
+</main>
+<footer>
+  Illustrative curve calibrated to published results: CHESS (2405.16755), MAC-SQL (2312.11242),
+  CHASE-SQL (2410.01943), DAIL-SQL (2308.15363), "Death of Schema Linking?" (2408.07702),
+  few-shot count (2502.14913). Full citations and the runnable code in <code>docs/GUIDE.md</code> and
+  <code>src/nemo_sql_agent/</code>. Benchmark SOTA figures are early–mid 2026 snapshots.
+</footer>
+
+<script>
+// Effect sizes (points), midpoints of the ranges in GUIDE.md. base = starting EX.
+const BASE = 46.0, DAMP = 0.85;
+const LADDER = [
+  {id:"link", lbl:"M-Schema + high-recall schema linking", delta:6.1, cite:"CHESS 2405.16755 · 2408.07702",
+   why:"Trimming to needed tables/columns helps at scale (CHESS table selection +6.12), but over-pruning drops needed columns and can go negative on small schemas / long-context models. Keep recall high."},
+  {id:"cot", lbl:"Query-plan chain-of-thought", delta:4.0, cite:"CHASE-SQL 2410.01943 · 2505.14174",
+   why:"Structured, engine-style reasoning helps. Naive 'think step by step' gives ~0 for many models."},
+  {id:"fewshot", lbl:"Similarity few-shot (k≈3)", delta:3.0, cite:"DAIL-SQL 2308.15363",
+   why:"Examples retrieved by masked-question / SQL-skeleton similarity beat random. EX gain is modest and peaks near 3."},
+  {id:"correct", lbl:"Execution-grounded self-correction", delta:4.6, cite:"MAC-SQL 2312.11242 · 2304.05128",
+   why:"Run the query, feed the error back, revise. Removing MAC-SQL's refiner costs −4.63 EX — the biggest single drop. Correct only on a real signal."},
+  {id:"select", lbl:"Multi-candidate + trained selector", delta:6.0, cite:"CHASE-SQL 2410.01943",
+   why:"Sample several queries, pick by execution-result vote or a trained selector (~+6 over naive voting). ~10-pt oracle gap remains — selection is now the bottleneck."},
+  {id:"overstack", lbl:"More few-shot (k=8) — over-stacking", delta:-2.2, neg:true, cite:"2502.14913 · DAIL-SQL",
+   why:"Beyond ~3 examples EX declines (noise + cost), and few-shot on top of fine-tuning actively hurts. A genuine negative return."},
+];
+
+const state = Object.fromEntries(LADDER.map(s=>[s.id, false]));
+
+function computeSeries(){
+  // Apply enabled deltas in ladder order; damp positive gains by DAMP^(k) where k counts prior enabled positives.
+  let acc = BASE, posCount = 0;
+  const pts = [{stage:"Base model, raw DDL schema", ex:BASE, marg:0, cite:"BIRD baseline 2312.11242"}];
+  for(const s of LADDER){
+    if(!state[s.id]) continue;
+    let applied;
+    if(s.delta <= 0){ applied = s.delta; }
+    else { applied = s.delta * Math.pow(DAMP, posCount); posCount++; }
+    acc = Math.round((acc+applied)*10)/10;
+    pts.push({stage:s.lbl, ex:acc, marg:Math.round(applied*10)/10, cite:s.cite});
+  }
+  return pts;
+}
+
+function drawChart(pts){
+  const W=720,H=280,padL=44,padR=16,padT=18,padB=54;
+  const xs=(i)=> padL + (pts.length<=1?0:i*(W-padL-padR)/(pts.length-1));
+  const yMin=40,yMax=70;
+  const ys=(v)=> padT + (yMax-v)/(yMax-yMin)*(H-padT-padB);
+  let g=`<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4ade80" stop-opacity=".35"/><stop offset="1" stop-color="#4ade80" stop-opacity="0"/>
+  </linearGradient></defs>`;
+  // gridlines
+  for(let v=40;v<=70;v+=5){ g+=`<line x1="${padL}" y1="${ys(v)}" x2="${W-padR}" y2="${ys(v)}" stroke="#243056"/>
+    <text x="${padL-8}" y="${ys(v)+4}" fill="#9aa6c4" font-size="11" text-anchor="end" font-family="monospace">${v}</text>`;}
+  // area + line
+  const line = pts.map((p,i)=>`${xs(i)},${ys(p.ex)}`).join(" ");
+  const area = `${padL},${ys(40)} ${line} ${xs(pts.length-1)},${ys(40)}`;
+  g+=`<polygon points="${area}" fill="url(#g)"/>`;
+  g+=`<polyline points="${line}" fill="none" stroke="#4ade80" stroke-width="2.5"/>`;
+  pts.forEach((p,i)=>{
+    const neg = p.marg<0;
+    g+=`<circle cx="${xs(i)}" cy="${ys(p.ex)}" r="5" fill="${neg?'#f87171':'#4ade80'}" stroke="#0b1020" stroke-width="2"/>`;
+    g+=`<text x="${xs(i)}" y="${ys(p.ex)-12}" fill="${neg?'#f87171':'#e8ecf6'}" font-size="12" font-weight="700"
+        text-anchor="middle" font-family="monospace">${p.ex}</text>`;
+    if(i>0){ const sign=p.marg>=0?'+':''; g+=`<text x="${xs(i)}" y="${H-padB+18}" fill="${neg?'#f87171':'#9aa6c4'}"
+        font-size="11" text-anchor="middle" font-family="monospace">${sign}${p.marg}</text>`;}
+  });
+  document.getElementById("chart").innerHTML=g;
+  document.getElementById("exScore").textContent=pts[pts.length-1].ex.toFixed(1);
+}
+
+function renderSwitches(){
+  const box=document.getElementById("switches");
+  box.innerHTML="";
+  LADDER.forEach(s=>{
+    const el=document.createElement("div");
+    el.className="switch"+(s.neg?" neg":"");
+    el.dataset.on=state[s.id]?"1":"0";
+    const sign=s.delta>=0?"+":"";
+    el.innerHTML=`<div><div class="lbl">${s.lbl}</div><div class="delta">${sign}${s.delta} EX · ${s.cite}</div></div><div class="knob"></div>`;
+    el.onclick=()=>{state[s.id]=!state[s.id]; el.dataset.on=state[s.id]?"1":"0"; update();};
+    box.appendChild(el);
+  });
+}
+
+function renderCards(){
+  const box=document.getElementById("cards");
+  box.innerHTML="";
+  LADDER.forEach(s=>{
+    const el=document.createElement("div");
+    el.className="card"+(s.neg?" neg":"");
+    const sign=s.delta>=0?"+":"";
+    el.innerHTML=`<h3>${s.lbl}</h3><div class="ev">${sign}${s.delta} EX · ${s.cite}</div><p>${s.why}</p>`;
+    box.appendChild(el);
+  });
+}
+
+function renderLadderTable(){
+  // Full ladder, all techniques on, for the saturation story.
+  for(const s of LADDER) state[s.id]=true;
+  const pts=computeSeries();
+  const tb=document.getElementById("ladderTable");
+  tb.innerHTML=pts.map(p=>{
+    const cls=p.marg<0?"negc":(p.marg>0?"pos":"");
+    const sign=p.marg>0?"+":"";
+    return `<tr><td>${p.stage}</td><td class="n">${p.ex}</td><td class="n ${cls}">${p.marg?sign+p.marg:"—"}</td><td>${p.cite}</td></tr>`;
+  }).join("");
+  // reset to recommended-first-three for the interactive default
+  for(const s of LADDER) state[s.id]=false;
+  state.link=true; state.correct=true; state.select=true;
+}
+
+function update(){ drawChart(computeSeries()); }
+
+renderLadderTable();
+renderSwitches();
+renderCards();
+update();
+</script>
+</body>
+</html>

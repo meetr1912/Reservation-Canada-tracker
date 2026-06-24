@@ -45,3 +45,7 @@ yarn-error.log*
 debug_*.json
 debug_*.png
 categories.txt
+
+# generated observability artifacts
+nemo-sql-agent/observability/out/
+nemo-sql-agent/anomaly/out/
