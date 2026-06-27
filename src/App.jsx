@@ -89,10 +89,11 @@ function ParkGroup({ park, sites, defaultOpen, verify }) {
         <div className="flex items-center gap-3 flex-shrink-0">
           {verify && (
             <Badge
-              className="hidden sm:inline-flex bg-amber-50 text-amber-700 border-amber-200"
+              className="inline-flex bg-amber-50 text-amber-700 border-amber-200"
               title="Shown available every day — confirm on Parks Canada before relying on it"
             >
-              <AlertTriangle className="h-3 w-3 mr-1" /> Verify
+              <AlertTriangle className="h-3 w-3 sm:mr-1" />
+              <span className="hidden sm:inline">Verify</span>
             </Badge>
           )}
           <Badge className={available
@@ -104,7 +105,7 @@ function ParkGroup({ park, sites, defaultOpen, verify }) {
         </div>
       </button>
       {open && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-4 sm:p-5 pt-0 border-t border-gray-100">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 p-3 sm:p-5 pt-3 sm:pt-0 border-t border-gray-100">
           {sites.map((site, i) => <SiteCard key={i} site={site} />)}
         </div>
       )}
@@ -113,31 +114,34 @@ function ParkGroup({ park, sites, defaultOpen, verify }) {
 }
 
 function SiteCard({ site }) {
-  return (
-    <div className={`rounded-xl border p-4 transition-all ${site.status
-      ? 'border-emerald-200 bg-emerald-50/40 hover:shadow-md'
-      : 'border-gray-200 bg-gray-50/50 opacity-80'}`}>
-      <div className="flex items-center justify-between mb-2">
-        <Badge className={site.status
-          ? 'bg-emerald-600 text-white border-transparent'
-          : 'bg-gray-200 text-gray-600 border-transparent'}>
-          {site.status
-            ? <><CheckCircle2 className="h-3 w-3 mr-1" />Available</>
-            : <><XCircle className="h-3 w-3 mr-1" />Booked</>}
-        </Badge>
-      </div>
-      <p className="font-semibold text-gray-900 leading-tight">{prettyUnit(site.ResourceName)}</p>
-      {prettyLoop(site.PageTitle) && (
-        <p className="text-xs text-gray-500 mt-0.5">{prettyLoop(site.PageTitle)}</p>
-      )}
+  const loop = prettyLoop(site.PageTitle);
+  const body = (
+    <>
+      <Badge className={`text-[11px] ${site.status
+        ? 'bg-emerald-600 text-white border-transparent'
+        : 'bg-gray-200 text-gray-600 border-transparent'}`}>
+        {site.status
+          ? <><CheckCircle2 className="h-3 w-3 mr-1" />Available</>
+          : <><XCircle className="h-3 w-3 mr-1" />Booked</>}
+      </Badge>
+      <p className="font-semibold text-gray-900 leading-tight mt-1.5">{prettyUnit(site.ResourceName)}</p>
+      {loop && <p className="text-xs text-gray-500 mt-0.5">{loop}</p>}
       {site.status && (
-        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
-          className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-emerald-700 hover:text-emerald-800">
-          Reserve on Parks Canada <ArrowRight className="h-3.5 w-3.5" />
-        </a>
+        <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-emerald-700">
+          Reserve <ArrowRight className="h-3 w-3" />
+        </span>
       )}
-    </div>
+    </>
   );
+  if (site.status) {
+    return (
+      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+        className="block rounded-xl border border-emerald-200 bg-emerald-50/40 p-3 transition-all hover:shadow-md hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
+        {body}
+      </a>
+    );
+  }
+  return <div className="rounded-xl border border-gray-200 bg-gray-50/50 p-3 opacity-80">{body}</div>;
 }
 
 function App() {
@@ -449,7 +453,7 @@ function App() {
               </div>
             )}
 
-            <div className="flex items-baseline justify-between">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
               <h2 className="text-lg font-semibold text-gray-900">
                 {formatDate(selectedDate, { weekday: 'long', month: 'long', day: 'numeric' })}
               </h2>
