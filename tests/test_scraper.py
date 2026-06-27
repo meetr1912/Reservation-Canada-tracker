@@ -94,17 +94,26 @@ def test_history_is_trimmed_to_limit():
 
 
 def test_collect_available_dict_and_list_forms():
+    # availability == 0 means OPEN/bookable; 1 means booked.
     out = set()
     scraper._collect_available(
-        {"2026-06-27T00:00:00": {"availability": 1},
-         "2026-06-28T00:00:00": {"availability": 0}},
+        {"2026-06-27T00:00:00": {"availability": 0},
+         "2026-06-28T00:00:00": {"availability": 1}},
         -1, START, out)
     assert out == {(-1, "2026-06-27")}
 
     out2 = set()
     scraper._collect_available(
-        [{"availability": 0}, {"availability": 1}], -2, START, out2)
+        [{"availability": 1}, {"availability": 0}], -2, START, out2)
     assert out2 == {(-2, "2026-06-28")}
+
+
+def test_collect_available_ignores_non_open_codes():
+    out = set()
+    scraper._collect_available(
+        [{"availability": 1}, {"availability": None}, {"availability": 5}],
+        -9, START, out)
+    assert out == set()
 
 
 def build(available_set=None, days=3, prior_history=None, generated_at="2026-06-27T00:00:00Z"):

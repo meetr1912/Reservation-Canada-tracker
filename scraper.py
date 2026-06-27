@@ -29,6 +29,13 @@ PUBLIC_REPORT_FILE = os.path.join("public", "availability_report.json")
 # Parks Canada booking category id for oTENTiks.
 BOOKING_CATEGORY_OTENTIK = 4
 
+# The reservation API returns one record per day shaped like
+#   {"processedAvailability": 5, "availability": 1, "remainingQuota": null}
+# Confirmed against the live API (see probe): `availability == 0` means the
+# date is OPEN/bookable; `1` means booked/unavailable. (The earlier code had
+# this inverted, which made nearly everything show as available.)
+AVAILABLE_CODE = 0
+
 # Scan window: the next 6 months.
 SCAN_DAYS = 180
 
@@ -200,15 +207,25 @@ def scan_availability(otentiks, start_date, days=SCAN_DAYS):
     return available_set, errors
 
 
+def _is_open(details):
+    """True if a per-day record represents a bookable (open) date."""
+    return isinstance(details, dict) and details.get("availability") == AVAILABLE_CODE
+
+
 def _collect_available(data, resource_id, start_date, available_set):
-    """Parse an API response into (resource_id, date) availability tuples."""
+    """Parse an API response into (resource_id, date) availability tuples.
+
+    The live endpoint returns a list (one entry per day from startDate); an
+    older dict-keyed form is also tolerated. A date counts as available only
+    when its `availability` code equals AVAILABLE_CODE (0).
+    """
     if isinstance(data, dict):
         for date, details in data.items():
-            if isinstance(details, dict) and details.get("availability") == 1:
+            if _is_open(details):
                 available_set.add((resource_id, date.split("T")[0]))
     elif isinstance(data, list):
         for i, details in enumerate(data):
-            if isinstance(details, dict) and details.get("availability") == 1:
+            if _is_open(details):
                 clean = (start_date + timedelta(days=i)).strftime("%Y-%m-%d")
                 available_set.add((resource_id, clean))
 
