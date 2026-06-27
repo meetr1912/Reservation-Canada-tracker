@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T02:40:32Z",
+    "generated_at": "2026-06-27T06:26:41Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -21,14 +21,14 @@
       "Prince Edward Island - Stanhope"
     ],
     "errors": [],
-    "total_available_slots": 12064,
+    "total_available_slots": 12065,
     "available_days": 180,
     "available_units": 109
   },
   "history": [
     {
       "date": "2026-06-27",
-      "available_slots": 12064,
+      "available_slots": 12065,
       "available_units": 109,
       "available_days": 180
     }
@@ -15921,7 +15921,7 @@
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
         "PageTitle": "Mkwesaqtuk/Cap-Rouge",
         "ResourceName": "O44",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -18569,7 +18569,7 @@
         "ParkName": "Fundy - Point Wolfe",
         "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
         "ResourceName": "O10",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -19303,7 +19303,7 @@
         "ParkName": "Fundy - Point Wolfe",
         "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
         "ResourceName": "O10",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
