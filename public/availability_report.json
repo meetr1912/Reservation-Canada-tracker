@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T20:06:34Z",
+    "generated_at": "2026-06-27T21:59:00Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -24,14 +24,14 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12064,
+    "total_available_slots": 12058,
     "available_days": 180,
     "available_units": 109
   },
   "history": [
     {
       "date": "2026-06-27",
-      "available_slots": 12064,
+      "available_slots": 12058,
       "available_units": 109,
       "available_days": 180
     }
@@ -3290,7 +3290,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O66",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -3910,7 +3910,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O48",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -49008,7 +49008,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O86",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -49742,7 +49742,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O86",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -50476,7 +50476,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O86",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -60680,7 +60680,7 @@
         "ParkName": "Cape Breton Highlands - Broad Cove",
         "PageTitle": "# 84 - 141",
         "ResourceName": "O95",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
