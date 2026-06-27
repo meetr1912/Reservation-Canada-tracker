@@ -116,6 +116,7 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
         "total_units": len(otentiks),
         "total_parks": len(stats["parks"]),
         "parks": stats["parks"],
+        "always_available_parks": always_available_parks(dates),
         "errors": errors or [],
         **{k: stats[k] for k in ("total_available_slots", "available_days", "available_units")},
     }
@@ -123,6 +124,33 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
     history = _append_history(prior_history, generated_at[:10], stats)
 
     return {"metadata": metadata, "history": history, "dates": dates}
+
+
+def always_available_parks(dates):
+    """Parks where every unit is open on every single day of the window.
+
+    Such a perfectly-constant pattern is statistically implausible for a real
+    in-demand site, so the UI flags these as "verify on Parks Canada" (a
+    resource can be valid in the system yet not actually open for booking).
+    """
+    if not dates:
+        return []
+    sample = next(iter(dates.values()))
+    totals = {}
+    for s in sample:
+        totals[s["ParkName"]] = totals.get(s["ParkName"], 0) + 1
+    flagged = set(totals)
+    for sites in dates.values():
+        open_by = {}
+        for s in sites:
+            if s["status"]:
+                open_by[s["ParkName"]] = open_by.get(s["ParkName"], 0) + 1
+        for park in list(flagged):
+            if open_by.get(park, 0) != totals[park]:
+                flagged.discard(park)
+        if not flagged:
+            break
+    return sorted(flagged)
 
 
 def _append_history(prior_history, scan_date, stats):

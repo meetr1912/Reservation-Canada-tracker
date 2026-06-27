@@ -93,6 +93,19 @@ def test_history_is_trimmed_to_limit():
         scraper.HISTORY_LIMIT = big_limit
 
 
+def test_always_available_parks_flags_only_fully_open_parks():
+    roster = [
+        {"ParkName": "Alpha", "PageTitle": "a", "ResourceName": "A1", "NegativeResourceValue": -10},
+        {"ParkName": "Beta", "PageTitle": "b", "ResourceName": "B1", "NegativeResourceValue": -20},
+    ]
+    # Alpha open all days; Beta open only day 1.
+    available = {(-10, "2026-06-27"), (-10, "2026-06-28"),
+                 (-20, "2026-06-27")}
+    report = scraper.build_report(roster, available, START, days=2,
+                                  generated_at="2026-06-27T00:00:00Z")
+    assert report["metadata"]["always_available_parks"] == ["Alpha"]
+
+
 def test_collect_available_dict_and_list_forms():
     # availability == 0 means OPEN/bookable; 1 means booked.
     out = set()
