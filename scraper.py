@@ -42,6 +42,10 @@ SCAN_DAYS = 180
 # How many daily history points to retain (~4 months of trend).
 HISTORY_LIMIT = 120
 
+# If more than this fraction of requests fail, treat the scan as blocked and
+# refuse to overwrite the existing report (prevents zeroing out the site).
+MAX_ERROR_RATE = 0.30
+
 
 def load_otentiks(path=OTENTIKS_FILE):
     """Load the tracked oTENTik units."""
@@ -149,8 +153,25 @@ def load_prior_history(*paths):
     return []
 
 
-def scan_availability(otentiks, start_date, days=SCAN_DAYS):
-    """Hit the reservation API for each unit. Returns (available_set, errors)."""
+# A modern, realistic browser UA. The reservation site rate-limits/forbids
+# bursts of requests, so we pace requests and back off on 403/429.
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+)
+REQUEST_DELAY = 0.6          # base polite delay between resources (seconds)
+MAX_ATTEMPTS = 4            # attempts per resource on a 403/429
+THROTTLE_STATUSES = (403, 429, 503)
+
+
+def scan_availability(otentiks, start_date, days=SCAN_DAYS, request_delay=REQUEST_DELAY):
+    """Hit the reservation API for each unit. Returns (available_set, errors).
+
+    Paces requests and backs off on throttling (403/429), refreshing the
+    browser session between retries, so a full 122-unit sweep isn't blocked.
+    """
+    import time
+    import random
     from playwright.sync_api import sync_playwright
 
     end_date = start_date + timedelta(days=days)
@@ -160,26 +181,24 @@ def scan_availability(otentiks, start_date, days=SCAN_DAYS):
     available_set = set()
     errors = []
 
+    def refresh(page):
+        try:
+            page.goto(BASE_URL, timeout=60000)
+            page.wait_for_load_state("networkidle", timeout=20000)
+        except Exception as e:  # noqa: BLE001 - page is usually ready enough
+            print(f"  (session refresh timeout, ok): {e}")
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(
-            user_agent=(
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                "(KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
-            )
-        )
+        context = browser.new_context(user_agent=USER_AGENT,
+                                      locale="en-CA")
         page = context.new_page()
 
         print("Initializing session...")
-        page.goto(BASE_URL, timeout=60000)
-        try:
-            page.wait_for_load_state("networkidle", timeout=30000)
-        except Exception as e:  # noqa: BLE001 - tolerated; page is usually ready
-            print(f"Network idle timeout (this is ok): {e}")
-
+        refresh(page)
         api = page.request
 
-        for otentik in otentiks:
+        for i, otentik in enumerate(otentiks):
             resource_id = otentik["NegativeResourceValue"]
             resource_name = otentik["ResourceName"]
             url = (
@@ -188,19 +207,39 @@ def scan_availability(otentiks, start_date, days=SCAN_DAYS):
                 f"bookingCategoryId={BOOKING_CATEGORY_OTENTIK}&"
                 f"startDate={start_str}&endDate={end_str}&isReserving=true"
             )
-            print(f"Checking {resource_name} ({resource_id})...")
-            try:
-                response = api.get(url)
-                if not response.ok:
-                    msg = f"{resource_name}: HTTP {response.status} {response.status_text}"
-                    print(f"  -> {msg}")
-                    errors.append(msg)
-                    continue
-                _collect_available(response.json(), resource_id, start_date, available_set)
-            except Exception as e:  # noqa: BLE001 - record and keep going
-                msg = f"{resource_name}: {e}"
-                print(f"  -> error: {msg}")
-                errors.append(msg)
+            print(f"[{i + 1}/{len(otentiks)}] {resource_name} ({resource_id})...")
+
+            last_err = None
+            for attempt in range(1, MAX_ATTEMPTS + 1):
+                try:
+                    response = api.get(url, timeout=30000)
+                    if response.ok:
+                        _collect_available(response.json(), resource_id,
+                                           start_date, available_set)
+                        last_err = None
+                        break
+                    last_err = f"HTTP {response.status} {response.status_text}"
+                    if response.status in THROTTLE_STATUSES and attempt < MAX_ATTEMPTS:
+                        backoff = 4 * attempt + random.uniform(0, 2)
+                        print(f"  -> {last_err}; backing off {backoff:.1f}s "
+                              f"(attempt {attempt}/{MAX_ATTEMPTS})")
+                        time.sleep(backoff)
+                        refresh(page)
+                        continue
+                    break  # non-throttle error, or out of attempts
+                except Exception as e:  # noqa: BLE001
+                    last_err = str(e)
+                    if attempt < MAX_ATTEMPTS:
+                        time.sleep(2 * attempt)
+                        continue
+                    break
+
+            if last_err:
+                print(f"  -> failed: {last_err}")
+                errors.append(f"{resource_name}: {last_err}")
+
+            # Polite pacing between resources with a little jitter.
+            time.sleep(request_delay + random.uniform(0, 0.4))
 
         browser.close()
 
@@ -246,6 +285,17 @@ def main():
     print(f"Scanning {len(otentiks)} oTENTiks for the next {SCAN_DAYS} days...")
 
     available_set, errors = scan_availability(otentiks, start_date, SCAN_DAYS)
+
+    # Safety guard: if the scan was largely blocked (e.g. mass 403s), do NOT
+    # overwrite the existing report with a near-empty one. Keep yesterday's
+    # data and fail the run so it's visible.
+    error_rate = len(errors) / len(otentiks) if otentiks else 1.0
+    if error_rate > MAX_ERROR_RATE:
+        print(f"\nABORT: {len(errors)}/{len(otentiks)} requests failed "
+              f"({error_rate:.0%} > {MAX_ERROR_RATE:.0%}). The scan was likely "
+              f"throttled; keeping the existing report unchanged.")
+        return 1
+
     prior_history = load_prior_history(REPORT_FILE, PUBLIC_REPORT_FILE)
     report = build_report(
         otentiks, available_set, start_date, SCAN_DAYS,
