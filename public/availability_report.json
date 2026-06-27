@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T06:26:41Z",
+    "generated_at": "2026-06-27T11:24:38Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -20,15 +20,18 @@
       "Prince Edward Island - Cavendish",
       "Prince Edward Island - Stanhope"
     ],
+    "always_available_parks": [
+      "Grand-Pré"
+    ],
     "errors": [],
-    "total_available_slots": 12065,
+    "total_available_slots": 12062,
     "available_days": 180,
     "available_units": 109
   },
   "history": [
     {
       "date": "2026-06-27",
-      "available_slots": 12065,
+      "available_slots": 12062,
       "available_units": 109,
       "available_days": 180
     }
@@ -2439,7 +2442,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O48",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -59287,7 +59290,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -60021,7 +60024,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
