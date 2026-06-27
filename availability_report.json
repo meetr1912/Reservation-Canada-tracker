@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T13:17:26Z",
+    "generated_at": "2026-06-27T15:11:57Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -24,14 +24,14 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12062,
+    "total_available_slots": 12057,
     "available_days": 180,
     "available_units": 109
   },
   "history": [
     {
       "date": "2026-06-27",
-      "available_slots": 12062,
+      "available_slots": 12057,
       "available_units": 109,
       "available_days": 180
     }
@@ -1106,7 +1106,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O50",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -1310,7 +1310,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O89",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -1942,7 +1942,7 @@
         "ParkName": "Cape Breton Highlands - Broad Cove",
         "PageTitle": "# 84 - 141",
         "ResourceName": "O96",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -5666,7 +5666,7 @@
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
         "PageTitle": "Mkwesaqtuk/Cap-Rouge",
         "ResourceName": "O45",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -6232,7 +6232,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O63",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -6298,7 +6298,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS1",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -7032,7 +7032,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS1",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
