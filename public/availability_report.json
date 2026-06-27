@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T11:24:38Z",
+    "generated_at": "2026-06-27T13:17:26Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -1310,7 +1310,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O89",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -55434,7 +55434,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O49",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -56168,7 +56168,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O49",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -56902,7 +56902,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O49",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -59290,7 +59290,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -60024,7 +60024,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
