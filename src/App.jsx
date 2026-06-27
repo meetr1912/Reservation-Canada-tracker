@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
-  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, Clock,
+  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, Clock, AlertTriangle,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -66,7 +66,7 @@ function StatCard({ label, value, sub, icon: Icon, tone = 'gray', children }) {
   );
 }
 
-function ParkGroup({ park, sites, defaultOpen }) {
+function ParkGroup({ park, sites, defaultOpen, verify }) {
   const [open, setOpen] = useState(defaultOpen);
   const available = sites.filter(s => s.status).length;
   const { park: parkName, area } = splitPark(park);
@@ -87,6 +87,14 @@ function ParkGroup({ park, sites, defaultOpen }) {
           </div>
         </div>
         <div className="flex items-center gap-3 flex-shrink-0">
+          {verify && (
+            <Badge
+              className="hidden sm:inline-flex bg-amber-50 text-amber-700 border-amber-200"
+              title="Shown available every day — confirm on Parks Canada before relying on it"
+            >
+              <AlertTriangle className="h-3 w-3 mr-1" /> Verify
+            </Badge>
+          )}
           <Badge className={available
             ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
             : 'bg-gray-100 text-gray-500 border-transparent'}>
@@ -191,6 +199,27 @@ function App() {
     }
     return Object.values(seen).sort((a, b) => a.date.localeCompare(b.date));
   }, [dates, report]);
+
+  // Parks shown available on every single day — flagged for the user to verify.
+  // Prefer the scraper-computed list; fall back to computing from the data.
+  const alwaysOpenParks = useMemo(() => {
+    if (!report) return new Set();
+    if (Array.isArray(report.metadata?.always_available_parks)) {
+      return new Set(report.metadata.always_available_parks);
+    }
+    const totals = {};
+    (report.dates[dates[0]] || []).forEach(s => {
+      totals[s.ParkName] = (totals[s.ParkName] || 0) + 1;
+    });
+    const flagged = new Set(Object.keys(totals));
+    for (const d of dates) {
+      const open = {};
+      report.dates[d].forEach(s => { if (s.status) open[s.ParkName] = (open[s.ParkName] || 0) + 1; });
+      for (const p of [...flagged]) if ((open[p] || 0) !== totals[p]) flagged.delete(p);
+      if (!flagged.size) break;
+    }
+    return flagged;
+  }, [report, dates]);
 
   if (loading) {
     return (
@@ -390,7 +419,9 @@ function App() {
                           <p className="text-sm font-semibold text-gray-900">
                             {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
                           </p>
-                          <p className="text-xs text-emerald-700 font-medium mt-0.5">{count} open</p>
+                          <p className={`text-xs font-medium mt-0.5 ${alwaysOpenParks.has(park) ? 'text-amber-600' : 'text-emerald-700'}`}>
+                            {count} open{alwaysOpenParks.has(park) && ' · verify'}
+                          </p>
                         </button>
                       );
                     })}
@@ -446,6 +477,7 @@ function App() {
               <div className="space-y-3">
                 {groupedParks.map(park => (
                   <ParkGroup key={park} park={park} sites={byPark[park]}
+                    verify={alwaysOpenParks.has(park)}
                     defaultOpen={countAvailable(byPark[park]) > 0 || groupedParks.length <= 3} />
                 ))}
               </div>
@@ -460,7 +492,7 @@ function App() {
 
       <footer className="border-t border-gray-200 mt-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-center space-y-2">
-          <p className="text-sm text-gray-600">Data updates daily via automated scanning of reservation.pc.gc.ca</p>
+          <p className="text-sm text-gray-600">Data updates hourly via automated scanning of reservation.pc.gc.ca</p>
           {lastUpdated && <p className="text-xs text-gray-500">Last updated: {lastUpdated}</p>}
           <p className="text-xs text-gray-500">
             For inquiries: <a href="mailto:meetr1912@gmail.com" className="text-gray-900 hover:underline font-medium">meetr1912@gmail.com</a>
