@@ -13,9 +13,12 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 
 TARGETS = [
     ("Grand-Pré unit 1", -2147480682),
-    ("Fundy HQ O45 (control)", -2147480485),
+    ("Fundy HQ O45 (real, booked)", -2147480485),
+    ("BOGUS id 0", 0),
+    ("BOGUS id -999999999", -999999999),
+    ("BOGUS id -2147470000 (in-range, likely unused)", -2147470000),
 ]
-CATEGORIES = [4, 1, 2, 3, 5, 6, 7, 8, 9]
+CATEGORIES = [4]
 
 
 def main():
