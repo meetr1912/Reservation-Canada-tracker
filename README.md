@@ -30,7 +30,7 @@ The scanner architecture can be extended to support:
 
 - 🏕️ **Real-time Tracking**: Monitors availability across all 122 oTENTik sites
 - 📊 **Interactive Dashboard**: Beautiful React UI to visualize availability data
-- ⏰ **Automated Scanning**: GitHub Actions runs daily scans automatically
+- ⏰ **Automated Scanning**: GitHub Actions runs hourly scans automatically
 - 🔍 **Smart Filtering**: Filter by date, park, and availability status
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 - 📅 **6-Month Forecast**: Scans availability for the next 180 days
