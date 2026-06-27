@@ -8,6 +8,13 @@ on:
       - 'src/**'
       - 'public/**'
       - 'package.json'
+  # Redeploy after each daily scan finishes. The scan commits the new data
+  # with GITHUB_TOKEN, and token-pushed commits do NOT trigger `push`
+  # workflows — so without this the site would never pick up fresh data.
+  workflow_run:
+    workflows: ["Daily oTENTik Availability Scan"]
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -15,10 +22,18 @@ permissions:
   pages: write
   id-token: write
 
+# Allow one concurrent deployment; let in-flight deploys finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+    # For workflow_run, only deploy when the scan succeeded. For all other
+    # triggers (push, manual), always run.
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
