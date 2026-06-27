@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-27T15:11:57Z",
+    "generated_at": "2026-06-27T17:03:13Z",
     "start_date": "2026-06-27",
     "end_date": "2026-12-23",
     "days": 180,
@@ -24,14 +24,14 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12057,
+    "total_available_slots": 12064,
     "available_days": 180,
     "available_units": 109
   },
   "history": [
     {
       "date": "2026-06-27",
-      "available_slots": 12057,
+      "available_slots": 12064,
       "available_units": 109,
       "available_days": 180
     }
@@ -9662,7 +9662,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O264",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -10396,7 +10396,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O264",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -21574,7 +21574,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -22380,7 +22380,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O63",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -23114,7 +23114,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O63",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -23752,7 +23752,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O104",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -24486,7 +24486,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O104",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
