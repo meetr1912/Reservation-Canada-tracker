@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T20:56:00Z",
+    "generated_at": "2026-06-28T23:00:27Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12152,
+    "total_available_slots": 12147,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12152,
+      "available_slots": 12147,
       "available_units": 109,
       "available_days": 180
     }
@@ -5198,7 +5198,7 @@
         "ParkName": "Fundy - Headquarters",
         "PageTitle": "#34 - 58",
         "ResourceName": "O46",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -11840,7 +11840,7 @@
         "ParkName": "Fundy - Headquarters",
         "PageTitle": "#59 - 124",
         "ResourceName": "O85",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -12574,7 +12574,7 @@
         "ParkName": "Fundy - Headquarters",
         "PageTitle": "#59 - 124",
         "ResourceName": "O85",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -20846,7 +20846,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -21128,7 +21128,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -42174,7 +42174,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O86",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -57546,7 +57546,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -58280,7 +58280,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -59014,7 +59014,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -59748,7 +59748,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -60482,7 +60482,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O102",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -60656,7 +60656,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS8",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -61390,7 +61390,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS8",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
