@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T08:44:36Z",
+    "generated_at": "2026-06-28T11:02:59Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12158,
+    "total_available_slots": 12156,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12158,
+      "available_slots": 12156,
       "available_units": 109,
       "available_days": 180
     }
@@ -1528,7 +1528,7 @@
         "ParkName": "Fundy - Headquarters",
         "PageTitle": "#34 - 58",
         "ResourceName": "O46",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -1570,7 +1570,7 @@
         "ParkName": "Fundy - Headquarters",
         "PageTitle": "#59 - 124",
         "ResourceName": "O72",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -10402,7 +10402,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O264",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -10450,7 +10450,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O288",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -11136,7 +11136,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O264",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -11184,7 +11184,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 175 - 290",
         "ResourceName": "O288",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
