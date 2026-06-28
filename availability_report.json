@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T11:02:59Z",
+    "generated_at": "2026-06-28T12:21:09Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12156,
+    "total_available_slots": 12157,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12156,
+      "available_slots": 12157,
       "available_units": 109,
       "available_days": 180
     }
@@ -2940,7 +2940,7 @@
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
         "PageTitle": "Jim Charles Point",
         "ResourceName": "406",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
