@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T18:02:48Z",
+    "generated_at": "2026-06-28T19:30:10Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12154,
+    "total_available_slots": 12151,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12154,
+      "available_slots": 12151,
       "available_units": 109,
       "available_days": 180
     }
@@ -5342,7 +5342,7 @@
         "ParkName": "Fundy - Point Wolfe",
         "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
         "ResourceName": "O7",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -7200,7 +7200,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O88",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -23342,7 +23342,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -24076,7 +24076,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -24966,7 +24966,7 @@
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
         "PageTitle": "Jim Charles Point",
         "ResourceName": "405",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
@@ -43618,7 +43618,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O87",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -66028,7 +66028,7 @@
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
         "PageTitle": "oTENTik Village",
         "ResourceName": "327",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
