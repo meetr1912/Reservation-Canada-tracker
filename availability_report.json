@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T19:30:10Z",
+    "generated_at": "2026-06-28T20:56:00Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12151,
+    "total_available_slots": 12152,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12151,
+      "available_slots": 12152,
       "available_units": 109,
       "available_days": 180
     }
@@ -21128,7 +21128,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O87",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -24966,7 +24966,7 @@
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
         "PageTitle": "Jim Charles Point",
         "ResourceName": "405",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremys Bay & Jakes Landing",
@@ -42174,7 +42174,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O86",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -70752,7 +70752,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O73",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -71486,7 +71486,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O73",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
