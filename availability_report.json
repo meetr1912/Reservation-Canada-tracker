@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-28T00:07:08Z",
+    "generated_at": "2026-06-28T08:44:36Z",
     "start_date": "2026-06-28",
     "end_date": "2026-12-24",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12159,
+    "total_available_slots": 12158,
     "available_days": 180,
     "available_units": 109
   },
@@ -37,7 +37,7 @@
     },
     {
       "date": "2026-06-28",
-      "available_slots": 12159,
+      "available_slots": 12158,
       "available_units": 109,
       "available_days": 180
     }
@@ -18938,7 +18938,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -21652,7 +21652,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O63",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -22386,7 +22386,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O63",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
