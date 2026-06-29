@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
-  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, Clock, AlertTriangle, Bell,
+  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, AlertTriangle, Bell,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -10,6 +10,7 @@ import {
 } from './components/ui/select';
 import { Badge } from './components/ui/badge';
 import CalendarView from './CalendarView';
+import SoonestOpenings from './SoonestOpenings';
 import AlertDialog from './AlertDialog';
 import {
   normalizeReport, formatDate, formatTimestamp, countAvailable, buildBookingUrl,
@@ -84,7 +85,7 @@ function ParkGroup({ park, sites, defaultOpen, verify, selectedDate, metadata })
           <div className="min-w-0">
             {area && <p className="text-[11px] font-medium uppercase tracking-wide text-gray-400">{parkName}</p>}
             <p className="font-semibold text-gray-900 truncate">{area || parkName}</p>
-            <p className="text-xs text-gray-500">{sites.length} oTENTiks</p>
+            <p className="text-xs text-gray-500">{sites.length} site{sites.length === 1 ? '' : 's'}</p>
           </div>
         </div>
         <div className="flex items-center gap-3 flex-shrink-0">
@@ -197,28 +198,6 @@ function App() {
     () => dates.filter(d => report.dates[d].some(s => s.status)),
     [dates, report]);
 
-  // Soonest upcoming open date per park (since near-term is often booked,
-  // this answers "when can I actually get one?"). Sorted soonest-first.
-  const soonestByPark = useMemo(() => {
-    if (!report) return [];
-    const seen = {};
-    for (const d of dates) {
-      for (const s of report.dates[d]) {
-        if (s.status && !seen[s.ParkName]) {
-          seen[s.ParkName] = { park: s.ParkName, date: d, count: 0 };
-        }
-      }
-      // fill counts for the soonest date of each park already discovered
-      for (const park of Object.keys(seen)) {
-        if (seen[park].date === d) {
-          seen[park].count = report.dates[d].filter(
-            s => s.ParkName === park && s.status).length;
-        }
-      }
-    }
-    return Object.values(seen).sort((a, b) => a.date.localeCompare(b.date));
-  }, [dates, report]);
-
   // Parks shown available on every single day — flagged for the user to verify.
   // Prefer the scraper-computed list; fall back to computing from the data.
   const alwaysOpenParks = useMemo(() => {
@@ -304,11 +283,11 @@ function App() {
             <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4 tracking-tight">
               Parks Canada{' '}
               <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
-                oTENTik Tracker
+                Camping Tracker
               </span>
             </h1>
             <p className="text-lg text-gray-300 max-w-xl mx-auto font-light">
-              Live availability across {metadata.total_units || 122} prebuilt campsites in {metadata.total_parks || 12} locations
+              Live availability for oTENTiks, yurts, cabins &amp; more across {metadata.total_units || 552} prebuilt sites in {metadata.total_parks || 51} locations
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2 mt-7">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 text-emerald-200 text-sm font-medium">
@@ -443,37 +422,13 @@ function App() {
           </Card>
 
           <TabsContent value="list" className="mt-0 space-y-6">
-            {/* Soonest opening per park */}
-            {soonestByPark.length > 0 && (
-              <Card className="border-0 shadow-sm">
-                <CardContent className="p-4 sm:p-5">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Clock className="h-4 w-4 text-emerald-600" />
-                    <h3 className="text-sm font-semibold text-gray-900">Soonest opening by park</h3>
-                  </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
-                    {soonestByPark.map(({ park, date, count }) => {
-                      const { park: pn, area } = splitPark(park);
-                      return (
-                        <button
-                          key={park}
-                          onClick={() => { setSelectedPark(park); setSelectedDate(date); }}
-                          className="text-left rounded-xl border border-gray-200 hover:border-emerald-300 hover:bg-emerald-50/40 transition-colors p-3"
-                        >
-                          <p className="text-xs text-gray-500 truncate">{area || pn}</p>
-                          <p className="text-sm font-semibold text-gray-900">
-                            {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
-                          </p>
-                          <p className={`text-xs font-medium mt-0.5 ${alwaysOpenParks.has(park) ? 'text-amber-600' : 'text-emerald-700'}`}>
-                            {count} open{alwaysOpenParks.has(park) && ' · verify'}
-                          </p>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </CardContent>
-              </Card>
-            )}
+            {/* Type-aware, soonest-first ranked feed across all parks */}
+            <SoonestOpenings
+              report={report} dates={dates} selectedType={selectedType}
+              search={search} alwaysOpenParks={alwaysOpenParks} metadata={metadata}
+              setSelectedPark={setSelectedPark} setSelectedDate={setSelectedDate}
+              setSelectedType={setSelectedType}
+            />
 
             {/* Quick date jumper */}
             {datesWithAvailability.length > 0 && (
