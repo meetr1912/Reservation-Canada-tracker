@@ -1,16 +1,18 @@
-"""Send availability alerts for watch requests filed as GitHub issues.
+"""Send email availability alerts for watch requests filed as GitHub issues.
 
 Runs in CI after each scan. Reads open issues that contain an ```alert fenced
 block (created by the site's "Alert me" flow), checks the freshly-scraped
-availability report, and emails (and optionally texts via a carrier SMS
-gateway) when a watched park has an opening on a watched date.
+availability report, and emails the watcher when a watched park has an opening
+on a watched date.
 
 Design notes:
 - No backend: subscriptions live as GitHub issues; this is the consumer.
-- Per the chosen behaviour, an active watch is re-notified on every run while
-  the opening persists; an issue comment is added only when the set of open
-  slots changes (keeps the issue readable). State persists in alerts_state.json.
-- Pure helpers (parse_alert_block, matches_for, recipients, build_email,
+- An active watch is re-notified on every run while the opening persists; an
+  issue comment is added only when the set of open slots changes (keeps the
+  issue readable). State persists in alerts_state.json.
+- Watches whose end date has passed are auto-closed (even when email isn't
+  configured).
+- Pure helpers (parse_alert_block, matches_for, build_email, booking_url,
   signature) are network-free and unit-tested. main() does the I/O.
 - Fails soft: missing email secrets or API hiccups never fail the workflow.
 """
@@ -31,22 +33,9 @@ STATE_FILE = "alerts_state.json"
 BOOKING_URL = "https://reservation.pc.gc.ca/"
 API = "https://api.github.com"
 
-# SMS-over-email gateways we allow (must match CARRIERS in src/lib/alerts.js).
-# Restricting to an allowlist prevents the notifier becoming an open relay.
-CARRIER_GATEWAYS = {
-    "pcs.rogers.com", "txt.bell.ca", "msg.telus.com", "fido.ca",
-    "msg.koodomobile.com", "vmobile.ca", "txt.freedommobile.ca",
-    "vtext.com", "txt.att.net", "tmomail.net",
-}
-
 # Bounds to keep a public, self-serve signup from turning into an abuse vector.
 MAX_PAGES = 20            # up to 2000 open issues scanned
 MAX_WATCHES_PER_RUN = 200  # cap watches (and thus emails) acted on per run
-
-# Free, no-registration push via ntfy.sh. Keep prefix/slug in sync with
-# src/lib/alerts.js so the topics the site shows match what we publish to.
-NTFY_BASE = "https://ntfy.sh"
-NTFY_PREFIX = "pc-otentik-9k2q"
 
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -58,7 +47,11 @@ ALERT_BLOCK_RE = re.compile(r"```alert\s*(\{.*?\})\s*```", re.DOTALL)
 # ---------------------------------------------------------------------------
 
 def parse_alert_block(body):
-    """Extract and validate the alert payload from an issue body, or None."""
+    """Extract and validate the alert payload from an issue body, or None.
+
+    Tolerant of legacy blocks that still carry phone/carrier keys — those are
+    simply ignored now that alerts are email-only.
+    """
     if not body:
         return None
     m = ALERT_BLOCK_RE.search(body)
@@ -84,13 +77,7 @@ def parse_alert_block(body):
         parks = []
     parks = [str(p) for p in parks if isinstance(p, (str,))]
 
-    phone = re.sub(r"[^\d]", "", str(data.get("phone", "")))
-    carrier = str(data.get("carrier", "")).strip().lower()
-    if carrier not in CARRIER_GATEWAYS:
-        carrier = ""
-
-    return {"email": email, "phone": phone, "carrier": carrier,
-            "parks": parks, "start": start, "end": end}
+    return {"email": email, "parks": parks, "start": start, "end": end}
 
 
 def matches_for(report_dates, criteria, today):
@@ -123,14 +110,6 @@ def matches_for(report_dates, criteria, today):
 def signature(matches):
     """Stable signature of a match set (date+park+count) for change detection."""
     return ";".join(f"{m['date']}|{m['park']}|{len(m['units'])}" for m in matches)
-
-
-def recipients(criteria):
-    """Email recipients: the email plus a carrier SMS gateway if configured."""
-    out = [criteria["email"]]
-    if criteria["phone"] and criteria["carrier"] in CARRIER_GATEWAYS:
-        out.append(f"{criteria['phone']}@{criteria['carrier']}")
-    return out
 
 
 def _pretty_unit(name):
@@ -174,7 +153,7 @@ def build_email(matches, criteria, locations=None):
     locations = locations or {}
     n_days = len({m["date"] for m in matches})
     n_slots = sum(len(m["units"]) for m in matches)
-    subject = f"🏕️ {n_slots} oTENTik opening(s) on {n_days} watched day(s)"
+    subject = f"🏕️ {n_slots} opening(s) on {n_days} watched day(s)"
     lines = ["Good news — openings matching your watch:\n"]
     for m in matches:
         units = ", ".join(_pretty_unit(u) for u in m["units"])
@@ -182,40 +161,6 @@ def build_email(matches, criteria, locations=None):
         lines.append(f"  Book this date: {booking_url(locations.get(m['park']), m['date'])}")
     lines.append("\nTo stop these alerts, close your alert issue on GitHub.")
     return subject, "\n".join(lines)
-
-
-def build_sms(matches, locations=None):
-    """Short text for SMS gateways, including a direct book link for the first."""
-    locations = locations or {}
-    n_slots = sum(len(m["units"]) for m in matches)
-    first = matches[0]
-    extra = f" +{len(matches) - 1} more" if len(matches) > 1 else ""
-    url = booking_url(locations.get(first["park"]), first["date"])
-    return (f"oTENTik alert: {n_slots} open. {first['date']} {first['park']}"
-            f"{extra}. Book: {url}")
-
-
-def slugify_park(park):
-    return re.sub(r"[^a-z0-9]+", "-", str(park or "").lower()).strip("-")
-
-
-def ntfy_topic(park):
-    if not park or park == "all":
-        return f"{NTFY_PREFIX}-all"
-    return f"{NTFY_PREFIX}-{slugify_park(park)}"
-
-
-def park_open_dates(report_dates, today):
-    """{park: [sorted future dates with >=1 opening]} from today onward."""
-    today_str = today.isoformat() if isinstance(today, date) else str(today)
-    out = {}
-    for d in report_dates:
-        if d < today_str:
-            continue
-        for s in report_dates[d]:
-            if s.get("status"):
-                out.setdefault(s.get("ParkName"), set()).add(d)
-    return {p: sorted(ds) for p, ds in out.items()}
 
 
 # ---------------------------------------------------------------------------
@@ -326,58 +271,11 @@ def email_config():
     }
 
 
-def post_ntfy(topic, title, body):
-    """Publish a message to a public ntfy topic (no auth). Returns True on success."""
-    try:
-        requests.post(
-            f"{NTFY_BASE}/{topic}",
-            data=body.encode("utf-8"),
-            headers={
-                "Title": title.encode("ascii", "ignore").decode() or "oTENTik opening",
-                "Tags": "tent",
-                "Click": BOOKING_URL,
-            },
-            timeout=15,
-        )
-        return True
-    except requests.RequestException as e:
-        print(f"  ntfy post failed for {topic}: {e}")
-        return False
-
-
-def publish_ntfy(report_dates, state, today):
-    """Push openings to free, no-registration per-park ntfy topics (on change)."""
-    ntfy_state = state.get("_ntfy", {})
-    opens = park_open_dates(report_dates, today)
-
-    for park in sorted(opens):
-        ds = opens[park]
-        topic = ntfy_topic(park)
-        sig = ";".join(ds)
-        if ntfy_state.get(topic) == sig:
-            continue  # nothing new since last run
-        shown = ", ".join(ds[:12]) + (" …" if len(ds) > 12 else "")
-        title = f"{park}: {len(ds)} day(s) open"
-        if post_ntfy(topic, title, f"Open dates: {shown}"):
-            ntfy_state[topic] = sig
-
-    # Catch-all topic for people watching "any park".
-    all_topic = ntfy_topic("all")
-    all_sig = ";".join(f"{p}:{len(opens[p])}" for p in sorted(opens))
-    if opens and ntfy_state.get(all_topic) != all_sig:
-        body = "; ".join(f"{p} ({len(opens[p])})" for p in sorted(opens))[:400]
-        if post_ntfy(all_topic, f"{len(opens)} park(s) have openings", body):
-            ntfy_state[all_topic] = all_sig
-
-    state["_ntfy"] = ntfy_state
-    print(f"ntfy: {len(opens)} park(s) with openings checked.")
-
-
 def process_email_watches(dates, state, today, token, repo, cfg, locations=None):
     """Act on GitHub-issue watch subscriptions.
 
     Always closes watches whose end date has passed (even when email isn't
-    configured); emails/texts matching openings only when `cfg` is present.
+    configured); emails matching openings only when `cfg` is present.
     """
     locations = locations or {}
     issues = list_alert_issues(repo, token)
@@ -420,13 +318,6 @@ def process_email_watches(dates, state, today, token, repo, cfg, locations=None)
 
         subject, body = build_email(matches, criteria, locations)
         ok = send_mail([criteria["email"]], subject, body, cfg)
-        sms_to = [r for r in recipients(criteria) if r != criteria["email"]]
-        if sms_to:
-            sms_ok = send_mail(sms_to, "", build_sms(matches, locations), cfg)
-            # "sent" means our SMTP accepted it; carrier email-to-SMS gateways
-            # may still silently drop it (many CA carriers have retired theirs).
-            print(f"  #{number}: SMS to {', '.join(sms_to)} — "
-                  f"{'accepted by mail server' if sms_ok else 'send failed'}")
 
         sig = signature(matches)
         prev = state.get(key, {})
@@ -457,21 +348,17 @@ def _run():
     state = load_json(STATE_FILE, {})
     today = date.today()
 
-    # Free, no-registration channel — needs no secrets at all.
-    publish_ntfy(dates, state, today)
-
-    # Optional email/text channel (needs a GitHub token + email secrets).
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
     cfg = email_config()
     if token and repo:
         # Runs even without email secrets so expired watches still get closed;
-        # emailing/texting only happens when cfg is present.
+        # emailing only happens when cfg is present.
         if not cfg:
             print("Email not configured; will close expired watches but not email.")
         process_email_watches(dates, state, today, token, repo, cfg, locations)
     else:
-        print("No GitHub token/repo; issue watches skipped (ntfy push only).")
+        print("No GitHub token/repo; nothing to do.")
 
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
