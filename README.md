@@ -28,42 +28,27 @@ The scanner architecture can be extended to support:
 
 ## Features
 
-- 🏕️ **Real-time Tracking**: Monitors availability across all 122 oTENTik sites
+- 🏕️ **Real-time Tracking**: Monitors availability across 550+ prebuilt sites (oTENTiks, yurts, cabins & more) nationwide
 - 📊 **Interactive Dashboard**: Beautiful React UI to visualize availability data
 - ⏰ **Automated Scanning**: GitHub Actions runs scans every 4 hours automatically
-- 🔔 **Availability Alerts**: Free phone push (via ntfy.sh, no sign-up) for watched parks, plus optional email/text for exact dates
+- 🔔 **Availability Alerts**: Email when a watched park has an opening on your dates
 - 🔍 **Smart Filtering**: Filter by date, park, and availability status
 - 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
 - 📅 **6-Month Forecast**: Scans availability for the next 180 days
 
 
-## 🔔 Availability Alerts
-
-### Free phone push — no registration (recommended)
-
-Powered by **[ntfy.sh](https://ntfy.sh)**, which needs **no account**:
-
-1. On the site click **"Alert me"** and pick your park(s).
-2. Install the free **ntfy** app (iOS/Android) — or just open the topic link in a
-   browser — and **subscribe to the shown topic** (e.g. `pc-otentik-9k2q-fundy-headquarters`).
-3. After every scan, the workflow publishes any openings to each park's topic, so
-   you get a push. **Zero setup, zero secrets, no sign-up** for anyone.
-
-Topics are public (campsite availability isn't sensitive) and are posted to only
-when a park's open dates change, so you're not spammed.
-
-### Email / exact dates (optional, needs a GitHub account)
+## 🔔 Availability Alerts (email)
 
 Because the site is fully static (no backend), email subscriptions are stored as
 **GitHub issues** and delivered by the scanning workflow:
 
-1. On the site, click **"Alert me"**, choose your date range + parks + email
-   (and optionally a phone number + carrier), and submit.
+1. On the site, click **"Alert me"**, choose your date range + parks + email, and submit.
 2. This opens a pre-filled GitHub issue containing a machine-readable `alert`
    block. Submitting it starts the watch; **closing the issue stops alerts**.
 3. After each scan, `notify.py` reads open alert issues, checks the new
    availability, and emails you when a watched park has an opening on a watched
-   date (re-notifying each run while it stays open). Expired watches auto-close.
+   date — each email includes a direct booking link per opening (re-notifying
+   each run while it stays open). Expired watches auto-close.
 
 ### Setup (maintainer)
 
@@ -77,9 +62,7 @@ Add these **repository secrets** (Settings → Secrets and variables → Actions
 | `SMTP_PORT` | no | Defaults to `587` |
 
 If the email secrets are absent, scanning still works and alerts are simply
-skipped. Phone texts use free carrier email-to-SMS gateways (Rogers, Bell,
-Telus, Fido, Koodo, Virgin, Freedom, Verizon, AT&T, T-Mobile); these can be
-delayed, so email is the reliable channel.
+skipped (expired watch issues are still auto-closed).
 
 **Privacy/limitations:** an alert issue is public and self-serve, so anyone can
 file one; emails live only in their issue and stop when it's closed. This suits

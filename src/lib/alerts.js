@@ -1,46 +1,8 @@
 // Helpers for the "Alert me" feature. Since the site is static (no backend),
 // a subscription is created as a GitHub issue containing a machine-readable
-// block; the hourly GitHub Action reads open issues and emails on a match.
+// block; the scheduled GitHub Action reads open issues and emails on a match.
 
 export const ALERT_REPO = 'meetr1912/Reservation-Canada-tracker';
-
-// Free, no-registration push via ntfy.sh. Subscribers add a topic in the free
-// ntfy app (or open it in a browser) — no account. The scanner publishes
-// openings to a deterministic per-park topic (no credentials needed).
-// The prefix carries a short salt so topics aren't trivially guessable/spoofable.
-// Keep NTFY_PREFIX and slugifyPark identical to notify.py.
-export const NTFY_BASE = 'https://ntfy.sh';
-export const NTFY_PREFIX = 'pc-otentik-9k2q';
-
-export function slugifyPark(park) {
-  return String(park || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-}
-
-// Topic for a park, or the catch-all "any park" topic when park is falsy/'all'.
-export function ntfyTopic(park) {
-  if (!park || park === 'all') return `${NTFY_PREFIX}-all`;
-  return `${NTFY_PREFIX}-${slugifyPark(park)}`;
-}
-
-export function ntfyUrl(topic) {
-  return `${NTFY_BASE}/${topic}`;
-}
-
-// SMS-over-email gateways. `value` is the gateway domain; a text is sent to
-// <number>@<domain>. Kept in sync with the allowlist in notify.py.
-export const CARRIERS = [
-  { label: 'No phone (email only)', value: '' },
-  { label: 'Rogers', value: 'pcs.rogers.com' },
-  { label: 'Bell', value: 'txt.bell.ca' },
-  { label: 'Telus', value: 'msg.telus.com' },
-  { label: 'Fido', value: 'fido.ca' },
-  { label: 'Koodo', value: 'msg.koodomobile.com' },
-  { label: 'Virgin Plus', value: 'vmobile.ca' },
-  { label: 'Freedom Mobile', value: 'txt.freedommobile.ca' },
-  { label: 'Verizon (US)', value: 'vtext.com' },
-  { label: 'AT&T (US)', value: 'txt.att.net' },
-  { label: 'T-Mobile (US)', value: 'tmomail.net' },
-];
 
 export function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((email || '').trim());
@@ -52,27 +14,22 @@ function parkLabel(parks) {
   return `${parks.length} parks`;
 }
 
-// Build the prefilled GitHub "new issue" URL for a watch request.
-export function buildAlertIssue({ email, phone, carrier, parks, start, end }) {
+// Build the prefilled GitHub "new issue" URL for an email watch request.
+export function buildAlertIssue({ email, parks, start, end }) {
   const dateLabel = start === end ? start : `${start} → ${end}`;
   const payload = {
     email: (email || '').trim(),
-    phone: (phone || '').replace(/[^\d]/g, ''),
-    carrier: carrier || '',
     parks: parks || [],
     start,
     end,
   };
   const title = `🔔 Alert: ${parkLabel(parks)} · ${dateLabel}`;
-  const phoneLine = payload.phone
-    ? `\n**Phone:** ${payload.phone} (texts via ${carrier})`
-    : '';
   const body =
-`Watch request — get notified when a watched oTENTik opens up.
+`Watch request — get an email when a watched site opens up.
 
 **Dates:** ${dateLabel}
 **Parks:** ${parks && parks.length ? parks.join(', ') : 'Any park'}
-**Email:** ${payload.email}${phoneLine}
+**Email:** ${payload.email}
 
 _Submit this issue to start the watch. **Close it any time to stop alerts.** Don't edit the block below — the tracker reads it automatically._
 
