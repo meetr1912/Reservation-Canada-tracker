@@ -8,7 +8,6 @@ on:
 
 permissions:
   contents: write
-  issues: write
 
 jobs:
   scan:
@@ -43,20 +42,14 @@ jobs:
       - name: Run availability scan
         run: python scraper.py
 
-      - name: Send availability alerts
-        run: python notify.py
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+      # Alerts run in their own workflow (notify.yml), chained after this scan
+      # via workflow_run, so they can also be triggered manually for testing.
 
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add availability_report.json public/availability_report.json alerts_state.json 2>/dev/null || true
+          git add availability_report.json public/availability_report.json 2>/dev/null || true
           git diff --quiet && git diff --staged --quiet || git commit -m "Update availability report - $(date +'%Y-%m-%d %H:%M:%S')"
           git push
         shell: bash
