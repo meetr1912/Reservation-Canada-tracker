@@ -123,10 +123,12 @@ def test_main_preserves_state_when_listing_fails(monkeypatch, tmp_path):
     monkeypatch.setenv("EMAIL_ADDRESS", "a@b.com")
     monkeypatch.setenv("EMAIL_PASSWORD", "pw")
     monkeypatch.setattr(notify, "list_alert_issues", lambda *a, **k: None)  # simulate API failure
+    monkeypatch.setattr(notify, "post_ntfy", lambda *a, **k: True)  # avoid real network
 
     assert notify.main() == 0
-    # State must be untouched (a wipe would cause duplicate alerts next run).
-    assert json.loads((tmp_path / "alerts_state.json").read_text()) == {"5": {"sig": "x", "notified_at": "t"}}
+    # The issue's state must be untouched (a wipe would cause duplicate alerts next run).
+    saved = json.loads((tmp_path / "alerts_state.json").read_text())
+    assert saved["5"] == {"sig": "x", "notified_at": "t"}
 
 
 def test_main_failsoft_on_unexpected_error(monkeypatch):
@@ -138,6 +140,50 @@ def test_main_failsoft_on_unexpected_error(monkeypatch):
         raise RuntimeError("kaboom")
     monkeypatch.setattr(notify, "report_dates", boom)
     assert notify.main() == 0  # never raises / never fails the workflow
+
+
+def test_ntfy_topic_and_slug():
+    assert notify.slugify_park("Fundy - Headquarters") == "fundy-headquarters"
+    assert notify.slugify_park("Mkwesaqtuk/Cap-Rouge") == "mkwesaqtuk-cap-rouge"
+    assert notify.ntfy_topic("Fundy - Headquarters") == f"{notify.NTFY_PREFIX}-fundy-headquarters"
+    assert notify.ntfy_topic("all") == f"{notify.NTFY_PREFIX}-all"
+    assert notify.ntfy_topic("") == f"{notify.NTFY_PREFIX}-all"
+
+
+def test_park_open_dates_future_only():
+    out = notify.park_open_dates(REPORT, date(2026, 7, 4))
+    assert out["Fundy - Headquarters"] == ["2026-07-04", "2026-07-05", "2026-07-09"]
+    assert out["Kejimkujik"] == ["2026-07-04"]
+    # 07-03 is booked/false and excluded; nothing before today leaks in.
+
+
+def test_publish_ntfy_posts_on_change_then_skips(monkeypatch):
+    posts = []
+    monkeypatch.setattr(notify, "post_ntfy", lambda t, ti, b: posts.append(t) or True)
+    state = {}
+    notify.publish_ntfy(REPORT, state, date(2026, 7, 4))
+    first = list(posts)
+    assert any(p.endswith("-fundy-headquarters") for p in first)
+    assert any(p.endswith("-all") for p in first)
+    assert "_ntfy" in state
+    # Second run with unchanged data posts nothing new.
+    posts.clear()
+    notify.publish_ntfy(REPORT, state, date(2026, 7, 4))
+    assert posts == []
+
+
+def test_run_does_ntfy_without_email_config(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "availability_report.json").write_text(json.dumps({"dates": REPORT}))
+    monkeypatch.delenv("EMAIL_ADDRESS", raising=False)
+    monkeypatch.delenv("EMAIL_PASSWORD", raising=False)
+    monkeypatch.delenv("GITHUB_TOKEN", raising=False)
+    posts = []
+    monkeypatch.setattr(notify, "post_ntfy", lambda t, ti, b: posts.append(t) or True)
+    assert notify.main() == 0
+    assert posts  # ntfy push happened with zero secrets
+    saved = json.loads((tmp_path / "alerts_state.json").read_text())
+    assert "_ntfy" in saved
 
 
 def test_build_email_and_sms_content():

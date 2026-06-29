@@ -42,6 +42,11 @@ CARRIER_GATEWAYS = {
 MAX_PAGES = 20            # up to 2000 open issues scanned
 MAX_WATCHES_PER_RUN = 200  # cap watches (and thus emails) acted on per run
 
+# Free, no-registration push via ntfy.sh. Keep prefix/slug in sync with
+# src/lib/alerts.js so the topics the site shows match what we publish to.
+NTFY_BASE = "https://ntfy.sh"
+NTFY_PREFIX = "pc-otentik-9k2q"
+
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ALERT_BLOCK_RE = re.compile(r"```alert\s*(\{.*?\})\s*```", re.DOTALL)
@@ -155,6 +160,29 @@ def build_sms(matches):
             f"{extra}. Book: {BOOKING_URL}")
 
 
+def slugify_park(park):
+    return re.sub(r"[^a-z0-9]+", "-", str(park or "").lower()).strip("-")
+
+
+def ntfy_topic(park):
+    if not park or park == "all":
+        return f"{NTFY_PREFIX}-all"
+    return f"{NTFY_PREFIX}-{slugify_park(park)}"
+
+
+def park_open_dates(report_dates, today):
+    """{park: [sorted future dates with >=1 opening]} from today onward."""
+    today_str = today.isoformat() if isinstance(today, date) else str(today)
+    out = {}
+    for d in report_dates:
+        if d < today_str:
+            continue
+        for s in report_dates[d]:
+            if s.get("status"):
+                out.setdefault(s.get("ParkName"), set()).add(d)
+    return {p: sorted(ds) for p, ds in out.items()}
+
+
 # ---------------------------------------------------------------------------
 # I/O
 # ---------------------------------------------------------------------------
@@ -263,31 +291,61 @@ def email_config():
     }
 
 
-def _run():
-    token = os.environ.get("GITHUB_TOKEN", "").strip()
-    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
-    if not token or not repo:
-        print("No GITHUB_TOKEN/GITHUB_REPOSITORY; skipping alerts.")
-        return 0
+def post_ntfy(topic, title, body):
+    """Publish a message to a public ntfy topic (no auth). Returns True on success."""
+    try:
+        requests.post(
+            f"{NTFY_BASE}/{topic}",
+            data=body.encode("utf-8"),
+            headers={
+                "Title": title.encode("ascii", "ignore").decode() or "oTENTik opening",
+                "Tags": "tent",
+                "Click": BOOKING_URL,
+            },
+            timeout=15,
+        )
+        return True
+    except requests.RequestException as e:
+        print(f"  ntfy post failed for {topic}: {e}")
+        return False
 
-    cfg = email_config()
-    if not cfg:
-        print("EMAIL_ADDRESS/EMAIL_PASSWORD not set; skipping alert emails.")
-        return 0
 
-    dates = report_dates(load_json(REPORT_FILE, {}))
-    if not dates:
-        print("No availability report; skipping alerts.")
-        return 0
+def publish_ntfy(report_dates, state, today):
+    """Push openings to free, no-registration per-park ntfy topics (on change)."""
+    ntfy_state = state.get("_ntfy", {})
+    opens = park_open_dates(report_dates, today)
 
-    state = load_json(STATE_FILE, {})
-    today = date.today()
+    for park in sorted(opens):
+        ds = opens[park]
+        topic = ntfy_topic(park)
+        sig = ";".join(ds)
+        if ntfy_state.get(topic) == sig:
+            continue  # nothing new since last run
+        shown = ", ".join(ds[:12]) + (" …" if len(ds) > 12 else "")
+        title = f"{park}: {len(ds)} day(s) open"
+        if post_ntfy(topic, title, f"Open dates: {shown}"):
+            ntfy_state[topic] = sig
+
+    # Catch-all topic for people watching "any park".
+    all_topic = ntfy_topic("all")
+    all_sig = ";".join(f"{p}:{len(opens[p])}" for p in sorted(opens))
+    if opens and ntfy_state.get(all_topic) != all_sig:
+        body = "; ".join(f"{p} ({len(opens[p])})" for p in sorted(opens))[:400]
+        if post_ntfy(all_topic, f"{len(opens)} park(s) have openings", body):
+            ntfy_state[all_topic] = all_sig
+
+    state["_ntfy"] = ntfy_state
+    print(f"ntfy: {len(opens)} park(s) with openings checked.")
+
+
+def process_email_watches(dates, state, today, token, repo, cfg):
+    """Email/text watchers who filed a GitHub-issue subscription (optional path)."""
     issues = list_alert_issues(repo, token)
     if issues is None:
-        # Transient API failure — do NOT touch state (a wipe would cause
-        # duplicate notifications next run). Leave everything as-is.
-        print("Issue listing failed; leaving alert state unchanged.")
-        return 0
+        # Transient API failure — do NOT prune issue state (a wipe would cause
+        # duplicate notifications next run).
+        print("Issue listing failed; leaving issue state unchanged.")
+        return
     print(f"Checking {len(issues)} open issue(s) for alert watches...")
 
     active = set()
@@ -304,7 +362,6 @@ def _run():
         key = str(number)
         active.add(key)
 
-        # Expire watches whose window has fully passed.
         if criteria["end"] < today.isoformat():
             comment_issue(repo, token, number,
                           "⏰ This watch's dates have passed — closing it. "
@@ -333,8 +390,32 @@ def _run():
                           "notified_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
         print(f"  #{number}: {len(matches)} match group(s){' (emailed)' if ok else ''}")
 
-    # Drop state for issues no longer open/active.
-    state = {k: v for k, v in state.items() if k in active}
+    # Prune state for issue keys (numeric) that are no longer open.
+    for k in [k for k in state if k.isdigit() and k not in active]:
+        state.pop(k, None)
+
+
+def _run():
+    dates = report_dates(load_json(REPORT_FILE, {}))
+    if not dates:
+        print("No availability report; skipping alerts.")
+        return 0
+
+    state = load_json(STATE_FILE, {})
+    today = date.today()
+
+    # Free, no-registration channel — needs no secrets at all.
+    publish_ntfy(dates, state, today)
+
+    # Optional email/text channel (needs a GitHub token + email secrets).
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    cfg = email_config()
+    if token and repo and cfg:
+        process_email_watches(dates, state, today, token, repo, cfg)
+    else:
+        print("Email/issue alerts not configured; ntfy push only.")
+
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
     print("Done.")
