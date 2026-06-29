@@ -2,8 +2,9 @@ name: Discover accommodations roster
 
 on:
   schedule:
-    # Refresh the national roster weekly (Mondays 03:17 UTC).
-    - cron: '17 3 * * 1'
+    # Refresh the national roster monthly (1st of the month, 03:17 UTC),
+    # in case Parks Canada adds locations/units or changes resource IDs.
+    - cron: '17 3 1 * *'
   workflow_dispatch:
 
 permissions:
