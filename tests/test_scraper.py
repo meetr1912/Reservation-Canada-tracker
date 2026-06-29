@@ -39,7 +39,22 @@ def test_build_report_dates_and_units():
     for sites in report["dates"].values():
         assert len(sites) == len(OTENTIKS)
         for site in sites:
-            assert set(site.keys()) == {"ParkName", "PageTitle", "ResourceName", "status"}
+            assert set(site.keys()) == {"ParkName", "PageTitle", "ResourceName", "Type", "status"}
+
+
+def test_type_propagates_and_defaults():
+    units = [
+        {"ParkName": "P", "PageTitle": None, "ResourceName": "Y1",
+         "NegativeResourceValue": -1, "Type": "Yurt"},
+        {"ParkName": "P", "PageTitle": None, "ResourceName": "O1",
+         "NegativeResourceValue": -2},  # no Type -> defaults to oTENTik
+    ]
+    report = scraper.build_report(units, set(), START, days=1,
+                                  generated_at="2026-06-27T00:00:00Z")
+    sites = report["dates"]["2026-06-27"]
+    types = {s["ResourceName"]: s["Type"] for s in sites}
+    assert types == {"Y1": "Yurt", "O1": "oTENTik"}
+    assert report["metadata"]["types"] == ["Yurt", "oTENTik"]
 
 
 def test_status_reflects_available_set():

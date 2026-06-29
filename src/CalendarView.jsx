@@ -17,14 +17,18 @@ function intensityClass(count, max) {
   return 'bg-emerald-100 border-emerald-200 text-emerald-900';
 }
 
-function CalendarView({ availabilityData, selectedPark, onAlert }) {
+function CalendarView({ availabilityData, selectedPark, selectedType, onAlert }) {
+  const matchesFilters = useMemo(() => (s) =>
+    s.status
+    && (!selectedPark || selectedPark === 'all' || s.ParkName === selectedPark)
+    && (!selectedType || selectedType === 'all' || (s.Type || 'oTENTik') === selectedType),
+    [selectedPark, selectedType]);
+
   const countFor = useMemo(() => (dateStr) => {
     const sites = availabilityData?.[dateStr];
     if (!sites) return 0;
-    return sites.filter(s =>
-      s.status && (!selectedPark || selectedPark === 'all' || s.ParkName === selectedPark)
-    ).length;
-  }, [availabilityData, selectedPark]);
+    return sites.filter(matchesFilters).length;
+  }, [availabilityData, matchesFilters]);
 
   const maxCount = useMemo(() => {
     let m = 0;
@@ -54,14 +58,14 @@ function CalendarView({ availabilityData, selectedPark, onAlert }) {
       </div>
       {months.map(monthKey => (
         <MonthCalendar key={monthKey} monthKey={monthKey}
-          availabilityData={availabilityData} selectedPark={selectedPark}
+          availabilityData={availabilityData} matchesFilters={matchesFilters}
           countFor={countFor} maxCount={maxCount} onAlert={onAlert} />
       ))}
     </div>
   );
 }
 
-function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, maxCount, onAlert }) {
+function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, maxCount, onAlert }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -77,8 +81,7 @@ function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, max
     cells.push(`${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`);
   }
 
-  const sitesFor = (dateStr) => (availabilityData[dateStr] || []).filter(s =>
-    s.status && (!selectedPark || selectedPark === 'all' || s.ParkName === selectedPark));
+  const sitesFor = (dateStr) => (availabilityData[dateStr] || []).filter(matchesFilters);
 
   const handleClick = (dateStr) => {
     if (countFor(dateStr) > 0) { setSelectedDate(dateStr); setOpen(true); }
@@ -153,7 +156,7 @@ function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, max
                 <Badge className="bg-emerald-600 text-white border-transparent mb-2">
                   <CheckCircle2 className="h-3 w-3 mr-1" /> Available
                 </Badge>
-                <p className="font-semibold text-gray-900">{prettyUnit(site.ResourceName)}</p>
+                <p className="font-semibold text-gray-900">{prettyUnit(site.ResourceName, site.Type)}</p>
                 <p className="text-xs text-gray-600 flex items-center gap-1 mt-0.5">
                   <MapPin className="h-3 w-3" /> {site.ParkName}
                 </p>
