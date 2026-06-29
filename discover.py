@@ -7,7 +7,11 @@ API. See docs/ACCOMMODATION_DISCOVERY.md.
 
 Each record matches the scraper's expected shape plus type metadata:
     {ParkName, PageTitle, ResourceName, NegativeResourceValue,
-     Type, ResourceCategoryId, BookingCategoryId, ResourceLocationId}
+     Type, ResourceCategoryId, BookingCategoryId, ResourceLocationId,
+     TransactionLocationId, MapId}
+
+TransactionLocationId (park-level) + ResourceLocationId (sub-area) + MapId
+(rootMapId) are the ids a create-booking/results deep link needs.
 
 Pure helpers (build_* / *_map / pick_*) are network-free and unit-tested; the
 network walk uses Playwright (the site blocks plain requests).
@@ -86,6 +90,8 @@ def build_records(resources, location, rc_names, bc_map):
     """Roofed-unit records for one location's /resources payload."""
     park = en_name(location.get("localizedValues"), "shortName", "fullName")
     rl_id = location.get("resourceLocationId")
+    txn_id = location.get("transactionLocationId")
+    map_id = location.get("rootMapId")
     records = []
     for res in (resources or {}).values():
         if not isinstance(res, dict):
@@ -102,6 +108,8 @@ def build_records(resources, location, rc_names, bc_map):
             "ResourceCategoryId": rcid,
             "BookingCategoryId": bc_map.get(rcid),
             "ResourceLocationId": rl_id,
+            "TransactionLocationId": txn_id,
+            "MapId": map_id,
         })
     return records
 

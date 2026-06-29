@@ -52,6 +52,8 @@ def test_build_records_filters_and_shapes():
     bc = discover.booking_category_map(BOOKING_CATEGORIES)
     location = {
         "resourceLocationId": -555,
+        "transactionLocationId": -500,
+        "rootMapId": -777,
         "localizedValues": [{"cultureName": "en-CA", "shortName": "Fundy - HQ",
                              "fullName": "Fundy - Headquarters"}],
     }
@@ -70,7 +72,7 @@ def test_build_records_filters_and_shapes():
         "ParkName": "Fundy - HQ", "PageTitle": None, "ResourceName": "O45",
         "NegativeResourceValue": -900, "Type": "oTENTik",
         "ResourceCategoryId": -102, "BookingCategoryId": 4,
-        "ResourceLocationId": -555,
+        "ResourceLocationId": -555, "TransactionLocationId": -500, "MapId": -777,
     }
     yurt = next(r for r in recs if r["NegativeResourceValue"] == -902)
     assert yurt["Type"] == "Yurt" and yurt["BookingCategoryId"] == 4
