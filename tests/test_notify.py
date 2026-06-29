@@ -142,6 +142,27 @@ def test_main_failsoft_on_unexpected_error(monkeypatch):
     assert notify.main() == 0  # never raises / never fails the workflow
 
 
+def test_expired_watch_closed_even_without_email_config(monkeypatch):
+    expired = {"number": 7, "body": block({**VALID, "start": "2026-01-01", "end": "2026-01-02"})}
+    monkeypatch.setattr(notify, "list_alert_issues", lambda *a, **k: [expired])
+    closed = []
+    monkeypatch.setattr(notify, "close_issue", lambda repo, token, n: closed.append(n))
+    monkeypatch.setattr(notify, "comment_issue", lambda *a, **k: None)
+    # cfg=None (no email secrets) must still close the expired watch.
+    notify.process_email_watches({}, {}, date(2026, 6, 29), "t", "o/r", None)
+    assert closed == [7]
+
+
+def test_active_watch_not_closed(monkeypatch):
+    active = {"number": 8, "body": block(VALID)}  # ends 2026-07-06
+    monkeypatch.setattr(notify, "list_alert_issues", lambda *a, **k: [active])
+    closed = []
+    monkeypatch.setattr(notify, "close_issue", lambda repo, token, n: closed.append(n))
+    monkeypatch.setattr(notify, "comment_issue", lambda *a, **k: None)
+    notify.process_email_watches({}, {}, date(2026, 6, 29), "t", "o/r", None)
+    assert closed == []  # still in range — left open
+
+
 def test_ntfy_topic_and_slug():
     assert notify.slugify_park("Fundy - Headquarters") == "fundy-headquarters"
     assert notify.slugify_park("Mkwesaqtuk/Cap-Rouge") == "mkwesaqtuk-cap-rouge"

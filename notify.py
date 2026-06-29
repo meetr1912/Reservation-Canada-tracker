@@ -374,7 +374,11 @@ def publish_ntfy(report_dates, state, today):
 
 
 def process_email_watches(dates, state, today, token, repo, cfg, locations=None):
-    """Email/text watchers who filed a GitHub-issue subscription (optional path)."""
+    """Act on GitHub-issue watch subscriptions.
+
+    Always closes watches whose end date has passed (even when email isn't
+    configured); emails/texts matching openings only when `cfg` is present.
+    """
     locations = locations or {}
     issues = list_alert_issues(repo, token)
     if issues is None:
@@ -404,7 +408,11 @@ def process_email_watches(dates, state, today, token, repo, cfg, locations=None)
                           "Open a new alert any time.")
             close_issue(repo, token, number)
             state.pop(key, None)
+            print(f"  #{number}: expired ({criteria['end']}) — closed")
             continue
+
+        if not cfg:
+            continue  # no email configured; expired issues are still closed above
 
         matches = matches_for(dates, criteria, today)
         if not matches:
@@ -414,7 +422,11 @@ def process_email_watches(dates, state, today, token, repo, cfg, locations=None)
         ok = send_mail([criteria["email"]], subject, body, cfg)
         sms_to = [r for r in recipients(criteria) if r != criteria["email"]]
         if sms_to:
-            send_mail(sms_to, "", build_sms(matches, locations), cfg)
+            sms_ok = send_mail(sms_to, "", build_sms(matches, locations), cfg)
+            # "sent" means our SMTP accepted it; carrier email-to-SMS gateways
+            # may still silently drop it (many CA carriers have retired theirs).
+            print(f"  #{number}: SMS to {', '.join(sms_to)} — "
+                  f"{'accepted by mail server' if sms_ok else 'send failed'}")
 
         sig = signature(matches)
         prev = state.get(key, {})
@@ -452,10 +464,14 @@ def _run():
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
     cfg = email_config()
-    if token and repo and cfg:
+    if token and repo:
+        # Runs even without email secrets so expired watches still get closed;
+        # emailing/texting only happens when cfg is present.
+        if not cfg:
+            print("Email not configured; will close expired watches but not email.")
         process_email_watches(dates, state, today, token, repo, cfg, locations)
     else:
-        print("Email/issue alerts not configured; ntfy push only.")
+        print("No GitHub token/repo; issue watches skipped (ntfy push only).")
 
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(state, f, indent=2, ensure_ascii=False)
