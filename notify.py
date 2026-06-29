@@ -20,8 +20,9 @@ import os
 import re
 import smtplib
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.message import EmailMessage
+from urllib.parse import urlencode
 
 import requests
 
@@ -137,8 +138,40 @@ def _pretty_unit(name):
     return f"oTENTik {m.group(1)}" if m else str(name)
 
 
-def build_email(matches, criteria):
-    """Return (subject, text_body) for a match set."""
+def _shift_date(date_str, n):
+    """YYYY-MM-DD shifted by n days (used for the booking end date)."""
+    d = datetime.strptime(date_str, "%Y-%m-%d").date() + timedelta(days=n)
+    return d.isoformat()
+
+
+def booking_url(loc, date_str):
+    """Deep-link to the Parks Canada results for a location + date (1 night).
+
+    `loc` is a metadata.locations entry ({t,r,m,b}). Falls back to the booking
+    home when we have no ids for the park (older report). Mirrors
+    buildBookingUrl in src/lib/data.js so site and email links match.
+    """
+    if not loc or not date_str:
+        return BOOKING_URL
+    params = {
+        "transactionLocationId": loc.get("t"),
+        "resourceLocationId": loc.get("r"),
+        "mapId": loc.get("m"),
+        "searchTabGroupId": 2,
+        "bookingCategoryId": 1 if loc.get("b") is None else loc.get("b"),
+        "startDate": date_str,
+        "endDate": _shift_date(date_str, 1),
+        "nights": 1,
+        "isReserving": "true",
+        "peopleCapacityCategoryCounts": "[[-32767,null,1,null]]",
+        "flexibleSearch": "[false,false,null,1]",
+    }
+    return f"https://reservation.pc.gc.ca/create-booking/results?{urlencode(params)}"
+
+
+def build_email(matches, criteria, locations=None):
+    """Return (subject, text_body) for a match set, with per-opening book links."""
+    locations = locations or {}
     n_days = len({m["date"] for m in matches})
     n_slots = sum(len(m["units"]) for m in matches)
     subject = f"🏕️ {n_slots} oTENTik opening(s) on {n_days} watched day(s)"
@@ -146,18 +179,20 @@ def build_email(matches, criteria):
     for m in matches:
         units = ", ".join(_pretty_unit(u) for u in m["units"])
         lines.append(f"• {m['date']} — {m['park']}: {units}")
-    lines.append(f"\nBook now: {BOOKING_URL}")
+        lines.append(f"  Book this date: {booking_url(locations.get(m['park']), m['date'])}")
     lines.append("\nTo stop these alerts, close your alert issue on GitHub.")
     return subject, "\n".join(lines)
 
 
-def build_sms(matches):
-    """Short text for SMS gateways."""
+def build_sms(matches, locations=None):
+    """Short text for SMS gateways, including a direct book link for the first."""
+    locations = locations or {}
     n_slots = sum(len(m["units"]) for m in matches)
     first = matches[0]
     extra = f" +{len(matches) - 1} more" if len(matches) > 1 else ""
+    url = booking_url(locations.get(first["park"]), first["date"])
     return (f"oTENTik alert: {n_slots} open. {first['date']} {first['park']}"
-            f"{extra}. Book: {BOOKING_URL}")
+            f"{extra}. Book: {url}")
 
 
 def slugify_park(park):
@@ -338,8 +373,9 @@ def publish_ntfy(report_dates, state, today):
     print(f"ntfy: {len(opens)} park(s) with openings checked.")
 
 
-def process_email_watches(dates, state, today, token, repo, cfg):
+def process_email_watches(dates, state, today, token, repo, cfg, locations=None):
     """Email/text watchers who filed a GitHub-issue subscription (optional path)."""
+    locations = locations or {}
     issues = list_alert_issues(repo, token)
     if issues is None:
         # Transient API failure — do NOT prune issue state (a wipe would cause
@@ -374,11 +410,11 @@ def process_email_watches(dates, state, today, token, repo, cfg):
         if not matches:
             continue
 
-        subject, body = build_email(matches, criteria)
+        subject, body = build_email(matches, criteria, locations)
         ok = send_mail([criteria["email"]], subject, body, cfg)
         sms_to = [r for r in recipients(criteria) if r != criteria["email"]]
         if sms_to:
-            send_mail(sms_to, "", build_sms(matches), cfg)
+            send_mail(sms_to, "", build_sms(matches, locations), cfg)
 
         sig = signature(matches)
         prev = state.get(key, {})
@@ -396,10 +432,15 @@ def process_email_watches(dates, state, today, token, repo, cfg):
 
 
 def _run():
-    dates = report_dates(load_json(REPORT_FILE, {}))
+    report = load_json(REPORT_FILE, {})
+    dates = report_dates(report)
     if not dates:
         print("No availability report; skipping alerts.")
         return 0
+    # Per-park ids for building booking deep links (absent in older reports).
+    locations = {}
+    if isinstance(report, dict) and isinstance(report.get("metadata"), dict):
+        locations = report["metadata"].get("locations") or {}
 
     state = load_json(STATE_FILE, {})
     today = date.today()
@@ -412,7 +453,7 @@ def _run():
     repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
     cfg = email_config()
     if token and repo and cfg:
-        process_email_watches(dates, state, today, token, repo, cfg)
+        process_email_watches(dates, state, today, token, repo, cfg, locations)
     else:
         print("Email/issue alerts not configured; ntfy push only.")
 
