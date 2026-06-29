@@ -4,6 +4,28 @@
 
 export const ALERT_REPO = 'meetr1912/Reservation-Canada-tracker';
 
+// Free, no-registration push via ntfy.sh. Subscribers add a topic in the free
+// ntfy app (or open it in a browser) — no account. The scanner publishes
+// openings to a deterministic per-park topic (no credentials needed).
+// The prefix carries a short salt so topics aren't trivially guessable/spoofable.
+// Keep NTFY_PREFIX and slugifyPark identical to notify.py.
+export const NTFY_BASE = 'https://ntfy.sh';
+export const NTFY_PREFIX = 'pc-otentik-9k2q';
+
+export function slugifyPark(park) {
+  return String(park || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+// Topic for a park, or the catch-all "any park" topic when park is falsy/'all'.
+export function ntfyTopic(park) {
+  if (!park || park === 'all') return `${NTFY_PREFIX}-all`;
+  return `${NTFY_PREFIX}-${slugifyPark(park)}`;
+}
+
+export function ntfyUrl(topic) {
+  return `${NTFY_BASE}/${topic}`;
+}
+
 // SMS-over-email gateways. `value` is the gateway domain; a text is sent to
 // <number>@<domain>. Kept in sync with the allowlist in notify.py.
 export const CARRIERS = [
