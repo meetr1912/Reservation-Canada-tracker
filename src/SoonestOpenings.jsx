@@ -78,7 +78,7 @@ function typeChipsForDate(entry, dateStr) {
 
 function SoonestOpenings({
   report, dates, selectedType, search, alwaysOpenParks, metadata,
-  setSelectedPark, setSelectedDate, setSelectedType,
+  setSelectedPark, setSelectedDate, setSelectedType, setSearch,
 }) {
   const [sortKey, setSortKey] = useState('soonest');
   const [horizon, setHorizon] = useState('any');
@@ -201,6 +201,7 @@ function SoonestOpenings({
             <XCircle className="h-8 w-8 mx-auto mb-2 text-gray-300" />
             <p className="text-sm text-gray-600 font-medium">
               No {selectedType === 'all' ? '' : `${selectedType} `}openings {horizonLabel}
+              {q ? ` matching “${search.trim()}”` : ''}
             </p>
             <div className="flex items-center justify-center gap-3 mt-2 text-sm">
               {horizon !== 'any' && (
@@ -209,11 +210,14 @@ function SoonestOpenings({
               {selectedType !== 'all' && (
                 <button onClick={() => setSelectedType('all')} className="text-emerald-700 hover:underline">All types</button>
               )}
+              {q && setSearch && (
+                <button onClick={() => setSearch('')} className="text-emerald-700 hover:underline">Clear search</button>
+              )}
             </div>
           </div>
         ) : (
           <>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <ul id="soonest-open-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {shown.map(r => (
                 <SoonestRow key={r.parkName} row={r} metadata={metadata}
                   onPick={onPick} onPickType={onPickType} />
@@ -222,6 +226,8 @@ function SoonestOpenings({
             {open.length > TOP_CAP && (
               <button
                 onClick={() => setShowAll(v => !v)}
+                aria-expanded={showAll}
+                aria-controls="soonest-open-list"
                 className="mt-3 text-sm font-medium text-emerald-700 hover:text-emerald-800"
               >
                 {showAll ? 'Show fewer' : `Show all ${open.length} parks`}
@@ -236,6 +242,7 @@ function SoonestOpenings({
             <button
               onClick={() => setTailOpen(v => !v)}
               aria-expanded={tailOpen}
+              aria-controls="soonest-tail-list"
               className="text-xs font-medium text-gray-500 hover:text-gray-700"
             >
               {tail.length} park{tail.length === 1 ? '' : 's'} with no{' '}
@@ -243,7 +250,7 @@ function SoonestOpenings({
               {horizon !== 'any' ? ` ${horizonLabel}` : ''} · {tailOpen ? 'hide' : 'show'}
             </button>
             {tailOpen && (
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+              <ul id="soonest-tail-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
                 {tail.map(r => <TailRow key={r.parkName} row={r} onPick={onPick} onPickType={onPickType} />)}
               </ul>
             )}
@@ -265,19 +272,20 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
           className="flex-1 min-w-0 text-left p-3 hover:bg-emerald-50/40 transition-colors"
         >
           <div className="flex items-center justify-between gap-2">
-            <p className="font-semibold text-gray-900 truncate">{area || park}</p>
+            <p className="font-semibold text-gray-900 truncate" title={area || park}>{area || park}</p>
             <span className="text-sm font-semibold text-emerald-700 flex-shrink-0">
               {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
             </span>
           </div>
           <div className="flex items-center justify-between gap-2 mt-0.5">
-            <p className="text-[11px] font-medium uppercase tracking-wide text-gray-400 truncate">
+            <p className="text-[11px] font-medium uppercase tracking-wide text-gray-400 truncate" title={area ? park : undefined}>
               {area ? park : ' '}
             </p>
             {verify ? (
               <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-600 flex-shrink-0"
                 title="Shown available every day — confirm on Parks Canada before relying on it">
-                <AlertTriangle className="h-3 w-3" /> {count} · verify
+                <AlertTriangle className="h-3 w-3" aria-hidden="true" /> {count} · verify
+                <span className="sr-only"> — shown available every day; confirm on Parks Canada before relying on it</span>
               </span>
             ) : (
               <span className="text-xs font-medium text-emerald-700 tabular-nums flex-shrink-0">
@@ -291,7 +299,7 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
           target="_blank" rel="noopener noreferrer"
           aria-label={`Book ${area || park} on Parks Canada`}
           title="Book on Parks Canada"
-          className="flex items-center px-3 border-l border-gray-100 text-emerald-700 hover:bg-emerald-50 transition-colors"
+          className="flex items-center justify-center min-w-[44px] px-3 border-l border-gray-100 bg-emerald-50/40 text-emerald-700 hover:bg-emerald-100 transition-colors"
         >
           <ArrowUpRight className="h-4 w-4" />
         </a>

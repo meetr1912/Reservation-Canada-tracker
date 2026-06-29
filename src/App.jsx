@@ -427,7 +427,7 @@ function App() {
               report={report} dates={dates} selectedType={selectedType}
               search={search} alwaysOpenParks={alwaysOpenParks} metadata={metadata}
               setSelectedPark={setSelectedPark} setSelectedDate={setSelectedDate}
-              setSelectedType={setSelectedType}
+              setSelectedType={setSelectedType} setSearch={setSearch}
             />
 
             {/* Quick date jumper */}
