@@ -191,6 +191,31 @@ def test_build_email_and_sms_content():
     subject, body = notify.build_email(m, VALID)
     assert "opening" in subject.lower()
     assert "oTENTik 45" in body and "Fundy - Headquarters" in body
-    assert notify.BOOKING_URL in body
+    assert notify.BOOKING_URL in body  # falls back to home when no location ids
     sms = notify.build_sms(m)
     assert "oTENTik alert" in sms and notify.BOOKING_URL in sms
+
+
+LOCATIONS = {"Fundy - Headquarters": {"t": -500, "r": -555, "m": -777, "b": 1}}
+
+
+def test_booking_url_builds_deep_link():
+    url = notify.booking_url(LOCATIONS["Fundy - Headquarters"], "2026-07-04")
+    assert url.startswith("https://reservation.pc.gc.ca/create-booking/results?")
+    assert "transactionLocationId=-500" in url
+    assert "resourceLocationId=-555" in url and "mapId=-777" in url
+    assert "startDate=2026-07-04" in url and "endDate=2026-07-05" in url
+    assert "bookingCategoryId=1" in url
+
+
+def test_booking_url_falls_back_without_ids():
+    assert notify.booking_url(None, "2026-07-04") == notify.BOOKING_URL
+
+
+def test_email_and_sms_include_per_opening_links():
+    m = [{"date": "2026-07-04", "park": "Fundy - Headquarters", "units": ["O45"]}]
+    _, body = notify.build_email(m, VALID, LOCATIONS)
+    assert "create-booking/results?" in body
+    assert "startDate=2026-07-04" in body
+    sms = notify.build_sms(m, LOCATIONS)
+    assert "create-booking/results?" in sms
