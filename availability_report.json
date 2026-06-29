@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-29T15:33:49Z",
+    "generated_at": "2026-06-29T17:04:43Z",
     "start_date": "2026-06-29",
     "end_date": "2026-12-25",
     "days": 180,
@@ -70,11 +70,319 @@
       "oTENTik",
       "Ôasis"
     ],
+    "locations": {
+      "Banff - Two Jack Lakeside": {
+        "t": -2147483648,
+        "r": -2147483643,
+        "m": -2147483606,
+        "b": 1
+      },
+      "Banff - Two Jack Main": {
+        "t": -2147483648,
+        "r": -2147483645,
+        "m": -2147483602,
+        "b": 1
+      },
+      "Banff - Village 2": {
+        "t": -2147483648,
+        "r": -2147483648,
+        "m": -2147483611,
+        "b": 1
+      },
+      "Bruce Peninsula - Cyprus Lake": {
+        "t": -2147483645,
+        "r": -2147483636,
+        "m": -2147483172,
+        "b": 1
+      },
+      "Cape Breton Highlands - Broad Cove": {
+        "t": -2147483643,
+        "r": -2147483634,
+        "m": -2147483170,
+        "b": 1
+      },
+      "Cape Breton Highlands - Cheticamp": {
+        "t": -2147483643,
+        "r": -2147483630,
+        "m": -2147483568,
+        "b": 1
+      },
+      "Cape Breton Highlands - Ingonish Beach": {
+        "t": -2147483643,
+        "r": -2147483631,
+        "m": -2147483169,
+        "b": 1
+      },
+      "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge": {
+        "t": -2147483643,
+        "r": -2147483632,
+        "m": -2147483569,
+        "b": 1
+      },
+      "Elk Island": {
+        "t": -2147483642,
+        "r": -2147483629,
+        "m": -2147483559,
+        "b": 1
+      },
+      "Forillon - Des-Rosiers": {
+        "t": -2147483640,
+        "r": -2147483625,
+        "m": -2147483157,
+        "b": 1
+      },
+      "Forillon - Petit-Gaspé": {
+        "t": -2147483640,
+        "r": -2147483626,
+        "m": -2147483156,
+        "b": 1
+      },
+      "Fort Langley": {
+        "t": -2147483638,
+        "r": -2147483623,
+        "m": -2147483536,
+        "b": 1
+      },
+      "Fort Rodd Hill": {
+        "t": -2147483637,
+        "r": -2147483622,
+        "m": -2147483534,
+        "b": 1
+      },
+      "Fundy - Backcountry": {
+        "t": -2147483636,
+        "r": -2147483618,
+        "m": -2147483527,
+        "b": 1
+      },
+      "Fundy - Chignecto": {
+        "t": -2147483636,
+        "r": -2147483617,
+        "m": -2147483531,
+        "b": 1
+      },
+      "Fundy - Headquarters": {
+        "t": -2147483636,
+        "r": -2147483621,
+        "m": -2147483529,
+        "b": 1
+      },
+      "Fundy - Point Wolfe": {
+        "t": -2147483636,
+        "r": -2147483619,
+        "m": -2147483528,
+        "b": 1
+      },
+      "Georgian Bay Islands - Cedar Spring": {
+        "t": -2147483635,
+        "r": -2147483614,
+        "m": -2147482995,
+        "b": 1
+      },
+      "Georgian Bay Islands - Christian Beach": {
+        "t": -2147483635,
+        "r": -2147483613,
+        "m": -2147483506,
+        "b": 1
+      },
+      "Grasslands - Frenchman Valley/West Block": {
+        "t": -2147483632,
+        "r": -2147483607,
+        "m": -2147482999,
+        "b": 1
+      },
+      "Grasslands - Rock Creek/East Block": {
+        "t": -2147483632,
+        "r": -2147483608,
+        "m": -2147482998,
+        "b": 1
+      },
+      "Gros Morne - Berry Hill": {
+        "t": -2147483631,
+        "r": -2147483606,
+        "m": -2147483152,
+        "b": 1
+      },
+      "Gros Morne - Green Point": {
+        "t": -2147483631,
+        "r": -2147483603,
+        "m": -2147483480,
+        "b": 1
+      },
+      "Gros Morne - Lomond": {
+        "t": -2147483631,
+        "r": -2147483605,
+        "m": -2147483479,
+        "b": 1
+      },
+      "Gros Morne - Shallow Bay": {
+        "t": -2147483631,
+        "r": -2147483602,
+        "m": -2147483482,
+        "b": 1
+      },
+      "Gros Morne - Trout River": {
+        "t": -2147483631,
+        "r": -2147483604,
+        "m": -2147483481,
+        "b": 1
+      },
+      "Jasper - Whistlers": {
+        "t": -2147483628,
+        "r": -2147483597,
+        "m": -2147483454,
+        "b": 1
+      },
+      "Kejimkujik - Jeremy's Bay & Jakes Landing": {
+        "t": -2147483627,
+        "r": -2147483587,
+        "m": -2147483126,
+        "b": 1
+      },
+      "Kluane": {
+        "t": -2147483626,
+        "r": -2147483586,
+        "m": -2147483387,
+        "b": 1
+      },
+      "Kootenay - Redstreak": {
+        "t": -2147483625,
+        "r": -2147483582,
+        "m": -2147483148,
+        "b": 1
+      },
+      "Kouchibouguac - South": {
+        "t": -2147483624,
+        "r": -2147483581,
+        "m": -2147483146,
+        "b": 1
+      },
+      "La Mauricie - Mistagance": {
+        "t": -2147483623,
+        "r": -2147483575,
+        "m": -2147483363,
+        "b": 1
+      },
+      "La Mauricie - Rivière-à-la-Pêche": {
+        "t": -2147483623,
+        "r": -2147483573,
+        "m": -2147483362,
+        "b": 1
+      },
+      "La Mauricie - Saint-Jean-des-Piles": {
+        "t": -2147483623,
+        "r": -2147483524,
+        "m": -2147483110,
+        "b": 1
+      },
+      "Lachine Canal": {
+        "t": -2147483622,
+        "r": -2147483571,
+        "m": -2147483330,
+        "b": 1
+      },
+      "Mingan Archipelago": {
+        "t": -2147483621,
+        "r": -2147483570,
+        "m": -2147483327,
+        "b": 1
+      },
+      "Mount Revelstoke - Snowforest": {
+        "t": -2147483620,
+        "r": -2147483567,
+        "m": -2147483141,
+        "b": 1
+      },
+      "Pacific Rim - Green Point": {
+        "t": -2147483619,
+        "r": -2147483565,
+        "m": -2147483315,
+        "b": 1
+      },
+      "Point Pelee - Camp Henry": {
+        "t": -2147483618,
+        "r": -2147483561,
+        "m": -2147483309,
+        "b": 1
+      },
+      "Prince Albert - Beaver Glen": {
+        "t": -2147483617,
+        "r": -2147483558,
+        "m": -2147483140,
+        "b": 1
+      },
+      "Prince Edward Island - Cavendish": {
+        "t": -2147483616,
+        "r": -2147483557,
+        "m": -2147483062,
+        "b": 1
+      },
+      "Prince Edward Island - Stanhope": {
+        "t": -2147483616,
+        "r": -2147483556,
+        "m": -2147483136,
+        "b": 1
+      },
+      "Pukaskwa": {
+        "t": -2147483615,
+        "r": -2147483555,
+        "m": -2147483279,
+        "b": 1
+      },
+      "Rideau Canal": {
+        "t": -2147483614,
+        "r": -2147483554,
+        "m": -2147483266,
+        "b": 1
+      },
+      "Riding Mountain - Wasagaming": {
+        "t": -2147483613,
+        "r": -2147483553,
+        "m": -2147483133,
+        "b": 1
+      },
+      "Rocky Mountain House": {
+        "t": -2147483612,
+        "r": -2147483549,
+        "m": -2147483244,
+        "b": 1
+      },
+      "Saint-Ours Canal": {
+        "t": -2147483611,
+        "r": -2147483548,
+        "m": -2147483241,
+        "b": 1
+      },
+      "Terra Nova - Malady Head": {
+        "t": -2147483610,
+        "r": -2147483546,
+        "m": -2147483130,
+        "b": 1
+      },
+      "Terra Nova - Newman Sound": {
+        "t": -2147483610,
+        "r": -2147483545,
+        "m": -2147483129,
+        "b": 1
+      },
+      "Thousand Islands": {
+        "t": -2147483609,
+        "r": -2147483544,
+        "m": -2147483216,
+        "b": 1
+      },
+      "Trent-Severn Waterway": {
+        "t": -2147483608,
+        "r": -2147483543,
+        "m": -2147483204,
+        "b": 1
+      }
+    },
     "always_available_parks": [
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 51779,
+    "total_available_slots": 51781,
     "available_days": 180,
     "available_units": 454
   },
@@ -93,7 +401,7 @@
     },
     {
       "date": "2026-06-29",
-      "available_slots": 51779,
+      "available_slots": 51781,
       "available_units": 454,
       "available_days": 180
     }
@@ -301,7 +609,7 @@
         "PageTitle": null,
         "ResourceName": "3D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -392,7 +700,7 @@
         "PageTitle": null,
         "ResourceName": "4H",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -1540,7 +1848,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -3234,7 +3542,7 @@
         "PageTitle": null,
         "ResourceName": "703",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -3612,7 +3920,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -3752,7 +4060,7 @@
         "PageTitle": null,
         "ResourceName": "O508",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -7100,7 +7408,7 @@
         "PageTitle": null,
         "ResourceName": "703",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -7401,7 +7709,7 @@
         "PageTitle": null,
         "ResourceName": "Teepee 7",
         "Type": "Teepee",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -7422,7 +7730,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -7478,7 +7786,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -9895,7 +10203,7 @@
         "PageTitle": null,
         "ResourceName": "A7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -10532,7 +10840,7 @@
         "PageTitle": null,
         "ResourceName": "22",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -11211,7 +11519,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -11288,7 +11596,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -11309,7 +11617,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -11568,7 +11876,7 @@
         "PageTitle": null,
         "ResourceName": "MC-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -11603,7 +11911,7 @@
         "PageTitle": null,
         "ResourceName": "MT-E",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -15077,7 +15385,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -15175,7 +15483,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -15434,7 +15742,7 @@
         "PageTitle": null,
         "ResourceName": "MC-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -15469,7 +15777,7 @@
         "PageTitle": null,
         "ResourceName": "MT-E",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -19020,7 +19328,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -19041,7 +19349,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -22886,7 +23194,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -22907,7 +23215,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -30632,7 +30940,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -31467,7 +31775,7 @@
         "PageTitle": null,
         "ResourceName": "D9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -33091,7 +33399,7 @@
         "PageTitle": null,
         "ResourceName": "A7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -33161,7 +33469,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -34498,7 +34806,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -35207,7 +35515,7 @@
         "PageTitle": null,
         "ResourceName": "D11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -37573,7 +37881,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -38364,7 +38672,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -41439,7 +41747,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -71926,7 +72234,7 @@
         "PageTitle": null,
         "ResourceName": "O98",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -79287,7 +79595,7 @@
         "PageTitle": null,
         "ResourceName": "335",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -88230,7 +88538,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -91564,7 +91872,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS03",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -91984,7 +92292,7 @@
         "PageTitle": null,
         "ResourceName": "OS2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -95962,7 +96270,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -96347,7 +96655,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -104753,7 +105061,7 @@
         "PageTitle": null,
         "ResourceName": "4E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -108521,7 +108829,7 @@
         "PageTitle": null,
         "ResourceName": "2H",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -112387,7 +112695,7 @@
         "PageTitle": null,
         "ResourceName": "2H",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -198237,7 +198545,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -202103,7 +202411,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -221902,7 +222210,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -225768,7 +226076,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -249713,7 +250021,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -253579,7 +253887,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -257445,7 +257753,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -272853,7 +273161,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -276719,7 +277027,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -280585,7 +280893,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -284451,7 +284759,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -297673,7 +297981,7 @@
         "PageTitle": null,
         "ResourceName": "MT-C",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -311184,7 +311492,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -324749,7 +325057,7 @@
         "PageTitle": null,
         "ResourceName": "MT-E",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -325549,7 +325857,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -329415,7 +329723,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -332096,7 +332404,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 2",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -351069,7 +351377,7 @@
         "PageTitle": null,
         "ResourceName": "70",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -355257,7 +355565,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -359123,7 +359431,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -362989,7 +363297,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -366855,7 +367163,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -376374,7 +376682,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -380240,7 +380548,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -384106,7 +384414,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -387972,7 +388280,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -391838,7 +392146,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -395704,7 +396012,7 @@
         "PageTitle": null,
         "ResourceName": "CS3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
