@@ -130,6 +130,7 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
         "total_parks": len(stats["parks"]),
         "parks": stats["parks"],
         "types": sorted({o.get("Type", "oTENTik") for o in otentiks}),
+        "locations": booking_locations(otentiks),
         "always_available_parks": always_available_parks(dates),
         "errors": errors or [],
         **{k: stats[k] for k in ("total_available_slots", "available_days", "available_units")},
@@ -138,6 +139,28 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
     history = _append_history(prior_history, generated_at[:10], stats)
 
     return {"metadata": metadata, "history": history, "dates": dates}
+
+
+def booking_locations(otentiks):
+    """Per-park ids for building Parks Canada booking deep links.
+
+    All units at a park share resourceLocationId / transactionLocationId /
+    mapId; bookingCategoryId is uniform per roofed type. Returns one compact
+    entry per park: {t: transactionLocationId, r: resourceLocationId,
+    m: mapId, b: bookingCategoryId}. Parks whose roster lacks the discovery
+    ids (older rosters) are omitted, so the UI falls back to the booking home.
+    """
+    out = {}
+    for o in otentiks:
+        park = o.get("ParkName")
+        t = o.get("TransactionLocationId")
+        r = o.get("ResourceLocationId")
+        m = o.get("MapId")
+        if park is None or t is None or r is None or m is None:
+            continue
+        out.setdefault(park, {"t": t, "r": r, "m": m,
+                              "b": o.get("BookingCategoryId") or 1})
+    return out
 
 
 def always_available_parks(dates):

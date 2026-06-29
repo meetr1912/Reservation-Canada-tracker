@@ -80,6 +80,35 @@ export function prettyLoop(pageTitle) {
   return pageTitle.replace(/^#\s*/, 'Site ');
 }
 
-// Booking deep-link for a park (best effort — the reservation site doesn't
-// expose stable per-unit URLs, so we link to the reservation home).
+// Booking home — fallback when we can't build a per-location deep link.
 export const BOOKING_URL = 'https://reservation.pc.gc.ca/';
+
+function shiftDate(dateStr, n) {
+  const d = parseLocalDate(dateStr);
+  d.setDate(d.getDate() + n);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+// Deep-link straight to the Parks Canada availability results for this site's
+// location + date (1 night). The reservation site doesn't expose stable
+// per-unit URLs, so this lands on the location's map filtered to the date —
+// as specific as the booking engine allows. Falls back to the booking home
+// if the report has no location ids for this park (e.g. an older snapshot).
+export function buildBookingUrl(site, dateStr, metadata) {
+  const loc = metadata && metadata.locations && metadata.locations[site && site.ParkName];
+  if (!loc || !dateStr) return BOOKING_URL;
+  const params = new URLSearchParams({
+    transactionLocationId: loc.t,
+    resourceLocationId: loc.r,
+    mapId: loc.m,
+    searchTabGroupId: 2,
+    bookingCategoryId: loc.b == null ? 1 : loc.b,
+    startDate: dateStr,
+    endDate: shiftDate(dateStr, 1),
+    nights: 1,
+    isReserving: true,
+    peopleCapacityCategoryCounts: '[[-32767,null,1,null]]',
+    flexibleSearch: '[false,false,null,1]',
+  });
+  return `https://reservation.pc.gc.ca/create-booking/results?${params.toString()}`;
+}

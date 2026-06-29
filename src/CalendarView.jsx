@@ -6,7 +6,7 @@ import { Button } from './components/ui/button';
 import {
   Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle,
 } from './components/ui/dialog';
-import { parseLocalDate, formatDate, BOOKING_URL, prettyUnit, prettyLoop } from './lib/data';
+import { parseLocalDate, formatDate, buildBookingUrl, prettyUnit, prettyLoop } from './lib/data';
 
 // Heatmap buckets keyed off the busiest single day in the dataset.
 function intensityClass(count, max) {
@@ -17,7 +17,7 @@ function intensityClass(count, max) {
   return 'bg-emerald-100 border-emerald-200 text-emerald-900';
 }
 
-function CalendarView({ availabilityData, selectedPark, selectedType, onAlert }) {
+function CalendarView({ availabilityData, selectedPark, selectedType, onAlert, metadata }) {
   const matchesFilters = useMemo(() => (s) =>
     s.status
     && (!selectedPark || selectedPark === 'all' || s.ParkName === selectedPark)
@@ -59,13 +59,13 @@ function CalendarView({ availabilityData, selectedPark, selectedType, onAlert })
       {months.map(monthKey => (
         <MonthCalendar key={monthKey} monthKey={monthKey}
           availabilityData={availabilityData} matchesFilters={matchesFilters}
-          countFor={countFor} maxCount={maxCount} onAlert={onAlert} />
+          countFor={countFor} maxCount={maxCount} onAlert={onAlert} metadata={metadata} />
       ))}
     </div>
   );
 }
 
-function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, maxCount, onAlert }) {
+function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, maxCount, onAlert, metadata }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -161,7 +161,7 @@ function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, m
                   <MapPin className="h-3 w-3" /> {site.ParkName}
                 </p>
                 {prettyLoop(site.PageTitle) && <p className="text-xs text-gray-500">{prettyLoop(site.PageTitle)}</p>}
-                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+                <a href={buildBookingUrl(site, selectedDate, metadata)} target="_blank" rel="noopener noreferrer"
                   className="mt-2 inline-block text-sm font-medium text-emerald-700 hover:text-emerald-800">
                   Reserve on Parks Canada →
                 </a>

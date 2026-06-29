@@ -57,6 +57,23 @@ def test_type_propagates_and_defaults():
     assert report["metadata"]["types"] == ["Yurt", "oTENTik"]
 
 
+def test_booking_locations_in_metadata():
+    units = [
+        {"ParkName": "Banff - Two Jack", "PageTitle": None, "ResourceName": "O1",
+         "NegativeResourceValue": -1, "Type": "oTENTik",
+         "ResourceLocationId": -2147483643, "TransactionLocationId": -2147483648,
+         "MapId": -2147483606, "BookingCategoryId": 1},
+        {"ParkName": "Old Park", "PageTitle": None, "ResourceName": "X1",
+         "NegativeResourceValue": -2},  # missing deep-link ids -> omitted
+    ]
+    report = scraper.build_report(units, set(), START, days=1,
+                                  generated_at="2026-06-27T00:00:00Z")
+    assert report["metadata"]["locations"] == {
+        "Banff - Two Jack": {"t": -2147483648, "r": -2147483643,
+                             "m": -2147483606, "b": 1},
+    }
+
+
 def test_status_reflects_available_set():
     available = {(-1, "2026-06-27"), (-3, "2026-06-28")}
     report = build(available_set=available, days=3)

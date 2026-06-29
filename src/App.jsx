@@ -12,7 +12,7 @@ import { Badge } from './components/ui/badge';
 import CalendarView from './CalendarView';
 import AlertDialog from './AlertDialog';
 import {
-  normalizeReport, formatDate, formatTimestamp, countAvailable, BOOKING_URL,
+  normalizeReport, formatDate, formatTimestamp, countAvailable, buildBookingUrl,
   prettyUnit, splitPark, prettyLoop,
 } from './lib/data';
 
@@ -67,7 +67,7 @@ function StatCard({ label, value, sub, icon: Icon, tone = 'gray', children }) {
   );
 }
 
-function ParkGroup({ park, sites, defaultOpen, verify }) {
+function ParkGroup({ park, sites, defaultOpen, verify, selectedDate, metadata }) {
   const [open, setOpen] = useState(defaultOpen);
   const available = sites.filter(s => s.status).length;
   const { park: parkName, area } = splitPark(park);
@@ -107,14 +107,14 @@ function ParkGroup({ park, sites, defaultOpen, verify }) {
       </button>
       {open && (
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 p-3 sm:p-5 pt-3 sm:pt-0 border-t border-gray-100">
-          {sites.map((site, i) => <SiteCard key={i} site={site} />)}
+          {sites.map((site, i) => <SiteCard key={i} site={site} dateStr={selectedDate} metadata={metadata} />)}
         </div>
       )}
     </div>
   );
 }
 
-function SiteCard({ site }) {
+function SiteCard({ site, dateStr, metadata }) {
   const loop = prettyLoop(site.PageTitle);
   const body = (
     <>
@@ -137,7 +137,7 @@ function SiteCard({ site }) {
   );
   if (site.status) {
     return (
-      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
+      <a href={buildBookingUrl(site, dateStr, metadata)} target="_blank" rel="noopener noreferrer"
         className="block rounded-xl border border-emerald-200 bg-emerald-50/40 p-3 transition-all hover:shadow-md hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
         {body}
       </a>
@@ -523,6 +523,7 @@ function App() {
                 {groupedParks.map(park => (
                   <ParkGroup key={park} park={park} sites={byPark[park]}
                     verify={alwaysOpenParks.has(park)}
+                    selectedDate={selectedDate} metadata={metadata}
                     defaultOpen={countAvailable(byPark[park]) > 0 || groupedParks.length <= 3} />
                 ))}
               </div>
@@ -530,7 +531,7 @@ function App() {
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} selectedType={selectedType} onAlert={openAlert} />
+            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} selectedType={selectedType} onAlert={openAlert} metadata={metadata} />
           </TabsContent>
         </Tabs>
       </div>
