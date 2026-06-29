@@ -7,7 +7,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -17,7 +19,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -27,7 +31,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -37,7 +43,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -47,7 +55,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -57,7 +67,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -67,7 +79,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -77,7 +91,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -87,7 +103,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Lakeside",
@@ -97,7 +115,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483643
+    "ResourceLocationId": -2147483643,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483606
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -107,7 +127,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -117,7 +139,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -127,7 +151,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -137,7 +163,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -147,7 +175,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -157,7 +187,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -167,7 +199,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -177,7 +211,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -187,7 +223,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -197,7 +235,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -207,7 +247,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -217,7 +259,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -227,7 +271,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -237,7 +283,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -247,7 +295,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -257,7 +307,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -267,7 +319,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -277,7 +331,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -287,7 +343,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -297,7 +355,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -307,7 +367,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -317,7 +379,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -327,7 +391,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -337,7 +403,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -347,7 +415,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -357,7 +427,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -367,7 +439,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -377,7 +451,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -387,7 +463,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -397,7 +475,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -407,7 +487,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Two Jack Main",
@@ -417,7 +499,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483645
+    "ResourceLocationId": -2147483645,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483602
   },
   {
     "ParkName": "Banff - Village 2",
@@ -427,7 +511,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -437,7 +523,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -447,7 +535,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -457,7 +547,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -467,7 +559,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -477,7 +571,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -487,7 +583,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -497,7 +595,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -507,7 +607,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -517,7 +619,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -527,7 +631,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -537,7 +643,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -547,7 +655,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -557,7 +667,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -567,7 +679,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -577,7 +691,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -587,7 +703,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -597,7 +715,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -607,7 +727,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -617,7 +739,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Banff - Village 2",
@@ -627,7 +751,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483648
+    "ResourceLocationId": -2147483648,
+    "TransactionLocationId": -2147483648,
+    "MapId": -2147483611
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -637,7 +763,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -647,7 +775,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -657,7 +787,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -667,7 +799,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -677,7 +811,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -687,7 +823,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -697,7 +835,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -707,7 +847,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -717,7 +859,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -727,7 +871,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483636
+    "ResourceLocationId": -2147483636,
+    "TransactionLocationId": -2147483645,
+    "MapId": -2147483172
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -737,7 +883,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -747,7 +895,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -757,7 +907,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -767,7 +919,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -777,7 +931,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -787,7 +943,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483634
+    "ResourceLocationId": -2147483634,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483170
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -797,7 +955,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -807,7 +967,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -817,7 +979,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -827,7 +991,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -837,7 +1003,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -847,7 +1015,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -857,7 +1027,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -867,7 +1039,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -877,7 +1051,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -887,7 +1063,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483630
+    "ResourceLocationId": -2147483630,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483568
   },
   {
     "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -897,7 +1075,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483631
+    "ResourceLocationId": -2147483631,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483169
   },
   {
     "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -907,7 +1087,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483631
+    "ResourceLocationId": -2147483631,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483169
   },
   {
     "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -917,7 +1099,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483631
+    "ResourceLocationId": -2147483631,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483169
   },
   {
     "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -927,7 +1111,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483631
+    "ResourceLocationId": -2147483631,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483169
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -937,7 +1123,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -947,7 +1135,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -957,7 +1147,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -967,7 +1159,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -977,7 +1171,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -987,7 +1183,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -997,7 +1195,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483632
+    "ResourceLocationId": -2147483632,
+    "TransactionLocationId": -2147483643,
+    "MapId": -2147483569
   },
   {
     "ParkName": "Elk Island",
@@ -1007,7 +1207,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483629
+    "ResourceLocationId": -2147483629,
+    "TransactionLocationId": -2147483642,
+    "MapId": -2147483559
   },
   {
     "ParkName": "Elk Island",
@@ -1017,7 +1219,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483629
+    "ResourceLocationId": -2147483629,
+    "TransactionLocationId": -2147483642,
+    "MapId": -2147483559
   },
   {
     "ParkName": "Elk Island",
@@ -1027,7 +1231,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483629
+    "ResourceLocationId": -2147483629,
+    "TransactionLocationId": -2147483642,
+    "MapId": -2147483559
   },
   {
     "ParkName": "Elk Island",
@@ -1037,7 +1243,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483629
+    "ResourceLocationId": -2147483629,
+    "TransactionLocationId": -2147483642,
+    "MapId": -2147483559
   },
   {
     "ParkName": "Elk Island",
@@ -1047,7 +1255,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483629
+    "ResourceLocationId": -2147483629,
+    "TransactionLocationId": -2147483642,
+    "MapId": -2147483559
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1057,7 +1267,9 @@
     "Type": "MicrOcube",
     "ResourceCategoryId": -2147483642,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1067,7 +1279,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1077,7 +1291,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1087,7 +1303,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1097,7 +1315,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1107,7 +1327,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1117,7 +1339,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1127,7 +1351,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1137,7 +1363,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1147,7 +1375,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1157,7 +1387,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1167,7 +1399,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1177,7 +1411,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Des-Rosiers",
@@ -1187,7 +1423,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483625
+    "ResourceLocationId": -2147483625,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483157
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1197,7 +1435,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1207,7 +1447,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1217,7 +1459,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1227,7 +1471,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1237,7 +1483,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1247,7 +1495,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Forillon - Petit-Gaspé",
@@ -1257,7 +1507,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483626
+    "ResourceLocationId": -2147483626,
+    "TransactionLocationId": -2147483640,
+    "MapId": -2147483156
   },
   {
     "ParkName": "Fort Langley",
@@ -1267,7 +1519,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483623
+    "ResourceLocationId": -2147483623,
+    "TransactionLocationId": -2147483638,
+    "MapId": -2147483536
   },
   {
     "ParkName": "Fort Langley",
@@ -1277,7 +1531,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483623
+    "ResourceLocationId": -2147483623,
+    "TransactionLocationId": -2147483638,
+    "MapId": -2147483536
   },
   {
     "ParkName": "Fort Langley",
@@ -1287,7 +1543,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483623
+    "ResourceLocationId": -2147483623,
+    "TransactionLocationId": -2147483638,
+    "MapId": -2147483536
   },
   {
     "ParkName": "Fort Langley",
@@ -1297,7 +1555,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483623
+    "ResourceLocationId": -2147483623,
+    "TransactionLocationId": -2147483638,
+    "MapId": -2147483536
   },
   {
     "ParkName": "Fort Langley",
@@ -1307,7 +1567,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483623
+    "ResourceLocationId": -2147483623,
+    "TransactionLocationId": -2147483638,
+    "MapId": -2147483536
   },
   {
     "ParkName": "Fort Rodd Hill",
@@ -1317,7 +1579,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483622
+    "ResourceLocationId": -2147483622,
+    "TransactionLocationId": -2147483637,
+    "MapId": -2147483534
   },
   {
     "ParkName": "Fort Rodd Hill",
@@ -1327,7 +1591,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483622
+    "ResourceLocationId": -2147483622,
+    "TransactionLocationId": -2147483637,
+    "MapId": -2147483534
   },
   {
     "ParkName": "Fort Rodd Hill",
@@ -1337,7 +1603,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483622
+    "ResourceLocationId": -2147483622,
+    "TransactionLocationId": -2147483637,
+    "MapId": -2147483534
   },
   {
     "ParkName": "Fort Rodd Hill",
@@ -1347,7 +1615,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483622
+    "ResourceLocationId": -2147483622,
+    "TransactionLocationId": -2147483637,
+    "MapId": -2147483534
   },
   {
     "ParkName": "Fort Rodd Hill",
@@ -1357,7 +1627,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483622
+    "ResourceLocationId": -2147483622,
+    "TransactionLocationId": -2147483637,
+    "MapId": -2147483534
   },
   {
     "ParkName": "Fundy - Backcountry",
@@ -1367,7 +1639,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483618
+    "ResourceLocationId": -2147483618,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483527
   },
   {
     "ParkName": "Fundy - Backcountry",
@@ -1377,7 +1651,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483618
+    "ResourceLocationId": -2147483618,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483527
   },
   {
     "ParkName": "Fundy - Backcountry",
@@ -1387,7 +1663,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483618
+    "ResourceLocationId": -2147483618,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483527
   },
   {
     "ParkName": "Fundy - Backcountry",
@@ -1397,7 +1675,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483618
+    "ResourceLocationId": -2147483618,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483527
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1407,7 +1687,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1417,7 +1699,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1427,7 +1711,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1437,7 +1723,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1447,7 +1735,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1457,7 +1747,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1467,7 +1759,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1477,7 +1771,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1487,7 +1783,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1497,7 +1795,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1507,7 +1807,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1517,7 +1819,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Chignecto",
@@ -1527,7 +1831,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483617
+    "ResourceLocationId": -2147483617,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483531
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1537,7 +1843,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1547,7 +1855,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1557,7 +1867,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1567,7 +1879,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1577,7 +1891,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1587,7 +1903,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1597,7 +1915,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1607,7 +1927,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1617,7 +1939,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1627,7 +1951,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1637,7 +1963,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1647,7 +1975,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1657,7 +1987,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1667,7 +1999,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Headquarters",
@@ -1677,7 +2011,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483621
+    "ResourceLocationId": -2147483621,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483529
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1687,7 +2023,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1697,7 +2035,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1707,7 +2047,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1717,7 +2059,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1727,7 +2071,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1737,7 +2083,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1747,7 +2095,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1757,7 +2107,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1767,7 +2119,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1777,7 +2131,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Fundy - Point Wolfe",
@@ -1787,7 +2143,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483619
+    "ResourceLocationId": -2147483619,
+    "TransactionLocationId": -2147483636,
+    "MapId": -2147483528
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1797,7 +2155,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1807,7 +2167,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1817,7 +2179,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1827,7 +2191,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1837,7 +2203,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1847,7 +2215,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1857,7 +2227,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1867,7 +2239,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1877,7 +2251,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1887,7 +2263,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -1897,7 +2275,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483614
+    "ResourceLocationId": -2147483614,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147482995
   },
   {
     "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -1907,7 +2287,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483613
+    "ResourceLocationId": -2147483613,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147483506
   },
   {
     "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -1917,7 +2299,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483613
+    "ResourceLocationId": -2147483613,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147483506
   },
   {
     "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -1927,7 +2311,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483613
+    "ResourceLocationId": -2147483613,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147483506
   },
   {
     "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -1937,7 +2323,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483613
+    "ResourceLocationId": -2147483613,
+    "TransactionLocationId": -2147483635,
+    "MapId": -2147483506
   },
   {
     "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -1947,7 +2335,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483607
+    "ResourceLocationId": -2147483607,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482999
   },
   {
     "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -1957,7 +2347,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483607
+    "ResourceLocationId": -2147483607,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482999
   },
   {
     "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -1967,7 +2359,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483607
+    "ResourceLocationId": -2147483607,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482999
   },
   {
     "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -1977,7 +2371,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483607
+    "ResourceLocationId": -2147483607,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482999
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -1987,7 +2383,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -1997,7 +2395,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2007,7 +2407,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2017,7 +2419,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2027,7 +2431,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2037,7 +2443,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2047,7 +2455,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2057,7 +2467,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483608
+    "ResourceLocationId": -2147483608,
+    "TransactionLocationId": -2147483632,
+    "MapId": -2147482998
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2067,7 +2479,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2077,7 +2491,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2087,7 +2503,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2097,7 +2515,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2107,7 +2527,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2117,7 +2539,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2127,7 +2551,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2137,7 +2563,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Berry Hill",
@@ -2147,7 +2575,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483606
+    "ResourceLocationId": -2147483606,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483152
   },
   {
     "ParkName": "Gros Morne - Green Point",
@@ -2157,7 +2587,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483603
+    "ResourceLocationId": -2147483603,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483480
   },
   {
     "ParkName": "Gros Morne - Green Point",
@@ -2167,7 +2599,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483603
+    "ResourceLocationId": -2147483603,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483480
   },
   {
     "ParkName": "Gros Morne - Lomond",
@@ -2177,7 +2611,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483605
+    "ResourceLocationId": -2147483605,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483479
   },
   {
     "ParkName": "Gros Morne - Lomond",
@@ -2187,7 +2623,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483605
+    "ResourceLocationId": -2147483605,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483479
   },
   {
     "ParkName": "Gros Morne - Lomond",
@@ -2197,7 +2635,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483605
+    "ResourceLocationId": -2147483605,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483479
   },
   {
     "ParkName": "Gros Morne - Lomond",
@@ -2207,7 +2647,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483605
+    "ResourceLocationId": -2147483605,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483479
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2217,7 +2659,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2227,7 +2671,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2237,7 +2683,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2247,7 +2695,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2257,7 +2707,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Shallow Bay",
@@ -2267,7 +2719,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483602
+    "ResourceLocationId": -2147483602,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483482
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2277,7 +2731,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2287,7 +2743,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2297,7 +2755,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2307,7 +2767,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2317,7 +2779,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Gros Morne - Trout River",
@@ -2327,7 +2791,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483604
+    "ResourceLocationId": -2147483604,
+    "TransactionLocationId": -2147483631,
+    "MapId": -2147483481
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2337,7 +2803,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2347,7 +2815,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2357,7 +2827,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2367,7 +2839,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2377,7 +2851,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2387,7 +2863,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2397,7 +2875,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2407,7 +2887,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2417,7 +2899,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2427,7 +2911,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2437,7 +2923,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2447,7 +2935,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2457,7 +2947,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2467,7 +2959,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2477,7 +2971,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2487,7 +2983,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2497,7 +2995,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2507,7 +3007,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2517,7 +3019,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2527,7 +3031,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Jasper - Whistlers",
@@ -2537,7 +3043,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483597
+    "ResourceLocationId": -2147483597,
+    "TransactionLocationId": -2147483628,
+    "MapId": -2147483454
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2547,7 +3055,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2557,7 +3067,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2567,7 +3079,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2577,7 +3091,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2587,7 +3103,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2597,7 +3115,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2607,7 +3127,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2617,7 +3139,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2627,7 +3151,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2637,7 +3163,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2647,7 +3175,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2657,7 +3187,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2667,7 +3199,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2677,7 +3211,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2687,7 +3223,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2697,7 +3235,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2707,7 +3247,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2717,7 +3259,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2727,7 +3271,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2737,7 +3283,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2747,7 +3295,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2757,7 +3307,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2767,7 +3319,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2777,7 +3331,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2787,7 +3343,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2797,7 +3355,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2807,7 +3367,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483587
+    "ResourceLocationId": -2147483587,
+    "TransactionLocationId": -2147483627,
+    "MapId": -2147483126
   },
   {
     "ParkName": "Kluane",
@@ -2817,7 +3379,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483586
+    "ResourceLocationId": -2147483586,
+    "TransactionLocationId": -2147483626,
+    "MapId": -2147483387
   },
   {
     "ParkName": "Kluane",
@@ -2827,7 +3391,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483586
+    "ResourceLocationId": -2147483586,
+    "TransactionLocationId": -2147483626,
+    "MapId": -2147483387
   },
   {
     "ParkName": "Kluane",
@@ -2837,7 +3403,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483586
+    "ResourceLocationId": -2147483586,
+    "TransactionLocationId": -2147483626,
+    "MapId": -2147483387
   },
   {
     "ParkName": "Kluane",
@@ -2847,7 +3415,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483586
+    "ResourceLocationId": -2147483586,
+    "TransactionLocationId": -2147483626,
+    "MapId": -2147483387
   },
   {
     "ParkName": "Kluane",
@@ -2857,7 +3427,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483586
+    "ResourceLocationId": -2147483586,
+    "TransactionLocationId": -2147483626,
+    "MapId": -2147483387
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2867,7 +3439,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2877,7 +3451,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2887,7 +3463,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2897,7 +3475,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2907,7 +3487,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2917,7 +3499,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2927,7 +3511,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2937,7 +3523,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2947,7 +3535,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kootenay - Redstreak",
@@ -2957,7 +3547,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483582
+    "ResourceLocationId": -2147483582,
+    "TransactionLocationId": -2147483625,
+    "MapId": -2147483148
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -2967,7 +3559,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -2977,7 +3571,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -2987,7 +3583,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -2997,7 +3595,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3007,7 +3607,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3017,7 +3619,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3027,7 +3631,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3037,7 +3643,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3047,7 +3655,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3057,7 +3667,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3067,7 +3679,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3077,7 +3691,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3087,7 +3703,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3097,7 +3715,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3107,7 +3727,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3117,7 +3739,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3127,7 +3751,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3137,7 +3763,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3147,7 +3775,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3157,7 +3787,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3167,7 +3799,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3177,7 +3811,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3187,7 +3823,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3197,7 +3835,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "Kouchibouguac - South",
@@ -3207,7 +3847,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483581
+    "ResourceLocationId": -2147483581,
+    "TransactionLocationId": -2147483624,
+    "MapId": -2147483146
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3217,7 +3859,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3227,7 +3871,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3237,7 +3883,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3247,7 +3895,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3257,7 +3907,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3267,7 +3919,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3277,7 +3931,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3287,7 +3943,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3297,7 +3955,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3307,7 +3967,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3317,7 +3979,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Mistagance",
@@ -3327,7 +3991,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483575
+    "ResourceLocationId": -2147483575,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483363
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3337,7 +4003,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3347,7 +4015,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3357,7 +4027,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3367,7 +4039,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3377,7 +4051,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3387,7 +4063,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3397,7 +4075,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3407,7 +4087,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3417,7 +4099,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3427,7 +4111,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3437,7 +4123,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3447,7 +4135,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -3457,7 +4147,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483573
+    "ResourceLocationId": -2147483573,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483362
   },
   {
     "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -3467,7 +4159,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483524
+    "ResourceLocationId": -2147483524,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483110
   },
   {
     "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -3477,7 +4171,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483524
+    "ResourceLocationId": -2147483524,
+    "TransactionLocationId": -2147483623,
+    "MapId": -2147483110
   },
   {
     "ParkName": "Lachine Canal",
@@ -3487,7 +4183,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3497,7 +4195,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3507,7 +4207,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3517,7 +4219,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3527,7 +4231,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3537,7 +4243,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Lachine Canal",
@@ -3547,7 +4255,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483571
+    "ResourceLocationId": -2147483571,
+    "TransactionLocationId": -2147483622,
+    "MapId": -2147483330
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3557,7 +4267,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3567,7 +4279,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3577,7 +4291,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3587,7 +4303,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3597,7 +4315,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3607,7 +4327,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3617,7 +4339,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3627,7 +4351,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3637,7 +4363,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3647,7 +4375,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3657,7 +4387,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mingan Archipelago",
@@ -3667,7 +4399,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483570
+    "ResourceLocationId": -2147483570,
+    "TransactionLocationId": -2147483621,
+    "MapId": -2147483327
   },
   {
     "ParkName": "Mount Revelstoke - Snowforest",
@@ -3677,7 +4411,9 @@
     "Type": "MicrOcube",
     "ResourceCategoryId": -2147483642,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483567
+    "ResourceLocationId": -2147483567,
+    "TransactionLocationId": -2147483620,
+    "MapId": -2147483141
   },
   {
     "ParkName": "Mount Revelstoke - Snowforest",
@@ -3687,7 +4423,9 @@
     "Type": "MicrOcube",
     "ResourceCategoryId": -2147483642,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483567
+    "ResourceLocationId": -2147483567,
+    "TransactionLocationId": -2147483620,
+    "MapId": -2147483141
   },
   {
     "ParkName": "Mount Revelstoke - Snowforest",
@@ -3697,7 +4435,9 @@
     "Type": "MicrOcube",
     "ResourceCategoryId": -2147483642,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483567
+    "ResourceLocationId": -2147483567,
+    "TransactionLocationId": -2147483620,
+    "MapId": -2147483141
   },
   {
     "ParkName": "Pacific Rim - Green Point",
@@ -3707,7 +4447,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483565
+    "ResourceLocationId": -2147483565,
+    "TransactionLocationId": -2147483619,
+    "MapId": -2147483315
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3717,7 +4459,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3727,7 +4471,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3737,7 +4483,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3747,7 +4495,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3757,7 +4507,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3767,7 +4519,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3777,7 +4531,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3787,7 +4543,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3797,7 +4555,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3807,7 +4567,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3817,7 +4579,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3827,7 +4591,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3837,7 +4603,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3847,7 +4615,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3857,7 +4627,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3867,7 +4639,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3877,7 +4651,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3887,7 +4663,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3897,7 +4675,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3907,7 +4687,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3917,7 +4699,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3927,7 +4711,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3937,7 +4723,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Point Pelee - Camp Henry",
@@ -3947,7 +4735,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483561
+    "ResourceLocationId": -2147483561,
+    "TransactionLocationId": -2147483618,
+    "MapId": -2147483309
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -3957,7 +4747,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -3967,7 +4759,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -3977,7 +4771,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -3987,7 +4783,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -3997,7 +4795,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -4007,7 +4807,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -4017,7 +4819,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -4027,7 +4831,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -4037,7 +4843,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Albert - Beaver Glen",
@@ -4047,7 +4855,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483558
+    "ResourceLocationId": -2147483558,
+    "TransactionLocationId": -2147483617,
+    "MapId": -2147483140
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4057,7 +4867,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4067,7 +4879,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4077,7 +4891,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4087,7 +4903,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4097,7 +4915,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4107,7 +4927,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4117,7 +4939,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4127,7 +4951,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4137,7 +4963,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4147,7 +4975,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Cavendish",
@@ -4157,7 +4987,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483557
+    "ResourceLocationId": -2147483557,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483062
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4167,7 +4999,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4177,7 +5011,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4187,7 +5023,9 @@
     "Type": "Cabin",
     "ResourceCategoryId": -2147483646,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4197,7 +5035,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4207,7 +5047,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4217,7 +5059,9 @@
     "Type": "Equipped Camping",
     "ResourceCategoryId": -2147483635,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4227,7 +5071,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4237,7 +5083,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4247,7 +5095,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4257,7 +5107,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4267,7 +5119,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4277,7 +5131,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4287,7 +5143,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Prince Edward Island - Stanhope",
@@ -4297,7 +5155,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483556
+    "ResourceLocationId": -2147483556,
+    "TransactionLocationId": -2147483616,
+    "MapId": -2147483136
   },
   {
     "ParkName": "Pukaskwa",
@@ -4307,7 +5167,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483555
+    "ResourceLocationId": -2147483555,
+    "TransactionLocationId": -2147483615,
+    "MapId": -2147483279
   },
   {
     "ParkName": "Pukaskwa",
@@ -4317,7 +5179,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483555
+    "ResourceLocationId": -2147483555,
+    "TransactionLocationId": -2147483615,
+    "MapId": -2147483279
   },
   {
     "ParkName": "Pukaskwa",
@@ -4327,7 +5191,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483555
+    "ResourceLocationId": -2147483555,
+    "TransactionLocationId": -2147483615,
+    "MapId": -2147483279
   },
   {
     "ParkName": "Pukaskwa",
@@ -4337,7 +5203,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483555
+    "ResourceLocationId": -2147483555,
+    "TransactionLocationId": -2147483615,
+    "MapId": -2147483279
   },
   {
     "ParkName": "Pukaskwa",
@@ -4347,7 +5215,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483555
+    "ResourceLocationId": -2147483555,
+    "TransactionLocationId": -2147483615,
+    "MapId": -2147483279
   },
   {
     "ParkName": "Rideau Canal",
@@ -4357,7 +5227,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4367,7 +5239,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4377,7 +5251,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4387,7 +5263,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4397,7 +5275,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4407,7 +5287,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4417,7 +5299,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Rideau Canal",
@@ -4427,7 +5311,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483554
+    "ResourceLocationId": -2147483554,
+    "TransactionLocationId": -2147483614,
+    "MapId": -2147483266
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4437,7 +5323,9 @@
     "Type": "MicrOcube",
     "ResourceCategoryId": -2147483642,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4447,7 +5335,9 @@
     "Type": "Yurt",
     "ResourceCategoryId": -2147483647,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4457,7 +5347,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4467,7 +5359,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4477,7 +5371,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4487,7 +5383,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4497,7 +5395,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4507,7 +5407,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4517,7 +5419,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4527,7 +5431,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4537,7 +5443,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4547,7 +5455,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4557,7 +5467,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4567,7 +5479,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4577,7 +5491,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4587,7 +5503,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4597,7 +5515,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4607,7 +5527,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4617,7 +5539,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4627,7 +5551,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4637,7 +5563,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4647,7 +5575,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4657,7 +5587,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4667,7 +5599,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4677,7 +5611,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4687,7 +5623,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4697,7 +5635,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4707,7 +5647,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4717,7 +5659,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4727,7 +5671,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4737,7 +5683,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4747,7 +5695,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4757,7 +5707,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4767,7 +5719,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4777,7 +5731,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4787,7 +5743,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4797,7 +5755,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4807,7 +5767,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Riding Mountain - Wasagaming",
@@ -4817,7 +5779,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483553
+    "ResourceLocationId": -2147483553,
+    "TransactionLocationId": -2147483613,
+    "MapId": -2147483133
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4827,7 +5791,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4837,7 +5803,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4847,7 +5815,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4857,7 +5827,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4867,7 +5839,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4877,7 +5851,9 @@
     "Type": "Prospector Tent",
     "ResourceCategoryId": -2147483630,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4887,7 +5863,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4897,7 +5875,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4907,7 +5887,9 @@
     "Type": "Teepee",
     "ResourceCategoryId": -2147483631,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4917,7 +5899,9 @@
     "Type": "Teepee",
     "ResourceCategoryId": -2147483631,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Rocky Mountain House",
@@ -4927,7 +5911,9 @@
     "Type": "Teepee",
     "ResourceCategoryId": -2147483631,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483549
+    "ResourceLocationId": -2147483549,
+    "TransactionLocationId": -2147483612,
+    "MapId": -2147483244
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4937,7 +5923,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4947,7 +5935,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4957,7 +5947,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4967,7 +5959,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4977,7 +5971,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Saint-Ours Canal",
@@ -4987,7 +5983,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483548
+    "ResourceLocationId": -2147483548,
+    "TransactionLocationId": -2147483611,
+    "MapId": -2147483241
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -4997,7 +5995,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5007,7 +6007,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5017,7 +6019,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5027,7 +6031,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5037,7 +6043,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5047,7 +6055,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5057,7 +6067,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5067,7 +6079,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5077,7 +6091,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Malady Head",
@@ -5087,7 +6103,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483546
+    "ResourceLocationId": -2147483546,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483130
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5097,7 +6115,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5107,7 +6127,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5117,7 +6139,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5127,7 +6151,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5137,7 +6163,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5147,7 +6175,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5157,7 +6187,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5167,7 +6199,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5177,7 +6211,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5187,7 +6223,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5197,7 +6235,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5207,7 +6247,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5217,7 +6259,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5227,7 +6271,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5237,7 +6283,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5247,7 +6295,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5257,7 +6307,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5267,7 +6319,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5277,7 +6331,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Terra Nova - Newman Sound",
@@ -5287,7 +6343,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483545
+    "ResourceLocationId": -2147483545,
+    "TransactionLocationId": -2147483610,
+    "MapId": -2147483129
   },
   {
     "ParkName": "Thousand Islands",
@@ -5297,7 +6355,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5307,7 +6367,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5317,7 +6379,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5327,7 +6391,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5337,7 +6403,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5347,7 +6415,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5357,7 +6427,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5367,7 +6439,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5377,7 +6451,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Thousand Islands",
@@ -5387,7 +6463,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483544
+    "ResourceLocationId": -2147483544,
+    "TransactionLocationId": -2147483609,
+    "MapId": -2147483216
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5397,7 +6475,9 @@
     "Type": "Rustic Cabin",
     "ResourceCategoryId": -2147483645,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5407,7 +6487,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5417,7 +6499,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5427,7 +6511,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5437,7 +6523,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5447,7 +6535,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5457,7 +6547,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5467,7 +6559,9 @@
     "Type": "oTENTik",
     "ResourceCategoryId": -2147483643,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5477,7 +6571,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5487,7 +6583,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5497,7 +6595,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5507,7 +6607,9 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   },
   {
     "ParkName": "Trent-Severn Waterway",
@@ -5517,6 +6619,8 @@
     "Type": "Ôasis",
     "ResourceCategoryId": -2147483644,
     "BookingCategoryId": 1,
-    "ResourceLocationId": -2147483543
+    "ResourceLocationId": -2147483543,
+    "TransactionLocationId": -2147483608,
+    "MapId": -2147483204
   }
 ]
