@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-29T00:11:40Z",
+    "generated_at": "2026-06-29T08:50:00Z",
     "start_date": "2026-06-29",
     "end_date": "2026-12-25",
     "days": 180,
@@ -24,7 +24,7 @@
       "Grand-Pré"
     ],
     "errors": [],
-    "total_available_slots": 12248,
+    "total_available_slots": 12259,
     "available_days": 180,
     "available_units": 109
   },
@@ -43,7 +43,7 @@
     },
     {
       "date": "2026-06-29",
-      "available_slots": 12248,
+      "available_slots": 12259,
       "available_units": 109,
       "available_days": 180
     }
@@ -1678,7 +1678,7 @@
         "ParkName": "Fundy - Point Wolfe",
         "PageTitle": "#3 - 20, 154 - 169, O4 - O16",
         "ResourceName": "O7",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -7206,7 +7206,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O88",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -7904,7 +7904,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O13",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -11358,7 +11358,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O75",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -32890,7 +32890,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -33624,7 +33624,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -34358,7 +34358,7 @@
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": "Cheticamp",
         "ResourceName": "O32",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -40098,7 +40098,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS6",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -40832,7 +40832,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS6",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -41566,7 +41566,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS6",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -42300,7 +42300,7 @@
         "ParkName": "Prince Edward Island - Stanhope",
         "PageTitle": "OS1 - OS8",
         "ResourceName": "OS6",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -42890,7 +42890,7 @@
         "ParkName": "Kouchibouguac - South",
         "PageTitle": "Loops 1 & 2",
         "ResourceName": "O87",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -57372,7 +57372,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 80 - 161",
         "ResourceName": "O124",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -58106,7 +58106,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 80 - 161",
         "ResourceName": "O124",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -58840,7 +58840,7 @@
         "ParkName": "Fundy - Chignecto",
         "PageTitle": "# 80 - 161",
         "ResourceName": "O124",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
