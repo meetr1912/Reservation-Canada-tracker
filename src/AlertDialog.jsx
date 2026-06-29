@@ -33,8 +33,11 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
   const togglePark = (p) => setSelectedParks(prev =>
     prev.includes(p) ? prev.filter(x => x !== p) : [...prev, p]);
 
-  const validRange = start && end && start <= end;
-  const canSubmit = isValidEmail(email) && validRange;
+  const phoneDigits = (phone || '').replace(/\D/g, '');
+  const phoneOk = phoneDigits.length === 0 || (phoneDigits.length >= 10 && !!carrier);
+  const inWindow = start >= minDate && end <= maxDate;
+  const validRange = start && end && start <= end && inWindow;
+  const canSubmit = isValidEmail(email) && validRange && phoneOk;
 
   const submit = () => {
     if (!canSubmit) return;
@@ -76,13 +79,13 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
             <div>
               <label className="text-sm font-medium text-gray-700">Dates to watch</label>
               <div className="flex items-center gap-2 mt-1.5">
-                <input type="date" value={start} min={minDate} max={maxDate}
+                <input type="date" aria-label="Start date" value={start} min={minDate} max={maxDate}
                   onChange={e => { setStart(e.target.value); if (e.target.value > end) setEnd(e.target.value); }}
-                  className="flex-1 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                  className="flex-1 min-w-0 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
                 <span className="text-gray-400 text-sm">to</span>
-                <input type="date" value={end} min={start} max={maxDate}
+                <input type="date" aria-label="End date" value={end} min={start} max={maxDate}
                   onChange={e => setEnd(e.target.value)}
-                  className="flex-1 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                  className="flex-1 min-w-0 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
               </div>
               <p className="text-xs text-gray-400 mt-1">Pick the same date twice to watch a single day.</p>
             </div>
@@ -95,7 +98,7 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
                 {parkNames.map(p => {
                   const on = selectedParks.includes(p);
                   return (
-                    <button key={p} type="button" onClick={() => togglePark(p)}
+                    <button key={p} type="button" onClick={() => togglePark(p)} aria-pressed={on}
                       className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
                         on ? 'bg-emerald-600 text-white border-emerald-600'
                           : 'bg-white text-gray-700 border-gray-200 hover:border-emerald-300'}`}>
@@ -108,24 +111,28 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
 
             {/* Contact */}
             <div>
-              <label className="text-sm font-medium text-gray-700">Email</label>
-              <input type="email" value={email} onChange={e => setEmail(e.target.value)}
+              <label htmlFor="alert-email" className="text-sm font-medium text-gray-700">Email</label>
+              <input id="alert-email" type="email" value={email} onChange={e => setEmail(e.target.value)}
                 placeholder="you@example.com"
                 className="w-full h-11 px-3 mt-1.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
             </div>
 
             <div>
-              <label className="text-sm font-medium text-gray-700">Phone text <span className="text-gray-400 font-normal">(optional)</span></label>
+              <label htmlFor="alert-phone" className="text-sm font-medium text-gray-700">Phone text <span className="text-gray-400 font-normal">(optional)</span></label>
               <div className="flex gap-2 mt-1.5">
-                <input type="tel" value={phone} onChange={e => setPhone(e.target.value)}
+                <input id="alert-phone" type="tel" value={phone} onChange={e => setPhone(e.target.value)}
                   placeholder="5551234567"
-                  className="flex-1 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
-                <select value={carrier} onChange={e => setCarrier(e.target.value)}
+                  className="flex-1 min-w-0 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                <select value={carrier} onChange={e => setCarrier(e.target.value)} aria-label="Phone carrier"
                   className="h-11 px-3 rounded-xl border border-gray-200 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
                   {CARRIERS.map(c => <option key={c.value} value={c.value}>{c.label}</option>)}
                 </select>
               </div>
-              <p className="text-xs text-gray-400 mt-1">Carrier texts are free but can be delayed; email is most reliable.</p>
+              {phoneDigits.length > 0 && !carrier ? (
+                <p className="text-xs text-amber-600 mt-1">Pick your carrier to receive texts.</p>
+              ) : (
+                <p className="text-xs text-gray-400 mt-1">Carrier texts are free but can be delayed; email is most reliable.</p>
+              )}
             </div>
 
             <div className="rounded-xl bg-gray-50 p-3 text-xs text-gray-500">

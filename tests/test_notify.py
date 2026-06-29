@@ -99,6 +99,47 @@ def test_signature_changes_with_count():
     assert notify.signature(a) == notify.signature(list(a))
 
 
+def test_report_dates_handles_both_schemas():
+    assert notify.report_dates({"dates": {"d": []}}) == {"d": []}
+    flat = {"2026-07-04": []}
+    assert notify.report_dates(flat) == flat
+    assert notify.report_dates(None) == {}
+
+
+def test_email_config_bad_port_falls_back(monkeypatch):
+    monkeypatch.setenv("EMAIL_ADDRESS", "a@b.com")
+    monkeypatch.setenv("EMAIL_PASSWORD", "pw")
+    monkeypatch.setenv("SMTP_PORT", "not-a-number")
+    assert notify.email_config()["port"] == 587
+
+
+def test_main_preserves_state_when_listing_fails(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
+    (tmp_path / "alerts_state.json").write_text('{"5": {"sig": "x", "notified_at": "t"}}')
+    (tmp_path / "availability_report.json").write_text(json.dumps(
+        {"dates": {"2026-07-04": [{"ParkName": "P", "ResourceName": "O1", "status": True}]}}))
+    monkeypatch.setenv("GITHUB_TOKEN", "t")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "o/r")
+    monkeypatch.setenv("EMAIL_ADDRESS", "a@b.com")
+    monkeypatch.setenv("EMAIL_PASSWORD", "pw")
+    monkeypatch.setattr(notify, "list_alert_issues", lambda *a, **k: None)  # simulate API failure
+
+    assert notify.main() == 0
+    # State must be untouched (a wipe would cause duplicate alerts next run).
+    assert json.loads((tmp_path / "alerts_state.json").read_text()) == {"5": {"sig": "x", "notified_at": "t"}}
+
+
+def test_main_failsoft_on_unexpected_error(monkeypatch):
+    monkeypatch.setenv("GITHUB_TOKEN", "t")
+    monkeypatch.setenv("GITHUB_REPOSITORY", "o/r")
+    monkeypatch.setenv("EMAIL_ADDRESS", "a@b.com")
+    monkeypatch.setenv("EMAIL_PASSWORD", "pw")
+    def boom(*a, **k):
+        raise RuntimeError("kaboom")
+    monkeypatch.setattr(notify, "report_dates", boom)
+    assert notify.main() == 0  # never raises / never fails the workflow
+
+
 def test_build_email_and_sms_content():
     m = [{"date": "2026-07-04", "park": "Fundy - Headquarters", "units": ["O45", "O46"]}]
     subject, body = notify.build_email(m, VALID)

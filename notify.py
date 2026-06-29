@@ -38,6 +38,10 @@ CARRIER_GATEWAYS = {
     "vtext.com", "txt.att.net", "tmomail.net",
 }
 
+# Bounds to keep a public, self-serve signup from turning into an abuse vector.
+MAX_PAGES = 20            # up to 2000 open issues scanned
+MAX_WATCHES_PER_RUN = 200  # cap watches (and thus emails) acted on per run
+
 EMAIL_RE = re.compile(r"^[^\s@]+@[^\s@]+\.[^\s@]+$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 ALERT_BLOCK_RE = re.compile(r"```alert\s*(\{.*?\})\s*```", re.DOTALL)
@@ -176,18 +180,35 @@ def gh_headers(token):
 
 
 def list_alert_issues(repo, token):
+    """Return ALL open issues (following pagination), or None if the API failed.
+
+    We fetch every page and filter by the presence of an alert block rather
+    than a server-side label, so a missing/removed `alert` label can never
+    silently hide subscriptions. Returning None (vs []) lets the caller tell a
+    transient failure apart from "genuinely no issues" and avoid wiping state.
+    """
     issues = []
     url = f"{API}/repos/{repo}/issues"
-    params = {"state": "open", "per_page": 100}
-    try:
-        r = requests.get(url, headers=gh_headers(token), params=params, timeout=30)
-        r.raise_for_status()
-        for it in r.json():
-            if "pull_request" in it:  # issues endpoint also returns PRs
+    for page in range(1, MAX_PAGES + 1):
+        try:
+            r = requests.get(url, headers=gh_headers(token),
+                             params={"state": "open", "per_page": 100, "page": page},
+                             timeout=30)
+            r.raise_for_status()
+            batch = r.json()
+        except (requests.RequestException, ValueError) as e:
+            print(f"  Could not list issues (page {page}): {e}")
+            return None
+        if not isinstance(batch, list) or not batch:
+            break
+        for it in batch:
+            if "pull_request" in it:  # the issues endpoint also returns PRs
                 continue
             issues.append(it)
-    except requests.RequestException as e:
-        print(f"  Could not list issues: {e}")
+        if len(batch) < 100:
+            break
+    else:
+        print(f"  Warning: stopped at {MAX_PAGES} pages; some issues unscanned.")
     return issues
 
 
@@ -230,15 +251,19 @@ def email_config():
     password = os.environ.get("EMAIL_PASSWORD", "").strip()
     if not address or not password:
         return None
+    try:
+        port = int((os.environ.get("SMTP_PORT") or "587").strip())
+    except ValueError:
+        port = 587
     return {
         "address": address,
         "password": password,
-        "server": os.environ.get("SMTP_SERVER", "smtp.gmail.com").strip(),
-        "port": int(os.environ.get("SMTP_PORT", "587") or "587"),
+        "server": (os.environ.get("SMTP_SERVER") or "smtp.gmail.com").strip(),
+        "port": port,
     }
 
 
-def main():
+def _run():
     token = os.environ.get("GITHUB_TOKEN", "").strip()
     repo = os.environ.get("GITHUB_REPOSITORY", "").strip()
     if not token or not repo:
@@ -258,14 +283,24 @@ def main():
     state = load_json(STATE_FILE, {})
     today = date.today()
     issues = list_alert_issues(repo, token)
+    if issues is None:
+        # Transient API failure — do NOT touch state (a wipe would cause
+        # duplicate notifications next run). Leave everything as-is.
+        print("Issue listing failed; leaving alert state unchanged.")
+        return 0
     print(f"Checking {len(issues)} open issue(s) for alert watches...")
 
     active = set()
+    processed = 0
     for it in issues:
-        number = it["number"]
         criteria = parse_alert_block(it.get("body", ""))
         if not criteria:
             continue
+        if processed >= MAX_WATCHES_PER_RUN:
+            print(f"  Reached per-run cap of {MAX_WATCHES_PER_RUN} watches; stopping.")
+            break
+        processed += 1
+        number = it["number"]
         key = str(number)
         active.add(key)
 
@@ -304,6 +339,15 @@ def main():
         json.dump(state, f, indent=2, ensure_ascii=False)
     print("Done.")
     return 0
+
+
+def main():
+    # Alerts must never fail the scan workflow — swallow anything unexpected.
+    try:
+        return _run()
+    except Exception as e:  # noqa: BLE001
+        print(f"Alert step error (ignored): {e}")
+        return 0
 
 
 if __name__ == "__main__":
