@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
-  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, Clock, AlertTriangle,
+  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, Clock, AlertTriangle, Bell,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -10,6 +10,7 @@ import {
 } from './components/ui/select';
 import { Badge } from './components/ui/badge';
 import CalendarView from './CalendarView';
+import AlertDialog from './AlertDialog';
 import {
   normalizeReport, formatDate, formatTimestamp, countAvailable, BOOKING_URL,
   prettyUnit, splitPark, prettyLoop,
@@ -153,6 +154,10 @@ function App() {
   const [search, setSearch] = useState('');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(true);
   const [viewMode, setViewMode] = useState('list');
+  const [alertOpen, setAlertOpen] = useState(false);
+  const [alertDate, setAlertDate] = useState(null);
+
+  const openAlert = (date) => { setAlertDate(date || null); setAlertOpen(true); };
 
   useEffect(() => {
     const url = `${process.env.PUBLIC_URL}/availability_report.json`;
@@ -340,14 +345,25 @@ function App() {
                       className="w-full h-11 pl-9 pr-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-400"
                     />
                   </div>
-                  <TabsList className="bg-gray-100 h-11">
-                    <TabsTrigger value="list" className="gap-2 data-[state=active]:bg-white px-4">
-                      <List className="h-4 w-4" /> List
-                    </TabsTrigger>
-                    <TabsTrigger value="calendar" className="gap-2 data-[state=active]:bg-white px-4">
-                      <CalendarIcon className="h-4 w-4" /> Calendar
-                    </TabsTrigger>
-                  </TabsList>
+                  <div className="flex gap-2">
+                    <TabsList className="bg-gray-100 h-11 flex-1 sm:flex-initial">
+                      <TabsTrigger value="list" className="gap-2 data-[state=active]:bg-white px-4 flex-1 sm:flex-initial">
+                        <List className="h-4 w-4" /> List
+                      </TabsTrigger>
+                      <TabsTrigger value="calendar" className="gap-2 data-[state=active]:bg-white px-4 flex-1 sm:flex-initial">
+                        <CalendarIcon className="h-4 w-4" /> Calendar
+                      </TabsTrigger>
+                    </TabsList>
+                    <button
+                      type="button"
+                      onClick={() => openAlert(selectedDate)}
+                      aria-label="Alert me"
+                      title="Get an availability alert"
+                      className="h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium inline-flex items-center gap-2 flex-shrink-0"
+                    >
+                      <Bell className="h-4 w-4" /> <span className="hidden sm:inline">Alert me</span>
+                    </button>
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -489,14 +505,23 @@ function App() {
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} />
+            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} onAlert={openAlert} />
           </TabsContent>
         </Tabs>
       </div>
 
+      <AlertDialog
+        open={alertOpen}
+        onOpenChange={setAlertOpen}
+        dates={dates}
+        parks={parks}
+        initialDate={alertDate || selectedDate}
+        initialPark={selectedPark}
+      />
+
       <footer className="border-t border-gray-200 mt-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-center space-y-2">
-          <p className="text-sm text-gray-600">Data updates hourly via automated scanning of reservation.pc.gc.ca</p>
+          <p className="text-sm text-gray-600">Data updates every few hours via automated scanning of reservation.pc.gc.ca</p>
           {lastUpdated && <p className="text-xs text-gray-500">Last updated: {lastUpdated}</p>}
           <p className="text-xs text-gray-500">
             For inquiries: <a href="mailto:meetr1912@gmail.com" className="text-gray-900 hover:underline font-medium">meetr1912@gmail.com</a>

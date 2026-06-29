@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
-import { CheckCircle2, MapPin } from 'lucide-react';
+import { CheckCircle2, MapPin, Bell } from 'lucide-react';
+import { Button } from './components/ui/button';
 import {
   Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle,
 } from './components/ui/dialog';
@@ -16,7 +17,7 @@ function intensityClass(count, max) {
   return 'bg-emerald-100 border-emerald-200 text-emerald-900';
 }
 
-function CalendarView({ availabilityData, selectedPark }) {
+function CalendarView({ availabilityData, selectedPark, onAlert }) {
   const countFor = useMemo(() => (dateStr) => {
     const sites = availabilityData?.[dateStr];
     if (!sites) return 0;
@@ -54,13 +55,13 @@ function CalendarView({ availabilityData, selectedPark }) {
       {months.map(monthKey => (
         <MonthCalendar key={monthKey} monthKey={monthKey}
           availabilityData={availabilityData} selectedPark={selectedPark}
-          countFor={countFor} maxCount={maxCount} />
+          countFor={countFor} maxCount={maxCount} onAlert={onAlert} />
       ))}
     </div>
   );
 }
 
-function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, maxCount }) {
+function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, maxCount, onAlert }) {
   const [selectedDate, setSelectedDate] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -137,6 +138,15 @@ function MonthCalendar({ monthKey, availabilityData, selectedPark, countFor, max
               })}
             </DialogDescription>
           </DialogHeader>
+          {onAlert && (
+            <div className="mt-3">
+              <Button variant="outline" size="sm"
+                onClick={() => { setOpen(false); onAlert(selectedDate); }}
+                className="gap-1.5 border-emerald-200 text-emerald-700 hover:bg-emerald-50">
+                <Bell className="h-3.5 w-3.5" /> Alert me for this date
+              </Button>
+            </div>
+          )}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
             {selectedSites.map((site, i) => (
               <div key={i} className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
