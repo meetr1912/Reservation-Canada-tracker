@@ -23,6 +23,9 @@ from datetime import datetime, timedelta, timezone
 
 BASE_URL = "https://reservation.pc.gc.ca"
 OTENTIKS_FILE = "otentiks.json"
+# National roster of all roofed/prebuilt units (built by discover.py); falls
+# back to the legacy oTENTik-only list if absent.
+RESOURCES_FILE = "resources.json"
 REPORT_FILE = "availability_report.json"
 PUBLIC_REPORT_FILE = os.path.join("public", "availability_report.json")
 
@@ -51,6 +54,15 @@ def load_otentiks(path=OTENTIKS_FILE):
     """Load the tracked oTENTik units."""
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_resources():
+    """Load the national roster (resources.json) if present, else oTENTiks."""
+    path = RESOURCES_FILE if os.path.exists(RESOURCES_FILE) else OTENTIKS_FILE
+    with open(path, "r", encoding="utf-8") as f:
+        units = json.load(f)
+    print(f"Loaded {len(units)} units from {path}")
+    return units
 
 
 def _date_range(start_date, days):
@@ -100,6 +112,7 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
                 "ParkName": otentik.get("ParkName"),
                 "PageTitle": otentik.get("PageTitle"),
                 "ResourceName": otentik.get("ResourceName"),
+                "Type": otentik.get("Type", "oTENTik"),
                 "status": (resource_id, date_str) in available_set,
             })
         dates[date_str] = daily
@@ -116,6 +129,7 @@ def build_report(otentiks, available_set, start_date, days=SCAN_DAYS,
         "total_units": len(otentiks),
         "total_parks": len(stats["parks"]),
         "parks": stats["parks"],
+        "types": sorted({o.get("Type", "oTENTik") for o in otentiks}),
         "always_available_parks": always_available_parks(dates),
         "errors": errors or [],
         **{k: stats[k] for k in ("total_available_slots", "available_days", "available_units")},
@@ -229,10 +243,11 @@ def scan_availability(otentiks, start_date, days=SCAN_DAYS, request_delay=REQUES
         for i, otentik in enumerate(otentiks):
             resource_id = otentik["NegativeResourceValue"]
             resource_name = otentik["ResourceName"]
+            booking_cat = otentik.get("BookingCategoryId") or BOOKING_CATEGORY_OTENTIK
             url = (
                 f"{BASE_URL}/api/availability/resourcedailyavailability?"
                 f"resourceId={resource_id}&"
-                f"bookingCategoryId={BOOKING_CATEGORY_OTENTIK}&"
+                f"bookingCategoryId={booking_cat}&"
                 f"startDate={start_str}&endDate={end_str}&isReserving=true"
             )
             print(f"[{i + 1}/{len(otentiks)}] {resource_name} ({resource_id})...")
@@ -308,9 +323,9 @@ def write_report(report, *paths):
 
 
 def main():
-    otentiks = load_otentiks()
+    otentiks = load_resources()
     start_date = datetime.now()
-    print(f"Scanning {len(otentiks)} oTENTiks for the next {SCAN_DAYS} days...")
+    print(f"Scanning {len(otentiks)} units for the next {SCAN_DAYS} days...")
 
     available_set, errors = scan_availability(otentiks, start_date, SCAN_DAYS)
 

@@ -125,8 +125,9 @@ function SiteCard({ site }) {
           ? <><CheckCircle2 className="h-3 w-3 mr-1" />Available</>
           : <><XCircle className="h-3 w-3 mr-1" />Booked</>}
       </Badge>
-      <p className="font-semibold text-gray-900 leading-tight mt-1.5">{prettyUnit(site.ResourceName)}</p>
-      {loop && <p className="text-xs text-gray-500 mt-0.5">{loop}</p>}
+      <p className="font-semibold text-gray-900 leading-tight mt-1.5">{prettyUnit(site.ResourceName, site.Type)}</p>
+      {loop ? <p className="text-xs text-gray-500 mt-0.5">{loop}</p>
+        : site.Type && <p className="text-xs text-gray-500 mt-0.5">{site.Type}</p>}
       {site.status && (
         <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-emerald-700">
           Reserve <ArrowRight className="h-3 w-3" />
@@ -151,6 +152,7 @@ function App() {
   const [error, setError] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedPark, setSelectedPark] = useState('all');
+  const [selectedType, setSelectedType] = useState('all');
   const [search, setSearch] = useState('');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(true);
   const [viewMode, setViewMode] = useState('list');
@@ -180,6 +182,14 @@ function App() {
     if (!report) return ['all'];
     const set = new Set();
     Object.values(report.dates).forEach(d => d.forEach(s => set.add(s.ParkName)));
+    return ['all', ...Array.from(set).sort()];
+  }, [report]);
+  const types = useMemo(() => {
+    if (!report) return ['all'];
+    if (Array.isArray(report.metadata?.types) && report.metadata.types.length)
+      return ['all', ...report.metadata.types];
+    const set = new Set();
+    Object.values(report.dates).forEach(d => d.forEach(s => s.Type && set.add(s.Type)));
     return ['all', ...Array.from(set).sort()];
   }, [report]);
 
@@ -267,6 +277,7 @@ function App() {
 
   let filtered = selectedSites.filter(matchesSearch);
   if (selectedPark !== 'all') filtered = filtered.filter(s => s.ParkName === selectedPark);
+  if (selectedType !== 'all') filtered = filtered.filter(s => (s.Type || 'oTENTik') === selectedType);
   if (showOnlyAvailable) filtered = filtered.filter(s => s.status);
 
   // Group filtered sites by park.
@@ -297,7 +308,7 @@ function App() {
               </span>
             </h1>
             <p className="text-lg text-gray-300 max-w-xl mx-auto font-light">
-              Live availability across {metadata.total_units || 122} oTENTik sites in {metadata.total_parks || 12} parks
+              Live availability across {metadata.total_units || 122} prebuilt campsites in {metadata.total_parks || 12} locations
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2 mt-7">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 text-emerald-200 text-sm font-medium">
@@ -366,7 +377,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {viewMode === 'list' && (
                     <Select value={selectedDate} onValueChange={setSelectedDate}>
                       <SelectTrigger className="bg-white h-11">
@@ -399,6 +410,20 @@ function App() {
                       ))}
                     </SelectContent>
                   </Select>
+                  {types.length > 2 && (
+                    <Select value={selectedType} onValueChange={setSelectedType}>
+                      <SelectTrigger className="bg-white h-11">
+                        <SelectValue placeholder="All types" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {types.map(t => (
+                          <SelectItem key={t} value={t}>
+                            {t === 'all' ? 'All types' : t}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  )}
                 </div>
 
                 {viewMode === 'list' && (
@@ -505,7 +530,7 @@ function App() {
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} onAlert={openAlert} />
+            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} selectedType={selectedType} onAlert={openAlert} />
           </TabsContent>
         </Tabs>
       </div>

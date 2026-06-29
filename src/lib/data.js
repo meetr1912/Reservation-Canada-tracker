@@ -54,12 +54,13 @@ export function countAvailable(sites, park) {
   }, 0);
 }
 
-// "O45" or bare "45" -> "oTENTik 45"; falls back to the raw name otherwise.
-export function prettyUnit(resourceName) {
-  if (!resourceName) return 'oTENTik';
-  const t = resourceName.trim();
+// "O45"/"45" -> "<Type> 45" (e.g. "oTENTik 45", "Yurt 3"); else the raw name.
+export function prettyUnit(resourceName, type) {
+  const label = type || 'oTENTik';
+  if (!resourceName) return label;
+  const t = String(resourceName).trim();
   const m = /^O?\s*0*(\d+)$/i.exec(t);
-  return m ? `oTENTik ${m[1]}` : t;
+  return m ? `${label} ${m[1]}` : t;
 }
 
 // "Fundy - Headquarters" -> { park: "Fundy", area: "Headquarters" }.
