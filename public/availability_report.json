@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-30T07:49:04Z",
+    "generated_at": "2026-06-30T10:56:19Z",
     "start_date": "2026-06-30",
     "end_date": "2026-12-26",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 52219,
+    "total_available_slots": 52214,
     "available_days": 180,
     "available_units": 455
   },
@@ -407,7 +407,7 @@
     },
     {
       "date": "2026-06-30",
-      "available_slots": 52219,
+      "available_slots": 52214,
       "available_units": 455,
       "available_days": 180
     }
@@ -27402,7 +27402,7 @@
         "PageTitle": null,
         "ResourceName": "DOO2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -47861,7 +47861,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -51727,7 +51727,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -101201,7 +101201,7 @@
         "PageTitle": null,
         "ResourceName": "4E",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -101502,7 +101502,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -114619,7 +114619,7 @@
         "PageTitle": null,
         "ResourceName": "O104",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -118485,7 +118485,7 @@
         "PageTitle": null,
         "ResourceName": "O104",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -139763,7 +139763,7 @@
         "PageTitle": null,
         "ResourceName": "2H",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -271690,7 +271690,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
