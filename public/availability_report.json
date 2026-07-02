@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-02T10:35:05Z",
+    "generated_at": "2026-07-02T13:33:59Z",
     "start_date": "2026-07-02",
     "end_date": "2026-12-28",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 53050,
+    "total_available_slots": 53030,
     "available_days": 180,
     "available_units": 455
   },
@@ -419,7 +419,7 @@
     },
     {
       "date": "2026-07-02",
-      "available_slots": 53050,
+      "available_slots": 53030,
       "available_units": 455,
       "available_days": 180
     }
@@ -11691,7 +11691,7 @@
         "PageTitle": null,
         "ResourceName": "O95",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -12239,7 +12239,7 @@
         "PageTitle": null,
         "ResourceName": "3F",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16042,7 +16042,7 @@
         "PageTitle": null,
         "ResourceName": "2E",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -23422,7 +23422,7 @@
         "PageTitle": null,
         "ResourceName": "O510",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -24852,7 +24852,7 @@
         "PageTitle": null,
         "ResourceName": "O7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -29383,7 +29383,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -29985,7 +29985,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -31133,7 +31133,7 @@
         "PageTitle": null,
         "ResourceName": "O507",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -33578,7 +33578,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -34999,7 +34999,7 @@
         "PageTitle": null,
         "ResourceName": "O507",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -40904,7 +40904,7 @@
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -44770,7 +44770,7 @@
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -46688,7 +46688,7 @@
         "PageTitle": null,
         "ResourceName": "MC-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -47782,7 +47782,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -51648,7 +51648,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -54730,7 +54730,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -55514,7 +55514,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -58659,14 +58659,14 @@
         "PageTitle": null,
         "ResourceName": "4A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
         "PageTitle": null,
         "ResourceName": "4B",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -62525,14 +62525,14 @@
         "PageTitle": null,
         "ResourceName": "4A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
         "PageTitle": null,
         "ResourceName": "4B",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -73295,7 +73295,7 @@
         "PageTitle": null,
         "ResourceName": "724",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -101122,7 +101122,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -104988,7 +104988,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -108854,7 +108854,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -122188,7 +122188,7 @@
         "PageTitle": null,
         "ResourceName": "406",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -126040,7 +126040,7 @@
         "PageTitle": null,
         "ResourceName": "404",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -133674,7 +133674,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -135811,7 +135811,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -137540,7 +137540,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -139677,7 +139677,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -143543,7 +143543,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -151877,7 +151877,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -177635,7 +177635,7 @@
         "PageTitle": null,
         "ResourceName": "718",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -178442,7 +178442,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -182308,7 +182308,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -202527,7 +202527,7 @@
         "PageTitle": null,
         "ResourceName": "O290",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -209265,7 +209265,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -229617,7 +229617,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -233483,7 +233483,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -299191,14 +299191,14 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -339783,7 +339783,7 @@
         "PageTitle": null,
         "ResourceName": "68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -343649,7 +343649,7 @@
         "PageTitle": null,
         "ResourceName": "68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
