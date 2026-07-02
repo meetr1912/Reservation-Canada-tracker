@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-02T02:09:39Z",
+    "generated_at": "2026-07-02T07:07:59Z",
     "start_date": "2026-07-02",
     "end_date": "2026-12-28",
     "days": 180,
@@ -382,9 +382,9 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 53097,
+    "total_available_slots": 53055,
     "available_days": 180,
-    "available_units": 454
+    "available_units": 455
   },
   "history": [
     {
@@ -419,8 +419,8 @@
     },
     {
       "date": "2026-07-02",
-      "available_slots": 53097,
-      "available_units": 454,
+      "available_slots": 53055,
+      "available_units": 455,
       "available_days": 180
     }
   ],
@@ -606,7 +606,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -4239,7 +4239,7 @@
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -4367,7 +4367,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -4472,7 +4472,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -8233,7 +8233,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -8338,7 +8338,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -12099,7 +12099,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -12204,7 +12204,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -12239,7 +12239,7 @@
         "PageTitle": null,
         "ResourceName": "3F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -15193,7 +15193,7 @@
         "PageTitle": null,
         "ResourceName": "708",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -15571,7 +15571,7 @@
         "PageTitle": null,
         "ResourceName": "O97",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -15774,7 +15774,7 @@
         "PageTitle": null,
         "ResourceName": "MT-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -15965,7 +15965,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16042,7 +16042,7 @@
         "PageTitle": null,
         "ResourceName": "2E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16070,7 +16070,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -19640,7 +19640,7 @@
         "PageTitle": null,
         "ResourceName": "MT-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -19831,7 +19831,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -19936,7 +19936,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -24845,7 +24845,7 @@
         "PageTitle": null,
         "ResourceName": "O4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -25517,7 +25517,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -29383,7 +29383,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -30146,7 +30146,7 @@
         "PageTitle": null,
         "ResourceName": "17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -31429,7 +31429,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -33578,7 +33578,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -35295,7 +35295,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -39196,7 +39196,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -40057,7 +40057,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -43923,7 +43923,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -45596,7 +45596,7 @@
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -49462,7 +49462,7 @@
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -51865,7 +51865,7 @@
         "PageTitle": null,
         "ResourceName": "O10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -58491,7 +58491,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -58596,7 +58596,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -62357,7 +62357,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -62462,7 +62462,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -66321,7 +66321,7 @@
         "PageTitle": null,
         "ResourceName": "2H",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -70187,7 +70187,7 @@
         "PageTitle": null,
         "ResourceName": "2H",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -73365,7 +73365,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -73955,7 +73955,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -74074,7 +74074,7 @@
         "PageTitle": null,
         "ResourceName": "3C",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -77821,7 +77821,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -81687,7 +81687,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -85553,7 +85553,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -89419,7 +89419,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -93320,7 +93320,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -93390,7 +93390,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -97186,7 +97186,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -97256,7 +97256,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -101017,7 +101017,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -104883,7 +104883,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -108749,7 +108749,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -112615,7 +112615,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -116481,7 +116481,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -120347,7 +120347,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -120452,7 +120452,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -124318,7 +124318,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -128184,7 +128184,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -128240,7 +128240,7 @@
         "PageTitle": null,
         "ResourceName": "3I",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -131418,7 +131418,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -132050,7 +132050,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -135284,7 +135284,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -155141,7 +155141,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -155246,7 +155246,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -159007,7 +159007,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -159112,7 +159112,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -162873,7 +162873,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -162978,7 +162978,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -166844,7 +166844,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -170710,7 +170710,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -201638,7 +201638,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -205504,7 +205504,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -209370,7 +209370,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -228595,7 +228595,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -228777,7 +228777,7 @@
         "PageTitle": null,
         "ResourceName": "4C",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -232461,7 +232461,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -236327,7 +236327,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -236390,7 +236390,7 @@
         "PageTitle": null,
         "ResourceName": "2C",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -240193,7 +240193,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -244059,7 +244059,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -244094,7 +244094,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -247925,7 +247925,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -248030,7 +248030,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -251791,7 +251791,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -251896,7 +251896,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -255657,7 +255657,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -260468,7 +260468,7 @@
         "PageTitle": null,
         "ResourceName": "O263",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -269124,7 +269124,7 @@
         "PageTitle": null,
         "ResourceName": "502",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -270286,7 +270286,7 @@
         "PageTitle": null,
         "ResourceName": "MicrOcube",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -314984,7 +314984,7 @@
         "PageTitle": null,
         "ResourceName": "RC28",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -322716,7 +322716,7 @@
         "PageTitle": null,
         "ResourceName": "RC28",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -323892,7 +323892,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -327758,7 +327758,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -331624,7 +331624,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -399147,7 +399147,7 @@
         "PageTitle": null,
         "ResourceName": "O128",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -403013,7 +403013,7 @@
         "PageTitle": null,
         "ResourceName": "O128",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -436041,7 +436041,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
