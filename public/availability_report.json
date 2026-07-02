@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-02T07:07:59Z",
+    "generated_at": "2026-07-02T10:35:05Z",
     "start_date": "2026-07-02",
     "end_date": "2026-12-28",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 53055,
+    "total_available_slots": 53050,
     "available_days": 180,
     "available_units": 455
   },
@@ -419,7 +419,7 @@
     },
     {
       "date": "2026-07-02",
-      "available_slots": 53055,
+      "available_slots": 53050,
       "available_units": 455,
       "available_days": 180
     }
@@ -31133,7 +31133,7 @@
         "PageTitle": null,
         "ResourceName": "O507",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -34999,7 +34999,7 @@
         "PageTitle": null,
         "ResourceName": "O507",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -70089,7 +70089,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -70194,7 +70194,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -73365,7 +73365,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -74060,7 +74060,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -77926,7 +77926,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -81792,7 +81792,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -101122,7 +101122,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -104988,7 +104988,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -108854,7 +108854,7 @@
         "PageTitle": null,
         "ResourceName": "3A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
