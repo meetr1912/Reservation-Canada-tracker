@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-03T10:33:25Z",
+    "generated_at": "2026-07-03T13:38:34Z",
     "start_date": "2026-07-03",
     "end_date": "2026-12-29",
     "days": 180,
@@ -381,10 +381,12 @@
     "always_available_parks": [
       "Lachine Canal"
     ],
-    "errors": [],
-    "total_available_slots": 53458,
+    "errors": [
+      "QuarryO1: HTTP 400 Bad Request"
+    ],
+    "total_available_slots": 53354,
     "available_days": 180,
-    "available_units": 455
+    "available_units": 454
   },
   "history": [
     {
@@ -425,8 +427,8 @@
     },
     {
       "date": "2026-07-03",
-      "available_slots": 53458,
-      "available_units": 455,
+      "available_slots": 53354,
+      "available_units": 454,
       "available_days": 180
     }
   ],
@@ -2922,7 +2924,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -3510,7 +3512,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -6088,7 +6090,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -10304,7 +10306,7 @@
         "PageTitle": null,
         "ResourceName": "O63",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -10654,7 +10656,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -12644,7 +12646,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -23141,14 +23143,14 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
         "PageTitle": null,
         "ResourceName": "Tent 2",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -24403,7 +24405,7 @@
         "PageTitle": null,
         "ResourceName": "81",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -27007,14 +27009,14 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
         "PageTitle": null,
         "ResourceName": "Tent 2",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -33199,7 +33201,7 @@
         "PageTitle": null,
         "ResourceName": "329",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -33304,7 +33306,7 @@
         "PageTitle": null,
         "ResourceName": "502",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -37065,7 +37067,7 @@
         "PageTitle": null,
         "ResourceName": "329",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -37716,7 +37718,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -40420,7 +40422,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -40658,7 +40660,7 @@
         "PageTitle": null,
         "ResourceName": "35SB",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -40931,7 +40933,7 @@
         "PageTitle": null,
         "ResourceName": "329",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -41582,7 +41584,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -58068,7 +58070,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -61934,7 +61936,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -72510,7 +72512,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -81306,7 +81308,7 @@
         "PageTitle": null,
         "ResourceName": "O98",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -83849,7 +83851,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -86539,7 +86541,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -87715,7 +87717,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -91581,7 +91583,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -95447,7 +95449,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -99313,7 +99315,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -103179,7 +103181,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -107045,7 +107047,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -107304,7 +107306,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -118902,7 +118904,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -122768,7 +122770,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -126634,7 +126636,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -130500,7 +130502,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -139205,7 +139207,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -143071,7 +143073,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -149872,7 +149874,7 @@
         "PageTitle": null,
         "ResourceName": "GI-PH01",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -161428,7 +161430,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -164951,7 +164953,7 @@
         "PageTitle": null,
         "ResourceName": "O66",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -165294,7 +165296,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -168817,7 +168819,7 @@
         "PageTitle": null,
         "ResourceName": "O66",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -176892,7 +176894,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -227150,7 +227152,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -231016,7 +231018,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -234882,7 +234884,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -238748,7 +238750,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -242614,7 +242616,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -246480,7 +246482,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -250346,7 +250348,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -254212,7 +254214,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -257735,7 +257737,7 @@
         "PageTitle": null,
         "ResourceName": "O66",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -258078,7 +258080,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -260712,7 +260714,7 @@
         "PageTitle": null,
         "ResourceName": "CS1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -264578,7 +264580,7 @@
         "PageTitle": null,
         "ResourceName": "CS1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -268444,7 +268446,7 @@
         "PageTitle": null,
         "ResourceName": "CS1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -271701,7 +271703,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -275567,7 +275569,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -307909,7 +307911,7 @@
         "PageTitle": null,
         "ResourceName": "A7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -346996,7 +346998,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -350862,7 +350864,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -354728,7 +354730,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -358594,7 +358596,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -362460,7 +362462,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -366326,7 +366328,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -370192,7 +370194,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -374058,7 +374060,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -377924,7 +377926,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -381790,7 +381792,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -385656,7 +385658,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -389522,7 +389524,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -393388,7 +393390,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -397254,7 +397256,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -401120,7 +401122,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -404986,7 +404988,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -408852,7 +408854,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -412718,7 +412720,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -416584,7 +416586,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -420450,7 +420452,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -424316,7 +424318,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -428182,7 +428184,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -432048,7 +432050,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -435914,7 +435916,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -439780,7 +439782,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -443646,7 +443648,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -447512,7 +447514,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -451378,7 +451380,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -455244,7 +455246,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -459110,7 +459112,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -462976,7 +462978,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -466842,7 +466844,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -470708,7 +470710,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -474574,7 +474576,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -478440,7 +478442,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -482306,7 +482308,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -486172,7 +486174,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -490038,7 +490040,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -493904,7 +493906,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -497770,7 +497772,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -501636,7 +501638,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -505502,7 +505504,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -509368,7 +509370,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -513234,7 +513236,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -517100,7 +517102,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -520966,7 +520968,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -524832,7 +524834,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -528698,7 +528700,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -532564,7 +532566,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -536430,7 +536432,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -540296,7 +540298,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -544162,7 +544164,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -548028,7 +548030,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -551894,7 +551896,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -555760,7 +555762,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -559626,7 +559628,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -563492,7 +563494,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -567358,7 +567360,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -571224,7 +571226,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -575090,7 +575092,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -578956,7 +578958,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -582822,7 +582824,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -586688,7 +586690,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -590554,7 +590556,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -594420,7 +594422,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -598286,7 +598288,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -602152,7 +602154,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -606018,7 +606020,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -609884,7 +609886,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -613750,7 +613752,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -617616,7 +617618,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -621482,7 +621484,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -625348,7 +625350,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -629214,7 +629216,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -633080,7 +633082,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -636946,7 +636948,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -640812,7 +640814,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -644678,7 +644680,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -648544,7 +648546,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -652410,7 +652412,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -656276,7 +656278,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -660142,7 +660144,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -662594,7 +662596,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -664008,7 +664010,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -667874,7 +667876,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -671740,7 +671742,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -675606,7 +675608,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -679472,7 +679474,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -683338,7 +683340,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -687204,7 +687206,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -691070,7 +691072,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -694936,7 +694938,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
