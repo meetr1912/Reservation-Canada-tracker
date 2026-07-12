@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-12T06:33:23Z",
+    "generated_at": "2026-07-12T09:49:28Z",
     "start_date": "2026-07-12",
     "end_date": "2027-01-07",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 57325,
+    "total_available_slots": 57327,
     "available_days": 180,
     "available_units": 455
   },
@@ -479,7 +479,7 @@
     },
     {
       "date": "2026-07-12",
-      "available_slots": 57325,
+      "available_slots": 57327,
       "available_units": 455,
       "available_days": 180
     }
@@ -30983,7 +30983,7 @@
         "PageTitle": null,
         "ResourceName": "Teepee 7",
         "Type": "Teepee",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -109684,7 +109684,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -113550,7 +113550,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -258447,7 +258447,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
