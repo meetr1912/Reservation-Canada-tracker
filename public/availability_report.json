@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-16T06:17:23Z",
+    "generated_at": "2026-07-16T10:02:24Z",
     "start_date": "2026-07-16",
     "end_date": "2027-01-11",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 59007,
+    "total_available_slots": 59008,
     "available_days": 180,
     "available_units": 455
   },
@@ -503,7 +503,7 @@
     },
     {
       "date": "2026-07-16",
-      "available_slots": 59007,
+      "available_slots": 59008,
       "available_units": 455,
       "available_days": 180
     }
@@ -7020,7 +7020,7 @@
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -10886,7 +10886,7 @@
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -13499,7 +13499,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -17904,7 +17904,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -60465,7 +60465,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -63715,7 +63715,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -67581,7 +67581,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -257673,7 +257673,7 @@
         "PageTitle": null,
         "ResourceName": "A11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -373576,7 +373576,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -377442,7 +377442,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -381308,7 +381308,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
