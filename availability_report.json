@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-19T09:51:24Z",
+    "generated_at": "2026-07-19T12:54:54Z",
     "start_date": "2026-07-19",
     "end_date": "2027-01-14",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 60279,
+    "total_available_slots": 60271,
     "available_days": 180,
     "available_units": 455
   },
@@ -521,7 +521,7 @@
     },
     {
       "date": "2026-07-19",
-      "available_slots": 60279,
+      "available_slots": 60271,
       "available_units": 455,
       "available_days": 180
     }
@@ -1044,7 +1044,7 @@
         "PageTitle": null,
         "ResourceName": "BO118",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -2101,7 +2101,7 @@
         "PageTitle": null,
         "ResourceName": "36SB",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -3067,7 +3067,7 @@
         "PageTitle": null,
         "ResourceName": "GI-PH02",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -7913,7 +7913,7 @@
         "PageTitle": null,
         "ResourceName": "O93",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -10617,14 +10617,14 @@
         "PageTitle": null,
         "ResourceName": "R-F12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -14483,14 +14483,14 @@
         "PageTitle": null,
         "ResourceName": "R-F12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -17558,7 +17558,7 @@
         "PageTitle": null,
         "ResourceName": "35SB",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -21648,7 +21648,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -27586,7 +27586,7 @@
         "PageTitle": null,
         "ResourceName": "MOA3",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       }
     ],
     "2026-07-26": [
@@ -31235,7 +31235,7 @@
         "PageTitle": null,
         "ResourceName": "O507",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -50404,7 +50404,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -50579,7 +50579,7 @@
         "PageTitle": null,
         "ResourceName": "O509",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -54270,7 +54270,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -109950,7 +109950,7 @@
         "PageTitle": null,
         "ResourceName": "O85",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -182065,7 +182065,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -193903,7 +193903,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -264520,7 +264520,7 @@
         "PageTitle": null,
         "ResourceName": "Y5",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -268386,7 +268386,7 @@
         "PageTitle": null,
         "ResourceName": "Y5",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -374077,7 +374077,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -377943,7 +377943,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
