@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-22T01:28:58Z",
+    "generated_at": "2026-07-22T06:28:53Z",
     "start_date": "2026-07-22",
     "end_date": "2027-01-17",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 61546,
+    "total_available_slots": 61557,
     "available_days": 180,
     "available_units": 453
   },
@@ -539,7 +539,7 @@
     },
     {
       "date": "2026-07-22",
-      "available_slots": 61546,
+      "available_slots": 61557,
       "available_units": 453,
       "available_days": 180
     }
@@ -8766,7 +8766,7 @@
         "PageTitle": null,
         "ResourceName": "Y6",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -8899,7 +8899,7 @@
         "PageTitle": null,
         "ResourceName": "O97",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -9613,7 +9613,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -10257,7 +10257,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -10271,7 +10271,7 @@
         "PageTitle": null,
         "ResourceName": "O4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -12632,7 +12632,7 @@
         "PageTitle": null,
         "ResourceName": "Y6",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -13479,7 +13479,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -14123,7 +14123,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -14137,7 +14137,7 @@
         "PageTitle": null,
         "ResourceName": "O4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -14662,7 +14662,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -16498,7 +16498,7 @@
         "PageTitle": null,
         "ResourceName": "Y6",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -22394,7 +22394,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -28978,7 +28978,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -29678,7 +29678,7 @@
         "PageTitle": null,
         "ResourceName": "A9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -35294,7 +35294,7 @@
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -59178,7 +59178,7 @@
         "PageTitle": null,
         "ResourceName": "O36",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -74460,7 +74460,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -92521,7 +92521,7 @@
         "PageTitle": null,
         "ResourceName": "BE2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -101058,7 +101058,7 @@
         "PageTitle": null,
         "ResourceName": "MOA3",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       }
     ],
     "2026-08-17": [
@@ -105073,7 +105073,7 @@
         "PageTitle": null,
         "ResourceName": "2D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -105654,7 +105654,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -108939,7 +108939,7 @@
         "PageTitle": null,
         "ResourceName": "2D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -110304,7 +110304,7 @@
         "PageTitle": null,
         "ResourceName": "OGP8",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Green Point",
@@ -112805,7 +112805,7 @@
         "PageTitle": null,
         "ResourceName": "2D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -155268,7 +155268,7 @@
         "PageTitle": null,
         "ResourceName": "1B",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -158565,7 +158565,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -169869,7 +169869,7 @@
         "PageTitle": null,
         "ResourceName": "UB2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -188310,7 +188310,7 @@
         "PageTitle": null,
         "ResourceName": "O76",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -262905,7 +262905,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -262940,7 +262940,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -266771,7 +266771,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -266806,7 +266806,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -271857,7 +271857,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -287258,7 +287258,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -291124,7 +291124,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -294990,7 +294990,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -298856,7 +298856,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
