@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T17:27:03Z",
+    "generated_at": "2026-07-24T21:02:39Z",
     "start_date": "2026-07-24",
     "end_date": "2027-01-19",
     "days": 180,
@@ -382,9 +382,9 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 62271,
+    "total_available_slots": 62292,
     "available_days": 180,
-    "available_units": 453
+    "available_units": 456
   },
   "history": [
     {
@@ -551,8 +551,8 @@
     },
     {
       "date": "2026-07-24",
-      "available_slots": 62271,
-      "available_units": 453,
+      "available_slots": 62292,
+      "available_units": 456,
       "available_days": 180
     }
   ],
@@ -724,7 +724,7 @@
         "PageTitle": null,
         "ResourceName": "2G",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -752,7 +752,7 @@
         "PageTitle": null,
         "ResourceName": "3C",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -1375,7 +1375,7 @@
         "PageTitle": null,
         "ResourceName": "94",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -1529,7 +1529,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -4618,7 +4618,7 @@
         "PageTitle": null,
         "ResourceName": "3C",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -5395,7 +5395,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -5829,7 +5829,7 @@
         "PageTitle": null,
         "ResourceName": "RC27",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -5857,7 +5857,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -8981,7 +8981,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -9653,7 +9653,7 @@
         "PageTitle": null,
         "ResourceName": "FV21",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -9723,7 +9723,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -10213,7 +10213,7 @@
         "PageTitle": null,
         "ResourceName": "407",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -11144,7 +11144,7 @@
         "PageTitle": null,
         "ResourceName": "C69",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -12301,7 +12301,7 @@
         "PageTitle": null,
         "ResourceName": "2D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -14226,7 +14226,7 @@
         "PageTitle": null,
         "ResourceName": "A9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -18274,7 +18274,7 @@
         "PageTitle": null,
         "ResourceName": "M-O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -19737,7 +19737,7 @@
         "PageTitle": null,
         "ResourceName": "GO-B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -20110,7 +20110,7 @@
         "PageTitle": null,
         "ResourceName": "3G",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -22140,7 +22140,7 @@
         "PageTitle": null,
         "ResourceName": "M-O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -23603,7 +23603,7 @@
         "PageTitle": null,
         "ResourceName": "GO-B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -30593,7 +30593,7 @@
         "PageTitle": null,
         "ResourceName": "OS3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -32072,7 +32072,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -34459,7 +34459,7 @@
         "PageTitle": null,
         "ResourceName": "OS3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -35938,7 +35938,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -35959,7 +35959,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -36610,7 +36610,7 @@
         "PageTitle": null,
         "ResourceName": "CS1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -38213,7 +38213,7 @@
         "PageTitle": null,
         "ResourceName": "C71",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -39496,7 +39496,7 @@
         "PageTitle": null,
         "ResourceName": "4F",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -40476,7 +40476,7 @@
         "PageTitle": null,
         "ResourceName": "CS1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -42079,7 +42079,7 @@
         "PageTitle": null,
         "ResourceName": "C71",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -43362,7 +43362,7 @@
         "PageTitle": null,
         "ResourceName": "4F",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -44559,7 +44559,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -55310,7 +55310,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -59176,7 +59176,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -69547,7 +69547,7 @@
         "PageTitle": null,
         "ResourceName": "722",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -73980,7 +73980,7 @@
         "PageTitle": null,
         "ResourceName": "HOA1",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -76628,42 +76628,42 @@
         "PageTitle": null,
         "ResourceName": "11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -76691,7 +76691,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -76733,28 +76733,28 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -80494,42 +80494,42 @@
         "PageTitle": null,
         "ResourceName": "11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -80557,7 +80557,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -80599,28 +80599,28 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -97934,7 +97934,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -109574,7 +109574,7 @@
         "PageTitle": null,
         "ResourceName": "112",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -113440,7 +113440,7 @@
         "PageTitle": null,
         "ResourceName": "112",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -117110,7 +117110,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -128869,7 +128869,7 @@
         "PageTitle": null,
         "ResourceName": "O9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -129527,7 +129527,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -132735,7 +132735,7 @@
         "PageTitle": null,
         "ResourceName": "O9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -133393,7 +133393,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -134891,7 +134891,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -137259,7 +137259,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -137959,7 +137959,7 @@
         "PageTitle": null,
         "ResourceName": "O104",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -138673,7 +138673,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -138757,7 +138757,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -138799,7 +138799,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -142539,7 +142539,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -142623,7 +142623,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -142665,7 +142665,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -144844,7 +144844,7 @@
         "PageTitle": null,
         "ResourceName": "O9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -152492,7 +152492,7 @@
         "PageTitle": null,
         "ResourceName": "O78",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -152912,7 +152912,7 @@
         "PageTitle": null,
         "ResourceName": "O40",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -156358,7 +156358,7 @@
         "PageTitle": null,
         "ResourceName": "O78",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -164405,7 +164405,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -168271,7 +168271,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -172284,7 +172284,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -176150,7 +176150,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -176808,7 +176808,7 @@
         "PageTitle": null,
         "ResourceName": "M-O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -180674,7 +180674,7 @@
         "PageTitle": null,
         "ResourceName": "M-O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -184540,7 +184540,7 @@
         "PageTitle": null,
         "ResourceName": "M-O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -185961,7 +185961,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -188406,7 +188406,7 @@
         "PageTitle": null,
         "ResourceName": "M-O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -210020,7 +210020,7 @@
         "PageTitle": null,
         "ResourceName": "O47",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -213886,7 +213886,7 @@
         "PageTitle": null,
         "ResourceName": "O47",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -227129,7 +227129,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -228536,7 +228536,7 @@
         "PageTitle": null,
         "ResourceName": "MT-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -230995,7 +230995,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -234861,7 +234861,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -238727,7 +238727,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -242593,7 +242593,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -257910,7 +257910,7 @@
         "PageTitle": null,
         "ResourceName": "O76",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -261776,7 +261776,7 @@
         "PageTitle": null,
         "ResourceName": "O76",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -263766,7 +263766,7 @@
         "PageTitle": null,
         "ResourceName": "D12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -302902,7 +302902,7 @@
         "PageTitle": null,
         "ResourceName": "92",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -306768,7 +306768,7 @@
         "PageTitle": null,
         "ResourceName": "92",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
