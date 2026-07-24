@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-24T06:27:24Z",
+    "generated_at": "2026-07-24T10:13:07Z",
     "start_date": "2026-07-24",
     "end_date": "2027-01-19",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 62274,
+    "total_available_slots": 62277,
     "available_days": 180,
     "available_units": 453
   },
@@ -551,7 +551,7 @@
     },
     {
       "date": "2026-07-24",
-      "available_slots": 62274,
+      "available_slots": 62277,
       "available_units": 453,
       "available_days": 180
     }
@@ -20110,7 +20110,7 @@
         "PageTitle": null,
         "ResourceName": "3G",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -109623,7 +109623,7 @@
         "PageTitle": null,
         "ResourceName": "94",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -133974,7 +133974,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -186502,7 +186502,7 @@
         "PageTitle": null,
         "ResourceName": "D2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -198450,7 +198450,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -202316,7 +202316,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -206182,7 +206182,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
