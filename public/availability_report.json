@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-25T06:16:48Z",
+    "generated_at": "2026-07-25T09:33:19Z",
     "start_date": "2026-07-25",
     "end_date": "2027-01-20",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 62743,
+    "total_available_slots": 62744,
     "available_days": 180,
     "available_units": 456
   },
@@ -557,7 +557,7 @@
     },
     {
       "date": "2026-07-25",
-      "available_slots": 62743,
+      "available_slots": 62744,
       "available_units": 456,
       "available_days": 180
     }
@@ -681,7 +681,7 @@
         "PageTitle": null,
         "ResourceName": "1G",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -4701,7 +4701,7 @@
         "PageTitle": null,
         "ResourceName": "4E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -12237,7 +12237,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16103,7 +16103,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -19969,7 +19969,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -250331,7 +250331,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -254197,7 +254197,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -258063,7 +258063,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -261929,7 +261929,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
