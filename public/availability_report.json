@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-26T06:36:57Z",
+    "generated_at": "2026-07-26T09:58:08Z",
     "start_date": "2026-07-26",
     "end_date": "2027-01-21",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 63180,
+    "total_available_slots": 63181,
     "available_days": 180,
     "available_units": 456
   },
@@ -563,7 +563,7 @@
     },
     {
       "date": "2026-07-26",
-      "available_slots": 63180,
+      "available_slots": 63181,
       "available_units": 456,
       "available_days": 180
     }
@@ -22453,7 +22453,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS04",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -26319,7 +26319,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS04",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -30185,7 +30185,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS04",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -83182,7 +83182,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -90865,7 +90865,7 @@
         "PageTitle": null,
         "ResourceName": "FV23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -265808,7 +265808,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -269674,7 +269674,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
