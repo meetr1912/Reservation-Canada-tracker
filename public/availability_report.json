@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-29T06:31:05Z",
+    "generated_at": "2026-07-29T10:35:17Z",
     "start_date": "2026-07-29",
     "end_date": "2027-01-24",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 64460,
+    "total_available_slots": 64461,
     "available_days": 180,
     "available_units": 453
   },
@@ -581,7 +581,7 @@
     },
     {
       "date": "2026-07-29",
-      "available_slots": 64460,
+      "available_slots": 64461,
       "available_units": 453,
       "available_days": 180
     }
@@ -10152,7 +10152,7 @@
         "PageTitle": null,
         "ResourceName": "328",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -11825,7 +11825,7 @@
         "PageTitle": null,
         "ResourceName": "O101",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -11993,7 +11993,7 @@
         "PageTitle": null,
         "ResourceName": "O83",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -15691,7 +15691,7 @@
         "PageTitle": null,
         "ResourceName": "O101",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -15859,7 +15859,7 @@
         "PageTitle": null,
         "ResourceName": "O83",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -84999,7 +84999,7 @@
         "PageTitle": null,
         "ResourceName": "716",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -156157,7 +156157,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fort Rodd Hill",
