@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-07-30T01:23:29Z",
+    "generated_at": "2026-07-30T06:24:16Z",
     "start_date": "2026-07-30",
     "end_date": "2027-01-25",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 64891,
+    "total_available_slots": 64888,
     "available_days": 180,
     "available_units": 453
   },
@@ -587,7 +587,7 @@
     },
     {
       "date": "2026-07-30",
-      "available_slots": 64891,
+      "available_slots": 64888,
       "available_units": 453,
       "available_days": 180
     }
@@ -6691,7 +6691,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -9297,7 +9297,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -9759,7 +9759,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -10914,7 +10914,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -12869,7 +12869,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -12890,7 +12890,7 @@
         "PageTitle": null,
         "ResourceName": "O47",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -13534,7 +13534,7 @@
         "PageTitle": null,
         "ResourceName": "CB2",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -14780,7 +14780,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -17029,7 +17029,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -18646,7 +18646,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -19472,7 +19472,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -21210,7 +21210,7 @@
         "PageTitle": null,
         "ResourceName": "CS5",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -25076,7 +25076,7 @@
         "PageTitle": null,
         "ResourceName": "CS5",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -28942,7 +28942,7 @@
         "PageTitle": null,
         "ResourceName": "CS5",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -29096,7 +29096,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -29271,7 +29271,7 @@
         "PageTitle": null,
         "ResourceName": "40TR",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -29677,7 +29677,7 @@
         "PageTitle": null,
         "ResourceName": "A17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -32563,7 +32563,7 @@
         "PageTitle": null,
         "ResourceName": "O286",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -36079,7 +36079,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -36821,7 +36821,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -39980,7 +39980,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -42129,7 +42129,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -42178,7 +42178,7 @@
         "PageTitle": null,
         "ResourceName": "109",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -52250,7 +52250,7 @@
         "PageTitle": null,
         "ResourceName": "RC26",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -56116,7 +56116,7 @@
         "PageTitle": null,
         "ResourceName": "RC26",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -70383,7 +70383,7 @@
         "PageTitle": null,
         "ResourceName": "3D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -73344,7 +73344,7 @@
         "PageTitle": null,
         "ResourceName": "707",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -77868,7 +77868,7 @@
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -80236,7 +80236,7 @@
         "PageTitle": null,
         "ResourceName": "M-O8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -81855,7 +81855,7 @@
         "PageTitle": null,
         "ResourceName": "1A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -84102,7 +84102,7 @@
         "PageTitle": null,
         "ResourceName": "M-O8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -94440,7 +94440,7 @@
         "PageTitle": null,
         "ResourceName": "O289",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -96659,7 +96659,7 @@
         "PageTitle": null,
         "ResourceName": "724",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -105261,7 +105261,7 @@
         "PageTitle": null,
         "ResourceName": "4G",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -109029,7 +109029,7 @@
         "PageTitle": null,
         "ResourceName": "3B",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -122524,7 +122524,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -142799,7 +142799,7 @@
         "PageTitle": null,
         "ResourceName": "70",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -169938,7 +169938,7 @@
         "PageTitle": null,
         "ResourceName": "MicrOcube",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -173804,7 +173804,7 @@
         "PageTitle": null,
         "ResourceName": "MicrOcube",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -188736,7 +188736,7 @@
         "PageTitle": null,
         "ResourceName": "B1",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -204970,7 +204970,7 @@
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -207905,7 +207905,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -208080,7 +208080,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -208836,7 +208836,7 @@
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -211771,7 +211771,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -211946,7 +211946,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -215637,7 +215637,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -215798,7 +215798,7 @@
         "PageTitle": null,
         "ResourceName": "B1",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -219503,7 +219503,7 @@
         "PageTitle": null,
         "ResourceName": "R-F8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -287341,7 +287341,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -291179,7 +291179,7 @@
         "PageTitle": null,
         "ResourceName": "O35",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
