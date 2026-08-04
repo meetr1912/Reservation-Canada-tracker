@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-04T06:27:29Z",
+    "generated_at": "2026-08-04T10:35:08Z",
     "start_date": "2026-08-04",
     "end_date": "2027-01-30",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 66979,
+    "total_available_slots": 66972,
     "available_days": 180,
     "available_units": 452
   },
@@ -617,7 +617,7 @@
     },
     {
       "date": "2026-08-04",
-      "available_slots": 66979,
+      "available_slots": 66972,
       "available_units": 452,
       "available_days": 180
     }
@@ -7841,7 +7841,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -61650,7 +61650,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -65516,7 +65516,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -68892,14 +68892,14 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS03",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
         "PageTitle": null,
         "ResourceName": "Havre-HS04",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -77114,7 +77114,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -80980,7 +80980,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -92851,7 +92851,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -99190,7 +99190,7 @@
         "PageTitle": null,
         "ResourceName": "406",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -128142,7 +128142,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -132008,7 +132008,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
