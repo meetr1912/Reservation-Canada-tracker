@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-05T06:27:51Z",
+    "generated_at": "2026-08-05T10:32:04Z",
     "start_date": "2026-08-05",
     "end_date": "2027-01-31",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 67421,
+    "total_available_slots": 67411,
     "available_days": 180,
     "available_units": 452
   },
@@ -623,7 +623,7 @@
     },
     {
       "date": "2026-08-05",
-      "available_slots": 67421,
+      "available_slots": 67411,
       "available_units": 452,
       "available_days": 180
     }
@@ -17947,7 +17947,7 @@
         "PageTitle": null,
         "ResourceName": "332",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -50261,7 +50261,7 @@
         "PageTitle": null,
         "ResourceName": "718",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -54127,7 +54127,7 @@
         "PageTitle": null,
         "ResourceName": "718",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -55403,7 +55403,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -59269,7 +59269,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -91492,7 +91492,7 @@
         "PageTitle": null,
         "ResourceName": "502",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -97824,7 +97824,7 @@
         "PageTitle": null,
         "ResourceName": "O95",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -101690,7 +101690,7 @@
         "PageTitle": null,
         "ResourceName": "O95",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -109121,7 +109121,7 @@
         "PageTitle": null,
         "ResourceName": "4A",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -169547,7 +169547,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
