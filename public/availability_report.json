@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-07T05:35:24Z",
+    "generated_at": "2026-08-07T08:52:08Z",
     "start_date": "2026-08-07",
     "end_date": "2027-02-02",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 68316,
+    "total_available_slots": 68323,
     "available_days": 180,
     "available_units": 454
   },
@@ -635,7 +635,7 @@
     },
     {
       "date": "2026-08-07",
-      "available_slots": 68316,
+      "available_slots": 68323,
       "available_units": 454,
       "available_days": 180
     }
@@ -20180,7 +20180,7 @@
         "PageTitle": null,
         "ResourceName": "3E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -24046,7 +24046,7 @@
         "PageTitle": null,
         "ResourceName": "3E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -97430,7 +97430,7 @@
         "PageTitle": null,
         "ResourceName": "2C",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -127726,7 +127726,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -127775,7 +127775,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -131641,7 +131641,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -132798,7 +132798,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -223382,7 +223382,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -227248,7 +227248,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -277506,7 +277506,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -281372,7 +281372,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
