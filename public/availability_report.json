@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-12T09:07:50Z",
+    "generated_at": "2026-08-12T12:48:07Z",
     "start_date": "2026-08-12",
     "end_date": "2027-02-07",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 70436,
+    "total_available_slots": 70415,
     "available_days": 180,
     "available_units": 451
   },
@@ -665,7 +665,7 @@
     },
     {
       "date": "2026-08-12",
-      "available_slots": 70436,
+      "available_slots": 70415,
       "available_units": 451,
       "available_days": 180
     }
@@ -6020,7 +6020,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -7448,7 +7448,7 @@
         "PageTitle": null,
         "ResourceName": "O6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -9368,7 +9368,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -13234,7 +13234,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -19830,7 +19830,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -21064,7 +21064,7 @@
         "PageTitle": null,
         "ResourceName": "O289",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -23577,7 +23577,7 @@
         "PageTitle": null,
         "ResourceName": "O186",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -26547,7 +26547,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -34461,7 +34461,7 @@
         "PageTitle": null,
         "ResourceName": "C71",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -49463,7 +49463,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -53329,7 +53329,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -56369,7 +56369,7 @@
         "PageTitle": null,
         "ResourceName": "36SB",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -57195,7 +57195,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -59801,7 +59801,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -80993,7 +80993,7 @@
         "PageTitle": null,
         "ResourceName": "OS7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -82913,7 +82913,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -84859,7 +84859,7 @@
         "PageTitle": null,
         "ResourceName": "OS7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -86751,7 +86751,7 @@
         "PageTitle": null,
         "ResourceName": "O264",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -86779,7 +86779,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -90778,7 +90778,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -101121,7 +101121,7 @@
         "PageTitle": null,
         "ResourceName": "DOO3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -171901,7 +171901,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -175767,7 +175767,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -202864,7 +202864,7 @@
         "PageTitle": null,
         "ResourceName": "O78",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -227306,7 +227306,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -231172,7 +231172,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -232348,7 +232348,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -235038,7 +235038,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -236214,7 +236214,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
