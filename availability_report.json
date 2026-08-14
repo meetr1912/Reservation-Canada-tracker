@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-14T09:04:15Z",
+    "generated_at": "2026-08-14T12:45:09Z",
     "start_date": "2026-08-14",
     "end_date": "2027-02-09",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 71307,
+    "total_available_slots": 71294,
     "available_days": 180,
     "available_units": 453
   },
@@ -677,7 +677,7 @@
     },
     {
       "date": "2026-08-14",
-      "available_slots": 71307,
+      "available_slots": 71294,
       "available_units": 453,
       "available_days": 180
     }
@@ -8349,7 +8349,7 @@
         "PageTitle": null,
         "ResourceName": "DOO3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -10360,7 +10360,7 @@
         "PageTitle": null,
         "ResourceName": "502",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -12777,7 +12777,7 @@
         "PageTitle": null,
         "ResourceName": "Y7",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -24683,7 +24683,7 @@
         "PageTitle": null,
         "ResourceName": "100",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -29130,7 +29130,7 @@
         "PageTitle": null,
         "ResourceName": "FV24",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -29354,7 +29354,7 @@
         "PageTitle": null,
         "ResourceName": "38TR",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -30845,7 +30845,7 @@
         "PageTitle": null,
         "ResourceName": "UN2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -31342,7 +31342,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -33220,7 +33220,7 @@
         "PageTitle": null,
         "ResourceName": "38TR",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -34711,7 +34711,7 @@
         "PageTitle": null,
         "ResourceName": "UN2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -35208,7 +35208,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -39074,7 +39074,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -62368,7 +62368,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -76383,7 +76383,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -109644,7 +109644,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -110687,7 +110687,7 @@
         "PageTitle": null,
         "ResourceName": "5I",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -112752,7 +112752,7 @@
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -113510,7 +113510,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -116618,7 +116618,7 @@
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -121991,7 +121991,7 @@
         "PageTitle": null,
         "ResourceName": "C3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -122005,7 +122005,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -125857,7 +125857,7 @@
         "PageTitle": null,
         "ResourceName": "C3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -125871,7 +125871,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -129737,7 +129737,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -133274,7 +133274,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -134975,7 +134975,7 @@
         "PageTitle": null,
         "ResourceName": "C68",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -137140,7 +137140,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -179834,7 +179834,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -183700,7 +183700,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -187566,7 +187566,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -202813,7 +202813,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -206679,7 +206679,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -206707,7 +206707,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -210573,7 +210573,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -214439,7 +214439,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
