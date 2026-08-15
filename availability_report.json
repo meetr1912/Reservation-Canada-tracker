@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-15T08:24:12Z",
+    "generated_at": "2026-08-15T12:22:20Z",
     "start_date": "2026-08-15",
     "end_date": "2027-02-10",
     "days": 180,
@@ -381,13 +381,10 @@
     "always_available_parks": [
       "Lachine Canal"
     ],
-    "errors": [
-      "DOO4: HTTP 403 Forbidden",
-      "ROO1: HTTP 403 Forbidden"
-    ],
-    "total_available_slots": 71464,
+    "errors": [],
+    "total_available_slots": 71773,
     "available_days": 180,
-    "available_units": 451
+    "available_units": 453
   },
   "history": [
     {
@@ -686,8 +683,8 @@
     },
     {
       "date": "2026-08-15",
-      "available_slots": 71464,
-      "available_units": 451,
+      "available_slots": 71773,
+      "available_units": 453,
       "available_days": 180
     }
   ],
@@ -1363,7 +1360,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -5096,7 +5093,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -5250,7 +5247,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -8372,7 +8369,7 @@
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -8962,7 +8959,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -9795,7 +9792,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -13661,7 +13658,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -16097,7 +16094,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -17527,7 +17524,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -19963,7 +19960,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -25224,7 +25221,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -27373,7 +27370,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -28838,7 +28835,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -29090,7 +29087,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -30721,7 +30718,7 @@
         "PageTitle": null,
         "ResourceName": "OS2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -31239,7 +31236,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -50891,7 +50888,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -52454,7 +52451,7 @@
         "PageTitle": null,
         "ResourceName": "OBH8",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Green Point",
@@ -56320,7 +56317,7 @@
         "PageTitle": null,
         "ResourceName": "OBH8",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Green Point",
@@ -66355,7 +66352,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -71035,7 +71032,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -74901,7 +74898,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -77953,7 +77950,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -93417,14 +93414,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -97283,14 +97280,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -101149,14 +101146,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -101634,7 +101631,7 @@
         "PageTitle": null,
         "ResourceName": "D7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -102047,7 +102044,7 @@
         "PageTitle": null,
         "ResourceName": "F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -105015,14 +105012,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -108881,14 +108878,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -110458,7 +110455,7 @@
         "PageTitle": null,
         "ResourceName": "OGP9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Lomond",
@@ -112747,14 +112744,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -114324,7 +114321,7 @@
         "PageTitle": null,
         "ResourceName": "OGP9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Lomond",
@@ -116613,14 +116610,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -120479,14 +120476,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -124345,14 +124342,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -126783,7 +126780,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -128211,14 +128208,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -130649,7 +130646,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -130950,7 +130947,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -132077,14 +132074,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -135943,7 +135940,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -139809,7 +139806,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -143675,14 +143672,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -147541,14 +147538,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -151407,14 +151404,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -155273,14 +155270,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -159139,14 +159136,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -161605,7 +161602,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -163005,7 +163002,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -165471,7 +165468,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -166871,7 +166868,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -170737,14 +170734,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -174603,14 +174600,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -178469,14 +178466,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -182335,14 +182332,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -186201,14 +186198,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -190067,14 +190064,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -193933,7 +193930,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -197799,14 +197796,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -201665,14 +201662,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -205531,14 +205528,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -209397,14 +209394,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -213263,14 +213260,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -217129,14 +217126,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -220995,14 +220992,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -224861,14 +224858,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -228727,14 +228724,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -232593,14 +232590,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -236459,14 +236456,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -240325,14 +240322,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -244191,14 +244188,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -248057,14 +248054,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -251923,14 +251920,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -255789,14 +255786,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -259655,14 +259652,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -263521,14 +263518,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -267387,14 +267384,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -271253,14 +271250,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -275119,14 +275116,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -278985,14 +278982,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -282851,14 +282848,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -286717,14 +286714,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -290583,14 +290580,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -294449,14 +294446,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -298315,14 +298312,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -302181,14 +302178,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -306047,14 +306044,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -309913,14 +309910,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -313779,14 +313776,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -317645,14 +317642,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -321511,14 +321508,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -325377,14 +325374,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -329243,14 +329240,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -333109,14 +333106,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -336975,14 +336972,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -340841,14 +340838,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -344707,14 +344704,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -348573,14 +348570,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -352439,14 +352436,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -356305,14 +356302,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -360171,14 +360168,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -364037,14 +364034,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -367903,14 +367900,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -371769,14 +371766,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -375635,14 +375632,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -379501,14 +379498,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -383367,14 +383364,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -387233,14 +387230,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -391099,14 +391096,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -394965,14 +394962,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -398831,14 +398828,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -402697,14 +402694,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -406563,14 +406560,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -410429,14 +410426,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -414295,14 +414292,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -418161,14 +418158,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -422027,14 +422024,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -425893,14 +425890,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -429759,14 +429756,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -433625,14 +433622,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -437491,14 +437488,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -441357,14 +441354,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -445223,14 +445220,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -449089,14 +449086,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -452955,14 +452952,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -456821,14 +456818,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -460687,14 +460684,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -464553,14 +464550,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -468419,14 +468416,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -472285,14 +472282,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -476151,14 +476148,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -480017,14 +480014,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -483883,14 +483880,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -487749,14 +487746,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -491615,14 +491612,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -495481,14 +495478,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -499347,14 +499344,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -503213,14 +503210,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -507079,14 +507076,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -510945,14 +510942,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -514811,14 +514808,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -518677,14 +518674,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -522543,14 +522540,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -526409,14 +526406,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -530275,14 +530272,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -534141,14 +534138,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -538007,14 +538004,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -541873,14 +541870,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -545739,14 +545736,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -549605,14 +549602,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -553471,14 +553468,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -557337,14 +557334,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -561203,14 +561200,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -565069,14 +565066,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -568935,14 +568932,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -572801,14 +572798,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -576667,14 +576664,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -580533,14 +580530,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -584399,14 +584396,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -588265,14 +588262,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -592131,14 +592128,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -595997,14 +595994,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -599863,14 +599860,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -603729,14 +603726,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -607595,14 +607592,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -611461,14 +611458,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -615327,14 +615324,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -619193,14 +619190,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -623059,14 +623056,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -626925,14 +626922,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -630791,14 +630788,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -634657,14 +634654,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -638523,14 +638520,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -642389,14 +642386,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -646255,14 +646252,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -650121,14 +650118,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -653987,14 +653984,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -657853,14 +657850,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -661719,14 +661716,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -665585,14 +665582,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -669451,14 +669448,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -673317,14 +673314,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -677183,14 +677180,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -681049,14 +681046,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -684915,14 +684912,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -688781,14 +688778,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -692647,14 +692644,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -696513,14 +696510,14 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
