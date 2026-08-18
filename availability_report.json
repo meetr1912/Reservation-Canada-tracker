@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-18T08:29:49Z",
+    "generated_at": "2026-08-18T12:29:06Z",
     "start_date": "2026-08-18",
     "end_date": "2027-02-13",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 72960,
+    "total_available_slots": 72943,
     "available_days": 180,
     "available_units": 452
   },
@@ -701,7 +701,7 @@
     },
     {
       "date": "2026-08-18",
-      "available_slots": 72960,
+      "available_slots": 72943,
       "available_units": 452,
       "available_days": 180
     }
@@ -8599,7 +8599,7 @@
         "PageTitle": null,
         "ResourceName": "2F",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -9516,7 +9516,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -10426,7 +10426,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -12001,7 +12001,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -13536,7 +13536,7 @@
         "PageTitle": null,
         "ResourceName": "O7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -15867,7 +15867,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -19733,7 +19733,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -23599,7 +23599,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -27556,7 +27556,7 @@
         "PageTitle": null,
         "ResourceName": "O508",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -29616,7 +29616,7 @@
         "PageTitle": null,
         "ResourceName": "331",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -38405,7 +38405,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -50178,7 +50178,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -54044,7 +54044,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -54688,7 +54688,7 @@
         "PageTitle": null,
         "ResourceName": "MC-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -56846,7 +56846,7 @@
         "PageTitle": null,
         "ResourceName": "A15",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -57910,7 +57910,7 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rideau Canal",
@@ -58554,7 +58554,7 @@
         "PageTitle": null,
         "ResourceName": "MC-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -60712,7 +60712,7 @@
         "PageTitle": null,
         "ResourceName": "A15",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -62420,7 +62420,7 @@
         "PageTitle": null,
         "ResourceName": "MC-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -64578,7 +64578,7 @@
         "PageTitle": null,
         "ResourceName": "A15",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -78817,7 +78817,7 @@
         "PageTitle": null,
         "ResourceName": "90",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -82683,7 +82683,7 @@
         "PageTitle": null,
         "ResourceName": "90",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -86549,7 +86549,7 @@
         "PageTitle": null,
         "ResourceName": "90",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -113296,7 +113296,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -130965,7 +130965,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -140470,35 +140470,35 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": null,
         "ResourceName": "O88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -151310,7 +151310,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -155176,7 +155176,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -176769,7 +176769,7 @@
         "PageTitle": null,
         "ResourceName": "O104",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -180635,7 +180635,7 @@
         "PageTitle": null,
         "ResourceName": "O104",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -202375,7 +202375,7 @@
         "PageTitle": null,
         "ResourceName": "O35",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -206157,7 +206157,7 @@
         "PageTitle": null,
         "ResourceName": "O96",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -210142,7 +210142,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
