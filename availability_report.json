@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-23T12:23:10Z",
+    "generated_at": "2026-08-23T16:19:18Z",
     "start_date": "2026-08-23",
     "end_date": "2027-02-18",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 75137,
+    "total_available_slots": 75136,
     "available_days": 180,
     "available_units": 452
   },
@@ -731,7 +731,7 @@
     },
     {
       "date": "2026-08-23",
-      "available_slots": 75137,
+      "available_slots": 75136,
       "available_units": 452,
       "available_days": 180
     }
@@ -1387,7 +1387,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -1898,7 +1898,7 @@
         "PageTitle": null,
         "ResourceName": "O78",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -1947,7 +1947,7 @@
         "PageTitle": null,
         "ResourceName": "O15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -3046,14 +3046,14 @@
         "PageTitle": null,
         "ResourceName": "M-O6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
         "PageTitle": null,
         "ResourceName": "M-O7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -3326,7 +3326,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -3599,7 +3599,7 @@
         "PageTitle": null,
         "ResourceName": "C71",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -4278,7 +4278,7 @@
         "PageTitle": null,
         "ResourceName": "O96",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -4334,7 +4334,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -5365,7 +5365,7 @@
         "PageTitle": null,
         "ResourceName": "110",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -6912,7 +6912,7 @@
         "PageTitle": null,
         "ResourceName": "M-O6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -7157,7 +7157,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS04",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -7724,7 +7724,7 @@
         "PageTitle": null,
         "ResourceName": "701",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -8158,14 +8158,14 @@
         "PageTitle": null,
         "ResourceName": "O98",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -8207,7 +8207,7 @@
         "PageTitle": null,
         "ResourceName": "O501",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -8459,7 +8459,7 @@
         "PageTitle": null,
         "ResourceName": "MOA2",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -9119,7 +9119,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -9483,7 +9483,7 @@
         "PageTitle": null,
         "ResourceName": "O262",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -11303,7 +11303,7 @@
         "PageTitle": null,
         "ResourceName": "R9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -12073,7 +12073,7 @@
         "PageTitle": null,
         "ResourceName": "O501",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -12192,7 +12192,7 @@
         "PageTitle": null,
         "ResourceName": "MC-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -14056,7 +14056,7 @@
         "PageTitle": null,
         "ResourceName": "5D",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -15435,7 +15435,7 @@
         "PageTitle": null,
         "ResourceName": "UN2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -16058,7 +16058,7 @@
         "PageTitle": null,
         "ResourceName": "MC-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -16354,7 +16354,7 @@
         "PageTitle": null,
         "ResourceName": "2E",
         "Type": "Equipped Camping",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16403,14 +16403,14 @@
         "PageTitle": null,
         "ResourceName": "3D",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
         "PageTitle": null,
         "ResourceName": "3E",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16431,14 +16431,14 @@
         "PageTitle": null,
         "ResourceName": "3H",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
         "PageTitle": null,
         "ResourceName": "3I",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -16774,7 +16774,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -17747,7 +17747,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -18286,7 +18286,7 @@
         "PageTitle": null,
         "ResourceName": "O102",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -18972,7 +18972,7 @@
         "PageTitle": null,
         "ResourceName": "R1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -19301,7 +19301,7 @@
         "PageTitle": null,
         "ResourceName": "UN2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -19742,7 +19742,7 @@
         "PageTitle": null,
         "ResourceName": "O96",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -21613,7 +21613,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -22838,7 +22838,7 @@
         "PageTitle": null,
         "ResourceName": "R1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -23874,7 +23874,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -24807,7 +24807,7 @@
         "PageTitle": null,
         "ResourceName": "F6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -25451,7 +25451,7 @@
         "PageTitle": null,
         "ResourceName": "OGP9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Lomond",
@@ -25479,7 +25479,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -26704,7 +26704,7 @@
         "PageTitle": null,
         "ResourceName": "R1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -27740,7 +27740,7 @@
         "PageTitle": null,
         "ResourceName": "DOO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -29506,7 +29506,7 @@
         "PageTitle": null,
         "ResourceName": "5B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -31221,14 +31221,14 @@
         "PageTitle": null,
         "ResourceName": "Cabin 1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
         "PageTitle": null,
         "ResourceName": "Cabin 2",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -31361,7 +31361,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -33421,7 +33421,7 @@
         "PageTitle": null,
         "ResourceName": "5I",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -35227,7 +35227,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -37287,7 +37287,7 @@
         "PageTitle": null,
         "ResourceName": "5I",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -39093,7 +39093,7 @@
         "PageTitle": null,
         "ResourceName": "O99",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -52240,7 +52240,7 @@
         "PageTitle": null,
         "ResourceName": "O9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -64188,7 +64188,7 @@
         "PageTitle": null,
         "ResourceName": "35TR",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -68054,7 +68054,7 @@
         "PageTitle": null,
         "ResourceName": "35TR",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -75681,7 +75681,7 @@
         "PageTitle": null,
         "ResourceName": "OBH12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -77564,7 +77564,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -78005,21 +78005,21 @@
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -81430,7 +81430,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -81871,21 +81871,21 @@
         "PageTitle": null,
         "ResourceName": "ROO1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
         "PageTitle": null,
         "ResourceName": "ROO3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -85261,7 +85261,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -92447,7 +92447,7 @@
         "PageTitle": null,
         "ResourceName": "R3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -96313,7 +96313,7 @@
         "PageTitle": null,
         "ResourceName": "R3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -103387,7 +103387,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -107253,7 +107253,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -109348,7 +109348,7 @@
         "PageTitle": null,
         "ResourceName": "D18",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -110076,7 +110076,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -111119,7 +111119,7 @@
         "PageTitle": null,
         "ResourceName": "O60",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -113942,7 +113942,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -155283,7 +155283,7 @@
         "PageTitle": null,
         "ResourceName": "MT-E",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -158148,7 +158148,7 @@
         "PageTitle": null,
         "ResourceName": "R1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -162014,7 +162014,7 @@
         "PageTitle": null,
         "ResourceName": "R1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -169697,7 +169697,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -177443,7 +177443,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -181309,7 +181309,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -294039,7 +294039,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -297905,7 +297905,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -374602,7 +374602,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -378468,7 +378468,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
