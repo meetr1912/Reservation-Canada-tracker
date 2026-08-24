@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-24T04:42:26Z",
+    "generated_at": "2026-08-24T08:42:35Z",
     "start_date": "2026-08-24",
     "end_date": "2027-02-19",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 75513,
+    "total_available_slots": 75515,
     "available_days": 180,
     "available_units": 452
   },
@@ -737,7 +737,7 @@
     },
     {
       "date": "2026-08-24",
-      "available_slots": 75513,
+      "available_slots": 75515,
       "available_units": 452,
       "available_days": 180
     }
@@ -3528,7 +3528,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -5903,7 +5903,7 @@
         "PageTitle": null,
         "ResourceName": "CS6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -7478,7 +7478,7 @@
         "PageTitle": null,
         "ResourceName": "O7",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -9769,7 +9769,7 @@
         "PageTitle": null,
         "ResourceName": "CS6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -11344,7 +11344,7 @@
         "PageTitle": null,
         "ResourceName": "O7",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -13635,7 +13635,7 @@
         "PageTitle": null,
         "ResourceName": "CS6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -14363,7 +14363,7 @@
         "PageTitle": null,
         "ResourceName": "A17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -16318,7 +16318,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -18229,7 +18229,7 @@
         "PageTitle": null,
         "ResourceName": "A17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -20184,7 +20184,7 @@
         "PageTitle": null,
         "ResourceName": "1F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -22095,7 +22095,7 @@
         "PageTitle": null,
         "ResourceName": "A17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -23166,7 +23166,7 @@
         "PageTitle": null,
         "ResourceName": "UN1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -25352,7 +25352,7 @@
         "PageTitle": null,
         "ResourceName": "RC28",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -29190,7 +29190,7 @@
         "PageTitle": null,
         "ResourceName": "FV24",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -29862,7 +29862,7 @@
         "PageTitle": null,
         "ResourceName": "A6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -35464,7 +35464,7 @@
         "PageTitle": null,
         "ResourceName": "DOO2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -39330,7 +39330,7 @@
         "PageTitle": null,
         "ResourceName": "DOO2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -39386,7 +39386,7 @@
         "PageTitle": null,
         "ResourceName": "MOA1",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -43252,7 +43252,7 @@
         "PageTitle": null,
         "ResourceName": "MOA1",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -52393,7 +52393,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -56259,7 +56259,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -56609,7 +56609,7 @@
         "PageTitle": null,
         "ResourceName": "5G",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -57442,7 +57442,7 @@
         "PageTitle": null,
         "ResourceName": "B1",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -60104,7 +60104,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -66793,7 +66793,7 @@
         "PageTitle": null,
         "ResourceName": "D13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -67178,7 +67178,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -109578,7 +109578,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -113220,7 +113220,7 @@
         "PageTitle": null,
         "ResourceName": "D18",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -113283,7 +113283,7 @@
         "PageTitle": null,
         "ResourceName": "D7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -152867,7 +152867,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -156733,7 +156733,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -160599,7 +160599,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
