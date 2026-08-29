@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-08-29T00:20:45Z",
+    "generated_at": "2026-08-29T10:40:04Z",
     "start_date": "2026-08-29",
     "end_date": "2027-02-24",
     "days": 180,
@@ -382,7 +382,7 @@
       "Lachine Canal"
     ],
     "errors": [],
-    "total_available_slots": 77722,
+    "total_available_slots": 77728,
     "available_days": 180,
     "available_units": 449
   },
@@ -767,7 +767,7 @@
     },
     {
       "date": "2026-08-29",
-      "available_slots": 77722,
+      "available_slots": 77728,
       "available_units": 449,
       "available_days": 180
     }
@@ -2760,7 +2760,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -6626,7 +6626,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -8068,7 +8068,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 2",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -9890,7 +9890,7 @@
         "PageTitle": null,
         "ResourceName": "FV24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -13259,7 +13259,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fort Langley",
@@ -14232,7 +14232,7 @@
         "PageTitle": null,
         "ResourceName": "334",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -15793,7 +15793,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -16150,7 +16150,7 @@
         "PageTitle": null,
         "ResourceName": "ROC1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -16213,7 +16213,7 @@
         "PageTitle": null,
         "ResourceName": "HOA2",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -16481,7 +16481,7 @@
         "PageTitle": null,
         "ResourceName": "4A",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -17125,7 +17125,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fort Langley",
@@ -18098,7 +18098,7 @@
         "PageTitle": null,
         "ResourceName": "334",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -20079,7 +20079,7 @@
         "PageTitle": null,
         "ResourceName": "HOA2",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -20669,7 +20669,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -20697,7 +20697,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -21964,7 +21964,7 @@
         "PageTitle": null,
         "ResourceName": "334",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -23945,7 +23945,7 @@
         "PageTitle": null,
         "ResourceName": "HOA2",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -24640,7 +24640,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -28506,7 +28506,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -35846,7 +35846,7 @@
         "PageTitle": null,
         "ResourceName": "4F",
         "Type": "Equipped Camping",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Main",
@@ -39017,7 +39017,7 @@
         "PageTitle": null,
         "ResourceName": "Teepee 9",
         "Type": "Teepee",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Saint-Ours Canal",
@@ -57829,7 +57829,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -61695,7 +61695,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -64805,7 +64805,7 @@
         "PageTitle": null,
         "ResourceName": "O73",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -65561,7 +65561,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -68671,7 +68671,7 @@
         "PageTitle": null,
         "ResourceName": "O73",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -69427,7 +69427,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -73293,7 +73293,7 @@
         "PageTitle": null,
         "ResourceName": "111",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -114846,7 +114846,7 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -120091,7 +120091,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -297962,7 +297962,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -301828,7 +301828,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
