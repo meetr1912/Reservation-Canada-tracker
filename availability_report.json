@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-03T08:29:48Z",
+    "generated_at": "2026-09-03T15:31:31Z",
     "start_date": "2026-09-03",
     "end_date": "2027-03-01",
     "days": 180,
@@ -1818,7 +1818,7 @@
         "PageTitle": null,
         "ResourceName": "O262",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -1888,7 +1888,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -2322,7 +2322,7 @@
         "PageTitle": null,
         "ResourceName": "OGP9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Lomond",
@@ -2665,7 +2665,7 @@
         "PageTitle": null,
         "ResourceName": "334",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -2770,7 +2770,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -2931,7 +2931,7 @@
         "PageTitle": null,
         "ResourceName": "O50",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -3764,7 +3764,7 @@
         "PageTitle": null,
         "ResourceName": "OS1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -5243,7 +5243,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -5257,7 +5257,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -5327,7 +5327,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -6601,7 +6601,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -6783,7 +6783,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -6811,7 +6811,7 @@
         "PageTitle": null,
         "ResourceName": "O63",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -7238,7 +7238,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS06",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -7511,7 +7511,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -7553,7 +7553,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -7630,7 +7630,7 @@
         "PageTitle": null,
         "ResourceName": "OS1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -8190,7 +8190,7 @@
         "PageTitle": null,
         "ResourceName": "O93",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -9109,7 +9109,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -9634,7 +9634,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -9725,7 +9725,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -10383,7 +10383,7 @@
         "PageTitle": null,
         "ResourceName": "331",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -11104,7 +11104,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS06",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -11377,7 +11377,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -11454,7 +11454,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -11496,7 +11496,7 @@
         "PageTitle": null,
         "ResourceName": "OS1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -13024,14 +13024,14 @@
         "PageTitle": null,
         "ResourceName": "O97",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -13052,7 +13052,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -14242,7 +14242,7 @@
         "PageTitle": null,
         "ResourceName": "329",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -15243,7 +15243,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -15320,7 +15320,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -16202,7 +16202,7 @@
         "PageTitle": null,
         "ResourceName": "DOO3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -16981,7 +16981,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -17849,7 +17849,7 @@
         "PageTitle": null,
         "ResourceName": "O40",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -20847,7 +20847,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -21001,7 +21001,7 @@
         "PageTitle": null,
         "ResourceName": "F5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -22100,7 +22100,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -24503,7 +24503,7 @@
         "PageTitle": null,
         "ResourceName": "Y8",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -24867,7 +24867,7 @@
         "PageTitle": null,
         "ResourceName": "F5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -25966,7 +25966,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -29832,7 +29832,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -32389,7 +32389,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -32690,7 +32690,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -34251,7 +34251,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -36255,7 +36255,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -36556,7 +36556,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -36605,7 +36605,7 @@
         "PageTitle": null,
         "ResourceName": "O261",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -38117,7 +38117,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -40121,7 +40121,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -41983,7 +41983,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -43987,7 +43987,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -47811,7 +47811,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -49715,7 +49715,7 @@
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -53686,7 +53686,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -57153,7 +57153,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -61019,7 +61019,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -61446,7 +61446,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -61586,7 +61586,7 @@
         "PageTitle": null,
         "ResourceName": "R3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -64213,7 +64213,7 @@
         "PageTitle": null,
         "ResourceName": "16SB",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Shallow Bay",
@@ -64885,7 +64885,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -65312,7 +65312,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -70713,7 +70713,7 @@
         "PageTitle": null,
         "ResourceName": "D12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -74614,7 +74614,7 @@
         "PageTitle": null,
         "ResourceName": "D17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -78480,7 +78480,7 @@
         "PageTitle": null,
         "ResourceName": "D17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -82346,7 +82346,7 @@
         "PageTitle": null,
         "ResourceName": "D17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -98412,7 +98412,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -102278,7 +102278,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -106144,7 +106144,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -143003,14 +143003,14 @@
         "PageTitle": null,
         "ResourceName": "69",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
         "PageTitle": null,
         "ResourceName": "70",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -146876,7 +146876,7 @@
         "PageTitle": null,
         "ResourceName": "70",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -150742,7 +150742,7 @@
         "PageTitle": null,
         "ResourceName": "70",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -152088,7 +152088,7 @@
         "PageTitle": null,
         "ResourceName": "Y9",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -155954,7 +155954,7 @@
         "PageTitle": null,
         "ResourceName": "Y9",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -179206,7 +179206,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -183072,7 +183072,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -183464,7 +183464,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -186938,7 +186938,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -187330,7 +187330,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -190846,7 +190846,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -191196,7 +191196,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -194712,7 +194712,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -198578,7 +198578,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
