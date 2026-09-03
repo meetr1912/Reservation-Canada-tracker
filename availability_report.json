@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-03T15:31:31Z",
+    "generated_at": "2026-09-03T19:05:20Z",
     "start_date": "2026-09-03",
     "end_date": "2027-03-01",
     "days": 180,
@@ -382,10 +382,12 @@
       "Lachine Canal",
       "Saint-Ours Canal"
     ],
-    "errors": [],
-    "total_available_slots": 79705,
+    "errors": [
+      "C14: HTTP 400 Bad Request"
+    ],
+    "total_available_slots": 79524,
     "available_days": 180,
-    "available_units": 450
+    "available_units": 449
   },
   "history": [
     {
@@ -798,8 +800,8 @@
     },
     {
       "date": "2026-09-03",
-      "available_slots": 79705,
-      "available_units": 450,
+      "available_slots": 79524,
+      "available_units": 449,
       "available_days": 180
     }
   ],
@@ -1881,7 +1883,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -2021,7 +2023,7 @@
         "PageTitle": null,
         "ResourceName": "O16",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -3659,14 +3661,14 @@
         "PageTitle": null,
         "ResourceName": "C69",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
         "PageTitle": null,
         "ResourceName": "C71",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -5327,7 +5329,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -5544,7 +5546,7 @@
         "PageTitle": null,
         "ResourceName": "F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -5747,7 +5749,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -5887,7 +5889,7 @@
         "PageTitle": null,
         "ResourceName": "O16",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Point Wolfe",
@@ -7238,7 +7240,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS06",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -7511,7 +7513,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -7679,7 +7681,7 @@
         "PageTitle": null,
         "ResourceName": "OS8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -9228,7 +9230,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -9613,7 +9615,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -11104,7 +11106,7 @@
         "PageTitle": null,
         "ResourceName": "Havre-HS06",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -11377,7 +11379,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -11454,7 +11456,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -11545,7 +11547,7 @@
         "PageTitle": null,
         "ResourceName": "OS8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -14557,7 +14559,7 @@
         "PageTitle": null,
         "ResourceName": "O68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -14634,7 +14636,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -15243,7 +15245,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -15320,7 +15322,7 @@
         "PageTitle": null,
         "ResourceName": "108",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Edward Island - Stanhope",
@@ -16020,7 +16022,7 @@
         "PageTitle": null,
         "ResourceName": "O503",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -16202,7 +16204,7 @@
         "PageTitle": null,
         "ResourceName": "DOO3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -16230,7 +16232,7 @@
         "PageTitle": null,
         "ResourceName": "ROO3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -17289,7 +17291,7 @@
         "PageTitle": null,
         "ResourceName": "O263",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -19648,7 +19650,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -21001,7 +21003,7 @@
         "PageTitle": null,
         "ResourceName": "F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -22037,7 +22039,7 @@
         "PageTitle": null,
         "ResourceName": "404",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -24328,7 +24330,7 @@
         "PageTitle": null,
         "ResourceName": "D13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -24503,7 +24505,7 @@
         "PageTitle": null,
         "ResourceName": "Y8",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -24867,7 +24869,7 @@
         "PageTitle": null,
         "ResourceName": "F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Petit-Gaspé",
@@ -25931,7 +25933,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -26841,7 +26843,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -28523,7 +28525,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -29797,7 +29799,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -30707,7 +30709,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -32690,7 +32692,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -34832,7 +34834,7 @@
         "PageTitle": null,
         "ResourceName": "UN2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -36556,7 +36558,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -36605,7 +36607,7 @@
         "PageTitle": null,
         "ResourceName": "O261",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -37753,7 +37755,7 @@
         "PageTitle": null,
         "ResourceName": "O68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -41150,7 +41152,7 @@
         "PageTitle": null,
         "ResourceName": "4J",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -42305,7 +42307,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -45016,7 +45018,7 @@
         "PageTitle": null,
         "ResourceName": "4J",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -48882,7 +48884,7 @@
         "PageTitle": null,
         "ResourceName": "4J",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -57769,7 +57771,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -59486,7 +59488,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -61019,7 +61021,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -63352,7 +63354,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -68548,7 +68550,7 @@
         "PageTitle": null,
         "ResourceName": "A17",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -69367,7 +69369,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -70720,7 +70722,7 @@
         "PageTitle": null,
         "ResourceName": "D13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -71756,7 +71758,7 @@
         "PageTitle": null,
         "ResourceName": "FV21",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -73233,7 +73235,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -75328,7 +75330,7 @@
         "PageTitle": null,
         "ResourceName": "O290",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -75699,7 +75701,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -77099,7 +77101,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -79194,7 +79196,7 @@
         "PageTitle": null,
         "ResourceName": "O290",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -79565,7 +79567,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -80965,7 +80967,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -83060,7 +83062,7 @@
         "PageTitle": null,
         "ResourceName": "O290",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -84831,7 +84833,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -88697,7 +88699,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -92563,7 +92565,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -96429,7 +96431,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -100295,7 +100297,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -104161,7 +104163,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -108027,7 +108029,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -111893,7 +111895,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -115269,7 +115271,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -115759,7 +115761,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -117455,7 +117457,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -119135,7 +119137,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -119625,7 +119627,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -123491,7 +123493,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -127357,7 +127359,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -131223,7 +131225,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -135089,7 +135091,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -138955,7 +138957,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -142821,7 +142823,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -143003,7 +143005,7 @@
         "PageTitle": null,
         "ResourceName": "69",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -146687,7 +146689,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -150553,7 +150555,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -154419,7 +154421,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -157837,7 +157839,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -158285,7 +158287,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -161703,7 +161705,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -162151,7 +162153,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -166017,7 +166019,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -169883,7 +169885,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -173749,7 +173751,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -177615,7 +177617,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -179206,7 +179208,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -181481,7 +181483,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -183072,7 +183074,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -185347,7 +185349,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -186938,7 +186940,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -189213,7 +189215,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -193079,7 +193081,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -196945,7 +196947,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -200811,7 +200813,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -204677,7 +204679,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -208543,7 +208545,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -212409,7 +212411,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -216275,7 +216277,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -220141,7 +220143,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -224007,7 +224009,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -227873,7 +227875,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -231739,7 +231741,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -235605,7 +235607,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -239471,7 +239473,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -243337,7 +243339,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -247203,7 +247205,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -251069,7 +251071,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -254935,7 +254937,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -258801,7 +258803,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -262667,7 +262669,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -266533,7 +266535,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -270399,7 +270401,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -274265,7 +274267,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -278131,7 +278133,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -281997,7 +281999,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -285863,7 +285865,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -289729,7 +289731,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -293595,7 +293597,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -297461,7 +297463,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -301327,7 +301329,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -305193,7 +305195,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -309059,7 +309061,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -312925,7 +312927,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -316791,7 +316793,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -320657,7 +320659,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -324523,7 +324525,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -328389,7 +328391,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -332255,7 +332257,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -336121,7 +336123,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -339987,7 +339989,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -343853,7 +343855,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -347719,7 +347721,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -351585,7 +351587,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -355451,7 +355453,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -359317,7 +359319,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -363183,7 +363185,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -367049,7 +367051,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -370915,7 +370917,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -374781,7 +374783,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -378647,7 +378649,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -382513,7 +382515,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -386379,7 +386381,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -390245,7 +390247,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -394111,7 +394113,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -397977,7 +397979,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -401843,7 +401845,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -405709,7 +405711,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -409575,7 +409577,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -413441,7 +413443,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -417307,7 +417309,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -421173,7 +421175,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -425039,7 +425041,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -428905,7 +428907,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -432771,7 +432773,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -436637,7 +436639,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -440503,7 +440505,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -444369,7 +444371,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -448235,7 +448237,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -452101,7 +452103,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -455967,7 +455969,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -459833,7 +459835,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -463699,7 +463701,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -467565,7 +467567,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -471431,7 +471433,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -475297,7 +475299,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -479163,7 +479165,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -483029,7 +483031,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -486895,7 +486897,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -490761,7 +490763,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -494627,7 +494629,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -498493,7 +498495,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -502359,7 +502361,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -506225,7 +506227,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -510091,7 +510093,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -513957,7 +513959,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -517823,7 +517825,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -521689,7 +521691,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -525555,7 +525557,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -529421,7 +529423,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -533287,7 +533289,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -537153,7 +537155,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -541019,7 +541021,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -544885,7 +544887,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -548751,7 +548753,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -552617,7 +552619,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -556483,7 +556485,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -560349,7 +560351,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -564215,7 +564217,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -568081,7 +568083,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -571947,7 +571949,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -575813,7 +575815,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -579679,7 +579681,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -583545,7 +583547,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -587411,7 +587413,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -591277,7 +591279,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -595143,7 +595145,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -599009,7 +599011,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -602875,7 +602877,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -606741,7 +606743,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -610607,7 +610609,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -614473,7 +614475,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -618339,7 +618341,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -622205,7 +622207,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -626071,7 +626073,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -629937,7 +629939,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -633803,7 +633805,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -637669,7 +637671,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -641535,7 +641537,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -645401,7 +645403,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -649267,7 +649269,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -653133,7 +653135,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -656999,7 +657001,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -660865,7 +660867,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -664731,7 +664733,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -668597,7 +668599,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -672463,7 +672465,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -676329,7 +676331,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -680195,7 +680197,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -684061,7 +684063,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -687927,7 +687929,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -691793,7 +691795,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
@@ -695659,7 +695661,7 @@
         "PageTitle": null,
         "ResourceName": "C14",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Edward Island - Cavendish",
