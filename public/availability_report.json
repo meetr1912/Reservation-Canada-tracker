@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-03T01:54:50Z",
+    "generated_at": "2026-09-03T08:29:48Z",
     "start_date": "2026-09-03",
     "end_date": "2027-03-01",
     "days": 180,
@@ -383,7 +383,7 @@
       "Saint-Ours Canal"
     ],
     "errors": [],
-    "total_available_slots": 79699,
+    "total_available_slots": 79705,
     "available_days": 180,
     "available_units": 450
   },
@@ -798,7 +798,7 @@
     },
     {
       "date": "2026-09-03",
-      "available_slots": 79699,
+      "available_slots": 79705,
       "available_units": 450,
       "available_days": 180
     }
@@ -9095,7 +9095,7 @@
         "PageTitle": null,
         "ResourceName": "O13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -9137,7 +9137,7 @@
         "PageTitle": null,
         "ResourceName": "O88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -16687,7 +16687,7 @@
         "PageTitle": null,
         "ResourceName": "D6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -19648,7 +19648,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 1",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -22919,7 +22919,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -24713,7 +24713,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -26785,7 +26785,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -28579,7 +28579,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -30651,7 +30651,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -34517,7 +34517,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -40177,7 +40177,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -41472,7 +41472,7 @@
         "PageTitle": null,
         "ResourceName": "A11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -55634,7 +55634,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -59500,7 +59500,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -62489,7 +62489,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -69941,7 +69941,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -73807,7 +73807,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -77673,7 +77673,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -134375,7 +134375,7 @@
         "PageTitle": null,
         "ResourceName": "O50",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -366958,7 +366958,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
