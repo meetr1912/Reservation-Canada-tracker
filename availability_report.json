@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-06T14:38:58Z",
+    "generated_at": "2026-09-06T17:58:07Z",
     "start_date": "2026-09-06",
     "end_date": "2027-03-04",
     "days": 180,
@@ -383,7 +383,7 @@
       "Saint-Ours Canal"
     ],
     "errors": [],
-    "total_available_slots": 80890,
+    "total_available_slots": 80892,
     "available_days": 180,
     "available_units": 449
   },
@@ -816,7 +816,7 @@
     },
     {
       "date": "2026-09-06",
-      "available_slots": 80890,
+      "available_slots": 80892,
       "available_units": 449,
       "available_days": 180
     }
@@ -1164,7 +1164,7 @@
         "PageTitle": null,
         "ResourceName": "D15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -1500,7 +1500,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -2256,7 +2256,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2634,7 +2634,7 @@
         "PageTitle": null,
         "ResourceName": "322",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -3628,7 +3628,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -4055,7 +4055,7 @@
         "PageTitle": null,
         "ResourceName": "717",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -4146,7 +4146,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -4342,14 +4342,14 @@
         "PageTitle": null,
         "ResourceName": "O93",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Malady Head",
         "PageTitle": null,
         "ResourceName": "O94",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Malady Head",
@@ -4622,7 +4622,7 @@
         "PageTitle": null,
         "ResourceName": "DOO3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -5401,7 +5401,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -5457,7 +5457,7 @@
         "PageTitle": null,
         "ResourceName": "112",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -5674,7 +5674,7 @@
         "PageTitle": null,
         "ResourceName": "O123",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -6339,7 +6339,7 @@
         "PageTitle": null,
         "ResourceName": "4C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -7494,7 +7494,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -8446,7 +8446,7 @@
         "PageTitle": null,
         "ResourceName": "MT-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -8966,7 +8966,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -12832,7 +12832,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -12958,7 +12958,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -14113,7 +14113,7 @@
         "PageTitle": null,
         "ResourceName": "4K",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -14197,7 +14197,7 @@
         "PageTitle": null,
         "ResourceName": "5L",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -16698,7 +16698,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -16971,14 +16971,14 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -18063,7 +18063,7 @@
         "PageTitle": null,
         "ResourceName": "5L",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -27797,7 +27797,7 @@
         "PageTitle": null,
         "ResourceName": "ROC1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -29276,21 +29276,21 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
         "PageTitle": null,
         "ResourceName": "RC26",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
         "PageTitle": null,
         "ResourceName": "RC27",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -29892,7 +29892,7 @@
         "PageTitle": null,
         "ResourceName": "A11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -32211,7 +32211,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -34136,7 +34136,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -38002,7 +38002,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -39003,7 +39003,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 2",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -43739,7 +43739,7 @@
         "PageTitle": null,
         "ResourceName": "D21",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -45608,7 +45608,7 @@
         "PageTitle": null,
         "ResourceName": "M-O10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -45643,7 +45643,7 @@
         "PageTitle": null,
         "ResourceName": "M-O4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -49474,7 +49474,7 @@
         "PageTitle": null,
         "ResourceName": "M-O10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -49509,7 +49509,7 @@
         "PageTitle": null,
         "ResourceName": "M-O4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -55540,7 +55540,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -59140,7 +59140,7 @@
         "PageTitle": null,
         "ResourceName": "D13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -59406,7 +59406,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -63027,7 +63027,7 @@
         "PageTitle": null,
         "ResourceName": "D16",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -63272,7 +63272,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -77075,7 +77075,7 @@
         "PageTitle": null,
         "ResourceName": "R4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -80941,7 +80941,7 @@
         "PageTitle": null,
         "ResourceName": "R4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -85766,7 +85766,7 @@
         "PageTitle": null,
         "ResourceName": "MT-C",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -90460,7 +90460,7 @@
         "PageTitle": null,
         "ResourceName": "O34",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -91664,7 +91664,7 @@
         "PageTitle": null,
         "ResourceName": "407",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -135996,7 +135996,7 @@
         "PageTitle": null,
         "ResourceName": "MC-B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -139862,7 +139862,7 @@
         "PageTitle": null,
         "ResourceName": "MC-B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -163830,7 +163830,7 @@
         "PageTitle": null,
         "ResourceName": "O35",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -194632,7 +194632,7 @@
         "PageTitle": null,
         "ResourceName": "Y9",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -198498,7 +198498,7 @@
         "PageTitle": null,
         "ResourceName": "Y9",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -212924,7 +212924,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -216790,7 +216790,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
