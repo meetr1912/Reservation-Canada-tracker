@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-09T01:59:47Z",
+    "generated_at": "2026-09-09T08:35:21Z",
     "start_date": "2026-09-09",
     "end_date": "2027-03-07",
     "days": 180,
@@ -385,7 +385,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 81888,
+    "total_available_slots": 81906,
     "available_days": 180,
     "available_units": 449
   },
@@ -836,7 +836,7 @@
     },
     {
       "date": "2026-09-09",
-      "available_slots": 81888,
+      "available_slots": 81906,
       "available_units": 449,
       "available_days": 180
     }
@@ -2269,7 +2269,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2549,7 +2549,7 @@
         "PageTitle": null,
         "ResourceName": "5B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -4756,7 +4756,7 @@
         "PageTitle": null,
         "ResourceName": "52",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -6135,7 +6135,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -9077,7 +9077,7 @@
         "PageTitle": null,
         "ResourceName": "Y8",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -9287,7 +9287,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -9504,7 +9504,7 @@
         "PageTitle": null,
         "ResourceName": "O2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fort Rodd Hill",
@@ -9910,7 +9910,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -10204,7 +10204,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -10232,7 +10232,7 @@
         "PageTitle": null,
         "ResourceName": "4D",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -12943,7 +12943,7 @@
         "PageTitle": null,
         "ResourceName": "Y8",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -13153,7 +13153,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -13776,7 +13776,7 @@
         "PageTitle": null,
         "ResourceName": "CB1",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -14028,7 +14028,7 @@
         "PageTitle": null,
         "ResourceName": "O42",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Trout River",
@@ -14070,7 +14070,7 @@
         "PageTitle": null,
         "ResourceName": "O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -16809,7 +16809,7 @@
         "PageTitle": null,
         "ResourceName": "Y8",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -24044,7 +24044,7 @@
         "PageTitle": null,
         "ResourceName": "36",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -24072,7 +24072,7 @@
         "PageTitle": null,
         "ResourceName": "50",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -26088,7 +26088,7 @@
         "PageTitle": null,
         "ResourceName": "A28",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -29954,7 +29954,7 @@
         "PageTitle": null,
         "ResourceName": "A28",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -40929,7 +40929,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -42560,7 +42560,7 @@
         "PageTitle": null,
         "ResourceName": "BE2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -61407,7 +61407,7 @@
         "PageTitle": null,
         "ResourceName": "B1",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -63992,7 +63992,7 @@
         "PageTitle": null,
         "ResourceName": "CS6",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -67858,7 +67858,7 @@
         "PageTitle": null,
         "ResourceName": "CS6",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -73999,7 +73999,7 @@
         "PageTitle": null,
         "ResourceName": "O185",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -77865,7 +77865,7 @@
         "PageTitle": null,
         "ResourceName": "O185",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -81731,7 +81731,7 @@
         "PageTitle": null,
         "ResourceName": "O185",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -146277,7 +146277,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -150143,7 +150143,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -154009,7 +154009,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -162028,7 +162028,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -165894,7 +165894,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -180588,7 +180588,7 @@
         "PageTitle": null,
         "ResourceName": "405",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
