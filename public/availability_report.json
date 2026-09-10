@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-10T01:55:26Z",
+    "generated_at": "2026-09-10T08:36:50Z",
     "start_date": "2026-09-10",
     "end_date": "2027-03-08",
     "days": 180,
@@ -385,7 +385,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 82151,
+    "total_available_slots": 82150,
     "available_days": 180,
     "available_units": 449
   },
@@ -842,7 +842,7 @@
     },
     {
       "date": "2026-09-10",
-      "available_slots": 82151,
+      "available_slots": 82150,
       "available_units": 449,
       "available_days": 180
     }
@@ -5791,7 +5791,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -6064,7 +6064,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -6652,7 +6652,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -8570,7 +8570,7 @@
         "PageTitle": null,
         "ResourceName": "MOA2",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -9930,7 +9930,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -10007,7 +10007,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -10518,7 +10518,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -13796,7 +13796,7 @@
         "PageTitle": null,
         "ResourceName": "CB3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Christian Beach",
@@ -16962,7 +16962,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -20184,7 +20184,7 @@
         "PageTitle": null,
         "ResourceName": "36",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -20828,7 +20828,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -24463,7 +24463,7 @@
         "PageTitle": null,
         "ResourceName": "D6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -24694,7 +24694,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -25156,7 +25156,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -28560,7 +28560,7 @@
         "PageTitle": null,
         "ResourceName": "O5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -31262,7 +31262,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -75379,7 +75379,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -129069,7 +129069,7 @@
         "PageTitle": null,
         "ResourceName": "O36",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -132858,7 +132858,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
