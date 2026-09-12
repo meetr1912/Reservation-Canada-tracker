@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-12T14:39:55Z",
+    "generated_at": "2026-09-12T18:04:25Z",
     "start_date": "2026-09-12",
     "end_date": "2027-03-10",
     "days": 180,
@@ -385,7 +385,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 82745,
+    "total_available_slots": 82756,
     "available_days": 180,
     "available_units": 449
   },
@@ -854,7 +854,7 @@
     },
     {
       "date": "2026-09-12",
-      "available_slots": 82745,
+      "available_slots": 82756,
       "available_units": 449,
       "available_days": 180
     }
@@ -887,7 +887,7 @@
         "PageTitle": null,
         "ResourceName": "48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -3372,14 +3372,14 @@
         "PageTitle": null,
         "ResourceName": "QuarryO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -3484,7 +3484,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -3568,7 +3568,7 @@
         "PageTitle": null,
         "ResourceName": "23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -3582,7 +3582,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -4247,14 +4247,14 @@
         "PageTitle": null,
         "ResourceName": "Tent 2",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
         "PageTitle": null,
         "ResourceName": "Tent 3",
         "Type": "Prospector Tent",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -4739,7 +4739,7 @@
         "PageTitle": null,
         "ResourceName": "37",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -5033,7 +5033,7 @@
         "PageTitle": null,
         "ResourceName": "D10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -6118,21 +6118,21 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
         "PageTitle": null,
         "ResourceName": "RC26",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
         "PageTitle": null,
         "ResourceName": "RC27",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -6867,7 +6867,7 @@
         "PageTitle": null,
         "ResourceName": "O63",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -6951,7 +6951,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -7098,7 +7098,7 @@
         "PageTitle": null,
         "ResourceName": "R-F2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -7238,14 +7238,14 @@
         "PageTitle": null,
         "ResourceName": "QuarryO4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mingan Archipelago",
         "PageTitle": null,
         "ResourceName": "QuarryO5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mingan Archipelago",
@@ -7476,7 +7476,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -9221,7 +9221,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -10733,7 +10733,7 @@
         "PageTitle": null,
         "ResourceName": "O63",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -10964,7 +10964,7 @@
         "PageTitle": null,
         "ResourceName": "R-F2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -11342,7 +11342,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -12772,7 +12772,7 @@
         "PageTitle": null,
         "ResourceName": "D11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -13087,7 +13087,7 @@
         "PageTitle": null,
         "ResourceName": "C6",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -14165,7 +14165,7 @@
         "PageTitle": null,
         "ResourceName": "5B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -15208,7 +15208,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -16330,7 +16330,7 @@
         "PageTitle": null,
         "ResourceName": "36",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -16701,7 +16701,7 @@
         "PageTitle": null,
         "ResourceName": "D2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -16820,7 +16820,7 @@
         "PageTitle": null,
         "ResourceName": "Y7",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -17380,7 +17380,7 @@
         "PageTitle": null,
         "ResourceName": "O288",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -17968,7 +17968,7 @@
         "PageTitle": null,
         "ResourceName": "4B",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -19088,7 +19088,7 @@
         "PageTitle": null,
         "ResourceName": "9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -20686,7 +20686,7 @@
         "PageTitle": null,
         "ResourceName": "Y7",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -20777,7 +20777,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -25196,7 +25196,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -27632,7 +27632,7 @@
         "PageTitle": null,
         "ResourceName": "O186",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -27646,14 +27646,14 @@
         "PageTitle": null,
         "ResourceName": "O188",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -29062,7 +29062,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -31498,7 +31498,7 @@
         "PageTitle": null,
         "ResourceName": "O186",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -31512,14 +31512,14 @@
         "PageTitle": null,
         "ResourceName": "O188",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -43728,7 +43728,7 @@
         "PageTitle": null,
         "ResourceName": "D15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -47594,7 +47594,7 @@
         "PageTitle": null,
         "ResourceName": "D15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -59220,7 +59220,7 @@
         "PageTitle": null,
         "ResourceName": "D19",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -80139,7 +80139,7 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -84005,7 +84005,7 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -86569,7 +86569,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -88186,7 +88186,7 @@
         "PageTitle": null,
         "ResourceName": "M-O12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -90435,7 +90435,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -92052,7 +92052,7 @@
         "PageTitle": null,
         "ResourceName": "M-O12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -94301,7 +94301,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -95918,7 +95918,7 @@
         "PageTitle": null,
         "ResourceName": "M-O12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -103566,7 +103566,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
