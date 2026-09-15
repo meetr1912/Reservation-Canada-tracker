@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
   Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, AlertTriangle, Bell, X,
+  SlidersHorizontal,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
@@ -159,6 +160,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(true);
   const [viewMode, setViewMode] = useState('list');
+  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertDate, setAlertDate] = useState(null);
 
@@ -271,6 +273,7 @@ function App() {
   const parksAvailable = new Set(selectedSites.filter(s => s.status).map(s => s.ParkName)).size;
   const nextAvailableDate = datesWithAvailability.find(d => d >= selectedDate) || datesWithAvailability[0];
   const lastUpdated = formatTimestamp(metadata.generated_at);
+  const selectedFilterCount = selectedParks.length + selectedTypes.length;
 
   // Picking a park/type from the ranked feed drills in like before — but when
   // several are already selected, keep the multi-selection instead of
@@ -334,7 +337,7 @@ function App() {
 
         <Tabs value={viewMode} onValueChange={setViewMode} className="w-full">
           {/* Controls */}
-          <Card className="mb-6 border-0 shadow-sm sticky top-2 z-20">
+          <Card className="mb-6 border-0 shadow-sm sm:sticky sm:top-2 sm:z-20">
             <CardContent className="p-4">
               <div className="flex flex-col gap-3">
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -368,95 +371,119 @@ function App() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                  {viewMode === 'list' && (
-                    <Select value={selectedDate} onValueChange={setSelectedDate}>
-                      <SelectTrigger className="bg-white h-11">
-                        <SelectValue placeholder="Select a date" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {dates.map(date => {
-                          const has = report.dates[date].some(s => s.status);
-                          return (
-                            <SelectItem key={date} value={date}>
-                              <span className="flex items-center gap-2">
-                                {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
-                                {has && <span className="text-emerald-500">●</span>}
-                              </span>
-                            </SelectItem>
-                          );
-                        })}
-                      </SelectContent>
-                    </Select>
-                  )}
-                  <MultiSelect
-                    options={parks}
-                    selected={selectedParks}
-                    onChange={setSelectedParks}
-                    placeholder="All parks"
-                    searchable
-                    searchPlaceholder="Search parks…"
-                    selectAllLabel="Select all parks"
-                  />
-                  {types.length > 1 && (
+                <button
+                  type="button"
+                  onClick={() => setMobileFiltersOpen(open => !open)}
+                  aria-expanded={mobileFiltersOpen}
+                  aria-controls="filter-controls"
+                  className="sm:hidden flex h-11 w-full items-center justify-between gap-3 rounded-xl border border-gray-200 bg-white px-3 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-400"
+                >
+                  <span className="inline-flex items-center gap-2">
+                    <SlidersHorizontal className="h-4 w-4 text-emerald-600" />
+                    Filters
+                    {selectedFilterCount > 0 && (
+                      <span className="inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-emerald-600 px-1.5 text-[11px] font-semibold text-white">
+                        {selectedFilterCount}
+                      </span>
+                    )}
+                  </span>
+                  <span className="inline-flex items-center gap-2 text-xs font-normal text-gray-500">
+                    {viewMode === 'list' && (showOnlyAvailable ? 'Available only' : 'All sites')}
+                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileFiltersOpen ? 'rotate-180' : ''}`} />
+                  </span>
+                </button>
+
+                <div id="filter-controls" className={`${mobileFiltersOpen ? 'flex' : 'hidden'} sm:flex flex-col gap-3`}>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {viewMode === 'list' && (
+                      <Select value={selectedDate} onValueChange={setSelectedDate}>
+                        <SelectTrigger className="bg-white h-11">
+                          <SelectValue placeholder="Select a date" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {dates.map(date => {
+                            const has = report.dates[date].some(s => s.status);
+                            return (
+                              <SelectItem key={date} value={date}>
+                                <span className="flex items-center gap-2">
+                                  {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
+                                  {has && <span className="text-emerald-500">●</span>}
+                                </span>
+                              </SelectItem>
+                            );
+                          })}
+                        </SelectContent>
+                      </Select>
+                    )}
                     <MultiSelect
-                      options={types}
-                      selected={selectedTypes}
-                      onChange={setSelectedTypes}
-                      placeholder="All types"
-                      selectAllLabel="Select all types"
+                      options={parks}
+                      selected={selectedParks}
+                      onChange={setSelectedParks}
+                      placeholder="All parks"
+                      searchable
+                      searchPlaceholder="Search parks…"
+                      selectAllLabel="Select all parks"
                     />
+                    {types.length > 1 && (
+                      <MultiSelect
+                        options={types}
+                        selected={selectedTypes}
+                        onChange={setSelectedTypes}
+                        placeholder="All types"
+                        selectAllLabel="Select all types"
+                      />
+                    )}
+                  </div>
+
+                  {(selectedParks.length > 0 || selectedTypes.length > 0) && (
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      {selectedParks.map(park => (
+                        <button
+                          key={`park-${park}`}
+                          type="button"
+                          onClick={() => removePark(park)}
+                          aria-label={`Remove ${park} filter`}
+                          className="inline-flex max-w-[240px] items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 hover:border-emerald-300"
+                        >
+                          <span className="truncate">{park}</span>
+                          <X className="h-3 w-3 flex-shrink-0" />
+                        </button>
+                      ))}
+                      {selectedTypes.map(type => (
+                        <button
+                          key={`type-${type}`}
+                          type="button"
+                          onClick={() => removeType(type)}
+                          aria-label={`Remove ${type} filter`}
+                          className="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 hover:border-gray-300"
+                        >
+                          {type}
+                          <X className="h-3 w-3 flex-shrink-0" />
+                        </button>
+                      ))}
+                      <button
+                        type="button"
+                        onClick={() => { setSelectedParks([]); setSelectedTypes([]); }}
+                        className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
+                      >
+                        Clear all
+                      </button>
+                    </div>
+                  )}
+
+                  {viewMode === 'list' && (
+                    <label className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-gray-50 cursor-pointer">
+                      <span className="text-sm font-medium text-gray-700">Show available only</span>
+                      <button
+                        type="button"
+                        onClick={() => setShowOnlyAvailable(v => !v)}
+                        className={`w-11 h-6 rounded-full p-0.5 transition-colors ${showOnlyAvailable ? 'bg-emerald-500' : 'bg-gray-300'}`}
+                      >
+                        <span className={`block h-5 w-5 bg-white rounded-full shadow transition-transform ${showOnlyAvailable ? 'translate-x-5' : ''}`} />
+                      </button>
+                    </label>
                   )}
                 </div>
-
-                {(selectedParks.length > 0 || selectedTypes.length > 0) && (
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    {selectedParks.map(park => (
-                      <button
-                        key={`park-${park}`}
-                        type="button"
-                        onClick={() => removePark(park)}
-                        aria-label={`Remove ${park} filter`}
-                        className="inline-flex max-w-[240px] items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 hover:border-emerald-300"
-                      >
-                        <span className="truncate">{park}</span>
-                        <X className="h-3 w-3 flex-shrink-0" />
-                      </button>
-                    ))}
-                    {selectedTypes.map(type => (
-                      <button
-                        key={`type-${type}`}
-                        type="button"
-                        onClick={() => removeType(type)}
-                        aria-label={`Remove ${type} filter`}
-                        className="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 hover:border-gray-300"
-                      >
-                        {type}
-                        <X className="h-3 w-3 flex-shrink-0" />
-                      </button>
-                    ))}
-                    <button
-                      type="button"
-                      onClick={() => { setSelectedParks([]); setSelectedTypes([]); }}
-                      className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
-                    >
-                      Clear all
-                    </button>
-                  </div>
-                )}
-
-                {viewMode === 'list' && (
-                  <label className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-gray-50 cursor-pointer">
-                    <span className="text-sm font-medium text-gray-700">Show available only</span>
-                    <button
-                      type="button"
-                      onClick={() => setShowOnlyAvailable(v => !v)}
-                      className={`w-11 h-6 rounded-full p-0.5 transition-colors ${showOnlyAvailable ? 'bg-emerald-500' : 'bg-gray-300'}`}
-                    >
-                      <span className={`block h-5 w-5 bg-white rounded-full shadow transition-transform ${showOnlyAvailable ? 'translate-x-5' : ''}`} />
-                    </button>
-                  </label>
-                )}
               </div>
             </CardContent>
           </Card>
