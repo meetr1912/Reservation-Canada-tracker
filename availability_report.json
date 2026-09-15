@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-15T02:17:09Z",
+    "generated_at": "2026-09-15T09:10:15Z",
     "start_date": "2026-09-15",
     "end_date": "2027-03-13",
     "days": 180,
@@ -386,7 +386,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 83682,
+    "total_available_slots": 83684,
     "available_days": 180,
     "available_units": 452
   },
@@ -873,7 +873,7 @@
     },
     {
       "date": "2026-09-15",
-      "available_slots": 83682,
+      "available_slots": 83684,
       "available_units": 452,
       "available_days": 180
     }
@@ -899,7 +899,7 @@
         "PageTitle": null,
         "ResourceName": "38",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -5332,7 +5332,7 @@
         "PageTitle": null,
         "ResourceName": "O86",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -14492,7 +14492,7 @@
         "PageTitle": null,
         "ResourceName": "A15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -15290,7 +15290,7 @@
         "PageTitle": null,
         "ResourceName": "R6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -16207,7 +16207,7 @@
         "PageTitle": null,
         "ResourceName": "MC-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -19156,7 +19156,7 @@
         "PageTitle": null,
         "ResourceName": "R6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -20052,7 +20052,7 @@
         "PageTitle": null,
         "ResourceName": "GO-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -20073,7 +20073,7 @@
         "PageTitle": null,
         "ResourceName": "MC-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -20551,7 +20551,7 @@
         "PageTitle": null,
         "ResourceName": "D15",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -20915,7 +20915,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -23918,7 +23918,7 @@
         "PageTitle": null,
         "ResourceName": "GO-A",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -27413,7 +27413,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -31279,7 +31279,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -102108,7 +102108,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
