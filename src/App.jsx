@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
-  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, AlertTriangle, Bell,
+  Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, AlertTriangle, Bell, X,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from './components/ui/select';
+import MultiSelect from './components/ui/multi-select';
 import { Badge } from './components/ui/badge';
 import CalendarView from './CalendarView';
 import SoonestOpenings from './SoonestOpenings';
@@ -152,8 +153,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
   const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedPark, setSelectedPark] = useState('all');
-  const [selectedType, setSelectedType] = useState('all');
+  // Empty arrays mean "no filter" (all parks / all types).
+  const [selectedParks, setSelectedParks] = useState([]);
+  const [selectedTypes, setSelectedTypes] = useState([]);
   const [search, setSearch] = useState('');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(true);
   const [viewMode, setViewMode] = useState('list');
@@ -180,18 +182,18 @@ function App() {
 
   const dates = useMemo(() => report ? Object.keys(report.dates).sort() : [], [report]);
   const parks = useMemo(() => {
-    if (!report) return ['all'];
+    if (!report) return [];
     const set = new Set();
     Object.values(report.dates).forEach(d => d.forEach(s => set.add(s.ParkName)));
-    return ['all', ...Array.from(set).sort()];
+    return Array.from(set).sort();
   }, [report]);
   const types = useMemo(() => {
-    if (!report) return ['all'];
+    if (!report) return [];
     if (Array.isArray(report.metadata?.types) && report.metadata.types.length)
-      return ['all', ...report.metadata.types];
+      return [...report.metadata.types];
     const set = new Set();
     Object.values(report.dates).forEach(d => d.forEach(s => s.Type && set.add(s.Type)));
-    return ['all', ...Array.from(set).sort()];
+    return Array.from(set).sort();
   }, [report]);
 
   const datesWithAvailability = useMemo(
@@ -255,8 +257,8 @@ function App() {
     (s.PageTitle || '').toLowerCase().includes(q);
 
   let filtered = selectedSites.filter(matchesSearch);
-  if (selectedPark !== 'all') filtered = filtered.filter(s => s.ParkName === selectedPark);
-  if (selectedType !== 'all') filtered = filtered.filter(s => (s.Type || 'oTENTik') === selectedType);
+  if (selectedParks.length) filtered = filtered.filter(s => selectedParks.includes(s.ParkName));
+  if (selectedTypes.length) filtered = filtered.filter(s => selectedTypes.includes(s.Type || 'oTENTik'));
   if (showOnlyAvailable) filtered = filtered.filter(s => s.status);
 
   // Group filtered sites by park.
@@ -269,6 +271,16 @@ function App() {
   const parksAvailable = new Set(selectedSites.filter(s => s.status).map(s => s.ParkName)).size;
   const nextAvailableDate = datesWithAvailability.find(d => d >= selectedDate) || datesWithAvailability[0];
   const lastUpdated = formatTimestamp(metadata.generated_at);
+
+  // Picking a park/type from the ranked feed drills in like before — but when
+  // several are already selected, keep the multi-selection instead of
+  // collapsing it to one.
+  const focusPark = (park) => setSelectedParks(prev =>
+    prev.length > 1 && prev.includes(park) ? prev : [park]);
+  const focusType = (type) => setSelectedTypes(prev =>
+    prev.length > 1 && prev.includes(type) ? prev : [type]);
+  const removePark = (park) => setSelectedParks(prev => prev.filter(p => p !== park));
+  const removeType = (type) => setSelectedTypes(prev => prev.filter(t => t !== type));
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -310,7 +322,7 @@ function App() {
           <StatCard label="Available on this date" value={totalAvailable} tone="green" icon={CheckCircle2}
             sub={`of ${selectedSites.length} sites`} />
           <StatCard label="Parks with openings" value={parksAvailable} tone="blue" icon={MapPin}
-            sub={`of ${(metadata.total_parks || parks.length - 1)} parks`} />
+            sub={`of ${(metadata.total_parks || parks.length)} parks`} />
           <StatCard label="Days with availability" value={datesWithAvailability.length} tone="amber" icon={CalendarIcon}
             sub={`next ${dates.length} days`} />
           <StatCard label="Total open slots" value={metadata.total_available_slots ?? '—'} tone="green" icon={TrendingUp}>
@@ -377,33 +389,61 @@ function App() {
                       </SelectContent>
                     </Select>
                   )}
-                  <Select value={selectedPark} onValueChange={setSelectedPark}>
-                    <SelectTrigger className="bg-white h-11">
-                      <SelectValue placeholder="All parks" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {parks.map(park => (
-                        <SelectItem key={park} value={park}>
-                          {park === 'all' ? 'All parks' : park}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                  {types.length > 2 && (
-                    <Select value={selectedType} onValueChange={setSelectedType}>
-                      <SelectTrigger className="bg-white h-11">
-                        <SelectValue placeholder="All types" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {types.map(t => (
-                          <SelectItem key={t} value={t}>
-                            {t === 'all' ? 'All types' : t}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                  <MultiSelect
+                    options={parks}
+                    selected={selectedParks}
+                    onChange={setSelectedParks}
+                    placeholder="All parks"
+                    searchable
+                    searchPlaceholder="Search parks…"
+                    selectAllLabel="Select all parks"
+                  />
+                  {types.length > 1 && (
+                    <MultiSelect
+                      options={types}
+                      selected={selectedTypes}
+                      onChange={setSelectedTypes}
+                      placeholder="All types"
+                      selectAllLabel="Select all types"
+                    />
                   )}
                 </div>
+
+                {(selectedParks.length > 0 || selectedTypes.length > 0) && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    {selectedParks.map(park => (
+                      <button
+                        key={`park-${park}`}
+                        type="button"
+                        onClick={() => removePark(park)}
+                        aria-label={`Remove ${park} filter`}
+                        className="inline-flex max-w-[240px] items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 hover:border-emerald-300"
+                      >
+                        <span className="truncate">{park}</span>
+                        <X className="h-3 w-3 flex-shrink-0" />
+                      </button>
+                    ))}
+                    {selectedTypes.map(type => (
+                      <button
+                        key={`type-${type}`}
+                        type="button"
+                        onClick={() => removeType(type)}
+                        aria-label={`Remove ${type} filter`}
+                        className="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 hover:border-gray-300"
+                      >
+                        {type}
+                        <X className="h-3 w-3 flex-shrink-0" />
+                      </button>
+                    ))}
+                    <button
+                      type="button"
+                      onClick={() => { setSelectedParks([]); setSelectedTypes([]); }}
+                      className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
+                    >
+                      Clear all
+                    </button>
+                  </div>
+                )}
 
                 {viewMode === 'list' && (
                   <label className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-gray-50 cursor-pointer">
@@ -422,12 +462,14 @@ function App() {
           </Card>
 
           <TabsContent value="list" className="mt-0 space-y-6">
-            {/* Type-aware, soonest-first ranked feed across all parks */}
+            {/* Type-aware, soonest-first ranked feed across the selected parks */}
             <SoonestOpenings
-              report={report} dates={dates} selectedType={selectedType}
+              report={report} dates={dates}
+              selectedParks={selectedParks} selectedTypes={selectedTypes}
               search={search} alwaysOpenParks={alwaysOpenParks} metadata={metadata}
-              setSelectedPark={setSelectedPark} setSelectedDate={setSelectedDate}
-              setSelectedType={setSelectedType} setSearch={setSearch}
+              onPickPark={focusPark} onPickType={focusType}
+              onClearTypes={() => setSelectedTypes([])}
+              setSelectedDate={setSelectedDate} setSearch={setSearch}
             />
 
             {/* Quick date jumper */}
@@ -486,7 +528,7 @@ function App() {
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            <CalendarView availabilityData={report.dates} selectedPark={selectedPark} selectedType={selectedType} onAlert={openAlert} metadata={metadata} />
+            <CalendarView availabilityData={report.dates} selectedParks={selectedParks} selectedTypes={selectedTypes} onAlert={openAlert} metadata={metadata} />
           </TabsContent>
         </Tabs>
       </div>
@@ -497,7 +539,7 @@ function App() {
         dates={dates}
         parks={parks}
         initialDate={alertDate || selectedDate}
-        initialPark={selectedPark}
+        initialParks={selectedParks}
       />
 
       <footer className="border-t border-gray-200 mt-12">

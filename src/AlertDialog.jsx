@@ -6,7 +6,7 @@ import {
 import { Button } from './components/ui/button';
 import { isValidEmail, buildAlertIssue } from './lib/alerts';
 
-function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPark }) {
+function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialParks }) {
   const minDate = dates[0];
   const maxDate = dates[dates.length - 1];
   const parkNames = parks.filter(p => p !== 'all');
@@ -22,10 +22,10 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
       const d = initialDate || minDate;
       setStart(d);
       setEnd(d);
-      setSelectedParks(initialPark && initialPark !== 'all' ? [initialPark] : []);
+      setSelectedParks(initialParks || []);
       setSubmitted(null);
     }
-  }, [open, initialDate, initialPark, minDate]);
+  }, [open, initialDate, initialParks, minDate]);
 
   const togglePark = (p) => setSelectedParks(prev =>
     prev.includes(p) ? prev.filter(x => x !== p) : [...prev, p]);

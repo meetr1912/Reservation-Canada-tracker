@@ -64,10 +64,12 @@ function buildIndex(dates, byDate) {
   return idx;
 }
 
-function typeChipsForDate(entry, dateStr) {
+function typeChipsForDate(entry, dateStr, allowedTypes) {
   // Types open on a given date for a park, richest first, with each type's
-  // own soonest date for deep-linking.
+  // own soonest date for deep-linking. When types are already filtered, only
+  // surface those.
   return Object.keys(entry.byType)
+    .filter(type => !allowedTypes || allowedTypes.length === 0 || allowedTypes.includes(type))
     .map(type => {
       const onDay = entry.byType[type].find(x => x.date === dateStr);
       return onDay ? { type, count: onDay.count, date: entry.byType[type][0].date } : null;
@@ -76,9 +78,27 @@ function typeChipsForDate(entry, dateStr) {
     .sort((a, b) => b.count - a.count);
 }
 
+// Union of per-type opening series: earliest date across the selected types,
+// with counts summed on days where several of them open.
+function mergeSeries(entry, types) {
+  const byDate = {};
+  types.forEach(type => {
+    (entry.byType[type] || []).forEach(({ date, count }) => {
+      byDate[date] = (byDate[date] || 0) + count;
+    });
+  });
+  return Object.keys(byDate).sort().map(date => ({ date, count: byDate[date] }));
+}
+
+function typesSummary(types) {
+  if (!types || types.length === 0) return 'All types';
+  if (types.length <= 2) return types.join(', ');
+  return `${types.length} types`;
+}
+
 function SoonestOpenings({
-  report, dates, selectedType, search, alwaysOpenParks, metadata,
-  setSelectedPark, setSelectedDate, setSelectedType, setSearch,
+  report, dates, selectedParks = [], selectedTypes = [], search, alwaysOpenParks, metadata,
+  onPickPark, onPickType, onClearTypes, setSelectedDate, setSearch,
 }) {
   const [sortKey, setSortKey] = useState('soonest');
   const [horizon, setHorizon] = useState('any');
@@ -94,22 +114,24 @@ function SoonestOpenings({
     const allParks = Array.from(new Set([
       ...Object.keys(metadata?.locations || {}),
       ...Object.keys(index),
-    ]));
+    ])).filter(park => selectedParks.length === 0 || selectedParks.includes(park));
     const rows = [];
     for (const parkName of allParks) {
       if (q && !parkName.toLowerCase().includes(q)) continue;
       const e = index[parkName];
       const { park, area } = splitPark(parkName);
       const series = !e ? null
-        : selectedType === 'all' ? e.anyDays : e.byType[selectedType];
+        : selectedTypes.length === 0 ? e.anyDays
+        : selectedTypes.length === 1 ? (e.byType[selectedTypes[0]] || null)
+        : mergeSeries(e, selectedTypes);
       const soonest = series && series[0];
       const within = soonest && (!horizonDate || soonest.date <= horizonDate);
       const verify = alwaysOpenParks.has(parkName);
 
       if (within) {
         let chips = [];
-        if (selectedType === 'all') {
-          chips = typeChipsForDate(e, soonest.date);
+        if (selectedTypes.length !== 1) {
+          chips = typeChipsForDate(e, soonest.date, selectedTypes);
           if (chips.length <= 1) chips = []; // single type → redundant with count
         }
         rows.push({
@@ -122,7 +144,7 @@ function SoonestOpenings({
         let reason;
         if (soonest) {
           reason = { kind: 'later', date: soonest.date }; // exists but beyond horizon
-        } else if (selectedType !== 'all' && e && e.anyDays.length) {
+        } else if (selectedTypes.length > 0 && e && e.anyDays.length) {
           const altDate = e.anyDays[0].date;
           const top = typeChipsForDate(e, altDate)[0];
           reason = { kind: 'othertype', date: altDate, topType: top && top.type };
@@ -146,14 +168,14 @@ function SoonestOpenings({
       (a.verify ? 1 : 0) - (b.verify ? 1 : 0) || cmp(a, b));
     const tailRows = rows.filter(r => !r.hasOpening).sort((a, b) => a.name.localeCompare(b.name));
     return { open: openRows, tail: tailRows };
-  }, [index, selectedType, q, sortKey, horizonDate, alwaysOpenParks, metadata]);
+  }, [index, selectedParks, selectedTypes, q, sortKey, horizonDate, alwaysOpenParks, metadata]);
 
-  const onPick = (parkName, date) => { setSelectedPark(parkName); if (date) setSelectedDate(date); };
-  const onPickType = (parkName, type, date) => {
-    setSelectedPark(parkName); setSelectedType(type); if (date) setSelectedDate(date);
+  const pick = (parkName, date) => { onPickPark(parkName); if (date) setSelectedDate(date); };
+  const pickType = (parkName, type, date) => {
+    onPickPark(parkName); onPickType(type); if (date) setSelectedDate(date);
   };
 
-  const typeLabel = selectedType === 'all' ? 'All types' : selectedType;
+  const typeLabel = typesSummary(selectedTypes);
   const horizonLabel = HORIZONS.find(h => h.key === horizon).label.toLowerCase();
   const shown = showAll ? open : open.slice(0, TOP_CAP);
 
@@ -200,15 +222,15 @@ function SoonestOpenings({
           <div className="text-center py-8">
             <XCircle className="h-8 w-8 mx-auto mb-2 text-gray-300" />
             <p className="text-sm text-gray-600 font-medium">
-              No {selectedType === 'all' ? '' : `${selectedType} `}openings {horizonLabel}
+              No openings{selectedTypes.length ? ` for ${typeLabel}` : ''} {horizonLabel}
               {q ? ` matching “${search.trim()}”` : ''}
             </p>
             <div className="flex items-center justify-center gap-3 mt-2 text-sm">
               {horizon !== 'any' && (
                 <button onClick={() => setHorizon('any')} className="text-emerald-700 hover:underline">Any time</button>
               )}
-              {selectedType !== 'all' && (
-                <button onClick={() => setSelectedType('all')} className="text-emerald-700 hover:underline">All types</button>
+              {selectedTypes.length > 0 && (
+                <button onClick={onClearTypes} className="text-emerald-700 hover:underline">All types</button>
               )}
               {q && setSearch && (
                 <button onClick={() => setSearch('')} className="text-emerald-700 hover:underline">Clear search</button>
@@ -220,7 +242,7 @@ function SoonestOpenings({
             <ul id="soonest-open-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {shown.map(r => (
                 <SoonestRow key={r.parkName} row={r} metadata={metadata}
-                  onPick={onPick} onPickType={onPickType} />
+                  onPick={pick} onPickType={pickType} />
               ))}
             </ul>
             {open.length > TOP_CAP && (
@@ -246,12 +268,12 @@ function SoonestOpenings({
               className="text-xs font-medium text-gray-500 hover:text-gray-700"
             >
               {tail.length} park{tail.length === 1 ? '' : 's'} with no{' '}
-              {selectedType === 'all' ? 'openings' : `${selectedType}`}
+              {selectedTypes.length === 0 ? 'openings' : `${typeLabel} openings`}
               {horizon !== 'any' ? ` ${horizonLabel}` : ''} · {tailOpen ? 'hide' : 'show'}
             </button>
             {tailOpen && (
               <ul id="soonest-tail-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
-                {tail.map(r => <TailRow key={r.parkName} row={r} onPick={onPick} onPickType={onPickType} />)}
+                {tail.map(r => <TailRow key={r.parkName} row={r} onPick={pick} onPickType={pickType} />)}
               </ul>
             )}
           </div>

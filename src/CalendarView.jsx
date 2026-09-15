@@ -17,12 +17,12 @@ function intensityClass(count, max) {
   return 'bg-emerald-100 border-emerald-200 text-emerald-900';
 }
 
-function CalendarView({ availabilityData, selectedPark, selectedType, onAlert, metadata }) {
+function CalendarView({ availabilityData, selectedParks = [], selectedTypes = [], onAlert, metadata }) {
   const matchesFilters = useMemo(() => (s) =>
     s.status
-    && (!selectedPark || selectedPark === 'all' || s.ParkName === selectedPark)
-    && (!selectedType || selectedType === 'all' || (s.Type || 'oTENTik') === selectedType),
-    [selectedPark, selectedType]);
+    && (selectedParks.length === 0 || selectedParks.includes(s.ParkName))
+    && (selectedTypes.length === 0 || selectedTypes.includes(s.Type || 'oTENTik')),
+    [selectedParks, selectedTypes]);
 
   const countFor = useMemo(() => (dateStr) => {
     const sites = availabilityData?.[dateStr];
