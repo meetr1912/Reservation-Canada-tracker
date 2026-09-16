@@ -17,6 +17,7 @@ Design notes:
 - Fails soft: missing email secrets or API hiccups never fail the workflow.
 """
 
+import base64
 import json
 import os
 import re
@@ -46,6 +47,22 @@ ALERT_BLOCK_RE = re.compile(r"```alert\s*(\{.*?\})\s*```", re.DOTALL)
 # Pure helpers (no network)
 # ---------------------------------------------------------------------------
 
+def decode_email(value):
+    """Decode an alert payload email.
+
+    New blocks store `b64:<base64>` so addresses aren't trivially harvestable
+    from public issues; older blocks carry the address in plain text and are
+    still accepted.
+    """
+    raw = str(value or "").strip()
+    if raw.startswith("b64:"):
+        try:
+            return base64.b64decode(raw[4:]).decode("utf-8").strip()
+        except (ValueError, UnicodeDecodeError):
+            return ""
+    return raw
+
+
 def parse_alert_block(body):
     """Extract and validate the alert payload from an issue body, or None.
 
@@ -64,7 +81,7 @@ def parse_alert_block(body):
     if not isinstance(data, dict):
         return None
 
-    email = str(data.get("email", "")).strip()
+    email = decode_email(data.get("email", ""))
     if not EMAIL_RE.match(email):
         return None
     start = str(data.get("start", "")).strip()

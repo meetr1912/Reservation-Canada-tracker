@@ -180,3 +180,22 @@ def test_email_includes_per_opening_links():
     _, body = notify.build_email(m, VALID, LOCATIONS)
     assert "create-booking/results?" in body
     assert "startDate=2026-07-04" in body
+
+
+def test_parse_decodes_base64_email():
+    import base64
+    encoded = "b64:" + base64.b64encode(b"a@b.com").decode("ascii")
+    c = notify.parse_alert_block(block({**VALID, "email": encoded}))
+    assert c is not None
+    assert c["email"] == "a@b.com"
+
+
+def test_parse_tolerates_broken_base64_email():
+    c = notify.parse_alert_block(block({**VALID, "email": "b64:!!!not-base64!!!"}))
+    assert c is None
+
+
+def test_decode_email_passthrough_and_rfc():
+    assert notify.decode_email("a@b.com") == "a@b.com"
+    assert notify.decode_email("") == ""
+    assert notify.decode_email(None) == ""

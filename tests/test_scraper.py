@@ -170,3 +170,60 @@ def build(available_set=None, days=3, prior_history=None, generated_at="2026-06-
         prior_history=prior_history,
         generated_at=generated_at,
     )
+
+
+# ---------------------------------------------------------------------------
+# Publish guards + atomic writes
+# ---------------------------------------------------------------------------
+
+def _report(units=3, slots=30, days=2, generated_at="2026-06-27T00:00:00Z"):
+    return scraper.build_report(
+        OTENTIKS[:units], set(), START, days=days, generated_at=generated_at)
+
+
+def test_report_plausible_accepts_similar_reports():
+    prior = _report(slots=30)
+    prior["metadata"]["total_available_slots"] = 30
+    new = _report(slots=28)
+    new["metadata"]["total_available_slots"] = 28
+    ok, reason = scraper.report_plausible(new, prior)
+    assert ok, reason
+
+
+def test_report_plausible_rejects_unit_roster_shrink():
+    prior = _report(units=3)
+    prior["metadata"]["total_units"] = 3
+    new = _report(units=1)
+    new["metadata"]["total_units"] = 1
+    ok, reason = scraper.report_plausible(new, prior)
+    assert not ok
+    assert "units shrank" in reason
+
+
+def test_report_plausible_rejects_slot_collapse():
+    prior = _report()
+    prior["metadata"]["total_available_slots"] = 100
+    new = _report()
+    new["metadata"]["total_available_slots"] = 0
+    ok, reason = scraper.report_plausible(new, prior)
+    assert not ok
+    assert "slots shrank" in reason
+
+
+def test_report_plausible_rejects_empty_dates():
+    new = _report()
+    new["dates"] = {}
+    ok, reason = scraper.report_plausible(new, _report())
+    assert not ok
+    assert "no dates" in reason
+
+
+def test_write_report_is_atomic_and_valid(tmp_path):
+    report = _report()
+    target = tmp_path / "report.json"
+    scraper.write_report(report, str(target))
+    assert target.exists()
+    assert not (tmp_path / "report.json.tmp").exists()
+    import json
+    with open(target, encoding="utf-8") as f:
+        assert json.load(f)["metadata"]["total_units"] == 3

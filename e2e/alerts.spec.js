@@ -35,7 +35,15 @@ test.describe('email alerts', () => {
     expect(url.pathname).toContain('/issues/new');
     expect(url.searchParams.get('labels')).toBe('alert');
     expect(url.searchParams.get('title')).toContain('Alert');
-    expect(decodeURIComponent(url.searchParams.get('body'))).toContain('camper@example.com');
+
+    const body = decodeURIComponent(url.searchParams.get('body'));
+    // The address must not be harvestable in plain text from the public issue.
+    expect(body).not.toContain('camper@example.com');
+    const block = body.match(/```alert\s*([\s\S]*?)```/);
+    expect(block).toBeTruthy();
+    const payload = JSON.parse(block[1]);
+    expect(payload.email.startsWith('b64:')).toBe(true);
+    expect(Buffer.from(payload.email.slice(4), 'base64').toString('utf8')).toBe('camper@example.com');
   });
 
   test('seeds the park picker from the active park filters', async ({ page }, testInfo) => {

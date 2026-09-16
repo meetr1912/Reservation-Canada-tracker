@@ -6,16 +6,11 @@ A real-time availability tracker for Parks Canada oTENTik sites with automated s
 
 ## 🏕️ Coverage
 
-### Supported Parks (13)
-- **Fundy National Park** (3 campgrounds: Headquarters, Chignecto, Point Wolfe)
-- **Kejimkujik National Park** (Jeremys Bay & Jakes Landing)
-- **Cape Breton Highlands National Park** (4 locations: Broad Cove, Cheticamp, Ingonish Beach, Mkwesaqtuk/Cap-Rouge)
-- **Prince Edward Island National Park** (2 locations: Cavendish, Stanhope)
-- **Kouchibouguac National Park** (South)
-- **Grand-Pré National Historic Site**
-
-### Accommodation Types
-Currently tracking: **oTENTik** (122 units across all parks)
+Coverage is data-driven: the scanner tracks every unit listed in
+`resources.json` (built by `discover.py`) — currently **552 prebuilt sites
+across 51 locations** (oTENTiks, yurts, cabins, equipped camping, micrOcube,
+prospector tents, teepees, Ôasis and more). Totals live in the report's
+`metadata`, so the UI never hard-codes them.
 
 **oTENTiks** are a unique Parks Canada accommodation - a cross between a tent and a rustic cabin, offering a comfortable camping experience with beds, furniture, and a covered porch. Perfect for families new to camping or those seeking comfort in nature.
 
@@ -32,8 +27,12 @@ The scanner architecture can be extended to support:
 - 📊 **Interactive Dashboard**: Beautiful React UI to visualize availability data
 - ⏰ **Automated Scanning**: GitHub Actions runs scans every 4 hours automatically
 - 🔔 **Availability Alerts**: Email when a watched park has an opening on your dates
-- 🔍 **Smart Filtering**: Filter by date, park, and availability status
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile devices
+- 🔍 **Smart Filtering**: Multi-select parks and accommodation types, search, availability-only toggle
+- 🌙 **Multi-night stays**: Check 1–3 consecutive nights; list and booking links follow the stay length
+- 🔗 **Shareable URLs**: Date, parks, types, nights, view and language live in the query string
+- 🇫🇷 **Bilingual**: Full English/French UI with a one-tap toggle (and `?lang=fr`)
+- 📱 **Responsive & installable**: Mobile bottom-sheet filters, PWA manifest and offline support
+- 🛡️ **Self-healing data**: Snapshot validation, stale-data warnings, last-good cache fallback
 - 📅 **6-Month Forecast**: Scans availability for the next 180 days
 
 
@@ -84,9 +83,12 @@ npm run test:e2e:ui               # interactive debugging
 ```
 
 Coverage includes: loading/error/retry states, multi-select park & type filters,
-search, the ranked "soonest openings" feed, the availability calendar, booking deep
-links, email-alert flows, and responsive guarantees (sticky bars, mobile filter
-sheet, no horizontal overflow, touch-target sizes).
+search, the ranked "soonest openings" feed, multi-night stays, shareable URL state,
+the availability calendar, booking deep links, email-alert flows (with privacy
+encoding), stale/partial-data warnings, cache fallback, frozen-clock determinism,
+offline service-worker behavior, automated axe accessibility scans, and responsive
+guarantees (sticky bars, mobile filter sheet, no horizontal overflow, touch-target
+sizes) across desktop, Pixel 7, iPhone 14 and iPad Mini projects.
 
 ### Python (scraper/notifier)
 

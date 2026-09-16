@@ -1,11 +1,27 @@
 // Helpers for the "Alert me" feature. Since the site is static (no backend),
 // a subscription is created as a GitHub issue containing a machine-readable
 // block; the scheduled GitHub Action reads open issues and emails on a match.
-
+//
+// Privacy: the subscriber's address is base64-encoded inside the alert block
+// (and masked in the human-readable body) so it isn't trivially harvestable
+// from public issues. notify.py decodes it when sending.
 export const ALERT_REPO = 'meetr1912/Reservation-Canada-tracker';
 
 export function isValidEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((email || '').trim());
+}
+
+export function encodeEmail(email) {
+  const clean = (email || '').trim();
+  if (typeof btoa === 'function') return `b64:${btoa(clean)}`;
+  return `b64:${Buffer.from(clean, 'utf8').toString('base64')}`;
+}
+
+export function maskEmail(email) {
+  const clean = (email || '').trim();
+  const at = clean.indexOf('@');
+  if (at <= 0) return '•••';
+  return `${clean[0]}***${clean.slice(at)}`;
 }
 
 function parkLabel(parks) {
@@ -17,8 +33,9 @@ function parkLabel(parks) {
 // Build the prefilled GitHub "new issue" URL for an email watch request.
 export function buildAlertIssue({ email, parks, start, end }) {
   const dateLabel = start === end ? start : `${start} → ${end}`;
+  const cleanEmail = (email || '').trim();
   const payload = {
-    email: (email || '').trim(),
+    email: encodeEmail(cleanEmail),
     parks: parks || [],
     start,
     end,
@@ -29,7 +46,7 @@ export function buildAlertIssue({ email, parks, start, end }) {
 
 **Dates:** ${dateLabel}
 **Parks:** ${parks && parks.length ? parks.join(', ') : 'Any park'}
-**Email:** ${payload.email}
+**Email:** ${maskEmail(cleanEmail)} (encoded in the block below)
 
 _Submit this issue to start the watch. **Close it any time to stop alerts.** Don't edit the block below — the tracker reads it automatically._
 

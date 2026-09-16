@@ -49,6 +49,10 @@ HISTORY_LIMIT = 120
 # refuse to overwrite the existing report (prevents zeroing out the site).
 MAX_ERROR_RATE = 0.30
 
+# Refuse to publish a snapshot that shrank more than this vs. the previous one
+# (e.g. a half-finished scan). Override with ALLOW_SHRINK=1 when intentional.
+MIN_RETAIN_RATIO = 0.5
+
 
 def load_otentiks(path=OTENTIKS_FILE):
     """Load the tracked oTENTik units."""
@@ -335,13 +339,55 @@ def _collect_available(data, resource_id, start_date, available_set):
                 available_set.add((resource_id, clean))
 
 
+def report_plausible(report, prior, min_ratio=MIN_RETAIN_RATIO):
+    """Check a new report against the previous one before publishing.
+
+    Returns (ok, reason). A huge drop in tracked units or available slots
+    almost always means a partial/throttled scan that slipped past the error
+    rate guard, so we keep yesterday's data instead of corrupting the site.
+    """
+    if not isinstance(prior, dict):
+        return True, ""
+    prior_meta = prior.get("metadata") if isinstance(prior.get("metadata"), dict) else {}
+    new_meta = report.get("metadata", {}) if isinstance(report, dict) else {}
+
+    prior_units = prior_meta.get("total_units") or 0
+    new_units = new_meta.get("total_units") or 0
+    if prior_units and new_units < prior_units * min_ratio:
+        return False, f"tracked units shrank {prior_units} -> {new_units}"
+
+    prior_slots = prior_meta.get("total_available_slots")
+    new_slots = new_meta.get("total_available_slots")
+    if isinstance(prior_slots, int) and prior_slots > 0:
+        if not isinstance(new_slots, int) or new_slots < prior_slots * min_ratio:
+            return False, f"available slots shrank {prior_slots} -> {new_slots}"
+
+    if not isinstance(report.get("dates"), dict) or not report["dates"]:
+        return False, "report has no dates"
+    return True, ""
+
+
+def _load_json(path):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+
+
 def write_report(report, *paths):
+    """Write the report atomically (tmp + rename) so a crash mid-write can
+    never leave a truncated JSON file in the repo."""
     for path in paths:
         directory = os.path.dirname(path)
         if directory:
             os.makedirs(directory, exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
+        tmp_path = f"{path}.tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(report, f, indent=2, ensure_ascii=False)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, path)
         print(f"Wrote {path}")
 
 
@@ -362,11 +408,22 @@ def main():
               f"throttled; keeping the existing report unchanged.")
         return 1
 
-    prior_history = load_prior_history(REPORT_FILE, PUBLIC_REPORT_FILE)
+    prior_report = _load_json(REPORT_FILE) or _load_json(PUBLIC_REPORT_FILE)
+    prior_history = prior_report.get("history") if isinstance(prior_report, dict) and \
+        isinstance(prior_report.get("history"), list) else []
     report = build_report(
         otentiks, available_set, start_date, SCAN_DAYS,
         prior_history=prior_history, errors=errors,
     )
+
+    # Second safety guard: a report that shrank dramatically is almost always a
+    # broken scan. Keep the previous snapshot and fail the run so it's visible.
+    if os.environ.get("ALLOW_SHRINK") != "1":
+        ok, reason = report_plausible(report, prior_report)
+        if not ok:
+            print(f"\nABORT: {reason}. Keeping the existing report unchanged "
+                  f"(set ALLOW_SHRINK=1 to publish anyway).")
+            return 1
 
     write_report(report, REPORT_FILE, PUBLIC_REPORT_FILE)
 

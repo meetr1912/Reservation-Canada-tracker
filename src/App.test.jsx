@@ -1,6 +1,7 @@
 import React, { act } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
+import { I18nProvider } from './lib/i18n';
 
 function futureDate(days) {
   const date = new Date();
@@ -63,7 +64,7 @@ describe('mobile filters', () => {
 
   it('keeps the filter sheet closed until the mobile trigger is used', async () => {
     await act(async () => {
-      root.render(<App />);
+      root.render(<I18nProvider initialLang="en"><App /></I18nProvider>);
       await Promise.resolve();
       await Promise.resolve();
     });

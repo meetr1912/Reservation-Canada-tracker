@@ -2,11 +2,29 @@
 // Tolerant of both the new schema ({ metadata, history, dates }) and the
 // legacy flat schema ({ "YYYY-MM-DD": [...] }).
 
+// Locale used for date formatting; kept in sync with the active language by
+// the i18n provider (see lib/i18n.jsx).
+let DEFAULT_LOCALE = 'en-US';
+
+export function setFormatLocale(locale) {
+  DEFAULT_LOCALE = locale || 'en-US';
+}
+
 export function todayStr() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
+function isValidSite(site) {
+  return !!site
+    && typeof site === 'object'
+    && typeof site.ParkName === 'string'
+    && typeof site.status === 'boolean';
+}
+
+// Validate the report while normalizing it. Returns null only when the data is
+// too broken to trust; otherwise attaches `warnings` describing what was
+// dropped so the UI can surface an "incomplete data" notice.
 export function normalizeReport(raw) {
   if (!raw || typeof raw !== 'object') return null;
 
@@ -17,14 +35,57 @@ export function normalizeReport(raw) {
 
   if (!allDates || Object.keys(allDates).length === 0) return null;
 
+  const warnings = [];
+  let total = 0;
+  let invalid = 0;
+  const dates = {};
+
+  Object.keys(allDates).forEach(d => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) { warnings.push('bad-date-key'); return; }
+    const rows = Array.isArray(allDates[d]) ? allDates[d] : [];
+    if (!Array.isArray(allDates[d])) warnings.push('bad-date-value');
+    const clean = [];
+    rows.forEach(site => {
+      total += 1;
+      if (isValidSite(site)) clean.push(site);
+      else invalid += 1;
+    });
+    dates[d] = clean;
+  });
+
+  if (!Object.keys(dates).length) return null;
+  if (invalid > 0) warnings.push(`${invalid} invalid site records skipped`);
+  // If a large share of the rows are malformed, treat the snapshot as broken.
+  if (total > 0 && invalid / total > 0.2) return null;
+  if (!metadata.generated_at) warnings.push('missing generated_at');
+
   // Only ever show today onward — never surface past dates even if the
   // committed snapshot is a day or two old.
   const today = todayStr();
-  let dates = {};
-  Object.keys(allDates).forEach(d => { if (d >= today) dates[d] = allDates[d]; });
-  if (Object.keys(dates).length === 0) dates = allDates; // fallback: don't blank the UI
+  let upcoming = {};
+  Object.keys(dates).forEach(d => { if (d >= today) upcoming[d] = dates[d]; });
+  if (Object.keys(upcoming).length === 0) upcoming = dates; // fallback: don't blank the UI
 
-  return { dates, metadata, history };
+  return { dates: upcoming, metadata, history, warnings };
+}
+
+// A snapshot is "stale" when the scanner hasn't refreshed it recently. The
+// scan runs every 4 hours, so anything beyond 12h means something failed.
+export const STALE_AFTER_HOURS = 12;
+
+export function isStale(generatedAt, now = Date.now()) {
+  if (!generatedAt) return true;
+  const t = Date.parse(generatedAt);
+  if (Number.isNaN(t)) return true;
+  const age = now - t;
+  if (age < 0) return false; // clock skew/future timestamp: trust it
+  return age > STALE_AFTER_HOURS * 3600 * 1000;
+}
+
+export function generatedAgeHours(generatedAt, now = Date.now()) {
+  const t = Date.parse(generatedAt);
+  if (Number.isNaN(t)) return null;
+  return Math.max(0, Math.round((now - t) / 3600 / 1000));
 }
 
 export function parseLocalDate(dateStr) {
@@ -34,14 +95,15 @@ export function parseLocalDate(dateStr) {
 }
 
 export function formatDate(dateStr, opts) {
-  return parseLocalDate(dateStr).toLocaleDateString('en-US', opts);
+  const options = { ...opts, locale: opts?.locale || DEFAULT_LOCALE };
+  return parseLocalDate(dateStr).toLocaleDateString(options.locale, options);
 }
 
-export function formatTimestamp(iso) {
+export function formatTimestamp(iso, opts = {}) {
   if (!iso) return null;
   const d = new Date(iso);
   if (isNaN(d)) return null;
-  return d.toLocaleDateString('en-US', {
+  return d.toLocaleDateString(opts.locale || DEFAULT_LOCALE, {
     month: 'long', day: 'numeric', year: 'numeric',
     hour: 'numeric', minute: '2-digit',
   });
@@ -54,7 +116,7 @@ export function countAvailable(sites, park) {
   }, 0);
 }
 
-// "O45"/"45" -> "<Type> 45" (e.g. "oTENTik 45", "Yurt 3"); else the raw name.
+// "O45"/"45" -> "<Type> 45" (e.g., "oTENTik 45", "Yurt 3"); else the raw name.
 export function prettyUnit(resourceName, type) {
   const label = type || 'oTENTik';
   if (!resourceName) return label;
@@ -64,7 +126,7 @@ export function prettyUnit(resourceName, type) {
 }
 
 // "Fundy - Headquarters" -> { park: "Fundy", area: "Headquarters" }.
-// Names without " - " (e.g. "Grand-Pré") return area: null.
+// Names without " - " (e.g., "Grand-Pré") return area: null.
 export function splitPark(parkName) {
   if (!parkName) return { park: '', area: null };
   const idx = parkName.indexOf(' - ');
@@ -83,18 +145,18 @@ export function prettyLoop(pageTitle) {
 // Booking home — fallback when we can't build a per-location deep link.
 export const BOOKING_URL = 'https://reservation.pc.gc.ca/';
 
-function shiftDate(dateStr, n) {
+export function shiftDate(dateStr, n) {
   const d = parseLocalDate(dateStr);
   d.setDate(d.getDate() + n);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
 // Deep-link straight to the Parks Canada availability results for this site's
-// location + date (1 night). The reservation site doesn't expose stable
-// per-unit URLs, so this lands on the location's map filtered to the date —
-// as specific as the booking engine allows. Falls back to the booking home
-// if the report has no location ids for this park (e.g. an older snapshot).
-export function buildBookingUrl(site, dateStr, metadata) {
+// location + date. The reservation site doesn't expose stable per-unit URLs,
+// so this lands on the location's map filtered to the date — as specific as
+// the booking engine allows. Falls back to the booking home if the report has
+// no location ids for this park (e.g., an older snapshot).
+export function buildBookingUrl(site, dateStr, metadata, nights = 1) {
   const loc = metadata && metadata.locations && metadata.locations[site && site.ParkName];
   if (!loc || !dateStr) return BOOKING_URL;
   const params = new URLSearchParams({
@@ -104,8 +166,8 @@ export function buildBookingUrl(site, dateStr, metadata) {
     searchTabGroupId: 2,
     bookingCategoryId: loc.b == null ? 1 : loc.b,
     startDate: dateStr,
-    endDate: shiftDate(dateStr, 1),
-    nights: 1,
+    endDate: shiftDate(dateStr, nights),
+    nights: String(nights),
     isReserving: true,
     peopleCapacityCategoryCounts: '[[-32767,null,1,null]]',
     flexibleSearch: '[false,false,null,1]',

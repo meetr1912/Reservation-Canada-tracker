@@ -4,6 +4,7 @@ import { Check, ChevronDown, Search, X } from 'lucide-react';
 import { Popover, PopoverContent, PopoverTrigger } from './popover';
 import { Dialog, DialogClose, DialogTitle, SheetContent } from './dialog';
 import { useMediaQuery } from '../../hooks/useMediaQuery';
+import { useI18n } from '../../lib/i18n';
 import { cn } from '../../lib/utils';
 
 // Checkbox picker for filtering on many values at once. An empty selection
@@ -13,13 +14,13 @@ import { cn } from '../../lib/utils';
 // Mobile: a nested bottom sheet, which keeps the list scrollable, avoids
 // floating menus fighting the filters sheet for focus, and is easier to tap.
 
-function CountLabel({ selected, options }) {
+function CountLabel({ selected, options, t, tn }) {
   return selected.length
-    ? `${selected.length} selected`
-    : `${options.length} option${options.length === 1 ? '' : 's'}`;
+    ? tn('filters.selected', selected.length)
+    : tn('filters.options', options.length);
 }
 
-function Actions({ selected, visible, query, onChange, selectAllLabel }) {
+function Actions({ selected, visible, query, onChange, selectAllLabel, t }) {
   const allVisibleSelected = visible.length > 0 && visible.every(o => selected.includes(o));
   return (
     <span className="flex items-center gap-2.5">
@@ -29,7 +30,7 @@ function Actions({ selected, visible, query, onChange, selectAllLabel }) {
         disabled={allVisibleSelected}
         className="text-[11px] font-medium text-emerald-700 hover:text-emerald-800 disabled:text-gray-300"
       >
-        {query ? 'Select shown' : selectAllLabel}
+        {query ? t('filters.selectShown') : selectAllLabel}
       </button>
       <button
         type="button"
@@ -37,13 +38,13 @@ function Actions({ selected, visible, query, onChange, selectAllLabel }) {
         disabled={!selected.length}
         className="text-[11px] font-medium text-gray-500 hover:text-gray-700 disabled:text-gray-300"
       >
-        Clear
+        {t('filters.clear')}
       </button>
     </span>
   );
 }
 
-function OptionList({ options, selected, onChange, className }) {
+function OptionList({ options, selected, onChange, className, t }) {
   return (
     <div
       role="listbox"
@@ -51,7 +52,7 @@ function OptionList({ options, selected, onChange, className }) {
       className={cn('overflow-y-auto overscroll-contain p-1', className)}
     >
       {options.length === 0 && (
-        <p className="px-3 py-4 text-center text-xs text-gray-400">No matches</p>
+        <p className="px-3 py-4 text-center text-xs text-gray-500">{t('filters.noMatches')}</p>
       )}
       {options.map(option => {
         const on = selected.includes(option);
@@ -70,7 +71,7 @@ function OptionList({ options, selected, onChange, className }) {
           >
             <span className={cn(
               'flex h-4 w-4 flex-shrink-0 items-center justify-center rounded border transition-colors',
-              on ? 'border-emerald-600 bg-emerald-600 text-white' : 'border-gray-300 bg-white',
+              on ? 'border-emerald-700 bg-emerald-700 text-white' : 'border-gray-300 bg-white',
             )}>
               {on && <Check className="h-3 w-3" />}
             </span>
@@ -85,7 +86,7 @@ function OptionList({ options, selected, onChange, className }) {
 function SearchField({ value, onChange, placeholder, inputRef }) {
   return (
     <div className="relative">
-      <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gray-400" />
+      <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-gray-500" />
       <input
         ref={inputRef}
         value={value}
@@ -113,6 +114,7 @@ function MultiSelect({
   disabled = false,
   id,
 }) {
+  const { t, tn } = useI18n();
   const isDesktop = useMediaQuery('(min-width: 640px)');
   const [open, setOpen] = React.useState(false);
   const [query, setQuery] = React.useState('');
@@ -148,7 +150,7 @@ function MultiSelect({
     >
       <span className="flex min-w-0 items-center gap-2">
         {selected.length > 0 && (
-          <span className="inline-flex h-5 min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-emerald-600 px-1.5 text-[11px] font-semibold text-white">
+          <span className="inline-flex h-5 min-w-[1.25rem] flex-shrink-0 items-center justify-center rounded-full bg-emerald-700 px-1.5 text-[11px] font-semibold text-white">
             {selected.length}
           </span>
         )}
@@ -157,7 +159,7 @@ function MultiSelect({
         </span>
       </span>
       <ChevronDown className={cn(
-        'h-4 w-4 flex-shrink-0 text-gray-400 transition-transform',
+        'h-4 w-4 flex-shrink-0 text-gray-500 transition-transform',
         open && 'rotate-180',
       )} />
     </button>
@@ -182,10 +184,10 @@ function MultiSelect({
           )}
         >
           <div className="flex items-center justify-between gap-3 border-b border-gray-100 px-3 py-2">
-            <span className="text-[11px] font-medium uppercase tracking-wide text-gray-400">
-              <CountLabel selected={selected} options={options} />
+            <span className="text-[11px] font-medium uppercase tracking-wide text-gray-500">
+              <CountLabel selected={selected} options={options} t={t} tn={tn} />
             </span>
-            <Actions selected={selected} visible={visible} query={q} onChange={onChange} selectAllLabel={selectAllLabel} />
+            <Actions selected={selected} visible={visible} query={q} onChange={onChange} selectAllLabel={selectAllLabel} t={t} />
           </div>
           {searchable && (
             <div className="px-2.5 pt-2">
@@ -197,6 +199,7 @@ function MultiSelect({
             selected={selected}
             onChange={onChange}
             className="max-h-[min(15rem,calc(var(--radix-popover-content-available-height)-5.5rem))]"
+            t={t}
           />
         </PopoverContent>
       </Popover>
@@ -214,7 +217,7 @@ function MultiSelect({
         <div className="flex items-center justify-between px-5 pb-2 pt-1">
           <DialogTitle className="text-lg font-semibold">{title || placeholder}</DialogTitle>
           <DialogClose
-            aria-label={`Close ${title || placeholder}`}
+            aria-label={t('filters.closePicker', { title: title || placeholder })}
             className="inline-flex h-9 w-9 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
           >
             <X className="h-4 w-4" />
@@ -222,10 +225,10 @@ function MultiSelect({
         </div>
 
         <div className="flex items-center justify-between gap-3 px-5 pb-2">
-          <span className="text-[11px] font-medium uppercase tracking-wide text-gray-400">
-            <CountLabel selected={selected} options={options} />
+          <span className="text-[11px] font-medium uppercase tracking-wide text-gray-500">
+            <CountLabel selected={selected} options={options} t={t} tn={tn} />
           </span>
-          <Actions selected={selected} visible={visible} query={q} onChange={onChange} selectAllLabel={selectAllLabel} />
+          <Actions selected={selected} visible={visible} query={q} onChange={onChange} selectAllLabel={selectAllLabel} t={t} />
         </div>
 
         <div className="min-h-0 flex-1 space-y-3 overflow-hidden px-5">
@@ -237,12 +240,13 @@ function MultiSelect({
             selected={selected}
             onChange={onChange}
             className="max-h-[45dvh]"
+            t={t}
           />
         </div>
 
         <div className="border-t border-gray-100 px-5 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
-          <DialogClose className="h-11 w-full rounded-xl bg-emerald-600 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
-            Done
+          <DialogClose className="h-11 w-full rounded-xl bg-emerald-700 text-sm font-semibold text-white transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
+            {t('filters.done')}
           </DialogClose>
         </div>
       </SheetContent>

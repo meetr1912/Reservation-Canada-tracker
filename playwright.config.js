@@ -21,6 +21,8 @@ module.exports = defineConfig({
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
+    // Keep tests deterministic: the PWA spec opts back in with its own context.
+    serviceWorkers: 'block',
   },
 
   projects: [

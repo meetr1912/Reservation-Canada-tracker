@@ -5,8 +5,10 @@ import {
 } from './components/ui/dialog';
 import { Button } from './components/ui/button';
 import { isValidEmail, buildAlertIssue } from './lib/alerts';
+import { useI18n } from './lib/i18n';
 
 function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialParks }) {
+  const { t } = useI18n();
   const minDate = dates[0];
   const maxDate = dates[dates.length - 1];
   const parkNames = parks.filter(p => p !== 'all');
@@ -49,39 +51,33 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
       >
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-xl font-semibold">
-            <Bell className="h-5 w-5 text-emerald-600" /> Get email alerts
+            <Bell className="h-5 w-5 text-emerald-600" /> {t('alert.title')}
           </DialogTitle>
-          <DialogDescription>
-            Get an email when a watched park has an opening on your dates.
-          </DialogDescription>
+          <DialogDescription>{t('alert.description')}</DialogDescription>
         </DialogHeader>
 
         {submitted ? (
-          <div className="text-center space-y-3 py-6">
-            <CheckCircle2 className="h-10 w-10 mx-auto text-emerald-500" />
-            <p className="text-sm text-gray-600">
-              A pre-filled GitHub issue opened in a new tab — click <strong>Create</strong> there to
-              start your watch. You'll get an email whenever a match opens up; close the issue any
-              time to stop.
-            </p>
+          <div className="space-y-3 py-6 text-center">
+            <CheckCircle2 className="mx-auto h-10 w-10 text-emerald-500" />
+            <p className="text-sm text-gray-600">{t('alert.success')}</p>
             <a href={submitted} target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-sm font-medium text-emerald-700">
-              Didn't open? Click here <ExternalLink className="h-3.5 w-3.5" />
+              {t('alert.didntOpen')} <ExternalLink className="h-3.5 w-3.5" />
             </a>
           </div>
         ) : (
           <div className="mt-4 space-y-5">
             {/* Parks */}
             <div>
-              <label className="text-sm font-medium text-gray-700">Parks</label>
-              <p className="text-xs text-gray-400 mb-2">Choose one or more, or leave empty for <strong>any</strong> park.</p>
+              <label className="text-sm font-medium text-gray-700">{t('filters.parks')}</label>
+              <p className="mb-2 text-xs text-gray-500">{t('alert.parksHint')}</p>
               <div className="flex flex-wrap gap-2">
                 {parkNames.map(p => {
                   const on = selectedParks.includes(p);
                   return (
                     <button key={p} type="button" onClick={() => togglePark(p)} aria-pressed={on}
                       className={`rounded-full border px-3 py-2 text-xs font-medium transition-colors ${
-                        on ? 'border-emerald-600 bg-emerald-600 text-white'
+                        on ? 'border-emerald-700 bg-emerald-700 text-white'
                           : 'border-gray-200 bg-white text-gray-700 hover:border-emerald-300'}`}>
                       {p}
                     </button>
@@ -92,33 +88,30 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
 
             {/* Dates */}
             <div>
-              <label className="text-sm font-medium text-gray-700">Dates</label>
-              <div className="flex items-center gap-2 mt-1.5">
-                <input type="date" aria-label="Start date" value={start} min={minDate} max={maxDate}
+              <label className="text-sm font-medium text-gray-700">{t('alert.dates')}</label>
+              <div className="mt-1.5 flex items-center gap-2">
+                <input type="date" aria-label={t('alert.startDate')} value={start} min={minDate} max={maxDate}
                   onChange={e => { setStart(e.target.value); if (e.target.value > end) setEnd(e.target.value); }}
-                  className="flex-1 min-w-0 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
-                <span className="text-gray-400 text-sm">to</span>
-                <input type="date" aria-label="End date" value={end} min={start} max={maxDate}
+                  className="h-11 min-w-0 flex-1 rounded-xl border border-gray-200 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                <span className="text-sm text-gray-500">{t('alert.to')}</span>
+                <input type="date" aria-label={t('alert.endDate')} value={end} min={start} max={maxDate}
                   onChange={e => setEnd(e.target.value)}
-                  className="flex-1 min-w-0 h-11 px-3 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                  className="h-11 min-w-0 flex-1 rounded-xl border border-gray-200 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
               </div>
             </div>
 
             {/* Email */}
             <div>
-              <label htmlFor="alert-email" className="text-sm font-medium text-gray-700">Email</label>
+              <label htmlFor="alert-email" className="text-sm font-medium text-gray-700">{t('alert.email')}</label>
               <input id="alert-email" type="email" value={email} onChange={e => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="w-full h-11 px-3 mt-1.5 rounded-xl border border-gray-200 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
+                className="mt-1.5 h-11 w-full rounded-xl border border-gray-200 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40" />
               {!isValidEmail(email) && email.length > 0 && (
-                <p className="text-xs text-red-500 mt-1">Enter a valid email address.</p>
+                <p className="mt-1 text-xs text-red-500">{t('alert.invalidEmail')}</p>
               )}
             </div>
 
-            <p className="text-xs text-gray-500">
-              Submitting opens a pre-filled GitHub issue (a free GitHub account is needed to file it).
-              The tracker reads open issues every few hours and emails you on a match.
-            </p>
+            <p className="text-xs text-gray-500">{t('alert.disclaimer')}</p>
 
             <Button
               data-testid="alert-submit"
@@ -126,7 +119,7 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
               disabled={!canSubmit}
               className="h-11 w-full bg-gray-900 font-medium text-white hover:bg-gray-800 disabled:opacity-50"
             >
-              Create email alert
+              {t('alert.submit')}
             </Button>
           </div>
         )}

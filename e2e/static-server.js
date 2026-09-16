@@ -46,7 +46,8 @@ const server = http.createServer((req, res) => {
   const url = decodeURIComponent((req.url || '/').split('?')[0]);
 
   if (url === '/' || url === PREFIX) {
-    res.writeHead(302, { Location: `${PREFIX}/` });
+    const query = (req.url || '').includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+    res.writeHead(302, { Location: `${PREFIX}/${query}` });
     return res.end();
   }
   if (!url.startsWith(`${PREFIX}/`)) return send(res, 404);

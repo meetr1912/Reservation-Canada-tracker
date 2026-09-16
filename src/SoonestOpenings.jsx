@@ -7,22 +7,11 @@ import {
 import {
   splitPark, formatDate, parseLocalDate, todayStr, buildBookingUrl,
 } from './lib/data';
+import { buildStayIndex } from './lib/stays';
+import { useI18n } from './lib/i18n';
 
-const TYPE_DEFAULT = 'oTENTik';
 const TOP_CAP = 8;          // collapse the open list to the soonest few by default
 const MAX_CHIPS = 3;        // type chips per row before "+N"
-
-const HORIZONS = [
-  { key: 'any', label: 'Any time' },
-  { key: 'week', label: 'Within a week' },
-  { key: 'month', label: 'Within a month' },
-];
-
-const SORTS = [
-  { key: 'soonest', label: 'Soonest' },
-  { key: 'open', label: 'Most open' },
-  { key: 'az', label: 'A–Z' },
-];
 
 function isoAddDays(n) {
   const d = parseLocalDate(todayStr());
@@ -30,44 +19,10 @@ function isoAddDays(n) {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-function daysAwayLabel(dateStr) {
-  const n = Math.round((parseLocalDate(dateStr) - parseLocalDate(todayStr())) / 86400000);
-  if (n <= 0) return 'today';
-  if (n === 1) return 'tomorrow';
-  return `${n}d away`;
-}
-
-// Build a per-park index once per data load: for each park, the ascending
-// list of dates it has any opening (with that day's total count), and the
-// same per type. O(dates × sites) — one linear pass.
-function buildIndex(dates, byDate) {
-  const idx = {};
-  for (const d of dates) {
-    const perPark = {};
-    for (const s of byDate[d]) {
-      if (!s.status) continue;
-      const park = s.ParkName;
-      const type = s.Type || TYPE_DEFAULT;
-      const pp = perPark[park] || (perPark[park] = { total: 0, types: {} });
-      pp.total += 1;
-      pp.types[type] = (pp.types[type] || 0) + 1;
-    }
-    for (const park of Object.keys(perPark)) {
-      const pp = perPark[park];
-      const e = idx[park] || (idx[park] = { anyDays: [], byType: {} });
-      e.anyDays.push({ date: d, count: pp.total });
-      for (const type of Object.keys(pp.types)) {
-        (e.byType[type] || (e.byType[type] = [])).push({ date: d, count: pp.types[type] });
-      }
-    }
-  }
-  return idx;
-}
-
+// Types open on a given date for a park, richest first, with each type's
+// own soonest date for deep-linking. When types are already filtered, only
+// surface those.
 function typeChipsForDate(entry, dateStr, allowedTypes) {
-  // Types open on a given date for a park, richest first, with each type's
-  // own soonest date for deep-linking. When types are already filtered, only
-  // surface those.
   return Object.keys(entry.byType)
     .filter(type => !allowedTypes || allowedTypes.length === 0 || allowedTypes.includes(type))
     .map(type => {
@@ -78,34 +33,37 @@ function typeChipsForDate(entry, dateStr, allowedTypes) {
     .sort((a, b) => b.count - a.count);
 }
 
-// Union of per-type opening series: earliest date across the selected types,
-// with counts summed on days where several of them open.
-function mergeSeries(entry, types) {
-  const byDate = {};
-  types.forEach(type => {
-    (entry.byType[type] || []).forEach(({ date, count }) => {
-      byDate[date] = (byDate[date] || 0) + count;
-    });
-  });
-  return Object.keys(byDate).sort().map(date => ({ date, count: byDate[date] }));
-}
-
-function typesSummary(types) {
-  if (!types || types.length === 0) return 'All types';
+function typesSummary(types, t, tn) {
+  if (!types || types.length === 0) return t('soonest.allTypes');
   if (types.length <= 2) return types.join(', ');
-  return `${types.length} types`;
+  return tn('soonest.typesLabel', types.length);
 }
 
 function SoonestOpenings({
   report, dates, selectedParks = [], selectedTypes = [], search, alwaysOpenParks, metadata,
-  onPickPark, onPickType, onClearTypes, setSelectedDate, setSearch,
+  nights = 1, onPickPark, onPickType, onClearTypes, setSelectedDate, setSearch,
 }) {
+  const { t, tn } = useI18n();
   const [sortKey, setSortKey] = useState('soonest');
   const [horizon, setHorizon] = useState('any');
   const [showAll, setShowAll] = useState(false);
   const [tailOpen, setTailOpen] = useState(false);
 
-  const index = useMemo(() => buildIndex(dates, report.dates), [dates, report]);
+  const SORTS = [
+    { key: 'soonest', label: t('soonest.sortSoonest') },
+    { key: 'open', label: t('soonest.sortOpen') },
+    { key: 'az', label: t('soonest.sortAz') },
+  ];
+  const HORIZONS = [
+    { key: 'any', label: t('soonest.anyTime') },
+    { key: 'week', label: t('soonest.withinWeek') },
+    { key: 'month', label: t('soonest.withinMonth') },
+  ];
+
+  const { index } = useMemo(
+    () => buildStayIndex(dates, report.dates, nights),
+    [dates, report, nights]);
+
   const horizonDate = horizon === 'week' ? isoAddDays(7)
     : horizon === 'month' ? isoAddDays(30) : null;
   const q = (search || '').trim().toLowerCase();
@@ -175,20 +133,23 @@ function SoonestOpenings({
     onPickPark(parkName); onPickType(type); if (date) setSelectedDate(date);
   };
 
-  const typeLabel = typesSummary(selectedTypes);
-  const horizonLabel = HORIZONS.find(h => h.key === horizon).label.toLowerCase();
+  const typeLabel = typesSummary(selectedTypes, t, tn);
+  const horizonLabel = { any: t('soonest.horizonAny'), week: t('soonest.horizonWeek'), month: t('soonest.horizonMonth') }[horizon];
   const shown = showAll ? open : open.slice(0, TOP_CAP);
+  const noOpeningsText = selectedTypes.length
+    ? t('soonest.noneFor', { types: typeLabel })
+    : t('soonest.none');
 
   return (
     <Card id="soonest-openings" className="scroll-mt-36 border-0 shadow-sm sm:scroll-mt-44">
       <CardContent className="p-4 sm:p-5">
-        <div className="flex items-center justify-between gap-3 mb-1">
-          <div className="flex items-center gap-2 min-w-0">
-            <Clock className="h-4 w-4 text-emerald-600 flex-shrink-0" />
-            <h3 className="text-sm font-semibold text-gray-900">Soonest openings</h3>
+        <div className="mb-1 flex items-center justify-between gap-3">
+          <div className="flex min-w-0 items-center gap-2">
+            <Clock className="h-4 w-4 flex-shrink-0 text-emerald-600" />
+            <h3 className="text-sm font-semibold text-gray-900">{t('soonest.title')}</h3>
           </div>
           <Select value={sortKey} onValueChange={setSortKey}>
-            <SelectTrigger className="bg-white h-9 w-[140px] text-sm" aria-label="Sort soonest openings">
+            <SelectTrigger className="h-9 w-[140px] bg-white text-sm" aria-label={t('soonest.sortAria')}>
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -197,21 +158,21 @@ function SoonestOpenings({
           </Select>
         </div>
 
-        <p className="text-xs text-gray-500 mb-3">
-          {typeLabel} · {horizonLabel} · {open.length} park{open.length === 1 ? '' : 's'} with openings
+        <p className="mb-3 text-xs text-gray-500">
+          {typeLabel} · {horizonLabel} · {tn('soonest.parksWithOpenings', open.length)}
         </p>
 
         {/* Date horizon pills */}
-        <div className="flex items-center gap-2 flex-wrap mb-4">
+        <div className="mb-4 flex flex-wrap items-center gap-2">
           {HORIZONS.map(h => (
             <button
               key={h.key}
               onClick={() => setHorizon(h.key)}
               aria-pressed={horizon === h.key}
-              className={`px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+              className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
                 horizon === h.key
                   ? 'bg-gray-900 text-white'
-                  : 'bg-white border border-gray-200 text-gray-700 hover:border-gray-300'}`}
+                  : 'border border-gray-200 bg-white text-gray-700 hover:border-gray-300'}`}
             >
               {h.label}
             </button>
@@ -219,29 +180,29 @@ function SoonestOpenings({
         </div>
 
         {open.length === 0 ? (
-          <div className="text-center py-8">
-            <XCircle className="h-8 w-8 mx-auto mb-2 text-gray-300" />
-            <p className="text-sm text-gray-600 font-medium">
-              No openings{selectedTypes.length ? ` for ${typeLabel}` : ''} {horizonLabel}
-              {q ? ` matching “${search.trim()}”` : ''}
+          <div className="py-8 text-center">
+            <XCircle className="mx-auto mb-2 h-8 w-8 text-gray-300" />
+            <p className="text-sm font-medium text-gray-600">
+              {noOpeningsText} {horizonLabel}
+              {q ? ` · “${search.trim()}”` : ''}
             </p>
-            <div className="flex items-center justify-center gap-3 mt-2 text-sm">
+            <div className="mt-2 flex items-center justify-center gap-3 text-sm">
               {horizon !== 'any' && (
-                <button onClick={() => setHorizon('any')} className="text-emerald-700 hover:underline">Any time</button>
+                <button onClick={() => setHorizon('any')} className="text-emerald-700 hover:underline">{t('soonest.anyTime')}</button>
               )}
               {selectedTypes.length > 0 && (
-                <button onClick={onClearTypes} className="text-emerald-700 hover:underline">All types</button>
+                <button onClick={onClearTypes} className="text-emerald-700 hover:underline">{t('soonest.allTypes')}</button>
               )}
               {q && setSearch && (
-                <button onClick={() => setSearch('')} className="text-emerald-700 hover:underline">Clear search</button>
+                <button onClick={() => setSearch('')} className="text-emerald-700 hover:underline">{t('soonest.clearSearch')}</button>
               )}
             </div>
           </div>
         ) : (
           <>
-            <ul id="soonest-open-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <ul id="soonest-open-list" className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {shown.map(r => (
-                <SoonestRow key={r.parkName} row={r} metadata={metadata}
+                <SoonestRow key={r.parkName} row={r} metadata={metadata} nights={nights}
                   onPick={pick} onPickType={pickType} />
               ))}
             </ul>
@@ -252,7 +213,7 @@ function SoonestOpenings({
                 aria-controls="soonest-open-list"
                 className="mt-3 text-sm font-medium text-emerald-700 hover:text-emerald-800"
               >
-                {showAll ? 'Show fewer' : `Show all ${open.length} parks`}
+                {showAll ? t('soonest.showFewer') : t('soonest.showAll', { n: open.length })}
               </button>
             )}
           </>
@@ -260,19 +221,20 @@ function SoonestOpenings({
 
         {/* Honest disclosure of parks with nothing for the current lens */}
         {tail.length > 0 && (
-          <div className="mt-4 pt-3 border-t border-gray-100">
+          <div className="mt-4 border-t border-gray-100 pt-3">
             <button
               onClick={() => setTailOpen(v => !v)}
               aria-expanded={tailOpen}
               aria-controls="soonest-tail-list"
               className="text-xs font-medium text-gray-500 hover:text-gray-700"
             >
-              {tail.length} park{tail.length === 1 ? '' : 's'} with no{' '}
-              {selectedTypes.length === 0 ? 'openings' : `${typeLabel} openings`}
-              {horizon !== 'any' ? ` ${horizonLabel}` : ''} · {tailOpen ? 'hide' : 'show'}
+              {tn('soonest.tail', tail.length, {
+                what: selectedTypes.length === 0 ? t('soonest.openings') : t('soonest.openingsFor', { types: typeLabel }),
+                action: tailOpen ? t('soonest.hide') : t('soonest.show'),
+              })}
             </button>
             {tailOpen && (
-              <ul id="soonest-tail-list" className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
+              <ul id="soonest-tail-list" className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {tail.map(r => <TailRow key={r.parkName} row={r} onPick={pick} onPickType={pickType} />)}
               </ul>
             )}
@@ -283,7 +245,27 @@ function SoonestOpenings({
   );
 }
 
-function SoonestRow({ row, metadata, onPick, onPickType }) {
+// Union of per-type opening series: earliest date across the selected types,
+// with counts summed on days where several of them open.
+function mergeSeries(entry, types) {
+  const byDate = {};
+  types.forEach(type => {
+    (entry.byType[type] || []).forEach(({ date, count }) => {
+      byDate[date] = (byDate[date] || 0) + count;
+    });
+  });
+  return Object.keys(byDate).sort().map(date => ({ date, count: byDate[date] }));
+}
+
+function daysAwayLabel(dateStr, t, tn) {
+  const n = Math.round((parseLocalDate(dateStr) - parseLocalDate(todayStr())) / 86400000);
+  if (n <= 0) return t('soonest.today');
+  if (n === 1) return t('soonest.tomorrow');
+  return tn('soonest.daysAway', n);
+}
+
+function SoonestRow({ row, metadata, nights, onPick, onPickType }) {
+  const { t, tn } = useI18n();
   const { parkName, park, area, date, count, chips, verify } = row;
   const extraChips = chips.length - MAX_CHIPS;
   return (
@@ -291,37 +273,37 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
       <div className="flex items-stretch">
         <button
           onClick={() => onPick(parkName, date)}
-          className="flex-1 min-w-0 text-left p-3 hover:bg-emerald-50/40 transition-colors"
+          className="min-w-0 flex-1 p-3 text-left transition-colors hover:bg-emerald-50/40"
         >
           <div className="flex items-center justify-between gap-2">
-            <p className="font-semibold text-gray-900 truncate" title={area || park}>{area || park}</p>
-            <span className="text-sm font-semibold text-emerald-700 flex-shrink-0">
+            <p className="truncate font-semibold text-gray-900" title={area || park}>{area || park}</p>
+            <span className="flex-shrink-0 text-sm font-semibold text-emerald-700">
               {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
             </span>
           </div>
-          <div className="flex items-center justify-between gap-2 mt-0.5">
-            <p className="text-[11px] font-medium uppercase tracking-wide text-gray-400 truncate" title={area ? park : undefined}>
-              {area ? park : ' '}
+          <div className="mt-0.5 flex items-center justify-between gap-2">
+            <p className="truncate text-[11px] font-medium uppercase tracking-wide text-gray-500" title={area ? park : undefined}>
+              {area ? park : ' '}
             </p>
             {verify ? (
-              <span className="inline-flex items-center gap-1 text-xs font-medium text-amber-600 flex-shrink-0"
-                title="Shown available every day — confirm on Parks Canada before relying on it">
-                <AlertTriangle className="h-3 w-3" aria-hidden="true" /> {count} · verify
-                <span className="sr-only"> — shown available every day; confirm on Parks Canada before relying on it</span>
+              <span className="inline-flex flex-shrink-0 items-center gap-1 text-xs font-medium text-amber-800"
+                title={t('soonest.verifyTitle')}>
+                <AlertTriangle className="h-3 w-3" aria-hidden="true" /> {count} · {t('soonest.verify')}
+                <span className="sr-only"> — {t('soonest.verifyTitle')}</span>
               </span>
             ) : (
-              <span className="text-xs font-medium text-emerald-700 tabular-nums flex-shrink-0">
-                {daysAwayLabel(date)} · {count} open
+              <span className="flex-shrink-0 text-xs font-medium tabular-nums text-emerald-700">
+                {daysAwayLabel(date, t, tn)} · {t('soonest.openCount', { n: count })}
               </span>
             )}
           </div>
         </button>
         <a
-          href={buildBookingUrl({ ParkName: parkName }, date, metadata)}
+          href={buildBookingUrl({ ParkName: parkName }, date, metadata, nights)}
           target="_blank" rel="noopener noreferrer"
-          aria-label={`Book ${area || park} on Parks Canada`}
-          title="Book on Parks Canada"
-          className="flex items-center justify-center min-w-[44px] px-3 border-l border-gray-100 bg-emerald-50/40 text-emerald-700 hover:bg-emerald-100 transition-colors"
+          aria-label={t('soonest.bookAria', { name: area || park })}
+          title={t('soonest.book')}
+          className="flex min-w-[44px] items-center justify-center border-l border-gray-100 bg-emerald-50/40 px-3 text-emerald-700 transition-colors hover:bg-emerald-100"
         >
           <ArrowUpRight className="h-4 w-4" />
         </a>
@@ -340,7 +322,7 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
             </button>
           ))}
           {extraChips > 0 && (
-            <span className="flex-shrink-0 inline-flex items-center text-[11px] text-gray-400 px-1">+{extraChips}</span>
+            <span className="inline-flex flex-shrink-0 items-center px-1 text-[11px] text-gray-500">+{extraChips}</span>
           )}
         </div>
       )}
@@ -349,24 +331,25 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
 }
 
 function TailRow({ row, onPick, onPickType }) {
+  const { t } = useI18n();
   const { parkName, park, area, reason } = row;
   return (
     <li data-testid="soonest-tail-row" className="rounded-xl border border-gray-100 bg-gray-50/50 p-3">
       <div className="flex items-center justify-between gap-2">
-        <p className="text-sm font-medium text-gray-500 truncate">{area || park}</p>
+        <p className="truncate text-sm font-medium text-gray-500">{area || park}</p>
         {reason.kind === 'later' && (
           <button onClick={() => onPick(parkName, reason.date)}
-            className="text-xs font-medium text-emerald-700 hover:underline flex-shrink-0">
-            Earliest {formatDate(reason.date, { month: 'short', day: 'numeric' })}
+            className="flex-shrink-0 text-xs font-medium text-emerald-700 hover:underline">
+            {t('soonest.earliest', { date: formatDate(reason.date, { month: 'short', day: 'numeric' }) })}
           </button>
         )}
         {reason.kind === 'othertype' && reason.topType && (
           <button onClick={() => onPickType(parkName, reason.topType, reason.date)}
-            className="text-xs font-medium text-emerald-700 hover:underline flex-shrink-0">
+            className="flex-shrink-0 text-xs font-medium text-emerald-700 hover:underline">
             {reason.topType} {formatDate(reason.date, { month: 'short', day: 'numeric' })}
           </button>
         )}
-        {reason.kind === 'none' && <span className="text-xs text-gray-400 flex-shrink-0">—</span>}
+        {reason.kind === 'none' && <span className="flex-shrink-0 text-xs text-gray-500">—</span>}
       </div>
     </li>
   );
