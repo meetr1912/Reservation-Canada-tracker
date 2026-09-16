@@ -493,6 +493,8 @@ function App() {
                   type="button"
                   data-testid="filters-button"
                   onClick={() => setFiltersOpen(true)}
+                  aria-haspopup="dialog"
+                  aria-expanded={filtersOpen}
                   aria-label={activeFilterCount ? `Filters, ${activeFilterCount} active` : 'Filters'}
                   className="relative inline-flex h-11 flex-shrink-0 items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3.5 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
                 >

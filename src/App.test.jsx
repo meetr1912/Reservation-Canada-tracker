@@ -8,12 +8,28 @@ function futureDate(days) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 }
 
+// jsdom has no matchMedia; report a phone-sized viewport so the app mounts its
+// mobile chrome (sticky bar + filter sheet).
+function mockNarrowViewport() {
+  window.matchMedia = jest.fn().mockImplementation(query => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addEventListener: jest.fn(),
+    removeEventListener: jest.fn(),
+    addListener: jest.fn(),
+    removeListener: jest.fn(),
+    dispatchEvent: jest.fn(),
+  }));
+}
+
 describe('mobile filters', () => {
   let container;
   let root;
 
   beforeEach(() => {
     global.IS_REACT_ACT_ENVIRONMENT = true;
+    mockNarrowViewport();
     const date = futureDate(7);
     global.fetch = jest.fn().mockResolvedValue({
       ok: true,
@@ -45,27 +61,34 @@ describe('mobile filters', () => {
     jest.restoreAllMocks();
   });
 
-  it('keeps the filter controls collapsed until the mobile trigger is used', async () => {
+  it('keeps the filter sheet closed until the mobile trigger is used', async () => {
     await act(async () => {
       root.render(<App />);
       await Promise.resolve();
       await Promise.resolve();
     });
 
-    const toggle = container.querySelector('button[aria-controls="filter-controls"]');
-    const controls = container.querySelector('#filter-controls');
-
+    const toggle = container.querySelector('[data-testid="filters-button"]');
     expect(toggle).not.toBeNull();
-    expect(controls).not.toBeNull();
     expect(toggle.getAttribute('aria-expanded')).toBe('false');
-    expect(controls.className).toContain('hidden');
+    expect(toggle.getAttribute('aria-haspopup')).toBe('dialog');
+    expect(document.body.querySelector('[data-testid="filters-sheet"]')).toBeNull();
 
     await act(async () => {
       toggle.dispatchEvent(new MouseEvent('click', { bubbles: true }));
     });
 
     expect(toggle.getAttribute('aria-expanded')).toBe('true');
-    expect(controls.className).toContain('flex');
-    expect(controls.className).not.toContain('hidden');
+    const sheet = document.body.querySelector('[data-testid="filters-sheet"]');
+    expect(sheet).not.toBeNull();
+    expect(sheet.textContent).toContain('Filters');
+    expect(sheet.textContent).toContain('Parks');
+    expect(sheet.textContent).toMatch(/Show \d+ results?/);
+
+    const close = sheet.querySelector('[aria-label="Close filters"]');
+    await act(async () => {
+      close.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+    });
+    expect(document.body.querySelector('[data-testid="filters-sheet"]')).toBeNull();
   });
 });
