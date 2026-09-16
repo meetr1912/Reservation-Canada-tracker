@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-16T19:18:07Z",
+    "generated_at": "2026-09-16T22:35:52Z",
     "start_date": "2026-09-16",
     "end_date": "2027-03-14",
     "days": 180,
@@ -386,7 +386,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 84951,
+    "total_available_slots": 84922,
     "available_days": 180,
     "available_units": 452
   },
@@ -879,7 +879,7 @@
     },
     {
       "date": "2026-09-16",
-      "available_slots": 84951,
+      "available_slots": 84922,
       "available_units": 452,
       "available_days": 180
     }
@@ -3033,7 +3033,7 @@
         "PageTitle": null,
         "ResourceName": "O66",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -4223,7 +4223,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -5891,7 +5891,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -6717,7 +6717,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -8166,7 +8166,7 @@
         "PageTitle": null,
         "ResourceName": "Tent 6",
         "Type": "Prospector Tent",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -9302,7 +9302,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -9764,7 +9764,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -10947,7 +10947,7 @@
         "PageTitle": null,
         "ResourceName": "M-O9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -13168,7 +13168,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -13910,7 +13910,7 @@
         "PageTitle": null,
         "ResourceName": "RC30",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -14813,7 +14813,7 @@
         "PageTitle": null,
         "ResourceName": "M-O9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -15065,7 +15065,7 @@
         "PageTitle": null,
         "ResourceName": "B2",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -18063,7 +18063,7 @@
         "PageTitle": null,
         "ResourceName": "5C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -18448,7 +18448,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -36252,7 +36252,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -40118,7 +40118,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -77453,7 +77453,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -89520,7 +89520,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -90495,7 +90495,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -93386,7 +93386,7 @@
         "PageTitle": null,
         "ResourceName": "O187",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -94361,7 +94361,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -115602,7 +115602,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -115616,14 +115616,14 @@
         "PageTitle": null,
         "ResourceName": "11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -115679,7 +115679,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -115721,42 +115721,42 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -289733,7 +289733,7 @@
         "PageTitle": null,
         "ResourceName": "9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -382188,7 +382188,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
@@ -386054,7 +386054,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
@@ -552607,7 +552607,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -556473,7 +556473,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -579263,7 +579263,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -583129,7 +583129,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -586995,7 +586995,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
