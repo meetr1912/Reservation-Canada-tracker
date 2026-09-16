@@ -43,7 +43,10 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-lg max-h-[88vh] overflow-y-auto">
+      <DialogContent
+        data-testid="alert-dialog"
+        className="max-h-[88vh] max-w-lg overflow-y-auto max-sm:left-0 max-sm:top-auto max-sm:bottom-0 max-sm:max-h-[90dvh] max-sm:w-full max-sm:max-w-none max-sm:translate-x-0 max-sm:translate-y-0 max-sm:rounded-b-none max-sm:rounded-t-3xl"
+      >
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-xl font-semibold">
             <Bell className="h-5 w-5 text-emerald-600" /> Get email alerts
@@ -77,9 +80,9 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
                   const on = selectedParks.includes(p);
                   return (
                     <button key={p} type="button" onClick={() => togglePark(p)} aria-pressed={on}
-                      className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
-                        on ? 'bg-emerald-600 text-white border-emerald-600'
-                          : 'bg-white text-gray-700 border-gray-200 hover:border-emerald-300'}`}>
+                      className={`rounded-full border px-3 py-2 text-xs font-medium transition-colors ${
+                        on ? 'border-emerald-600 bg-emerald-600 text-white'
+                          : 'border-gray-200 bg-white text-gray-700 hover:border-emerald-300'}`}>
                       {p}
                     </button>
                   );
@@ -117,8 +120,12 @@ function AlertDialog({ open, onOpenChange, dates, parks, initialDate, initialPar
               The tracker reads open issues every few hours and emails you on a match.
             </p>
 
-            <Button onClick={submit} disabled={!canSubmit}
-              className="w-full h-11 bg-gray-900 hover:bg-gray-800 text-white font-medium disabled:opacity-50">
+            <Button
+              data-testid="alert-submit"
+              onClick={submit}
+              disabled={!canSubmit}
+              className="h-11 w-full bg-gray-900 font-medium text-white hover:bg-gray-800 disabled:opacity-50"
+            >
               Create email alert
             </Button>
           </div>

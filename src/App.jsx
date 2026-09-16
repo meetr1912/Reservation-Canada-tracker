@@ -1,19 +1,18 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import {
   Calendar as CalendarIcon, List, CheckCircle2, XCircle, TrendingUp,
   Search, MapPin, ChevronDown, Tent, ArrowRight, RefreshCw, AlertTriangle, Bell, X,
-  SlidersHorizontal,
+  SlidersHorizontal, RotateCcw,
 } from 'lucide-react';
 import { Card, CardContent } from './components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
-} from './components/ui/select';
-import MultiSelect from './components/ui/multi-select';
 import { Badge } from './components/ui/badge';
 import CalendarView from './CalendarView';
 import SoonestOpenings from './SoonestOpenings';
 import AlertDialog from './AlertDialog';
+import FiltersPanel from './components/FiltersPanel';
+import FiltersSheet from './components/FiltersSheet';
+import { useMediaQuery } from './hooks/useMediaQuery';
 import {
   normalizeReport, formatDate, formatTimestamp, countAvailable, buildBookingUrl,
   prettyUnit, splitPark, prettyLoop,
@@ -42,25 +41,28 @@ function Sparkline({ data, className = '' }) {
   );
 }
 
-function StatCard({ label, value, sub, icon: Icon, tone = 'gray', children }) {
+function StatCard({ testid, label, value, sub, icon: Icon, tone = 'gray', children }) {
   const tones = {
     green: 'bg-emerald-50 text-emerald-600',
     gray: 'bg-gray-100 text-gray-600',
     blue: 'bg-blue-50 text-blue-600',
     amber: 'bg-amber-50 text-amber-600',
   };
+  const display = typeof value === 'number' ? value.toLocaleString('en-US') : value;
   return (
-    <Card className="border-0 shadow-sm hover:shadow-md transition-shadow">
+    <Card data-testid={testid} className="border-0 shadow-sm transition-shadow hover:shadow-md">
       <CardContent className="p-4 sm:p-5">
         <div className="flex items-start justify-between gap-3">
           <div className="min-w-0">
-            <p className="text-xs font-medium text-gray-500 mb-1.5">{label}</p>
-            <p className="text-2xl sm:text-3xl font-bold tracking-tight">{value}</p>
-            {sub && <p className="text-xs text-gray-400 mt-1">{sub}</p>}
+            <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500 sm:text-xs">
+              {label}
+            </p>
+            <p className="text-2xl font-bold tabular-nums tracking-tight sm:text-3xl">{display}</p>
+            {sub && <p className="mt-1 text-xs text-gray-400">{sub}</p>}
             {children}
           </div>
           {Icon && (
-            <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${tones[tone]}`}>
+            <div className={`flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl ${tones[tone]}`}>
               <Icon className="h-5 w-5" />
             </div>
           )}
@@ -75,25 +77,30 @@ function ParkGroup({ park, sites, defaultOpen, verify, selectedDate, metadata })
   const available = sites.filter(s => s.status).length;
   const { park: parkName, area } = splitPark(park);
   return (
-    <div className="rounded-2xl border border-gray-200 overflow-hidden bg-white">
+    <div
+      data-testid="park-group"
+      data-park={park}
+      className="overflow-hidden rounded-2xl border border-gray-200 bg-white transition-shadow hover:shadow-sm"
+    >
       <button
         onClick={() => setOpen(o => !o)}
-        className="w-full flex items-center justify-between gap-3 px-4 sm:px-5 py-4 hover:bg-gray-50 transition-colors text-left"
+        aria-expanded={open}
+        className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left transition-colors hover:bg-gray-50 active:bg-gray-100 sm:px-5"
       >
-        <div className="flex items-center gap-3 min-w-0">
-          <div className={`w-9 h-9 rounded-lg flex items-center justify-center flex-shrink-0 ${available ? 'bg-emerald-50 text-emerald-600' : 'bg-gray-100 text-gray-400'}`}>
+        <div className="flex min-w-0 items-center gap-3">
+          <div className={`flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-lg ${available ? 'bg-emerald-50 text-emerald-600' : 'bg-gray-100 text-gray-400'}`}>
             <MapPin className="h-4 w-4" />
           </div>
           <div className="min-w-0">
             {area && <p className="text-[11px] font-medium uppercase tracking-wide text-gray-400">{parkName}</p>}
-            <p className="font-semibold text-gray-900 truncate">{area || parkName}</p>
+            <p className="truncate font-semibold text-gray-900">{area || parkName}</p>
             <p className="text-xs text-gray-500">{sites.length} site{sites.length === 1 ? '' : 's'}</p>
           </div>
         </div>
-        <div className="flex items-center gap-3 flex-shrink-0">
+        <div className="flex flex-shrink-0 items-center gap-3">
           {verify && (
             <Badge
-              className="inline-flex bg-amber-50 text-amber-700 border-amber-200"
+              className="inline-flex border-amber-200 bg-amber-50 text-amber-700"
               title="Shown available every day — confirm on Parks Canada before relying on it"
             >
               <AlertTriangle className="h-3 w-3 sm:mr-1" />
@@ -101,15 +108,15 @@ function ParkGroup({ park, sites, defaultOpen, verify, selectedDate, metadata })
             </Badge>
           )}
           <Badge className={available
-            ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-            : 'bg-gray-100 text-gray-500 border-transparent'}>
+            ? 'border-emerald-200 bg-emerald-50 text-emerald-700'
+            : 'border-transparent bg-gray-100 text-gray-500'}>
             {available} available
           </Badge>
           <ChevronDown className={`h-4 w-4 text-gray-400 transition-transform ${open ? 'rotate-180' : ''}`} />
         </div>
       </button>
       {open && (
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3 p-3 sm:p-5 pt-3 sm:pt-0 border-t border-gray-100">
+        <div className="grid grid-cols-2 gap-2 border-t border-gray-100 p-3 pt-3 sm:gap-3 sm:p-5 sm:pt-4 lg:grid-cols-3">
           {sites.map((site, i) => <SiteCard key={i} site={site} dateStr={selectedDate} metadata={metadata} />)}
         </div>
       )}
@@ -122,15 +129,15 @@ function SiteCard({ site, dateStr, metadata }) {
   const body = (
     <>
       <Badge className={`text-[11px] ${site.status
-        ? 'bg-emerald-600 text-white border-transparent'
-        : 'bg-gray-200 text-gray-600 border-transparent'}`}>
+        ? 'border-transparent bg-emerald-600 text-white'
+        : 'border-transparent bg-gray-200 text-gray-600'}`}>
         {site.status
-          ? <><CheckCircle2 className="h-3 w-3 mr-1" />Available</>
-          : <><XCircle className="h-3 w-3 mr-1" />Booked</>}
+          ? <><CheckCircle2 className="mr-1 h-3 w-3" />Available</>
+          : <><XCircle className="mr-1 h-3 w-3" />Booked</>}
       </Badge>
-      <p className="font-semibold text-gray-900 leading-tight mt-1.5">{prettyUnit(site.ResourceName, site.Type)}</p>
-      {loop ? <p className="text-xs text-gray-500 mt-0.5">{loop}</p>
-        : site.Type && <p className="text-xs text-gray-500 mt-0.5">{site.Type}</p>}
+      <p className="mt-1.5 font-semibold leading-tight text-gray-900">{prettyUnit(site.ResourceName, site.Type)}</p>
+      {loop ? <p className="mt-0.5 text-xs text-gray-500">{loop}</p>
+        : site.Type && <p className="mt-0.5 text-xs text-gray-500">{site.Type}</p>}
       {site.status && (
         <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-emerald-700">
           Reserve <ArrowRight className="h-3 w-3" />
@@ -140,19 +147,134 @@ function SiteCard({ site, dateStr, metadata }) {
   );
   if (site.status) {
     return (
-      <a href={buildBookingUrl(site, dateStr, metadata)} target="_blank" rel="noopener noreferrer"
-        className="block rounded-xl border border-emerald-200 bg-emerald-50/40 p-3 transition-all hover:shadow-md hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/40">
+      <a
+        href={buildBookingUrl(site, dateStr, metadata)}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-testid="site-card"
+        data-status="available"
+        className="block rounded-xl border border-emerald-200 bg-emerald-50/40 p-3 transition-all hover:border-emerald-300 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-emerald-500/40 active:scale-[0.99]"
+      >
         {body}
       </a>
     );
   }
-  return <div className="rounded-xl border border-gray-200 bg-gray-50/50 p-3 opacity-80">{body}</div>;
+  return (
+    <div data-testid="site-card" data-status="booked" className="rounded-xl border border-gray-200 bg-gray-50/50 p-3 opacity-80">
+      {body}
+    </div>
+  );
+}
+
+function SearchInput({ value, onChange, className = '' }) {
+  return (
+    <div className={`relative ${className}`}>
+      <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
+      <input
+        type="search"
+        inputMode="search"
+        enterKeyHint="search"
+        aria-label="Search site or park"
+        data-testid="search-input"
+        value={value}
+        onChange={e => onChange(e.target.value)}
+        placeholder="Search site or park…"
+        className="h-11 w-full rounded-xl border border-gray-200 bg-white pl-9 pr-3 text-sm focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
+      />
+    </div>
+  );
+}
+
+function ActiveFilterChips({ selectedParks, selectedTypes, onRemovePark, onRemoveType, onClear, scroll = false, className = '' }) {
+  if (!selectedParks.length && !selectedTypes.length) return null;
+  return (
+    <div
+      data-testid="active-filters"
+      className={`flex items-center gap-1.5 ${scroll ? 'overflow-x-auto overscroll-x-contain pb-0.5' : 'flex-wrap'} ${className}`}
+    >
+      {selectedParks.map(park => (
+        <button
+          key={`park-${park}`}
+          type="button"
+          onClick={() => onRemovePark(park)}
+          aria-label={`Remove ${park} filter`}
+          className="inline-flex max-w-[240px] flex-shrink-0 items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 hover:border-emerald-300"
+        >
+          <span className="truncate">{park}</span>
+          <X className="h-3 w-3 flex-shrink-0" />
+        </button>
+      ))}
+      {selectedTypes.map(type => (
+        <button
+          key={`type-${type}`}
+          type="button"
+          onClick={() => onRemoveType(type)}
+          aria-label={`Remove ${type} filter`}
+          className="inline-flex flex-shrink-0 items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 hover:border-gray-300"
+        >
+          {type}
+          <X className="h-3 w-3 flex-shrink-0" />
+        </button>
+      ))}
+      <button
+        type="button"
+        onClick={onClear}
+        className="flex-shrink-0 text-xs font-medium text-gray-500 underline hover:text-gray-700"
+      >
+        Clear all
+      </button>
+    </div>
+  );
+}
+
+function LoadingSkeleton() {
+  return (
+    <div className="min-h-screen bg-gray-50" data-testid="loading">
+      <div className="h-56 bg-gradient-to-br from-emerald-900 via-gray-900 to-gray-950 sm:h-72" />
+      <div className="mx-auto max-w-6xl animate-pulse px-4 py-6 sm:px-6 sm:py-10">
+        <div className="mb-6 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          {[0, 1, 2, 3].map(i => <div key={i} className="h-28 rounded-2xl bg-white shadow-sm sm:h-32" />)}
+        </div>
+        <div className="mb-6 h-32 rounded-2xl bg-white shadow-sm sm:h-24" />
+        <div className="space-y-3">
+          <div className="h-16 rounded-2xl bg-white shadow-sm" />
+          <div className="h-20 rounded-2xl bg-white shadow-sm" />
+          <div className="h-20 rounded-2xl bg-white shadow-sm" />
+        </div>
+        <p className="sr-only">Loading availability…</p>
+      </div>
+    </div>
+  );
+}
+
+function ErrorState({ onRetry }) {
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-gradient-to-b from-gray-50 to-white p-6">
+      <Card className="max-w-md border-0 shadow-sm" data-testid="error-state">
+        <CardContent className="p-8 text-center">
+          <XCircle className="mx-auto mb-4 h-10 w-10 text-red-400" />
+          <p className="font-semibold text-gray-900">Unable to load availability data</p>
+          <p className="mt-1 text-sm text-gray-500">
+            The report could not be fetched. Check your connection and try again.
+          </p>
+          <button
+            type="button"
+            onClick={onRetry}
+            className="mt-5 inline-flex h-11 items-center gap-2 rounded-xl bg-emerald-600 px-5 text-sm font-semibold text-white transition-colors hover:bg-emerald-700"
+          >
+            <RotateCcw className="h-4 w-4" /> Try again
+          </button>
+        </CardContent>
+      </Card>
+    </div>
+  );
 }
 
 function App() {
   const [report, setReport] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [reloadKey, setReloadKey] = useState(0);
   const [selectedDate, setSelectedDate] = useState(null);
   // Empty arrays mean "no filter" (all parks / all types).
   const [selectedParks, setSelectedParks] = useState([]);
@@ -160,17 +282,22 @@ function App() {
   const [search, setSearch] = useState('');
   const [showOnlyAvailable, setShowOnlyAvailable] = useState(true);
   const [viewMode, setViewMode] = useState('list');
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertDate, setAlertDate] = useState(null);
 
-  const openAlert = (date) => { setAlertDate(date || null); setAlertOpen(true); };
+  const isDesktop = useMediaQuery('(min-width: 640px)');
+  const openAlert = useCallback((date) => { setAlertDate(date || null); setAlertOpen(true); }, []);
 
   useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+    setError(false);
     const url = `${process.env.PUBLIC_URL}/availability_report.json`;
     fetch(url)
       .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
       .then(raw => {
+        if (cancelled) return;
         const normalized = normalizeReport(raw);
         if (!normalized) throw new Error('Invalid or empty data');
         setReport(normalized);
@@ -179,8 +306,16 @@ function App() {
         setSelectedDate(firstAvail || Object.keys(normalized.dates).sort()[0]);
         setLoading(false);
       })
-      .catch(e => { console.error('Error loading availability data:', e); setError(true); setLoading(false); });
-  }, []);
+      .catch(e => {
+        if (cancelled) return;
+        console.error('Error loading availability data:', e);
+        setError(true);
+        setLoading(false);
+      });
+    return () => { cancelled = true; };
+  }, [reloadKey]);
+
+  const retry = () => { setReport(null); setReloadKey(k => k + 1); };
 
   const dates = useMemo(() => report ? Object.keys(report.dates).sort() : [], [report]);
   const parks = useMemo(() => {
@@ -223,45 +358,40 @@ function App() {
     return flagged;
   }, [report, dates]);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-white">
-        <div className="text-center">
-          <div className="w-14 h-14 border-4 border-gray-200 border-t-emerald-500 rounded-full animate-spin mx-auto mb-5" />
-          <p className="text-gray-600 font-medium">Loading availability…</p>
-        </div>
-      </div>
-    );
-  }
+  const removePark = useCallback((park) => setSelectedParks(prev => prev.filter(p => p !== park)), []);
+  const removeType = useCallback((type) => setSelectedTypes(prev => prev.filter(t => t !== type)), []);
+  const clearFilters = useCallback(() => {
+    setSelectedParks([]);
+    setSelectedTypes([]);
+    setShowOnlyAvailable(true);
+  }, []);
 
-  if (error || !report) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-50 to-white p-6">
-        <Card className="max-w-md border-0 shadow-sm">
-          <CardContent className="p-8 text-center">
-            <XCircle className="h-10 w-10 mx-auto mb-4 text-red-400" />
-            <p className="font-semibold text-gray-900">Unable to load data</p>
-            <p className="text-sm text-gray-500 mt-1">Please ensure the availability report is accessible.</p>
-          </CardContent>
-        </Card>
-      </div>
-    );
-  }
+  // Picking a park/type from the ranked feed drills in like before — but when
+  // several are already selected, keep the multi-selection instead of
+  // collapsing it to one.
+  const focusPark = (park) => setSelectedParks(prev =>
+    prev.length > 1 && prev.includes(park) ? prev : [park]);
+  const focusType = (type) => setSelectedTypes(prev =>
+    prev.length > 1 && prev.includes(type) ? prev : [type]);
+
+  if (loading) return <LoadingSkeleton />;
+  if (error || !report) return <ErrorState onRetry={retry} />;
 
   const { metadata, history } = report;
   const selectedSites = (report.dates[selectedDate] || []);
 
-  // Apply filters (park + search) for list view.
+  // Apply filters (park + type + search) for the list/calendar lens.
   const q = search.trim().toLowerCase();
   const matchesSearch = (s) => !q ||
     (s.ResourceName || '').toLowerCase().includes(q) ||
     (s.ParkName || '').toLowerCase().includes(q) ||
     (s.PageTitle || '').toLowerCase().includes(q);
 
-  let filtered = selectedSites.filter(matchesSearch);
-  if (selectedParks.length) filtered = filtered.filter(s => selectedParks.includes(s.ParkName));
-  if (selectedTypes.length) filtered = filtered.filter(s => selectedTypes.includes(s.Type || 'oTENTik'));
-  if (showOnlyAvailable) filtered = filtered.filter(s => s.status);
+  const baseFiltered = selectedSites
+    .filter(matchesSearch)
+    .filter(s => !selectedParks.length || selectedParks.includes(s.ParkName))
+    .filter(s => !selectedTypes.length || selectedTypes.includes(s.Type || 'oTENTik'));
+  const filtered = showOnlyAvailable ? baseFiltered.filter(s => s.status) : baseFiltered;
 
   // Group filtered sites by park.
   const byPark = {};
@@ -273,44 +403,59 @@ function App() {
   const parksAvailable = new Set(selectedSites.filter(s => s.status).map(s => s.ParkName)).size;
   const nextAvailableDate = datesWithAvailability.find(d => d >= selectedDate) || datesWithAvailability[0];
   const lastUpdated = formatTimestamp(metadata.generated_at);
-  const selectedFilterCount = selectedParks.length + selectedTypes.length;
+  const activeFilterCount = selectedParks.length + selectedTypes.length + (!showOnlyAvailable ? 1 : 0);
+  const canClear = activeFilterCount > 0;
 
-  // Picking a park/type from the ranked feed drills in like before — but when
-  // several are already selected, keep the multi-selection instead of
-  // collapsing it to one.
-  const focusPark = (park) => setSelectedParks(prev =>
-    prev.length > 1 && prev.includes(park) ? prev : [park]);
-  const focusType = (type) => setSelectedTypes(prev =>
-    prev.length > 1 && prev.includes(type) ? prev : [type]);
-  const removePark = (park) => setSelectedParks(prev => prev.filter(p => p !== park));
-  const removeType = (type) => setSelectedTypes(prev => prev.filter(t => t !== type));
+  const applyFilters = () => {
+    setFiltersOpen(false);
+    requestAnimationFrame(() => {
+      document.getElementById('results')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  };
+
+  const filterPanelProps = {
+    dates,
+    availableDates: datesWithAvailability,
+    selectedDate,
+    onSelectDate: setSelectedDate,
+    parks,
+    selectedParks,
+    onChangeParks: setSelectedParks,
+    types,
+    selectedTypes,
+    onChangeTypes: setSelectedTypes,
+    showOnlyAvailable,
+    // The switch only affects the list view.
+    onChangeShowOnlyAvailable: viewMode === 'list' ? setShowOnlyAvailable : undefined,
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Hero */}
-      <header className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-gray-900 to-gray-900">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(16,185,129,0.15),transparent_50%)]" />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
+      <header className="relative overflow-hidden bg-gradient-to-br from-emerald-900 via-gray-900 to-gray-950">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(16,185,129,0.28),transparent_45%),radial-gradient(circle_at_85%_100%,rgba(45,212,191,0.18),transparent_45%)]" />
+        <div className="relative mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
           <div className="text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 mb-6 bg-white/10 backdrop-blur-xl rounded-2xl">
-              <Tent className="h-8 w-8 text-emerald-300" />
+            <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/10 ring-1 ring-white/15 backdrop-blur-xl sm:mb-6 sm:h-16 sm:w-16">
+              <Tent className="h-6 w-6 text-emerald-300 sm:h-8 sm:w-8" />
             </div>
-            <h1 className="text-4xl sm:text-6xl font-bold text-white mb-4 tracking-tight">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
               Parks Canada{' '}
               <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
                 Camping Tracker
               </span>
             </h1>
-            <p className="text-lg text-gray-300 max-w-xl mx-auto font-light">
-              Live availability for oTENTiks, yurts, cabins &amp; more across {metadata.total_units || 552} prebuilt sites in {metadata.total_parks || 51} locations
+            <p className="mx-auto mt-3 max-w-xl text-base font-light text-gray-300 sm:mt-4 sm:text-lg">
+              Live availability for oTENTiks, yurts, cabins &amp; more across{' '}
+              {metadata.total_units || 552} prebuilt sites in {metadata.total_parks || 51} locations
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-2 mt-7">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/15 text-emerald-200 text-sm font-medium">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:mt-7">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1.5 text-xs font-medium text-emerald-200 sm:text-sm">
                 <CheckCircle2 className="h-4 w-4" />
                 {datesWithAvailability.length} days with openings
               </span>
               {lastUpdated && (
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/10 text-gray-300 text-sm">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 text-xs text-gray-300 sm:text-sm">
                   <RefreshCw className="h-3.5 w-3.5" /> Updated {lastUpdated}
                 </span>
               )}
@@ -319,43 +464,90 @@ function App() {
         </div>
       </header>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
         {/* Overview stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8">
-          <StatCard label="Available on this date" value={totalAvailable} tone="green" icon={CheckCircle2}
+        <div className="mb-6 grid grid-cols-2 gap-3 sm:mb-8 sm:gap-4 lg:grid-cols-4">
+          <StatCard testid="stat-available" label="Available on this date" value={totalAvailable} tone="green" icon={CheckCircle2}
             sub={`of ${selectedSites.length} sites`} />
-          <StatCard label="Parks with openings" value={parksAvailable} tone="blue" icon={MapPin}
+          <StatCard testid="stat-parks" label="Parks with openings" value={parksAvailable} tone="blue" icon={MapPin}
             sub={`of ${(metadata.total_parks || parks.length)} parks`} />
-          <StatCard label="Days with availability" value={datesWithAvailability.length} tone="amber" icon={CalendarIcon}
+          <StatCard testid="stat-days" label="Days with availability" value={datesWithAvailability.length} tone="amber" icon={CalendarIcon}
             sub={`next ${dates.length} days`} />
-          <StatCard label="Total open slots" value={metadata.total_available_slots ?? '—'} tone="green" icon={TrendingUp}>
+          <StatCard testid="stat-slots" label="Total open slots" value={metadata.total_available_slots ?? '—'} tone="green" icon={TrendingUp}>
             {history.length > 1 && (
-              <div className="text-emerald-500 mt-2"><Sparkline data={history} className="w-full h-8" /></div>
+              <div className="mt-2 text-emerald-500"><Sparkline data={history} className="h-8 w-full" /></div>
             )}
           </StatCard>
         </div>
 
         <Tabs value={viewMode} onValueChange={setViewMode} className="w-full">
-          {/* Controls */}
-          <Card className="mb-6 border-0 shadow-sm sm:sticky sm:top-2 sm:z-20">
-            <CardContent className="p-4">
-              <div className="flex flex-col gap-3">
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <input
-                      value={search}
-                      onChange={e => setSearch(e.target.value)}
-                      placeholder="Search site or park…"
-                      className="w-full h-11 pl-9 pr-3 rounded-xl border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-400"
-                    />
-                  </div>
+          {/* Mobile: compact sticky bar + bottom-sheet filters */}
+          {!isDesktop && (
+            <div
+              data-testid="mobile-controls"
+              className="sticky top-0 z-30 -mx-4 mb-5 border-b border-gray-200/70 bg-white/90 px-4 pb-2.5 pt-2.5 backdrop-blur-md"
+            >
+              <div className="flex items-center gap-2">
+                <SearchInput value={search} onChange={setSearch} className="flex-1" />
+                <button
+                  type="button"
+                  data-testid="filters-button"
+                  onClick={() => setFiltersOpen(true)}
+                  aria-label={activeFilterCount ? `Filters, ${activeFilterCount} active` : 'Filters'}
+                  className="relative inline-flex h-11 flex-shrink-0 items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3.5 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40"
+                >
+                  <SlidersHorizontal className="h-4 w-4" />
+                  Filters
+                  {activeFilterCount > 0 && (
+                    <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-emerald-600 px-1 text-[10px] font-semibold text-white">
+                      {activeFilterCount}
+                    </span>
+                  )}
+                </button>
+              </div>
+              <div className="mt-2 flex items-center gap-2">
+                <TabsList className="h-11 flex-1 bg-gray-100 p-0.5">
+                  <TabsTrigger value="list" className="h-10 flex-1 gap-1.5 px-3 data-[state=active]:bg-white">
+                    <List className="h-4 w-4" /> List
+                  </TabsTrigger>
+                  <TabsTrigger value="calendar" className="h-10 flex-1 gap-1.5 px-3 data-[state=active]:bg-white">
+                    <CalendarIcon className="h-4 w-4" /> Calendar
+                  </TabsTrigger>
+                </TabsList>
+                <button
+                  type="button"
+                  onClick={() => openAlert(selectedDate)}
+                  aria-label="Alert me"
+                  title="Get an availability alert"
+                  className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-600 text-white transition-colors hover:bg-emerald-700"
+                >
+                  <Bell className="h-4 w-4" />
+                </button>
+              </div>
+              <ActiveFilterChips
+                scroll
+                className="mt-2"
+                selectedParks={selectedParks}
+                selectedTypes={selectedTypes}
+                onRemovePark={removePark}
+                onRemoveType={removeType}
+                onClear={clearFilters}
+              />
+            </div>
+          )}
+
+          {/* Desktop: inline sticky filter card */}
+          {isDesktop && (
+            <Card data-testid="desktop-controls" className="sticky top-3 z-20 mb-6 border-0 shadow-sm">
+              <CardContent className="space-y-3 p-4">
+                <div className="flex flex-col gap-3 sm:flex-row">
+                  <SearchInput value={search} onChange={setSearch} className="flex-1" />
                   <div className="flex gap-2">
-                    <TabsList className="bg-gray-100 h-11 flex-1 sm:flex-initial">
-                      <TabsTrigger value="list" className="gap-2 data-[state=active]:bg-white px-4 flex-1 sm:flex-initial">
+                    <TabsList className="h-11 flex-1 bg-gray-100 p-0.5 sm:flex-initial">
+                      <TabsTrigger value="list" className="h-10 flex-1 gap-2 px-4 data-[state=active]:bg-white sm:flex-initial">
                         <List className="h-4 w-4" /> List
                       </TabsTrigger>
-                      <TabsTrigger value="calendar" className="gap-2 data-[state=active]:bg-white px-4 flex-1 sm:flex-initial">
+                      <TabsTrigger value="calendar" className="h-10 flex-1 gap-2 px-4 data-[state=active]:bg-white sm:flex-initial">
                         <CalendarIcon className="h-4 w-4" /> Calendar
                       </TabsTrigger>
                     </TabsList>
@@ -364,131 +556,26 @@ function App() {
                       onClick={() => openAlert(selectedDate)}
                       aria-label="Alert me"
                       title="Get an availability alert"
-                      className="h-11 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium inline-flex items-center gap-2 flex-shrink-0"
+                      className="inline-flex h-11 flex-shrink-0 items-center gap-2 rounded-xl bg-emerald-600 px-4 text-sm font-medium text-white transition-colors hover:bg-emerald-700"
                     >
                       <Bell className="h-4 w-4" /> <span className="hidden sm:inline">Alert me</span>
                     </button>
                   </div>
                 </div>
-
-                <button
-                  type="button"
-                  onClick={() => setMobileFiltersOpen(open => !open)}
-                  aria-expanded={mobileFiltersOpen}
-                  aria-controls="filter-controls"
-                  className="sm:hidden flex h-11 w-full items-center justify-between gap-3 rounded-xl border border-gray-200 bg-white px-3 text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-400"
-                >
-                  <span className="inline-flex items-center gap-2">
-                    <SlidersHorizontal className="h-4 w-4 text-emerald-600" />
-                    Filters
-                    {selectedFilterCount > 0 && (
-                      <span className="inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-emerald-600 px-1.5 text-[11px] font-semibold text-white">
-                        {selectedFilterCount}
-                      </span>
-                    )}
-                  </span>
-                  <span className="inline-flex items-center gap-2 text-xs font-normal text-gray-500">
-                    {viewMode === 'list' && (showOnlyAvailable ? 'Available only' : 'All sites')}
-                    <ChevronDown className={`h-4 w-4 transition-transform ${mobileFiltersOpen ? 'rotate-180' : ''}`} />
-                  </span>
-                </button>
-
-                <div id="filter-controls" className={`${mobileFiltersOpen ? 'flex' : 'hidden'} sm:flex flex-col gap-3`}>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    {viewMode === 'list' && (
-                      <Select value={selectedDate} onValueChange={setSelectedDate}>
-                        <SelectTrigger className="bg-white h-11">
-                          <SelectValue placeholder="Select a date" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {dates.map(date => {
-                            const has = report.dates[date].some(s => s.status);
-                            return (
-                              <SelectItem key={date} value={date}>
-                                <span className="flex items-center gap-2">
-                                  {formatDate(date, { weekday: 'short', month: 'short', day: 'numeric' })}
-                                  {has && <span className="text-emerald-500">●</span>}
-                                </span>
-                              </SelectItem>
-                            );
-                          })}
-                        </SelectContent>
-                      </Select>
-                    )}
-                    <MultiSelect
-                      options={parks}
-                      selected={selectedParks}
-                      onChange={setSelectedParks}
-                      placeholder="All parks"
-                      searchable
-                      searchPlaceholder="Search parks…"
-                      selectAllLabel="Select all parks"
-                    />
-                    {types.length > 1 && (
-                      <MultiSelect
-                        options={types}
-                        selected={selectedTypes}
-                        onChange={setSelectedTypes}
-                        placeholder="All types"
-                        selectAllLabel="Select all types"
-                      />
-                    )}
-                  </div>
-
-                  {(selectedParks.length > 0 || selectedTypes.length > 0) && (
-                    <div className="flex flex-wrap items-center gap-1.5">
-                      {selectedParks.map(park => (
-                        <button
-                          key={`park-${park}`}
-                          type="button"
-                          onClick={() => removePark(park)}
-                          aria-label={`Remove ${park} filter`}
-                          className="inline-flex max-w-[240px] items-center gap-1 rounded-full border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-800 hover:border-emerald-300"
-                        >
-                          <span className="truncate">{park}</span>
-                          <X className="h-3 w-3 flex-shrink-0" />
-                        </button>
-                      ))}
-                      {selectedTypes.map(type => (
-                        <button
-                          key={`type-${type}`}
-                          type="button"
-                          onClick={() => removeType(type)}
-                          aria-label={`Remove ${type} filter`}
-                          className="inline-flex items-center gap-1 rounded-full border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs font-medium text-gray-700 hover:border-gray-300"
-                        >
-                          {type}
-                          <X className="h-3 w-3 flex-shrink-0" />
-                        </button>
-                      ))}
-                      <button
-                        type="button"
-                        onClick={() => { setSelectedParks([]); setSelectedTypes([]); }}
-                        className="text-xs font-medium text-gray-500 underline hover:text-gray-700"
-                      >
-                        Clear all
-                      </button>
-                    </div>
-                  )}
-
-                  {viewMode === 'list' && (
-                    <label className="flex items-center justify-between gap-3 px-3 py-2.5 rounded-xl bg-gray-50 cursor-pointer">
-                      <span className="text-sm font-medium text-gray-700">Show available only</span>
-                      <button
-                        type="button"
-                        onClick={() => setShowOnlyAvailable(v => !v)}
-                        className={`w-11 h-6 rounded-full p-0.5 transition-colors ${showOnlyAvailable ? 'bg-emerald-500' : 'bg-gray-300'}`}
-                      >
-                        <span className={`block h-5 w-5 bg-white rounded-full shadow transition-transform ${showOnlyAvailable ? 'translate-x-5' : ''}`} />
-                      </button>
-                    </label>
-                  )}
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                <ActiveFilterChips
+                  selectedParks={selectedParks}
+                  selectedTypes={selectedTypes}
+                  onRemovePark={removePark}
+                  onRemoveType={removeType}
+                  onClear={clearFilters}
+                />
+                <FiltersPanel idPrefix="desktop" showDate={viewMode === 'list'} {...filterPanelProps} />
+              </CardContent>
+            </Card>
+          )}
 
           <TabsContent value="list" className="mt-0 space-y-6">
+            <div id="results" className="scroll-mt-40 sm:scroll-mt-44" />
             {/* Type-aware, soonest-first ranked feed across the selected parks */}
             <SoonestOpenings
               report={report} dates={dates}
@@ -501,16 +588,16 @@ function App() {
 
             {/* Quick date jumper */}
             {datesWithAvailability.length > 0 && (
-              <div className="flex items-center gap-2 overflow-x-auto pb-1 -mx-1 px-1">
-                <span className="text-xs font-semibold text-gray-500 flex-shrink-0">Jump to:</span>
+              <div className="flex items-center gap-2 overflow-x-auto overscroll-x-contain pb-1 -mx-1 px-1">
+                <span className="flex-shrink-0 text-xs font-semibold text-gray-500">Jump to:</span>
                 {datesWithAvailability.slice(0, 14).map(date => (
                   <button
                     key={date}
                     onClick={() => setSelectedDate(date)}
-                    className={`flex-shrink-0 px-3 py-1.5 rounded-full text-xs font-medium transition-colors ${
+                    className={`flex-shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
                       date === selectedDate
                         ? 'bg-gray-900 text-white'
-                        : 'bg-white border border-gray-200 text-gray-700 hover:border-gray-300'}`}
+                        : 'border border-gray-200 bg-white text-gray-700 hover:border-gray-300'}`}
                   >
                     {formatDate(date, { month: 'short', day: 'numeric' })}
                   </button>
@@ -519,12 +606,12 @@ function App() {
             )}
 
             <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
-              <h2 className="text-lg font-semibold text-gray-900">
+              <h2 data-testid="results-heading" className="text-lg font-semibold text-gray-900">
                 {formatDate(selectedDate, { weekday: 'long', month: 'long', day: 'numeric' })}
               </h2>
               {totalAvailable === 0 && nextAvailableDate && nextAvailableDate !== selectedDate && (
                 <button onClick={() => setSelectedDate(nextAvailableDate)}
-                  className="text-sm font-medium text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-1">
+                  className="inline-flex items-center gap-1 text-sm font-medium text-emerald-700 hover:text-emerald-800">
                   Next opening {formatDate(nextAvailableDate, { month: 'short', day: 'numeric' })}
                   <ArrowRight className="h-3.5 w-3.5" />
                 </button>
@@ -532,14 +619,21 @@ function App() {
             </div>
 
             {groupedParks.length === 0 ? (
-              <Card className="border-0 shadow-sm">
+              <Card className="border-0 shadow-sm" data-testid="empty-state">
                 <CardContent className="p-12 text-center">
-                  <XCircle className="h-10 w-10 mx-auto mb-3 text-gray-300" />
-                  <p className="text-gray-600 font-medium">No sites match your filters</p>
-                  {showOnlyAvailable && (
-                    <button onClick={() => setShowOnlyAvailable(false)}
-                      className="mt-2 text-sm text-emerald-700 hover:underline">Show all sites</button>
-                  )}
+                  <XCircle className="mx-auto mb-3 h-10 w-10 text-gray-300" />
+                  <p className="font-medium text-gray-600">No sites match your filters</p>
+                  <div className="mt-2 flex items-center justify-center gap-4 text-sm">
+                    {showOnlyAvailable && (
+                      <button onClick={() => setShowOnlyAvailable(false)}
+                        className="text-emerald-700 hover:underline">Show all sites</button>
+                    )}
+                    {canClear && (
+                      <button onClick={clearFilters} className="text-emerald-700 hover:underline">
+                        Clear filters
+                      </button>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ) : (
@@ -555,10 +649,29 @@ function App() {
           </TabsContent>
 
           <TabsContent value="calendar" className="mt-0">
-            <CalendarView availabilityData={report.dates} selectedParks={selectedParks} selectedTypes={selectedTypes} onAlert={openAlert} metadata={metadata} />
+            <CalendarView
+              availabilityData={report.dates}
+              selectedParks={selectedParks}
+              selectedTypes={selectedTypes}
+              onAlert={openAlert}
+              metadata={metadata}
+            />
           </TabsContent>
         </Tabs>
       </div>
+
+      {!isDesktop && (
+        <FiltersSheet
+          open={filtersOpen}
+          onOpenChange={setFiltersOpen}
+          resultCount={baseFiltered.length}
+          onClear={clearFilters}
+          canClear={canClear}
+          onApply={applyFilters}
+        >
+          <FiltersPanel idPrefix="sheet" showDate={viewMode === 'list'} {...filterPanelProps} />
+        </FiltersSheet>
+      )}
 
       <AlertDialog
         open={alertOpen}
@@ -569,12 +682,12 @@ function App() {
         initialParks={selectedParks}
       />
 
-      <footer className="border-t border-gray-200 mt-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 text-center space-y-2">
+      <footer className="mt-12 border-t border-gray-200">
+        <div className="mx-auto max-w-6xl space-y-2 px-4 py-8 text-center sm:px-6 sm:py-10">
           <p className="text-sm text-gray-600">Data updates every few hours via automated scanning of reservation.pc.gc.ca</p>
           {lastUpdated && <p className="text-xs text-gray-500">Last updated: {lastUpdated}</p>}
           <p className="text-xs text-gray-500">
-            For inquiries: <a href="mailto:meetr1912@gmail.com" className="text-gray-900 hover:underline font-medium">meetr1912@gmail.com</a>
+            For inquiries: <a href="mailto:meetr1912@gmail.com" className="font-medium text-gray-900 hover:underline">meetr1912@gmail.com</a>
           </p>
         </div>
       </footer>

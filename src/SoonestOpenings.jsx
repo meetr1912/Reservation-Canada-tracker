@@ -180,7 +180,7 @@ function SoonestOpenings({
   const shown = showAll ? open : open.slice(0, TOP_CAP);
 
   return (
-    <Card className="border-0 shadow-sm">
+    <Card id="soonest-openings" className="scroll-mt-36 border-0 shadow-sm sm:scroll-mt-44">
       <CardContent className="p-4 sm:p-5">
         <div className="flex items-center justify-between gap-3 mb-1">
           <div className="flex items-center gap-2 min-w-0">
@@ -287,7 +287,7 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
   const { parkName, park, area, date, count, chips, verify } = row;
   const extraChips = chips.length - MAX_CHIPS;
   return (
-    <li className={`rounded-xl border overflow-hidden ${verify ? 'border-amber-200 bg-amber-50/30' : 'border-gray-200'}`}>
+    <li data-testid="soonest-row" data-park={parkName} className={`overflow-hidden rounded-xl border ${verify ? 'border-amber-200 bg-amber-50/30' : 'border-gray-200'}`}>
       <div className="flex items-stretch">
         <button
           onClick={() => onPick(parkName, date)}
@@ -327,12 +327,14 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
         </a>
       </div>
       {chips.length > 1 && (
-        <div className="flex gap-1 px-3 pb-2 overflow-x-auto">
+        <div className="flex gap-1 overflow-x-auto overscroll-x-contain px-3 pb-2">
           {chips.slice(0, MAX_CHIPS).map(c => (
             <button
               key={c.type}
+              type="button"
+              data-testid="type-chip"
               onClick={() => onPickType(parkName, c.type, c.date)}
-              className="flex-shrink-0 inline-flex items-center rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 px-2 py-0.5 text-[11px] font-medium hover:bg-emerald-100"
+              className="inline-flex flex-shrink-0 items-center rounded-full border border-emerald-100 bg-emerald-50 px-2 py-0.5 text-[11px] font-medium text-emerald-700 hover:bg-emerald-100"
             >
               {c.type} {c.count}
             </button>
@@ -349,7 +351,7 @@ function SoonestRow({ row, metadata, onPick, onPickType }) {
 function TailRow({ row, onPick, onPickType }) {
   const { parkName, park, area, reason } = row;
   return (
-    <li className="rounded-xl border border-gray-100 bg-gray-50/50 p-3">
+    <li data-testid="soonest-tail-row" className="rounded-xl border border-gray-100 bg-gray-50/50 p-3">
       <div className="flex items-center justify-between gap-2">
         <p className="text-sm font-medium text-gray-500 truncate">{area || park}</p>
         {reason.kind === 'later' && (

@@ -45,6 +45,25 @@ const DialogContent = React.forwardRef(({ className, children, ...props }, ref) 
 ))
 DialogContent.displayName = DialogPrimitive.Content.displayName
 
+// Bottom sheet variant: used on small screens for filters and day details.
+const SheetContent = React.forwardRef(({ className, children, ...props }, ref) => (
+  <DialogPortal>
+    <DialogOverlay className="bg-black/50" />
+    <DialogPrimitive.Content
+      ref={ref}
+      className={cn(
+        "fixed inset-x-0 bottom-0 z-50 flex max-h-[88dvh] w-full flex-col rounded-t-3xl border-t bg-background shadow-2xl data-[state=open]:animate-sheet-up",
+        className
+      )}
+      {...props}
+    >
+      <div className="mx-auto mt-2.5 h-1.5 w-10 flex-shrink-0 rounded-full bg-gray-200" aria-hidden="true" />
+      {children}
+    </DialogPrimitive.Content>
+  </DialogPortal>
+))
+SheetContent.displayName = DialogPrimitive.Content.displayName
+
 const DialogHeader = ({
   className,
   ...props
@@ -101,6 +120,7 @@ export {
   DialogClose,
   DialogTrigger,
   DialogContent,
+  SheetContent,
   DialogHeader,
   DialogFooter,
   DialogTitle,

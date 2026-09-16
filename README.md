@@ -69,6 +69,31 @@ file one; emails live only in their issue and stop when it's closed. This suits
 a small personal tracker rather than large-scale use.
 
 
+## 🧪 Testing
+
+### End-to-end (Playwright)
+
+Runs against the production build, served at the real GitHub Pages base path.
+
+```bash
+npm ci
+npx playwright install chromium   # one-time browser download
+npm run build
+npm run test:e2e                  # desktop, Pixel 7, iPhone 14 and iPad Mini projects
+npm run test:e2e:ui               # interactive debugging
+```
+
+Coverage includes: loading/error/retry states, multi-select park & type filters,
+search, the ranked "soonest openings" feed, the availability calendar, booking deep
+links, email-alert flows, and responsive guarantees (sticky bars, mobile filter
+sheet, no horizontal overflow, touch-target sizes).
+
+### Python (scraper/notifier)
+
+```bash
+pytest -q
+```
+
 ## License
 
 MIT License - feel free to use and modify as needed.

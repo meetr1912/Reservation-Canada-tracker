@@ -55,6 +55,7 @@ module.exports = {
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.4s ease-out',
+        'sheet-up': 'sheetUp 0.28s cubic-bezier(0.32, 0.72, 0, 1)',
       },
       keyframes: {
         fadeIn: {
@@ -65,8 +66,12 @@ module.exports = {
           '0%': { transform: 'translateY(10px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
+        sheetUp: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 }

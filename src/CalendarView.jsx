@@ -17,6 +17,11 @@ function intensityClass(count, max) {
   return 'bg-emerald-100 border-emerald-200 text-emerald-900';
 }
 
+function monthLabel(monthKey) {
+  const [year, month] = monthKey.split('-').map(Number);
+  return new Date(year, month - 1, 1).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+}
+
 function CalendarView({ availabilityData, selectedParks = [], selectedTypes = [], onAlert, metadata }) {
   const matchesFilters = useMemo(() => (s) =>
     s.status
@@ -48,13 +53,29 @@ function CalendarView({ availabilityData, selectedParks = [], selectedTypes = []
 
   return (
     <div className="space-y-6">
-      {/* Legend */}
-      <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
-        <span className="font-medium text-gray-600">Availability:</span>
-        <span className="flex items-center gap-1.5"><span className="w-4 h-4 rounded bg-white border border-gray-200" /> None</span>
-        <span className="flex items-center gap-1.5"><span className="w-4 h-4 rounded bg-emerald-100 border border-emerald-200" /> Low</span>
-        <span className="flex items-center gap-1.5"><span className="w-4 h-4 rounded bg-emerald-400" /> Medium</span>
-        <span className="flex items-center gap-1.5"><span className="w-4 h-4 rounded bg-emerald-600" /> High</span>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        {/* Month jump */}
+        <div className="flex items-center gap-2 overflow-x-auto overscroll-x-contain pb-1 -mx-1 px-1">
+          <span className="flex-shrink-0 text-xs font-semibold text-gray-500">Jump to:</span>
+          {months.map(monthKey => (
+            <button
+              key={monthKey}
+              type="button"
+              onClick={() => document.getElementById(`month-${monthKey}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              className="flex-shrink-0 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-gray-300"
+            >
+              {monthLabel(monthKey)}
+            </button>
+          ))}
+        </div>
+        {/* Legend */}
+        <div className="flex flex-wrap items-center gap-3 text-xs text-gray-500">
+          <span className="font-medium text-gray-600">Availability:</span>
+          <span className="flex items-center gap-1.5"><span className="h-4 w-4 rounded border border-gray-200 bg-white" /> None</span>
+          <span className="flex items-center gap-1.5"><span className="h-4 w-4 rounded border border-emerald-200 bg-emerald-100" /> Low</span>
+          <span className="flex items-center gap-1.5"><span className="h-4 w-4 rounded bg-emerald-400" /> Medium</span>
+          <span className="flex items-center gap-1.5"><span className="h-4 w-4 rounded bg-emerald-600" /> High</span>
+        </div>
       </div>
       {months.map(monthKey => (
         <MonthCalendar key={monthKey} monthKey={monthKey}
@@ -92,7 +113,7 @@ function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, m
 
   return (
     <>
-      <Card className="border-0 shadow-sm">
+      <Card id={`month-${monthKey}`} className="scroll-mt-36 border-0 shadow-sm sm:scroll-mt-56">
         <CardHeader className="pb-3">
           <CardTitle className="text-xl font-semibold">{monthName}</CardTitle>
         </CardHeader>
@@ -113,9 +134,12 @@ function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, m
                   key={dateStr}
                   onClick={() => handleClick(dateStr)}
                   disabled={!has}
-                  className={`relative aspect-square rounded-lg sm:rounded-xl border flex flex-col items-center justify-center transition-all
+                  data-testid="calendar-day"
+                  data-date={dateStr}
+                  aria-label={`${formatDate(dateStr, { weekday: 'long', month: 'long', day: 'numeric' })}: ${has ? `${count} available` : 'no availability'}`}
+                  className={`relative flex aspect-square flex-col items-center justify-center rounded-lg border transition-all sm:rounded-xl
                     ${intensityClass(count, maxCount)}
-                    ${has ? 'hover:scale-105 hover:shadow-md cursor-pointer' : 'cursor-default'}
+                    ${has ? 'cursor-pointer hover:scale-105 hover:shadow-md' : 'cursor-default'}
                     ${isToday ? 'ring-2 ring-gray-900 ring-offset-1' : ''}`}
                 >
                   <span className="text-xs sm:text-base font-semibold leading-none">
@@ -130,7 +154,10 @@ function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, m
       </Card>
 
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+        <DialogContent
+          data-testid="day-dialog"
+          className="max-h-[80vh] max-w-2xl overflow-y-auto max-sm:left-0 max-sm:top-auto max-sm:bottom-0 max-sm:max-h-[88dvh] max-sm:w-full max-sm:max-w-none max-sm:translate-x-0 max-sm:translate-y-0 max-sm:rounded-b-none max-sm:rounded-t-3xl"
+        >
           <DialogHeader>
             <DialogTitle className="text-xl font-semibold">
               {selectedSites.length} site{selectedSites.length === 1 ? '' : 's'} available
@@ -150,11 +177,11 @@ function MonthCalendar({ monthKey, availabilityData, matchesFilters, countFor, m
               </Button>
             </div>
           )}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+          <div className="mt-4 grid grid-cols-1 gap-3 pb-[env(safe-area-inset-bottom)] sm:grid-cols-2">
             {selectedSites.map((site, i) => (
-              <div key={i} className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
-                <Badge className="bg-emerald-600 text-white border-transparent mb-2">
-                  <CheckCircle2 className="h-3 w-3 mr-1" /> Available
+              <div key={i} data-testid="calendar-site" className="rounded-xl border border-emerald-200 bg-emerald-50/40 p-4">
+                <Badge className="mb-2 border-transparent bg-emerald-600 text-white">
+                  <CheckCircle2 className="mr-1 h-3 w-3" /> Available
                 </Badge>
                 <p className="font-semibold text-gray-900">{prettyUnit(site.ResourceName, site.Type)}</p>
                 <p className="text-xs text-gray-600 flex items-center gap-1 mt-0.5">
