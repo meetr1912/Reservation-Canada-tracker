@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-17T02:13:10Z",
+    "generated_at": "2026-09-17T09:07:03Z",
     "start_date": "2026-09-17",
     "end_date": "2027-03-15",
     "days": 180,
@@ -386,7 +386,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 85166,
+    "total_available_slots": 85167,
     "available_days": 180,
     "available_units": 452
   },
@@ -885,7 +885,7 @@
     },
     {
       "date": "2026-09-17",
-      "available_slots": 85166,
+      "available_slots": 85167,
       "available_units": 452,
       "available_days": 180
     }
@@ -6807,7 +6807,7 @@
         "PageTitle": null,
         "ResourceName": "A28",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kootenay - Redstreak",
@@ -7367,7 +7367,7 @@
         "PageTitle": null,
         "ResourceName": "10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -7556,7 +7556,7 @@
         "PageTitle": null,
         "ResourceName": "R4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -11233,7 +11233,7 @@
         "PageTitle": null,
         "ResourceName": "10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -11422,7 +11422,7 @@
         "PageTitle": null,
         "ResourceName": "R4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -12796,7 +12796,7 @@
         "PageTitle": null,
         "ResourceName": "D10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -13223,7 +13223,7 @@
         "PageTitle": null,
         "ResourceName": "O9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -14231,7 +14231,7 @@
         "PageTitle": null,
         "ResourceName": "5G",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Jasper - Whistlers",
@@ -15099,7 +15099,7 @@
         "PageTitle": null,
         "ResourceName": "10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -16767,7 +16767,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -20633,7 +20633,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -28365,7 +28365,7 @@
         "PageTitle": null,
         "ResourceName": "D5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -31375,7 +31375,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -55721,7 +55721,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -62191,7 +62191,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -65546,7 +65546,7 @@
         "PageTitle": null,
         "ResourceName": "R4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -66057,7 +66057,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -69398,7 +69398,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -69923,7 +69923,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -86642,7 +86642,7 @@
         "PageTitle": null,
         "ResourceName": "O47",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -405341,7 +405341,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -409207,7 +409207,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -463338,7 +463338,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -467204,7 +467204,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -471070,7 +471070,7 @@
         "PageTitle": null,
         "ResourceName": "R-F5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
