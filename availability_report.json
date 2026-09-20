@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-20T15:07:48Z",
+    "generated_at": "2026-09-20T18:29:22Z",
     "start_date": "2026-09-20",
     "end_date": "2027-03-18",
     "days": 180,
@@ -388,7 +388,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 85963,
+    "total_available_slots": 85974,
     "available_days": 180,
     "available_units": 452
   },
@@ -905,7 +905,7 @@
     },
     {
       "date": "2026-09-20",
-      "available_slots": 85963,
+      "available_slots": 85974,
       "available_units": 452,
       "available_days": 180
     }
@@ -3724,7 +3724,7 @@
         "PageTitle": null,
         "ResourceName": "R6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -3927,7 +3927,7 @@
         "PageTitle": null,
         "ResourceName": "68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -4508,7 +4508,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -6225,7 +6225,7 @@
         "PageTitle": null,
         "ResourceName": "C1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -6582,7 +6582,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -7793,7 +7793,7 @@
         "PageTitle": null,
         "ResourceName": "68",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pukaskwa",
@@ -8374,7 +8374,7 @@
         "PageTitle": null,
         "ResourceName": "O189",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -9426,7 +9426,7 @@
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -10091,7 +10091,7 @@
         "PageTitle": null,
         "ResourceName": "C1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -12564,7 +12564,7 @@
         "PageTitle": null,
         "ResourceName": "53",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -13292,7 +13292,7 @@
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -13957,7 +13957,7 @@
         "PageTitle": null,
         "ResourceName": "C1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -17823,7 +17823,7 @@
         "PageTitle": null,
         "ResourceName": "C1",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -19489,7 +19489,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -22368,7 +22368,7 @@
         "PageTitle": null,
         "ResourceName": "O50",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -22599,7 +22599,7 @@
         "PageTitle": null,
         "ResourceName": "R-F12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -22844,7 +22844,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -23355,7 +23355,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -25898,7 +25898,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -26234,7 +26234,7 @@
         "PageTitle": null,
         "ResourceName": "O50",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -26465,7 +26465,7 @@
         "PageTitle": null,
         "ResourceName": "R-F12",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -26710,7 +26710,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -27165,7 +27165,7 @@
         "PageTitle": null,
         "ResourceName": "BE2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -27221,7 +27221,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -27858,7 +27858,7 @@
         "PageTitle": null,
         "ResourceName": "MT-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -29351,7 +29351,7 @@
         "PageTitle": null,
         "ResourceName": "FV23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -31724,7 +31724,7 @@
         "PageTitle": null,
         "ResourceName": "MT-B",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -32174,7 +32174,7 @@
         "PageTitle": null,
         "ResourceName": "D14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -33217,7 +33217,7 @@
         "PageTitle": null,
         "ResourceName": "FV23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -41467,7 +41467,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -45333,7 +45333,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -47911,7 +47911,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -47939,7 +47939,7 @@
         "PageTitle": null,
         "ResourceName": "O35",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -51777,7 +51777,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -51833,7 +51833,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -55699,7 +55699,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -56931,7 +56931,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -57232,7 +57232,7 @@
         "PageTitle": null,
         "ResourceName": "O76",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -60797,7 +60797,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -61098,7 +61098,7 @@
         "PageTitle": null,
         "ResourceName": "O76",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -67199,7 +67199,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -71065,7 +71065,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -84266,7 +84266,7 @@
         "PageTitle": null,
         "ResourceName": "O71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -130427,7 +130427,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -134293,7 +134293,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
