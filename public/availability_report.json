@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-23T02:14:58Z",
+    "generated_at": "2026-09-23T09:01:25Z",
     "start_date": "2026-09-23",
     "end_date": "2027-03-21",
     "days": 180,
@@ -390,7 +390,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 86585,
+    "total_available_slots": 86591,
     "available_days": 180,
     "available_units": 452
   },
@@ -925,7 +925,7 @@
     },
     {
       "date": "2026-09-23",
-      "available_slots": 86585,
+      "available_slots": 86591,
       "available_units": 452,
       "available_days": 180
     }
@@ -6189,7 +6189,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -10622,14 +10622,14 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -14488,14 +14488,14 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kluane",
@@ -17010,7 +17010,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -24525,7 +24525,7 @@
         "PageTitle": null,
         "ResourceName": "D3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Village 2",
@@ -147087,7 +147087,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
