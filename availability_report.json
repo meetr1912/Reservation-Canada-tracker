@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-24T02:02:18Z",
+    "generated_at": "2026-09-24T08:57:16Z",
     "start_date": "2026-09-24",
     "end_date": "2027-03-22",
     "days": 180,
@@ -389,7 +389,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 86751,
+    "total_available_slots": 86755,
     "available_days": 180,
     "available_units": 452
   },
@@ -930,7 +930,7 @@
     },
     {
       "date": "2026-09-24",
-      "available_slots": 86751,
+      "available_slots": 86755,
       "available_units": 452,
       "available_days": 180
     }
@@ -5529,7 +5529,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -6082,7 +6082,7 @@
         "PageTitle": null,
         "ResourceName": "CS4",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -7181,7 +7181,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -9395,7 +9395,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -9948,7 +9948,7 @@
         "PageTitle": null,
         "ResourceName": "CS4",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -11047,7 +11047,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -12974,7 +12974,7 @@
         "PageTitle": null,
         "ResourceName": "D9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -13093,7 +13093,7 @@
         "PageTitle": null,
         "ResourceName": "O13",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -15319,7 +15319,7 @@
         "PageTitle": null,
         "ResourceName": "R2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -15963,7 +15963,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 2",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -34670,7 +34670,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -38536,7 +38536,7 @@
         "PageTitle": null,
         "ResourceName": "R5",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -38781,7 +38781,7 @@
         "PageTitle": null,
         "ResourceName": "BE1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -382498,7 +382498,7 @@
         "PageTitle": null,
         "ResourceName": "21",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -386364,7 +386364,7 @@
         "PageTitle": null,
         "ResourceName": "21",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -390230,7 +390230,7 @@
         "PageTitle": null,
         "ResourceName": "21",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
