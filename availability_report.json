@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-27T16:03:17Z",
+    "generated_at": "2026-09-27T19:30:52Z",
     "start_date": "2026-09-27",
     "end_date": "2027-03-25",
     "days": 180,
@@ -390,7 +390,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 87660,
+    "total_available_slots": 87655,
     "available_days": 180,
     "available_units": 451
   },
@@ -949,7 +949,7 @@
     },
     {
       "date": "2026-09-27",
-      "available_slots": 87660,
+      "available_slots": 87655,
       "available_units": 451,
       "available_days": 180
     }
@@ -1626,7 +1626,7 @@
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -1647,7 +1647,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -2837,7 +2837,7 @@
         "PageTitle": null,
         "ResourceName": "401",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -3992,7 +3992,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -4384,7 +4384,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 2",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -6703,7 +6703,7 @@
         "PageTitle": null,
         "ResourceName": "401",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -8250,7 +8250,7 @@
         "PageTitle": null,
         "ResourceName": "Cabin 2",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -8586,7 +8586,7 @@
         "PageTitle": null,
         "ResourceName": "MT-D",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -9813,7 +9813,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -10569,7 +10569,7 @@
         "PageTitle": null,
         "ResourceName": "401",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -12580,7 +12580,7 @@
         "PageTitle": null,
         "ResourceName": "48",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Banff - Two Jack Lakeside",
@@ -13161,7 +13161,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -20963,7 +20963,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -20991,7 +20991,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -22412,7 +22412,7 @@
         "PageTitle": null,
         "ResourceName": "O50",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -24829,7 +24829,7 @@
         "PageTitle": null,
         "ResourceName": "O44",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -24857,7 +24857,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -26446,7 +26446,7 @@
         "PageTitle": null,
         "ResourceName": "M-O4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -26740,7 +26740,7 @@
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -28681,7 +28681,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -28765,7 +28765,7 @@
         "PageTitle": null,
         "ResourceName": "101",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -30312,7 +30312,7 @@
         "PageTitle": null,
         "ResourceName": "M-O4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -32631,7 +32631,7 @@
         "PageTitle": null,
         "ResourceName": "101",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -32995,7 +32995,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -34178,7 +34178,7 @@
         "PageTitle": null,
         "ResourceName": "M-O4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -92210,7 +92210,7 @@
         "PageTitle": null,
         "ResourceName": "R-F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -96076,7 +96076,7 @@
         "PageTitle": null,
         "ResourceName": "R-F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -102569,7 +102569,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -103402,7 +103402,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -107268,7 +107268,7 @@
         "PageTitle": null,
         "ResourceName": "408",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -612762,7 +612762,7 @@
         "PageTitle": null,
         "ResourceName": "SH01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -616628,7 +616628,7 @@
         "PageTitle": null,
         "ResourceName": "SH01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -620494,7 +620494,7 @@
         "PageTitle": null,
         "ResourceName": "SH01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
