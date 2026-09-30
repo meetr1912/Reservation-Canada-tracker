@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-09-30T02:50:24Z",
+    "generated_at": "2026-09-30T10:11:43Z",
     "start_date": "2026-09-30",
     "end_date": "2027-03-28",
     "days": 180,
@@ -397,7 +397,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 88213,
+    "total_available_slots": 88218,
     "available_days": 180,
     "available_units": 449
   },
@@ -974,7 +974,7 @@
     },
     {
       "date": "2026-09-30",
-      "available_slots": 88213,
+      "available_slots": 88218,
       "available_units": 449,
       "available_days": 180
     }
@@ -10496,7 +10496,7 @@
         "PageTitle": null,
         "ResourceName": "C2",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -16772,7 +16772,7 @@
         "PageTitle": null,
         "ResourceName": "D13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -25239,7 +25239,7 @@
         "PageTitle": null,
         "ResourceName": "O289",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -44149,7 +44149,7 @@
         "PageTitle": null,
         "ResourceName": "O36",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -50409,7 +50409,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -54275,7 +54275,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -58141,7 +58141,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
