@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-01T10:39:46Z",
+    "generated_at": "2026-10-01T17:46:02Z",
     "start_date": "2026-10-01",
     "end_date": "2027-03-29",
     "days": 180,
@@ -389,7 +389,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 87319,
+    "total_available_slots": 87316,
     "available_days": 180,
     "available_units": 449
   },
@@ -972,7 +972,7 @@
     },
     {
       "date": "2026-10-01",
-      "available_slots": 87319,
+      "available_slots": 87316,
       "available_units": 449,
       "available_days": 180
     }
@@ -2363,7 +2363,7 @@
         "PageTitle": null,
         "ResourceName": "FV24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2419,7 +2419,7 @@
         "PageTitle": null,
         "ResourceName": "RC32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Gros Morne - Berry Hill",
@@ -6103,7 +6103,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -9927,7 +9927,7 @@
         "PageTitle": null,
         "ResourceName": "O1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Georgian Bay Islands - Cedar Spring",
@@ -10865,7 +10865,7 @@
         "PageTitle": null,
         "ResourceName": "O98",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -12433,7 +12433,7 @@
         "PageTitle": null,
         "ResourceName": "MOA1",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -15263,7 +15263,7 @@
         "PageTitle": null,
         "ResourceName": "R6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -19990,14 +19990,14 @@
         "PageTitle": null,
         "ResourceName": "MT-C",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
         "PageTitle": null,
         "ResourceName": "MT-D",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -22386,7 +22386,7 @@
         "PageTitle": null,
         "ResourceName": "M-O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -23408,7 +23408,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -26210,7 +26210,7 @@
         "PageTitle": null,
         "ResourceName": "M-O3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Mistagance",
@@ -27001,14 +27001,14 @@
         "PageTitle": null,
         "ResourceName": "UB1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
         "PageTitle": null,
         "ResourceName": "UB2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rideau Canal",
@@ -31392,7 +31392,7 @@
         "PageTitle": null,
         "ResourceName": "O85",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -32941,7 +32941,7 @@
         "PageTitle": null,
         "ResourceName": "FV22",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Frenchman Valley/West Block",
@@ -33746,7 +33746,7 @@
         "PageTitle": null,
         "ResourceName": "O73",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -42864,7 +42864,7 @@
         "PageTitle": null,
         "ResourceName": "O85",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Terra Nova - Newman Sound",
@@ -43727,7 +43727,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -66601,7 +66601,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -84046,7 +84046,7 @@
         "PageTitle": null,
         "ResourceName": "9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -86211,7 +86211,7 @@
         "PageTitle": null,
         "ResourceName": "Y5",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -90035,7 +90035,7 @@
         "PageTitle": null,
         "ResourceName": "Y5",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -408757,7 +408757,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
@@ -412581,7 +412581,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
