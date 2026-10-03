@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-03T02:44:59Z",
+    "generated_at": "2026-10-03T09:37:32Z",
     "start_date": "2026-10-03",
     "end_date": "2027-03-31",
     "days": 180,
@@ -389,7 +389,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 87755,
+    "total_available_slots": 87752,
     "available_days": 180,
     "available_units": 461
   },
@@ -984,7 +984,7 @@
     },
     {
       "date": "2026-10-03",
-      "available_slots": 87755,
+      "available_slots": 87752,
       "available_units": 461,
       "available_days": 180
     }
@@ -7214,7 +7214,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -11038,7 +11038,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -34164,14 +34164,14 @@
         "PageTitle": null,
         "ResourceName": "B2",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
         "PageTitle": null,
         "ResourceName": "B3",
         "Type": "MicrOcube",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Pacific Rim - Green Point",
@@ -225385,7 +225385,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
