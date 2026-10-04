@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-04T03:16:45Z",
+    "generated_at": "2026-10-04T10:25:35Z",
     "start_date": "2026-10-04",
     "end_date": "2027-04-01",
     "days": 180,
@@ -389,7 +389,7 @@
       "Terra Nova - Malady Head"
     ],
     "errors": [],
-    "total_available_slots": 88044,
+    "total_available_slots": 88046,
     "available_days": 180,
     "available_units": 464
   },
@@ -990,7 +990,7 @@
     },
     {
       "date": "2026-10-04",
-      "available_slots": 88044,
+      "available_slots": 88046,
       "available_units": 464,
       "available_days": 180
     }
@@ -1702,7 +1702,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -10449,7 +10449,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -11681,7 +11681,7 @@
         "PageTitle": null,
         "ResourceName": "71",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Pukaskwa",
@@ -14273,7 +14273,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18090,7 +18090,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -34023,7 +34023,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
@@ -37847,7 +37847,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
@@ -184097,7 +184097,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -187921,7 +187921,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -321698,7 +321698,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
