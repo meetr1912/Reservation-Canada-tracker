@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-06T17:38:55Z",
+    "generated_at": "2026-10-06T23:33:13Z",
     "start_date": "2026-10-06",
     "end_date": "2027-04-03",
     "days": 180,
@@ -391,7 +391,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 88456,
+    "total_available_slots": 88453,
     "available_days": 180,
     "available_units": 464
   },
@@ -1004,7 +1004,7 @@
     },
     {
       "date": "2026-10-06",
-      "available_slots": 88456,
+      "available_slots": 88453,
       "available_units": 464,
       "available_days": 180
     }
@@ -1576,7 +1576,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -1674,14 +1674,14 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
         "PageTitle": null,
         "ResourceName": "O43",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -1800,7 +1800,7 @@
         "PageTitle": null,
         "ResourceName": "90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -2402,7 +2402,7 @@
         "PageTitle": null,
         "ResourceName": "RC25",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -2430,7 +2430,7 @@
         "PageTitle": null,
         "ResourceName": "RC29",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -3585,7 +3585,7 @@
         "PageTitle": null,
         "ResourceName": "B1",
         "Type": "MicrOcube",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Mount Revelstoke - Snowforest",
@@ -5498,7 +5498,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -5526,7 +5526,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -6268,7 +6268,7 @@
         "PageTitle": null,
         "ResourceName": "RC31",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -9322,7 +9322,7 @@
         "PageTitle": null,
         "ResourceName": "32",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Mkwesaqtuk/Cap-Rouge",
@@ -9770,7 +9770,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -9805,7 +9805,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -10449,7 +10449,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -13209,7 +13209,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -13265,7 +13265,7 @@
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -13594,7 +13594,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -14406,7 +14406,7 @@
         "PageTitle": null,
         "ResourceName": "407",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14602,7 +14602,7 @@
         "PageTitle": null,
         "ResourceName": "O49",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -15225,7 +15225,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -17033,7 +17033,7 @@
         "PageTitle": null,
         "ResourceName": "O41",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -17089,7 +17089,7 @@
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -17418,7 +17418,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -18426,7 +18426,7 @@
         "PageTitle": null,
         "ResourceName": "O49",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kouchibouguac - South",
@@ -19049,7 +19049,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -19966,7 +19966,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -20001,7 +20001,7 @@
         "PageTitle": null,
         "ResourceName": "MC-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -20913,7 +20913,7 @@
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -21102,7 +21102,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -21242,7 +21242,7 @@
         "PageTitle": null,
         "ResourceName": "O45",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -21550,7 +21550,7 @@
         "PageTitle": null,
         "ResourceName": "RC29",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Grasslands - Rock Creek/East Block",
@@ -22873,7 +22873,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -23790,7 +23790,7 @@
         "PageTitle": null,
         "ResourceName": "O87",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Thousand Islands",
@@ -23825,7 +23825,7 @@
         "PageTitle": null,
         "ResourceName": "MC-C",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Thousand Islands",
@@ -26389,7 +26389,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
@@ -30213,7 +30213,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Lachine Canal",
@@ -36034,7 +36034,7 @@
         "PageTitle": null,
         "ResourceName": "O89",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -37224,7 +37224,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -149436,7 +149436,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -153260,7 +153260,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -210116,7 +210116,7 @@
         "PageTitle": null,
         "ResourceName": "10",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -282912,7 +282912,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -286736,7 +286736,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -363818,7 +363818,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -367642,7 +367642,7 @@
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
