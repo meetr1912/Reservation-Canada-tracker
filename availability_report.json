@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-10T10:19:22Z",
+    "generated_at": "2026-10-10T16:36:56Z",
     "start_date": "2026-10-10",
     "end_date": "2027-04-07",
     "days": 180,
@@ -391,7 +391,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 89376,
+    "total_available_slots": 89361,
     "available_days": 180,
     "available_units": 464
   },
@@ -1028,7 +1028,7 @@
     },
     {
       "date": "2026-10-10",
-      "available_slots": 89376,
+      "available_slots": 89361,
       "available_units": 464,
       "available_days": 180
     }
@@ -1810,14 +1810,14 @@
         "PageTitle": null,
         "ResourceName": "81",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -4764,7 +4764,7 @@
         "PageTitle": null,
         "ResourceName": "MT-E",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Trent-Severn Waterway",
@@ -5564,7 +5564,7 @@
         "PageTitle": null,
         "ResourceName": "O11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Elk Island",
@@ -5634,14 +5634,14 @@
         "PageTitle": null,
         "ResourceName": "81",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
         "PageTitle": null,
         "ResourceName": "88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Forillon - Des-Rosiers",
@@ -7223,7 +7223,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -10599,7 +10599,7 @@
         "PageTitle": null,
         "ResourceName": "406",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -10648,7 +10648,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -11047,7 +11047,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -13121,7 +13121,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -24621,7 +24621,7 @@
         "PageTitle": null,
         "ResourceName": "O36",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -25097,7 +25097,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -28760,7 +28760,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -28921,7 +28921,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -50246,7 +50246,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -454869,7 +454869,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -454946,7 +454946,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -458693,7 +458693,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -458770,7 +458770,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -481791,7 +481791,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -485615,7 +485615,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -489439,7 +489439,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -561766,7 +561766,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -565590,7 +565590,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
