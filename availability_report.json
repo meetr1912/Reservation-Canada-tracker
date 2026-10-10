@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-10T03:10:52Z",
+    "generated_at": "2026-10-10T10:19:22Z",
     "start_date": "2026-10-10",
     "end_date": "2027-04-07",
     "days": 180,
@@ -391,7 +391,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 89375,
+    "total_available_slots": 89376,
     "available_days": 180,
     "available_units": 464
   },
@@ -1028,7 +1028,7 @@
     },
     {
       "date": "2026-10-10",
-      "available_slots": 89375,
+      "available_slots": 89376,
       "available_units": 464,
       "available_days": 180
     }
@@ -1747,7 +1747,7 @@
         "PageTitle": null,
         "ResourceName": "O20",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Elk Island",
@@ -9255,7 +9255,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -13079,7 +13079,7 @@
         "PageTitle": null,
         "ResourceName": "O32",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -13107,7 +13107,7 @@
         "PageTitle": null,
         "ResourceName": "O88",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -16931,7 +16931,7 @@
         "PageTitle": null,
         "ResourceName": "O88",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
