@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-11T02:40:57Z",
+    "generated_at": "2026-10-11T10:31:13Z",
     "start_date": "2026-10-11",
     "end_date": "2027-04-08",
     "days": 180,
@@ -391,7 +391,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 89587,
+    "total_available_slots": 89584,
     "available_days": 180,
     "available_units": 464
   },
@@ -1034,7 +1034,7 @@
     },
     {
       "date": "2026-10-11",
-      "available_slots": 89587,
+      "available_slots": 89584,
       "available_units": 464,
       "available_days": 180
     }
@@ -210139,7 +210139,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -210216,7 +210216,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -213963,7 +213963,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -214040,7 +214040,7 @@
         "PageTitle": null,
         "ResourceName": "2",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -286759,7 +286759,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -290583,7 +290583,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -294407,7 +294407,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -504391,7 +504391,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -508215,7 +508215,7 @@
         "PageTitle": null,
         "ResourceName": "R-F7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
