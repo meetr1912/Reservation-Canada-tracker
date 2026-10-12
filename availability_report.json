@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-12T03:05:49Z",
+    "generated_at": "2026-10-12T11:32:58Z",
     "start_date": "2026-10-12",
     "end_date": "2027-04-09",
     "days": 180,
@@ -403,7 +403,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 89884,
+    "total_available_slots": 89877,
     "available_days": 180,
     "available_units": 464
   },
@@ -1052,7 +1052,7 @@
     },
     {
       "date": "2026-10-12",
-      "available_slots": 89884,
+      "available_slots": 89877,
       "available_units": 464,
       "available_days": 180
     }
@@ -18173,7 +18173,7 @@
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -21997,7 +21997,7 @@
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -53506,7 +53506,7 @@
         "PageTitle": null,
         "ResourceName": "5",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -101629,7 +101629,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -105453,7 +105453,7 @@
         "PageTitle": null,
         "ResourceName": "O74",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -473789,7 +473789,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -477613,7 +477613,7 @@
         "PageTitle": null,
         "ResourceName": "R-F3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
