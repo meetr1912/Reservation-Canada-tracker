@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-13T04:20:15Z",
+    "generated_at": "2026-10-13T15:30:15Z",
     "start_date": "2026-10-13",
     "end_date": "2027-04-10",
     "days": 180,
@@ -407,7 +407,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90028,
+    "total_available_slots": 90023,
     "available_days": 180,
     "available_units": 464
   },
@@ -1062,7 +1062,7 @@
     },
     {
       "date": "2026-10-13",
-      "available_slots": 90028,
+      "available_slots": 90023,
       "available_units": 464,
       "available_days": 180
     }
@@ -10654,7 +10654,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14324,7 +14324,7 @@
         "PageTitle": null,
         "ResourceName": "C2",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14415,7 +14415,7 @@
         "PageTitle": null,
         "ResourceName": "336",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14429,7 +14429,7 @@
         "PageTitle": null,
         "ResourceName": "402",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18239,7 +18239,7 @@
         "PageTitle": null,
         "ResourceName": "336",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -128225,7 +128225,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -132049,7 +132049,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -135873,7 +135873,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -279146,7 +279146,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -282970,7 +282970,7 @@
         "PageTitle": null,
         "ResourceName": "7",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -336121,7 +336121,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -339945,7 +339945,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -343769,7 +343769,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -362889,7 +362889,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -366713,7 +366713,7 @@
         "PageTitle": null,
         "ResourceName": "R-F13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
