@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-16T19:13:43Z",
+    "generated_at": "2026-10-16T22:25:57Z",
     "start_date": "2026-10-16",
     "end_date": "2027-04-13",
     "days": 180,
@@ -410,7 +410,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90296,
+    "total_available_slots": 90292,
     "available_days": 180,
     "available_units": 464
   },
@@ -1083,7 +1083,7 @@
     },
     {
       "date": "2026-10-16",
-      "available_slots": 90296,
+      "available_slots": 90292,
       "available_units": 464,
       "available_days": 180
     }
@@ -5479,7 +5479,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -5514,7 +5514,7 @@
         "PageTitle": null,
         "ResourceName": "O88",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -20740,7 +20740,7 @@
         "PageTitle": null,
         "ResourceName": "O185",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Broad Cove",
@@ -21993,7 +21993,7 @@
         "PageTitle": null,
         "ResourceName": "C2",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
