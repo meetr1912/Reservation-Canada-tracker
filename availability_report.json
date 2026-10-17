@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-17T18:09:02Z",
+    "generated_at": "2026-10-17T21:57:30Z",
     "start_date": "2026-10-17",
     "end_date": "2027-04-14",
     "days": 180,
@@ -2214,7 +2214,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -9309,7 +9309,7 @@
         "PageTitle": null,
         "ResourceName": "O14",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -11094,7 +11094,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -14918,7 +14918,7 @@
         "PageTitle": null,
         "ResourceName": "R-F11",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -20830,7 +20830,7 @@
         "PageTitle": null,
         "ResourceName": "O90",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -38135,7 +38135,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
