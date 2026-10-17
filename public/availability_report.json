@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-17T01:58:55Z",
+    "generated_at": "2026-10-17T08:14:08Z",
     "start_date": "2026-10-17",
     "end_date": "2027-04-14",
     "days": 180,
@@ -410,7 +410,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90404,
+    "total_available_slots": 90405,
     "available_days": 180,
     "available_units": 464
   },
@@ -1089,7 +1089,7 @@
     },
     {
       "date": "2026-10-17",
-      "available_slots": 90404,
+      "available_slots": 90405,
       "available_units": 464,
       "available_days": 180
     }
@@ -8033,7 +8033,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
