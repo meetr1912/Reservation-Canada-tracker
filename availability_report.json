@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-18T15:07:39Z",
+    "generated_at": "2026-10-18T18:27:25Z",
     "start_date": "2026-10-18",
     "end_date": "2027-04-15",
     "days": 180,
@@ -410,7 +410,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90478,
+    "total_available_slots": 90469,
     "available_days": 180,
     "available_units": 464
   },
@@ -1095,7 +1095,7 @@
     },
     {
       "date": "2026-10-18",
-      "available_slots": 90478,
+      "available_slots": 90469,
       "available_units": 464,
       "available_days": 180
     }
@@ -6044,7 +6044,7 @@
         "PageTitle": null,
         "ResourceName": "O46",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -156678,7 +156678,7 @@
         "PageTitle": null,
         "ResourceName": "11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -160502,7 +160502,7 @@
         "PageTitle": null,
         "ResourceName": "11",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -425065,7 +425065,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -428889,7 +428889,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -565986,7 +565986,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -569810,7 +569810,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -573634,7 +573634,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -577458,7 +577458,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
