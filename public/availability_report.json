@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-18T08:31:05Z",
+    "generated_at": "2026-10-18T15:07:39Z",
     "start_date": "2026-10-18",
     "end_date": "2027-04-15",
     "days": 180,
@@ -410,7 +410,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90481,
+    "total_available_slots": 90478,
     "available_days": 180,
     "available_units": 464
   },
@@ -1095,7 +1095,7 @@
     },
     {
       "date": "2026-10-18",
-      "available_slots": 90481,
+      "available_slots": 90478,
       "available_units": 464,
       "available_days": 180
     }
@@ -11121,7 +11121,7 @@
         "PageTitle": null,
         "ResourceName": "R-F2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -14945,7 +14945,7 @@
         "PageTitle": null,
         "ResourceName": "R-F2",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -185737,7 +185737,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -210340,7 +210340,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -214164,7 +214164,7 @@
         "PageTitle": null,
         "ResourceName": "6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -425051,7 +425051,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -428875,7 +428875,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
