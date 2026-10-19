@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-19T02:14:35Z",
+    "generated_at": "2026-10-19T09:31:43Z",
     "start_date": "2026-10-19",
     "end_date": "2027-04-16",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90550,
+    "total_available_slots": 90548,
     "available_days": 180,
     "available_units": 464
   },
@@ -1102,7 +1102,7 @@
     },
     {
       "date": "2026-10-19",
-      "available_slots": 90550,
+      "available_slots": 90548,
       "available_units": 464,
       "available_days": 180
     }
@@ -19056,7 +19056,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -19077,7 +19077,7 @@
         "PageTitle": null,
         "ResourceName": "19",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -22880,7 +22880,7 @@
         "PageTitle": null,
         "ResourceName": "16",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -22901,7 +22901,7 @@
         "PageTitle": null,
         "ResourceName": "19",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -366732,7 +366732,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -370556,7 +370556,7 @@
         "PageTitle": null,
         "ResourceName": "R-F10",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -466926,7 +466926,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -470750,7 +470750,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -526136,7 +526136,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -529960,7 +529960,7 @@
         "PageTitle": null,
         "ResourceName": "O72",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
