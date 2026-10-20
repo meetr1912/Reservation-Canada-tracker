@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-20T02:31:49Z",
+    "generated_at": "2026-10-20T09:05:42Z",
     "start_date": "2026-10-20",
     "end_date": "2027-04-17",
     "days": 180,
@@ -14419,7 +14419,7 @@
         "PageTitle": null,
         "ResourceName": "328",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -15245,7 +15245,7 @@
         "PageTitle": null,
         "ResourceName": "17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -18194,7 +18194,7 @@
         "PageTitle": null,
         "ResourceName": "C2",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18243,7 +18243,7 @@
         "PageTitle": null,
         "ResourceName": "328",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -19069,7 +19069,7 @@
         "PageTitle": null,
         "ResourceName": "17",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -573647,7 +573647,7 @@
         "PageTitle": null,
         "ResourceName": "8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -577422,7 +577422,7 @@
         "PageTitle": null,
         "ResourceName": "23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -581246,7 +581246,7 @@
         "PageTitle": null,
         "ResourceName": "23",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
