@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-20T19:50:25Z",
+    "generated_at": "2026-10-20T22:53:34Z",
     "start_date": "2026-10-20",
     "end_date": "2027-04-17",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90634,
+    "total_available_slots": 90632,
     "available_days": 180,
     "available_units": 464
   },
@@ -1108,7 +1108,7 @@
     },
     {
       "date": "2026-10-20",
-      "available_slots": 90634,
+      "available_slots": 90632,
       "available_units": 464,
       "available_days": 180
     }
@@ -3017,7 +3017,7 @@
         "PageTitle": null,
         "ResourceName": "404",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -3073,7 +3073,7 @@
         "PageTitle": null,
         "ResourceName": "504",
         "Type": "Ôasis",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14398,14 +14398,14 @@
         "PageTitle": null,
         "ResourceName": "322",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -14461,7 +14461,7 @@
         "PageTitle": null,
         "ResourceName": "336",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18229,7 +18229,7 @@
         "PageTitle": null,
         "ResourceName": "323",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18285,7 +18285,7 @@
         "PageTitle": null,
         "ResourceName": "336",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -21311,7 +21311,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -22172,7 +22172,7 @@
         "PageTitle": null,
         "ResourceName": "501",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -25135,7 +25135,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -309462,7 +309462,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -310372,7 +310372,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -313286,7 +313286,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -314196,7 +314196,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
