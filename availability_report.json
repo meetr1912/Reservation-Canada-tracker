@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-20T16:04:10Z",
+    "generated_at": "2026-10-20T19:50:25Z",
     "start_date": "2026-10-20",
     "end_date": "2027-04-17",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90640,
+    "total_available_slots": 90634,
     "available_days": 180,
     "available_units": 464
   },
@@ -1108,7 +1108,7 @@
     },
     {
       "date": "2026-10-20",
-      "available_slots": 90640,
+      "available_slots": 90634,
       "available_units": 464,
       "available_days": 180
     }
@@ -6015,7 +6015,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -13684,7 +13684,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -15252,14 +15252,14 @@
         "PageTitle": null,
         "ResourceName": "18",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "19",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -15301,7 +15301,7 @@
         "PageTitle": null,
         "ResourceName": "24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -19076,14 +19076,14 @@
         "PageTitle": null,
         "ResourceName": "18",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
         "PageTitle": null,
         "ResourceName": "19",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -19125,7 +19125,7 @@
         "PageTitle": null,
         "ResourceName": "24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -44150,7 +44150,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -59572,7 +59572,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
