@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-21T02:24:13Z",
+    "generated_at": "2026-10-21T09:04:41Z",
     "start_date": "2026-10-21",
     "end_date": "2027-04-18",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90723,
+    "total_available_slots": 90727,
     "available_days": 180,
     "available_units": 464
   },
@@ -1114,7 +1114,7 @@
     },
     {
       "date": "2026-10-21",
-      "available_slots": 90723,
+      "available_slots": 90727,
       "available_units": 464,
       "available_days": 180
     }
@@ -10692,7 +10692,7 @@
         "PageTitle": null,
         "ResourceName": "407",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -11203,7 +11203,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
@@ -14516,7 +14516,7 @@
         "PageTitle": null,
         "ResourceName": "407",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -15027,7 +15027,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
