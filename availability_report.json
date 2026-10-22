@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-22T09:12:15Z",
+    "generated_at": "2026-10-22T16:22:31Z",
     "start_date": "2026-10-22",
     "end_date": "2027-04-19",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90791,
+    "total_available_slots": 90790,
     "available_days": 180,
     "available_units": 464
   },
@@ -1120,7 +1120,7 @@
     },
     {
       "date": "2026-10-22",
-      "available_slots": 90791,
+      "available_slots": 90790,
       "available_units": 464,
       "available_days": 180
     }
@@ -3848,7 +3848,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -6741,7 +6741,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -6832,7 +6832,7 @@
         "PageTitle": null,
         "ResourceName": "401",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -13220,7 +13220,7 @@
         "PageTitle": null,
         "ResourceName": "O97",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -13234,7 +13234,7 @@
         "PageTitle": null,
         "ResourceName": "O35",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Ingonish Beach",
@@ -14403,7 +14403,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18213,7 +18213,7 @@
         "PageTitle": null,
         "ResourceName": "C4",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -18227,7 +18227,7 @@
         "PageTitle": null,
         "ResourceName": "W3",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -22044,7 +22044,7 @@
         "PageTitle": null,
         "ResourceName": "C5",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
