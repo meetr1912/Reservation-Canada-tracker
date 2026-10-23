@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-23T02:24:39Z",
+    "generated_at": "2026-10-23T09:02:51Z",
     "start_date": "2026-10-23",
     "end_date": "2027-04-20",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90699,
+    "total_available_slots": 90696,
     "available_days": 180,
     "available_units": 456
   },
@@ -1126,7 +1126,7 @@
     },
     {
       "date": "2026-10-23",
-      "available_slots": 90699,
+      "available_slots": 90696,
       "available_units": 456,
       "available_days": 180
     }
@@ -240844,7 +240844,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -244668,7 +244668,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -248492,7 +248492,7 @@
         "PageTitle": null,
         "ResourceName": "12",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
