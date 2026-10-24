@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-24T08:35:51Z",
+    "generated_at": "2026-10-24T15:07:28Z",
     "start_date": "2026-10-24",
     "end_date": "2027-04-21",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90800,
+    "total_available_slots": 90796,
     "available_days": 180,
     "available_units": 456
   },
@@ -1132,7 +1132,7 @@
     },
     {
       "date": "2026-10-24",
-      "available_slots": 90800,
+      "available_slots": 90796,
       "available_units": 456,
       "available_days": 180
     }
@@ -3034,7 +3034,7 @@
         "PageTitle": null,
         "ResourceName": "403",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -6928,7 +6928,7 @@
         "PageTitle": null,
         "ResourceName": "505",
         "Type": "Ôasis",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kluane",
@@ -380686,7 +380686,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -384510,7 +384510,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
