@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-25T15:17:36Z",
+    "generated_at": "2026-10-25T18:43:37Z",
     "start_date": "2026-10-25",
     "end_date": "2027-04-22",
     "days": 180,
@@ -1697,7 +1697,7 @@
         "PageTitle": null,
         "ResourceName": "O13",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Cape Breton Highlands - Cheticamp",
@@ -22140,7 +22140,7 @@
         "PageTitle": null,
         "ResourceName": "401",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Kejimkujik - Jeremy's Bay & Jakes Landing",
@@ -250852,7 +250852,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -254676,7 +254676,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
