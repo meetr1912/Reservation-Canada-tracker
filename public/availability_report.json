@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-25T08:56:11Z",
+    "generated_at": "2026-10-25T15:17:36Z",
     "start_date": "2026-10-25",
     "end_date": "2027-04-22",
     "days": 180,
@@ -411,7 +411,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90908,
+    "total_available_slots": 90893,
     "available_days": 180,
     "available_units": 456
   },
@@ -1132,7 +1132,7 @@
     },
     {
       "date": "2026-10-25",
-      "available_slots": 90908,
+      "available_slots": 90893,
       "available_units": 456,
       "available_days": 180
     }
@@ -2103,7 +2103,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -4462,7 +4462,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -5927,7 +5927,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -9751,7 +9751,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -13575,7 +13575,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -17399,7 +17399,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -25047,7 +25047,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -28871,7 +28871,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -32695,7 +32695,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -36519,7 +36519,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -40343,7 +40343,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -250852,7 +250852,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -254676,7 +254676,7 @@
         "PageTitle": null,
         "ResourceName": "O75",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -397739,7 +397739,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -401563,7 +401563,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
