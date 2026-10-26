@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-26T02:10:49Z",
+    "generated_at": "2026-10-26T09:34:25Z",
     "start_date": "2026-10-26",
     "end_date": "2027-04-23",
     "days": 180,
@@ -413,7 +413,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90965,
+    "total_available_slots": 90963,
     "available_days": 180,
     "available_units": 456
   },
@@ -1134,7 +1134,7 @@
     },
     {
       "date": "2026-10-26",
-      "available_slots": 90965,
+      "available_slots": 90963,
       "available_units": 456,
       "available_days": 180
     }
@@ -73282,7 +73282,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -77106,7 +77106,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
