@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-29T17:50:44Z",
+    "generated_at": "2026-10-29T23:49:20Z",
     "start_date": "2026-10-29",
     "end_date": "2027-04-26",
     "days": 180,
@@ -414,7 +414,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91113,
+    "total_available_slots": 91109,
     "available_days": 180,
     "available_units": 456
   },
@@ -1135,7 +1135,7 @@
     },
     {
       "date": "2026-10-29",
-      "available_slots": 91113,
+      "available_slots": 91109,
       "available_units": 456,
       "available_days": 180
     }
@@ -9894,7 +9894,7 @@
         "PageTitle": null,
         "ResourceName": "Y5",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -21338,7 +21338,7 @@
         "PageTitle": null,
         "ResourceName": "Y1",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -113135,7 +113135,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -116959,7 +116959,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -393610,7 +393610,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -397434,7 +397434,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -401258,7 +401258,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -405082,7 +405082,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
