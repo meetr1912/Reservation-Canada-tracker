@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-10-30T03:22:11Z",
+    "generated_at": "2026-10-30T10:39:34Z",
     "start_date": "2026-10-30",
     "end_date": "2027-04-27",
     "days": 180,
@@ -414,7 +414,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91156,
+    "total_available_slots": 91155,
     "available_days": 180,
     "available_units": 456
   },
@@ -1135,7 +1135,7 @@
     },
     {
       "date": "2026-10-30",
-      "available_slots": 91156,
+      "available_slots": 91155,
       "available_units": 456,
       "available_days": 180
     }
@@ -6126,7 +6126,7 @@
         "PageTitle": null,
         "ResourceName": "O78",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
