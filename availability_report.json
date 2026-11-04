@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-04T03:45:36Z",
+    "generated_at": "2026-11-04T11:48:34Z",
     "start_date": "2026-11-04",
     "end_date": "2027-05-02",
     "days": 180,
@@ -417,7 +417,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91289,
+    "total_available_slots": 91291,
     "available_days": 180,
     "available_units": 456
   },
@@ -1138,7 +1138,7 @@
     },
     {
       "date": "2026-11-04",
-      "available_slots": 91289,
+      "available_slots": 91291,
       "available_units": 456,
       "available_days": 180
     }
@@ -149178,7 +149178,7 @@
         "PageTitle": null,
         "ResourceName": "3",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -206580,7 +206580,7 @@
         "PageTitle": null,
         "ResourceName": "9",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Prince Albert - Beaver Glen",
@@ -252132,7 +252132,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -255956,7 +255956,7 @@
         "PageTitle": null,
         "ResourceName": "CHA1",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
