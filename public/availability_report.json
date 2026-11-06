@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-06T18:45:53Z",
+    "generated_at": "2026-11-06T23:59:27Z",
     "start_date": "2026-11-06",
     "end_date": "2027-05-04",
     "days": 180,
@@ -417,7 +417,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91318,
+    "total_available_slots": 91323,
     "available_days": 180,
     "available_units": 456
   },
@@ -1138,7 +1138,7 @@
     },
     {
       "date": "2026-11-06",
-      "available_slots": 91318,
+      "available_slots": 91323,
       "available_units": 456,
       "available_days": 180
     }
@@ -5940,7 +5940,7 @@
         "PageTitle": null,
         "ResourceName": "RC03",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -42498,7 +42498,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -46322,7 +46322,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -50146,7 +50146,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -53970,7 +53970,7 @@
         "PageTitle": null,
         "ResourceName": "Yurt",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -191858,7 +191858,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -195682,7 +195682,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -199506,7 +199506,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -203330,7 +203330,7 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -378317,7 +378317,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
@@ -382141,7 +382141,7 @@
         "PageTitle": null,
         "ResourceName": "R-F9",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Saint-Jean-des-Piles",
