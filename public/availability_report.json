@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-13T00:54:15Z",
+    "generated_at": "2026-11-13T11:48:17Z",
     "start_date": "2026-11-13",
     "end_date": "2027-05-11",
     "days": 180,
@@ -416,7 +416,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91062,
+    "total_available_slots": 91059,
     "available_days": 180,
     "available_units": 456
   },
@@ -1137,7 +1137,7 @@
     },
     {
       "date": "2026-11-13",
-      "available_slots": 91062,
+      "available_slots": 91059,
       "available_units": 456,
       "available_days": 180
     }
@@ -82405,7 +82405,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -271426,7 +271426,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -275250,7 +275250,7 @@
         "PageTitle": null,
         "ResourceName": "1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
