@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-14T11:09:56Z",
+    "generated_at": "2026-11-14T17:32:52Z",
     "start_date": "2026-11-14",
     "end_date": "2027-05-12",
     "days": 180,
@@ -416,7 +416,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91078,
+    "total_available_slots": 91074,
     "available_days": 180,
     "available_units": 456
   },
@@ -1137,7 +1137,7 @@
     },
     {
       "date": "2026-11-14",
-      "available_slots": 91078,
+      "available_slots": 91074,
       "available_units": 456,
       "available_days": 180
     }
@@ -128433,7 +128433,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -132257,7 +132257,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -153589,7 +153589,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -157413,7 +157413,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
