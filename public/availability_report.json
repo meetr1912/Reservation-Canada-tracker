@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-15T18:13:25Z",
+    "generated_at": "2026-11-15T23:45:35Z",
     "start_date": "2026-11-15",
     "end_date": "2027-05-13",
     "days": 180,
@@ -416,7 +416,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91090,
+    "total_available_slots": 91077,
     "available_days": 180,
     "available_units": 456
   },
@@ -1137,7 +1137,7 @@
     },
     {
       "date": "2026-11-15",
-      "available_slots": 91090,
+      "available_slots": 91077,
       "available_units": 456,
       "available_days": 180
     }
@@ -23608,7 +23608,7 @@
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -27432,7 +27432,7 @@
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -28876,7 +28876,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -92433,21 +92433,21 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -92468,7 +92468,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -96257,21 +96257,21 @@
         "PageTitle": null,
         "ResourceName": "732",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
         "PageTitle": null,
         "ResourceName": "733",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
         "PageTitle": null,
         "ResourceName": "734",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -96292,7 +96292,7 @@
         "PageTitle": null,
         "ResourceName": "737",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Rocky Mountain House",
@@ -156489,7 +156489,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -160313,7 +160313,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -237731,7 +237731,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -241555,7 +241555,7 @@
         "PageTitle": null,
         "ResourceName": "730",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -331098,7 +331098,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -397401,7 +397401,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -397415,7 +397415,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -401225,7 +401225,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -401239,7 +401239,7 @@
         "PageTitle": null,
         "ResourceName": "R-F6",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -405049,7 +405049,7 @@
         "PageTitle": null,
         "ResourceName": "R-F4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
