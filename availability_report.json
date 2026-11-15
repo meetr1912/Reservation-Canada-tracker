@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-15T03:37:09Z",
+    "generated_at": "2026-11-15T11:44:41Z",
     "start_date": "2026-11-15",
     "end_date": "2027-05-13",
     "days": 180,
@@ -416,7 +416,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 91097,
+    "total_available_slots": 91100,
     "available_days": 180,
     "available_units": 456
   },
@@ -1137,7 +1137,7 @@
     },
     {
       "date": "2026-11-15",
-      "available_slots": 91097,
+      "available_slots": 91100,
       "available_units": 456,
       "available_days": 180
     }
@@ -412746,7 +412746,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
@@ -416570,7 +416570,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
@@ -420394,7 +420394,7 @@
         "PageTitle": null,
         "ResourceName": "CHA2",
         "Type": "Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Lachine Canal",
