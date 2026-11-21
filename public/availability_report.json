@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-21T04:40:21Z",
+    "generated_at": "2026-11-21T15:50:39Z",
     "start_date": "2026-11-21",
     "end_date": "2027-05-19",
     "days": 180,
@@ -416,7 +416,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90928,
+    "total_available_slots": 90922,
     "available_days": 180,
     "available_units": 456
   },
@@ -1137,7 +1137,7 @@
     },
     {
       "date": "2026-11-21",
-      "available_slots": 90928,
+      "available_slots": 90922,
       "available_units": 456,
       "available_days": 180
     }
@@ -55644,7 +55644,7 @@
         "PageTitle": null,
         "ResourceName": "RC02",
         "Type": "Rustic Cabin",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -141522,7 +141522,7 @@
         "PageTitle": null,
         "ResourceName": "24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -145346,7 +145346,7 @@
         "PageTitle": null,
         "ResourceName": "24",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -167912,7 +167912,7 @@
         "PageTitle": null,
         "ResourceName": "R-F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -171736,7 +171736,7 @@
         "PageTitle": null,
         "ResourceName": "R-F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -175560,7 +175560,7 @@
         "PageTitle": null,
         "ResourceName": "R-F1",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "La Mauricie - Rivière-à-la-Pêche",
@@ -277429,7 +277429,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
@@ -281253,7 +281253,7 @@
         "PageTitle": null,
         "ResourceName": "RC01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Backcountry",
