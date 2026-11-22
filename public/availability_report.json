@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-22T12:13:49Z",
+    "generated_at": "2026-11-22T21:30:20Z",
     "start_date": "2026-11-22",
     "end_date": "2027-05-20",
     "days": 180,
@@ -374,7 +374,6 @@
     "always_available_parks": [
       "Banff - Two Jack Lakeside",
       "Banff - Two Jack Main",
-      "Banff - Village 2",
       "Cape Breton Highlands - Broad Cove",
       "Cape Breton Highlands - Cheticamp",
       "Cape Breton Highlands - Ingonish Beach",
@@ -415,7 +414,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90942,
+    "total_available_slots": 90908,
     "available_days": 180,
     "available_units": 456
   },
@@ -1136,7 +1135,7 @@
     },
     {
       "date": "2026-11-22",
-      "available_slots": 90942,
+      "available_slots": 90908,
       "available_units": 456,
       "available_days": 180
     }
@@ -105516,7 +105515,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -109340,7 +109339,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -110943,7 +110942,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -113164,7 +113163,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -114767,7 +114766,7 @@
         "PageTitle": null,
         "ResourceName": "4",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -116988,7 +116987,7 @@
         "PageTitle": null,
         "ResourceName": "O48",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Headquarters",
@@ -123978,7 +123977,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -127802,7 +127801,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -131626,7 +131625,7 @@
         "PageTitle": null,
         "ResourceName": "Y3",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -137690,7 +137689,7 @@
         "PageTitle": null,
         "ResourceName": "23",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -141514,7 +141513,7 @@
         "PageTitle": null,
         "ResourceName": "23",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Point Pelee - Camp Henry",
@@ -193321,7 +193320,7 @@
         "PageTitle": null,
         "ResourceName": "SH01",
         "Type": "Rustic Cabin",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Fundy - Chignecto",
@@ -261649,7 +261648,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -265473,7 +265472,7 @@
         "PageTitle": null,
         "ResourceName": "Y4",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -613415,7 +613414,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -617239,7 +617238,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -621063,7 +621062,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -624887,7 +624886,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -628711,7 +628710,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -632535,7 +632534,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -636359,7 +636358,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -640183,7 +640182,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -644007,7 +644006,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -647831,7 +647830,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -651655,7 +651654,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -655479,7 +655478,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -659303,7 +659302,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -663127,7 +663126,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -666951,7 +666950,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -670775,7 +670774,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -674599,7 +674598,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -678423,7 +678422,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -682247,7 +682246,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
@@ -686071,7 +686070,7 @@
         "PageTitle": null,
         "ResourceName": "D8",
         "Type": "oTENTik",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Banff - Village 2",
