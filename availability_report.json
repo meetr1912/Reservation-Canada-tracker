@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-11-22T03:54:49Z",
+    "generated_at": "2026-11-22T12:13:49Z",
     "start_date": "2026-11-22",
     "end_date": "2027-05-20",
     "days": 180,
@@ -415,7 +415,7 @@
       "Trent-Severn Waterway"
     ],
     "errors": [],
-    "total_available_slots": 90940,
+    "total_available_slots": 90942,
     "available_days": 180,
     "available_units": 456
   },
@@ -1136,7 +1136,7 @@
     },
     {
       "date": "2026-11-22",
-      "available_slots": 90940,
+      "available_slots": 90942,
       "available_units": 456,
       "available_days": 180
     }
@@ -50340,7 +50340,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -54164,7 +54164,7 @@
         "PageTitle": null,
         "ResourceName": "728",
         "Type": "oTENTik",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Riding Mountain - Wasagaming",
@@ -208099,7 +208099,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -211923,7 +211923,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": false
+        "status": true
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -288403,7 +288403,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
@@ -292227,7 +292227,7 @@
         "PageTitle": null,
         "ResourceName": "Y2",
         "Type": "Yurt",
-        "status": true
+        "status": false
       },
       {
         "ParkName": "Bruce Peninsula - Cyprus Lake",
